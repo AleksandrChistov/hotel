@@ -1,16 +1,18 @@
 const path = require('path')
 const webpack = require('webpack')
-const HTMLPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
   entry: './src/pages/index.js',
   output: {
-    filename: 'js/[name].js',
-    path: path.resolve(__dirname, 'dist')
+    publicPath: '',
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'js/[name].js'
   },
   optimization: {
     minimizer: [new TerserPlugin(), new OptimizeCSSAssetsPlugin({})],
@@ -21,9 +23,14 @@ module.exports = {
     port: 9000
   },
   plugins: [
-    new HTMLPlugin({
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/pages/index.pug'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'ui-kit/ui-kit.html',
+      template: './src/pages/ui-kit/ui-kit.pug'
     }),
     new MiniCssExtractPlugin({
       filename: 'css/style.css',
@@ -31,7 +38,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       { from: 'src/img', to: 'img' },
-      { from: 'src/fonts', to: 'fonts' },
+      // { from: 'src/fonts', to: 'fonts' },
     ]),
     new webpack.ProvidePlugin({
       $: 'jquery',
@@ -65,7 +72,8 @@ module.exports = {
         exclude: /img/,
         loader: "file-loader",
         options: {
-          name: '../fonts/[name]/[name].[ext]'
+          publicPath: '../',
+          name: './fonts/[name]/[name].[ext]'
         }
       },
       { 
