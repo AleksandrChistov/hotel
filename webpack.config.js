@@ -8,15 +8,21 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const pages = [
   { filename: 'index.html', template: './src/pages/index.pug', chunks: ['app', 'vendors'] },
-  { filename: 'ui-kit/ui-kit.html', template: './src/pages/ui-kit/ui-kit.pug', chunks: ['ui-kit', 'vendors'] }
+  { filename: 'ui-kit/ui-kit.html', template: './src/pages/ui-kit/ui-kit.pug', chunks: ['ui-kit', 'vendors'] },
+  { filename: 'page3/page3.html', template: './src/pages/page3/page3.pug', chunks: ['page3', 'vendors'] }
 ];
+
+let obj = {};
+
+pages.forEach(item => {
+  let name = item.chunks[0];
+  let val = item.template.substring(0, item.template.length - 4);
+  obj[name] = val;
+});
 
 module.exports = env => {
   return {
-    entry: {
-     'app': './src/pages/',
-     'ui-kit': './src/pages/ui-kit/ui-kit'
-    },
+    entry: obj,
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: '[name]/js/[name].[hash].js'
@@ -41,8 +47,7 @@ module.exports = env => {
       port: 9000
     },
     plugins: [
-      new HtmlWebpackPlugin(pages[0]),
-      new HtmlWebpackPlugin(pages[1]),
+      ...pages.map(page => new HtmlWebpackPlugin(page)),
       new MiniCssExtractPlugin({
         filename: '[name]/css/[name].[hash].css'
       }),
