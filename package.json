@@ -4,10 +4,10 @@
   "description": "Multi-page site using components",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development",
-    "dev:watch": "webpack --mode development --watch",
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open"
+    "dev": "rimraf dist && webpack --env=development --mode development",
+    "dev:watch": "webpack --env=development --mode development --watch",
+    "build": "rimraf dist --env=production && webpack --mode production",
+    "start": "webpack-dev-server --env=development --mode development --open"
   },
   "keywords": [
     "webpack",
@@ -21,7 +21,6 @@
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "babel-loader": "^8.0.6",
-    "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^3.2.0",
     "eslint": "^6.5.0",
@@ -32,6 +31,7 @@
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "pug": "^2.0.4",
     "pug-loader": "^2.4.0",
+    "rimraf": "^3.0.0",
     "style-loader": "^1.0.0",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
