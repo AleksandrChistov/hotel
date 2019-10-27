@@ -52,7 +52,7 @@ module.exports = env => {
         filename: '[name]/css/[name].[hash].css'
       }),
       new CopyWebpackPlugin([
-        { from: 'src/img', to: 'img' },
+        // { from: 'src/img', to: 'img' },
         // { from: 'src/fonts', to: 'fonts' },
       ]),
       new webpack.ProvidePlugin({
@@ -97,7 +97,8 @@ module.exports = env => {
           exclude: /fonts/,
           loader: "file-loader",
           options: {
-            name: '[name].[ext]'
+            publicPath: './',
+            name: 'img/[name].[ext]'
           }
         }
       ]
