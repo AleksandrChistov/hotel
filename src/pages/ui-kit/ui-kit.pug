@@ -1,7 +1,7 @@
-extends ../../components/main
+extends ../../components/main/main
 
 block variables
-  - const pageTitle = 'Вторая страница на Pug - UI Kit'
+  - const pageTitle = 'UI Kit'
   - const youAreUsingPug = false
 
 block content
@@ -14,7 +14,6 @@ block content
         a(href="/" class="link") Перейти на главную страницу
       p
         a(href="./ui-kit-too/") Перейти на следующую страницу
-  img(src=require('./img/dog.jpg'), alt="")
   p.montserrat-bold.
     Pug is a terse and simple templating language with a
     strong focus on performance and powerful features.

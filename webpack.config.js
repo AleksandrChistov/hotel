@@ -9,7 +9,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const pages = [
   { filename: 'index.html', template: './pages/index.pug', chunks: ['app', 'vendors'] },
   { filename: 'ui-kit/index.html', template: './pages/ui-kit/ui-kit.pug', chunks: ['ui-kit', 'vendors'] },
-  { filename: 'ui-kit/ui-kit-too/index.html', template: './pages/ui-kit/ui-kit-too/ui-kit-too.pug', chunks: ['ui-kit/ui-kit-too', 'vendors'] }
 ];
 
 let obj = {};
@@ -27,7 +26,7 @@ module.exports = env => {
     output: {
       path: path.resolve(__dirname, 'dist'),
       publicPath: '/',
-      filename: '[name]/js/script.[hash].js'
+      filename: env === 'development' ? '[name]/js/script.js' : '[name]/js/script.[hash].js'
     },
     optimization: {
       minimizer: [new TerserPlugin(), new OptimizeCSSAssetsPlugin({})],
@@ -35,7 +34,7 @@ module.exports = env => {
         cacheGroups: {
           vendor: {
             name: 'vendors',
-            filename: 'app/js/[name].[hash].js',
+            filename: env === 'development' ? 'app/js/[name].js' : 'app/js/[name].[hash].js',
             test: /node_modules/,
             chunks: 'all',
             enforce: true
@@ -51,7 +50,7 @@ module.exports = env => {
     plugins: [
       ...pages.map(page => new HtmlWebpackPlugin(page)),
       new MiniCssExtractPlugin({
-        filename: '[name]/css/style.[hash].css',
+        filename: env === 'development' ? '[name]/css/style.css' : '[name]/css/style.[hash].css',
       }),
       new CopyWebpackPlugin([
         // { from: 'src/img', to: 'img' },
@@ -94,7 +93,7 @@ module.exports = env => {
           }
         },
         { 
-          test: /\.(png|jpg|gif|svg)$/,
+          test: /\.(png|jpg|gif|svg|ico)$/,
           exclude: /fonts/,
           loader: "file-loader",
           options: {
