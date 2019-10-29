@@ -2,18 +2,14 @@ extends ../../components/main/main
 
 block variables
   - const pageTitle = 'UI Kit'
-  - const youAreUsingPug = false
 
 block content
-  h1.title Next one is the item title inside widgets
-  #container.col
-    if youAreUsingPug
-      p You are amazing
-    else
+  .ui-wrap
+    include ../../components/small-components/ui-logo/ui-logo.pug
+    h1.title Next one is the item title inside widgets
+    #container.col
       p Get on it! 
         a(href="/" class="link") Перейти на главную страницу
-      p
-        a(href="./ui-kit-too/") Перейти на следующую страницу
-  p.montserrat-bold.
-    Pug is a terse and simple templating language with a
-    strong focus on performance and powerful features.
+    p.montserrat-bold.
+      Pug is a terse and simple templating language with a
+      strong focus on performance and powerful features.

@@ -5,15 +5,17 @@ block variables
   - const youAreUsingPug = true
 
 block content
-  h1.title Pug - node template engine
-  #container.col
-    if youAreUsingPug
-      p 
-        | This is the body text which is used for most of the design, 
-        | like paragraphs, lists, etc. 
-        a(href="./ui-kit/") ссылка
-    else
-      p Get on it!
-  p.montserrat-bold This is a label or CTA text
-  .container
-    p Привет я новый блок див, раскрась меня :)
+  .ui-wrap
+    include ../components/small-components/ui-logo/ui-logo.pug
+    h1.title Pug - node template engine
+    #container.col
+      if youAreUsingPug
+        p 
+          | This is the body text which is used for most of the design, 
+          | like paragraphs, lists, etc. 
+          a(href="./ui-kit/") ссылка
+      else
+        p Get on it!
+    p.montserrat-bold This is a label or CTA text
+    .container
+      p Привет я новый блок див, раскрась меня :)

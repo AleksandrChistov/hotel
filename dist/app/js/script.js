@@ -174,7 +174,52 @@ eval("module.exports = __webpack_require__.p + \"img/favicon.ico\";\n\n//# sourc
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _fonts_fonts_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../fonts/fonts.styl */ \"./fonts/fonts.styl\");\n/* harmony import */ var _fonts_fonts_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_fonts_fonts_styl__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _img_favicon_ico__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/favicon.ico */ \"./components/main/img/favicon.ico\");\n/* harmony import */ var _img_favicon_ico__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_favicon_ico__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack:///./components/main/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _fonts_fonts_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../fonts/fonts.styl */ \"./fonts/fonts.styl\");\n/* harmony import */ var _fonts_fonts_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_fonts_fonts_styl__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _img_favicon_ico__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/favicon.ico */ \"./components/main/img/favicon.ico\");\n/* harmony import */ var _img_favicon_ico__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_favicon_ico__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _main_styl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./main.styl */ \"./components/main/main.styl\");\n/* harmony import */ var _main_styl__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_main_styl__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\n//# sourceURL=webpack:///./components/main/main.js?");
+
+/***/ }),
+
+/***/ "./components/main/main.styl":
+/*!***********************************!*\
+  !*** ./components/main/main.styl ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./components/main/main.styl?");
+
+/***/ }),
+
+/***/ "./components/small-components/ui-logo/img/ui-logo.svg":
+/*!*************************************************************!*\
+  !*** ./components/small-components/ui-logo/img/ui-logo.svg ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/ui-logo.svg\";\n\n//# sourceURL=webpack:///./components/small-components/ui-logo/img/ui-logo.svg?");
+
+/***/ }),
+
+/***/ "./components/small-components/ui-logo/ui-logo.js":
+/*!********************************************************!*\
+  !*** ./components/small-components/ui-logo/ui-logo.js ***!
+  \********************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _img_ui_logo_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./img/ui-logo.svg */ \"./components/small-components/ui-logo/img/ui-logo.svg\");\n/* harmony import */ var _img_ui_logo_svg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_img_ui_logo_svg__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _ui_logo_styl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ui-logo.styl */ \"./components/small-components/ui-logo/ui-logo.styl\");\n/* harmony import */ var _ui_logo_styl__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_ui_logo_styl__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack:///./components/small-components/ui-logo/ui-logo.js?");
+
+/***/ }),
+
+/***/ "./components/small-components/ui-logo/ui-logo.styl":
+/*!**********************************************************!*\
+  !*** ./components/small-components/ui-logo/ui-logo.styl ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./components/small-components/ui-logo/ui-logo.styl?");
 
 /***/ }),
 
@@ -197,7 +242,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./font
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _index_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.styl */ \"./pages/index.styl\");\n/* harmony import */ var _index_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_styl__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_main_main_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/main/main.js */ \"./components/main/main.js\");\n\n\n$('.title').addClass('new-class');\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"../node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./pages/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _index_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.styl */ \"./pages/index.styl\");\n/* harmony import */ var _index_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_styl__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_main_main_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/main/main.js */ \"./components/main/main.js\");\n/* harmony import */ var _components_small_components_ui_logo_ui_logo_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/small-components/ui-logo/ui-logo.js */ \"./components/small-components/ui-logo/ui-logo.js\");\n\n\n\n$('.title').addClass('new-class');\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"../node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./pages/index.js?");
 
 /***/ }),
 

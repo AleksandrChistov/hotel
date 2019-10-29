@@ -40,5 +40,18 @@ p {
   font-style: normal;
 }
 
+.body {
+  margin: 0;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.ui-wrap__logo {
+  margin: 30px;
+}
+
 
 /*# sourceMappingURL=style.css.map*/
