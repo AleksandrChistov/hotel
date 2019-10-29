@@ -1,3 +1,6 @@
 import '../../fonts/fonts.styl'
 import './ui-kit.styl'
+import './ui-kit.pug'
+import '../../components/main.pug'
 import './img/dog.jpg'
+import '../../components/header/img/logo.svg'

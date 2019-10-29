@@ -1,0 +1,13 @@
+extends ../../../components/main
+
+block variables
+  - const pageTitle = 'Третья страница на Pug - UI Kit Too'
+
+block content
+  h1.title Третья страница на Pug - UI Kit Too
+  p
+    a(href="../") Перейти на предыдущую страницу
+  img(src=require('../img/dog.jpg'), alt="")
+  p.
+    Pug is a terse and simple templating language with a
+    strong focus on performance and powerful features.

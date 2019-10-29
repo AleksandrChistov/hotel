@@ -5,14 +5,16 @@ block variables
   - const youAreUsingPug = false
 
 block content
-  h1.title Pug - node template engine
-  img(src="../img/dog.jpg", alt="Dog")
+  h1.title Next one is the item title inside widgets
   #container.col
     if youAreUsingPug
       p You are amazing
     else
       p Get on it! 
         a(href="/" class="link") Перейти на главную страницу
-  p.
+      p
+        a(href="./ui-kit-too/") Перейти на следующую страницу
+  img(src=require('./img/dog.jpg'), alt="")
+  p.montserrat-bold.
     Pug is a terse and simple templating language with a
     strong focus on performance and powerful features.

@@ -7,9 +7,9 @@ const TerserPlugin = require('terser-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const pages = [
-  { filename: 'index.html', template: './src/pages/index.pug', chunks: ['app', 'vendors'] },
-  { filename: 'ui-kit/ui-kit.html', template: './src/pages/ui-kit/ui-kit.pug', chunks: ['ui-kit', 'vendors'] },
-  { filename: 'page3/page3.html', template: './src/pages/page3/page3.pug', chunks: ['page3', 'vendors'] }
+  { filename: 'index.html', template: './pages/index.pug', chunks: ['app', 'vendors'] },
+  { filename: 'ui-kit/index.html', template: './pages/ui-kit/ui-kit.pug', chunks: ['ui-kit', 'vendors'] },
+  { filename: 'ui-kit/ui-kit-too/index.html', template: './pages/ui-kit/ui-kit-too/ui-kit-too.pug', chunks: ['ui-kit/ui-kit-too', 'vendors'] }
 ];
 
 let obj = {};
@@ -23,9 +23,11 @@ pages.forEach(item => {
 module.exports = env => {
   return {
     entry: obj,
+    context: path.resolve(__dirname, 'src'),
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: '[name]/js/[name].[hash].js'
+      publicPath: '/',
+      filename: '[name]/js/script.[hash].js'
     },
     optimization: {
       minimizer: [new TerserPlugin(), new OptimizeCSSAssetsPlugin({})],
@@ -42,14 +44,14 @@ module.exports = env => {
       }
     },
     devServer: {
+      contentBase: path.resolve(__dirname, 'src'),
       historyApiFallback: true,
-      contentBase: path.resolve(__dirname, 'dist'),
       port: 9000
     },
     plugins: [
       ...pages.map(page => new HtmlWebpackPlugin(page)),
       new MiniCssExtractPlugin({
-        filename: '[name]/css/[name].[hash].css'
+        filename: '[name]/css/style.[hash].css',
       }),
       new CopyWebpackPlugin([
         // { from: 'src/img', to: 'img' },
@@ -88,8 +90,7 @@ module.exports = env => {
           exclude: /img/,
           loader: "file-loader",
           options: {
-            publicPath: '../../',
-            name: './fonts/[name]/[name].[ext]'
+            name: 'fonts/[name]/[name].[ext]'
           }
         },
         { 
@@ -97,7 +98,6 @@ module.exports = env => {
           exclude: /fonts/,
           loader: "file-loader",
           options: {
-            publicPath: './',
             name: 'img/[name].[ext]'
           }
         }
