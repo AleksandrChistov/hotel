@@ -120,6 +120,17 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./comp
 
 /***/ }),
 
+/***/ "./components/small-components/ui-block-text/ui-block-text.styl":
+/*!**********************************************************************!*\
+  !*** ./components/small-components/ui-block-text/ui-block-text.styl ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./components/small-components/ui-block-text/ui-block-text.styl?");
+
+/***/ }),
+
 /***/ "./components/small-components/ui-color/ui-color.styl":
 /*!************************************************************!*\
   !*** ./components/small-components/ui-color/ui-color.styl ***!
@@ -184,7 +195,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./font
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ui_kit_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ui-kit.styl */ \"./pages/ui-kit/ui-kit.styl\");\n/* harmony import */ var _ui_kit_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_styl__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_main_main_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/main/main.js */ \"./components/main/main.js\");\n/* harmony import */ var _components_small_components_ui_wrap_ui_wrap_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/small-components/ui-wrap/ui-wrap.js */ \"./components/small-components/ui-wrap/ui-wrap.js\");\n/* harmony import */ var _components_small_components_ui_color_ui_color_styl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/small-components/ui-color/ui-color.styl */ \"./components/small-components/ui-color/ui-color.styl\");\n/* harmony import */ var _components_small_components_ui_color_ui_color_styl__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_small_components_ui_color_ui_color_styl__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\n\n//# sourceURL=webpack:///./pages/ui-kit/ui-kit.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ui_kit_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ui-kit.styl */ \"./pages/ui-kit/ui-kit.styl\");\n/* harmony import */ var _ui_kit_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_styl__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_main_main_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/main/main.js */ \"./components/main/main.js\");\n/* harmony import */ var _components_small_components_ui_wrap_ui_wrap_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/small-components/ui-wrap/ui-wrap.js */ \"./components/small-components/ui-wrap/ui-wrap.js\");\n/* harmony import */ var _components_small_components_ui_color_ui_color_styl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/small-components/ui-color/ui-color.styl */ \"./components/small-components/ui-color/ui-color.styl\");\n/* harmony import */ var _components_small_components_ui_color_ui_color_styl__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_small_components_ui_color_ui_color_styl__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _components_small_components_ui_block_text_ui_block_text_styl__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/small-components/ui-block-text/ui-block-text.styl */ \"./components/small-components/ui-block-text/ui-block-text.styl\");\n/* harmony import */ var _components_small_components_ui_block_text_ui_block_text_styl__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_small_components_ui_block_text_ui_block_text_styl__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\n\n//# sourceURL=webpack:///./pages/ui-kit/ui-kit.js?");
 
 /***/ }),
 

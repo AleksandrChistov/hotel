@@ -1,5 +1,13 @@
 .container {
-  margin: 0 140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1240px;
+}
+.block-text-wrap {
+  display: flex;
+  max-width: 403px;
+  margin-right: 130px;
 }
 
 @font-face {
@@ -44,21 +52,41 @@
 }
 .ui-wrap__logo {
   position: absolute;
-  top: 30px;
+  top: 25px;
   left: 30px;
 }
 
 .block-color {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
+  margin-left: 10px;
 }
 .block-color__square {
   width: 70px;
   height: 70px;
   border-radius: 6px;
 }
-.block-color__square_black {
+.block-color__square_dark100 {
   background-color: #1f2041;
+}
+.block-color__square_dark75 {
+  background-color: rgba(31,32,65,0.75);
+}
+.block-color__square_dark50 {
+  background-color: rgba(31,32,65,0.5);
+}
+.block-color__square_dark25 {
+  background-color: rgba(31,32,65,0.25);
+}
+.block-color__square_dark5 {
+  background-color: rgba(31,32,65,0.05);
+}
+.block-color__square_purple {
+  background-color: #bc9cff;
+}
+.block-color__square_green {
+  background-color: #6fcf97;
 }
 .block-color-text {
   margin-left: 40px;
@@ -76,6 +104,61 @@
 }
 .block-color-text__hex {
   font-weight: normal;
+}
+
+.block-tag {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-basis: 5%;
+  margin-right: 30px;
+  color: rgba(31,32,65,0.25);
+}
+.block-text {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 85%;
+  color: #1f2041;
+}
+.block-tag__tag {
+  margin: 0;
+}
+.block-text__text {
+  margin: 0;
+  margin-bottom: 50px;
+}
+.block-tag__tag_size_l {
+  font-size: 24px;
+  margin-bottom: 80px;
+}
+.block-tag__tag_size_m {
+  font-size: 19px;
+  margin-bottom: 74px;
+}
+.block-tag__tag_size_s {
+  font-size: 12px;
+  margin-bottom: 50px;
+}
+.block-text__text_size_l {
+  font-size: 24px;
+  font-family: Quicksand, sans-serif;
+  font-weight: bold;
+}
+.block-text__text_size_m {
+  font-size: 19px;
+  font-family: Quicksand, sans-serif;
+  font-weight: bold;
+}
+.block-text__text_size_s {
+  font-size: 12px;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.block-text__text_color_gray {
+  color: rgba(31,32,65,0.75);
+  line-height: 24px;
+  max-width: 310px;
 }
 
 

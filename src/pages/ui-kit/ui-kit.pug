@@ -1,5 +1,6 @@
 extends ../../components/main/main
 include ../../components/small-components/ui-color/ui-color.pug
+include ../../components/small-components/ui-block-text/ui-block-text.pug
 
 block variables
   - const pageTitle = 'UI Kit'
@@ -7,4 +8,13 @@ block variables
 block content
   include ../../components/small-components/ui-wrap/ui-wrap.pug
     .container
-      +color({squareClass: "block-color__square_black", title: "Dark Shade 100%", hex: "#1F2041"})
+      .block-color-wrap
+        +color({squareClass: "block-color__square_dark100", title: "Dark Shade 100%", hex: "#1F2041"})
+        +color({squareClass: "block-color__square_dark75", title: "Dark Shade 75%", hex: "#1F2041"})
+        +color({squareClass: "block-color__square_dark50", title: "Dark Shade 50%", hex: "#1F2041"})
+        +color({squareClass: "block-color__square_dark25", title: "Dark Shade 25%", hex: "#1F2041"})
+        +color({squareClass: "block-color__square_dark5", title: "Dark Shade 5%", hex: "#1F2041"})
+        +color({squareClass: "block-color__square_purple", title: "Purple", hex: "#BC9CFF"})
+        +color({squareClass: "block-color__square_green", title: "Green", hex: "#6FCF97"})
+      .block-text-wrap
+        +text()
