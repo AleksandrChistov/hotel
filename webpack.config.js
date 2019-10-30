@@ -72,6 +72,10 @@ module.exports = env => {
           test: /\.styl$/,
           use: [MiniCssExtractPlugin.loader, 'css-loader', 'stylus-loader']
         },
+        {
+          test: /\.css$/,
+          loaders: ["style-loader", "css-loader"]
+        },
         { 
           test: /\.pug$/,
           loader: "pug-loader",

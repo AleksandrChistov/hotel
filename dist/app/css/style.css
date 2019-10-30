@@ -52,18 +52,28 @@ p {
   font-size: 14px;
   font-weight: normal;
 }
+.body_bg-color_white {
+  background-color: #fff;
+}
 *,
 ::before,
 ::after {
   box-sizing: border-box;
 }
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1240px;
+}
 
 .ui-wrap {
   margin: 140px 0;
+  position: relative;
 }
 .ui-wrap__logo {
   position: absolute;
-  top: 25px;
+  top: -115px;
   left: 30px;
 }
 

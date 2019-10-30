@@ -189,37 +189,37 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./comp
 
 /***/ }),
 
-/***/ "./components/small-components/ui-wrap/img/ui-logo.svg":
-/*!*************************************************************!*\
-  !*** ./components/small-components/ui-wrap/img/ui-logo.svg ***!
-  \*************************************************************/
+/***/ "./components/small-components/ui-page-1/ui-wrap/img/ui-logo.svg":
+/*!***********************************************************************!*\
+  !*** ./components/small-components/ui-page-1/ui-wrap/img/ui-logo.svg ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"img/ui-logo.svg\";\n\n//# sourceURL=webpack:///./components/small-components/ui-wrap/img/ui-logo.svg?");
+eval("module.exports = __webpack_require__.p + \"img/ui-logo.svg\";\n\n//# sourceURL=webpack:///./components/small-components/ui-page-1/ui-wrap/img/ui-logo.svg?");
 
 /***/ }),
 
-/***/ "./components/small-components/ui-wrap/ui-wrap.js":
-/*!********************************************************!*\
-  !*** ./components/small-components/ui-wrap/ui-wrap.js ***!
-  \********************************************************/
+/***/ "./components/small-components/ui-page-1/ui-wrap/ui-wrap.js":
+/*!******************************************************************!*\
+  !*** ./components/small-components/ui-page-1/ui-wrap/ui-wrap.js ***!
+  \******************************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _img_ui_logo_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./img/ui-logo.svg */ \"./components/small-components/ui-wrap/img/ui-logo.svg\");\n/* harmony import */ var _img_ui_logo_svg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_img_ui_logo_svg__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _ui_wrap_styl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ui-wrap.styl */ \"./components/small-components/ui-wrap/ui-wrap.styl\");\n/* harmony import */ var _ui_wrap_styl__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_ui_wrap_styl__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack:///./components/small-components/ui-wrap/ui-wrap.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _img_ui_logo_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./img/ui-logo.svg */ \"./components/small-components/ui-page-1/ui-wrap/img/ui-logo.svg\");\n/* harmony import */ var _img_ui_logo_svg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_img_ui_logo_svg__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _ui_wrap_styl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ui-wrap.styl */ \"./components/small-components/ui-page-1/ui-wrap/ui-wrap.styl\");\n/* harmony import */ var _ui_wrap_styl__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_ui_wrap_styl__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack:///./components/small-components/ui-page-1/ui-wrap/ui-wrap.js?");
 
 /***/ }),
 
-/***/ "./components/small-components/ui-wrap/ui-wrap.styl":
-/*!**********************************************************!*\
-  !*** ./components/small-components/ui-wrap/ui-wrap.styl ***!
-  \**********************************************************/
+/***/ "./components/small-components/ui-page-1/ui-wrap/ui-wrap.styl":
+/*!********************************************************************!*\
+  !*** ./components/small-components/ui-page-1/ui-wrap/ui-wrap.styl ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./components/small-components/ui-wrap/ui-wrap.styl?");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./components/small-components/ui-page-1/ui-wrap/ui-wrap.styl?");
 
 /***/ }),
 
@@ -242,7 +242,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./font
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _index_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.styl */ \"./pages/index.styl\");\n/* harmony import */ var _index_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_styl__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_main_main_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/main/main.js */ \"./components/main/main.js\");\n/* harmony import */ var _components_small_components_ui_wrap_ui_wrap_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/small-components/ui-wrap/ui-wrap.js */ \"./components/small-components/ui-wrap/ui-wrap.js\");\n\n\n\n$('.title').addClass('new-class');\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"../node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./pages/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _index_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.styl */ \"./pages/index.styl\");\n/* harmony import */ var _index_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_styl__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_main_main_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/main/main.js */ \"./components/main/main.js\");\n/* harmony import */ var _components_small_components_ui_page_1_ui_wrap_ui_wrap_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/small-components/ui-page-1/ui-wrap/ui-wrap.js */ \"./components/small-components/ui-page-1/ui-wrap/ui-wrap.js\");\n\n\n\n$('.title').addClass('new-class');\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"../node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./pages/index.js?");
 
 /***/ }),
 

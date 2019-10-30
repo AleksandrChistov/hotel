@@ -1,13 +1,16 @@
 extends ../../components/main/main
-include ../../components/small-components/ui-color/ui-color.pug
-include ../../components/small-components/ui-block-text/ui-block-text.pug
+include ../../components/small-components/ui-page-1/ui-color/ui-color.pug
+include ../../components/small-components/ui-page-1/ui-block-text/ui-block-text.pug
+include ../../components/form-hotel-search/form-hotel-search.pug
+include ../../components/small-components/text-field/text-field.pug
 
 block variables
   - const pageTitle = 'UI Kit'
+  - const bg = " body_bg-color_white"
 
 block content
-  include ../../components/small-components/ui-wrap/ui-wrap.pug
-    .container
+  include ../../components/small-components/ui-page-1/ui-wrap/ui-wrap.pug
+    .container.container-ui
       .block-color-wrap
         +color({squareClass: "block-color__square_dark100", title: "Dark Shade 100%", hex: "#1F2041"})
         +color({squareClass: "block-color__square_dark75", title: "Dark Shade 75%", hex: "#1F2041"})
@@ -18,3 +21,9 @@ block content
         +color({squareClass: "block-color__square_green", title: "Green", hex: "#6FCF97"})
       .block-text-wrap
         +text()
+    include ../../components/small-components/ui-page-1/ui-wrap/ui-wrap.pug
+      .container.container-ui
+        +textField(options)
+    include ../../components/small-components/ui-page-1/ui-wrap/ui-wrap.pug
+      .container.container-ui
+        +formHotelSeacrh()
