@@ -1,0 +1,8 @@
+mixin color(options)
+  -
+    let squareClass = "block-color__square " + options.squareClass
+  .block-color
+    div(class=squareClass)
+    .block-color-text
+      p(class="block-color-text__title")= options.title
+      p(class="block-color-text__hex")= options.hex

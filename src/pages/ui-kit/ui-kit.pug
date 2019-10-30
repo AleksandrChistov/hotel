@@ -1,15 +1,10 @@
 extends ../../components/main/main
+include ../../components/small-components/ui-color/ui-color.pug
 
 block variables
   - const pageTitle = 'UI Kit'
 
 block content
-  .ui-wrap
-    include ../../components/small-components/ui-logo/ui-logo.pug
-    h1.title Next one is the item title inside widgets
-    #container.col
-      p Get on it! 
-        a(href="/" class="link") Перейти на главную страницу
-    p.montserrat-bold.
-      Pug is a terse and simple templating language with a
-      strong focus on performance and powerful features.
+  include ../../components/small-components/ui-wrap/ui-wrap.pug
+    .container
+      +color({squareClass: "block-color__square_black", title: "Dark Shade 100%", hex: "#1F2041"})

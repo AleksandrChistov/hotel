@@ -120,37 +120,48 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./comp
 
 /***/ }),
 
-/***/ "./components/small-components/ui-logo/img/ui-logo.svg":
+/***/ "./components/small-components/ui-color/ui-color.styl":
+/*!************************************************************!*\
+  !*** ./components/small-components/ui-color/ui-color.styl ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./components/small-components/ui-color/ui-color.styl?");
+
+/***/ }),
+
+/***/ "./components/small-components/ui-wrap/img/ui-logo.svg":
 /*!*************************************************************!*\
-  !*** ./components/small-components/ui-logo/img/ui-logo.svg ***!
+  !*** ./components/small-components/ui-wrap/img/ui-logo.svg ***!
   \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"img/ui-logo.svg\";\n\n//# sourceURL=webpack:///./components/small-components/ui-logo/img/ui-logo.svg?");
+eval("module.exports = __webpack_require__.p + \"img/ui-logo.svg\";\n\n//# sourceURL=webpack:///./components/small-components/ui-wrap/img/ui-logo.svg?");
 
 /***/ }),
 
-/***/ "./components/small-components/ui-logo/ui-logo.js":
+/***/ "./components/small-components/ui-wrap/ui-wrap.js":
 /*!********************************************************!*\
-  !*** ./components/small-components/ui-logo/ui-logo.js ***!
+  !*** ./components/small-components/ui-wrap/ui-wrap.js ***!
   \********************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _img_ui_logo_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./img/ui-logo.svg */ \"./components/small-components/ui-logo/img/ui-logo.svg\");\n/* harmony import */ var _img_ui_logo_svg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_img_ui_logo_svg__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _ui_logo_styl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ui-logo.styl */ \"./components/small-components/ui-logo/ui-logo.styl\");\n/* harmony import */ var _ui_logo_styl__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_ui_logo_styl__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack:///./components/small-components/ui-logo/ui-logo.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _img_ui_logo_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./img/ui-logo.svg */ \"./components/small-components/ui-wrap/img/ui-logo.svg\");\n/* harmony import */ var _img_ui_logo_svg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_img_ui_logo_svg__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _ui_wrap_styl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ui-wrap.styl */ \"./components/small-components/ui-wrap/ui-wrap.styl\");\n/* harmony import */ var _ui_wrap_styl__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_ui_wrap_styl__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack:///./components/small-components/ui-wrap/ui-wrap.js?");
 
 /***/ }),
 
-/***/ "./components/small-components/ui-logo/ui-logo.styl":
+/***/ "./components/small-components/ui-wrap/ui-wrap.styl":
 /*!**********************************************************!*\
-  !*** ./components/small-components/ui-logo/ui-logo.styl ***!
+  !*** ./components/small-components/ui-wrap/ui-wrap.styl ***!
   \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./components/small-components/ui-logo/ui-logo.styl?");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./components/small-components/ui-wrap/ui-wrap.styl?");
 
 /***/ }),
 
@@ -173,7 +184,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./font
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ui_kit_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ui-kit.styl */ \"./pages/ui-kit/ui-kit.styl\");\n/* harmony import */ var _ui_kit_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_styl__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_main_main_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/main/main.js */ \"./components/main/main.js\");\n/* harmony import */ var _components_small_components_ui_logo_ui_logo_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/small-components/ui-logo/ui-logo.js */ \"./components/small-components/ui-logo/ui-logo.js\");\n\n\n\n\n//# sourceURL=webpack:///./pages/ui-kit/ui-kit.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ui_kit_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ui-kit.styl */ \"./pages/ui-kit/ui-kit.styl\");\n/* harmony import */ var _ui_kit_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_styl__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_main_main_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/main/main.js */ \"./components/main/main.js\");\n/* harmony import */ var _components_small_components_ui_wrap_ui_wrap_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/small-components/ui-wrap/ui-wrap.js */ \"./components/small-components/ui-wrap/ui-wrap.js\");\n/* harmony import */ var _components_small_components_ui_color_ui_color_styl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/small-components/ui-color/ui-color.styl */ \"./components/small-components/ui-color/ui-color.styl\");\n/* harmony import */ var _components_small_components_ui_color_ui_color_styl__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_small_components_ui_color_ui_color_styl__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\n\n//# sourceURL=webpack:///./pages/ui-kit/ui-kit.js?");
 
 /***/ }),
 
