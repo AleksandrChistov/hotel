@@ -12,18 +12,22 @@ block content
   include ../../components/small-components/ui-page-1/ui-wrap/ui-wrap.pug
     .container.container-ui
       .block-color-wrap
-        +color({squareClass: "block-color__square_dark100", title: "Dark Shade 100%", hex: "#1F2041"})
-        +color({squareClass: "block-color__square_dark75", title: "Dark Shade 75%", hex: "#1F2041"})
-        +color({squareClass: "block-color__square_dark50", title: "Dark Shade 50%", hex: "#1F2041"})
-        +color({squareClass: "block-color__square_dark25", title: "Dark Shade 25%", hex: "#1F2041"})
-        +color({squareClass: "block-color__square_dark5", title: "Dark Shade 5%", hex: "#1F2041"})
-        +color({squareClass: "block-color__square_purple", title: "Purple", hex: "#BC9CFF"})
-        +color({squareClass: "block-color__square_green", title: "Green", hex: "#6FCF97"})
+        +color({squareClass: " block-color__square_dark100", title: "Dark Shade 100%", hex: "#1F2041"})
+        +color({squareClass: " block-color__square_dark75", title: "Dark Shade 75%", hex: "#1F2041"})
+        +color({squareClass: " block-color__square_dark50", title: "Dark Shade 50%", hex: "#1F2041"})
+        +color({squareClass: " block-color__square_dark25", title: "Dark Shade 25%", hex: "#1F2041"})
+        +color({squareClass: " block-color__square_dark5", title: "Dark Shade 5%", hex: "#1F2041"})
+        +color({squareClass: " block-color__square_purple", title: "Purple", hex: "#BC9CFF"})
+        +color({squareClass: " block-color__square_green", title: "Green", hex: "#6FCF97"})
       .block-text-wrap
         +text()
     include ../../components/small-components/ui-page-1/ui-wrap/ui-wrap.pug
       .container.container-ui
-        +textField(options)
+        .container-text-field
+          +textField({color: " text-field__input_color text-field__input_margin_bottom", 
+          title: "TEXT-FIELD", state: "DEFAULT"})
+          +textField({color: " text-field__input_active", title: "TEXT-FIELD", state: "HOVER / FOCUS", 
+          placeholder: "This is pretty awesome"})
     include ../../components/small-components/ui-page-1/ui-wrap/ui-wrap.pug
       .container.container-ui
         +formHotelSeacrh()
