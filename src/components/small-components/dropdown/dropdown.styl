@@ -1,39 +1,36 @@
-.text-field__input
+.dropdown__input
   width 320px
   height 44px
   padding-left 15px
   border-radius 4px
   border 1px solid rgba(31, 32, 65, 0.25)
+  &::-webkit-input-placeholder
+    color rgba(31, 32, 65, 0.75)
   &:active, &:focus
     outline none
   
-.text-field__input_color
+.dropdown__input_color
   margin-top 5px
   &:active, &:hover, &:focus
     border 1px solid rgba(31, 32, 65, 0.5)
-    &::-webkit-input-placeholder
-      color rgba(31, 32, 65, 0.75)
-  &::-webkit-input-placeholder
-    color rgba(31, 32, 65, 0.25)
+    cursor pointer
 
-.text-field__input_active
-  margin-top 5px
-  border 1px solid rgba(31, 32, 65, 0.5)
-  color rgba(31, 32, 65, 0.75)
+.dropdown__icon
+  position absolute
+  top 45%
+  right 15px
 
-.text-field__input_margin_bottom
-  margin-bottom 20px
-
-.text-field
+.dropdown
   max-width 320px
+  position relative
 
-.text-field__title
+.dropdown__title
   font-weight bold
   font-size 12px
   color #1F2041
   text-transform uppercase
 
-.text-field__state
+.dropdown__state
   font-size 12px
   color rgba(31, 32, 65, 0.5)
   display inline-block

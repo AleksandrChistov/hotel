@@ -1,0 +1,12 @@
+mixin dropdown(options)
+
+  .dropdown
+    if options.state
+      p(class="dropdown__state")= options.state
+    else
+    if options.title
+      label(class="dropdown__title" for="dropdown")= options.title
+    else
+    input(type="text" name="text" id="dropdown" class=`dropdown__input${options.color || ""}` 
+    placeholder=options.placeholder || "Email")
+    img(src="/img/icon-dropdown.svg" alt="Icon Dropdown" class="dropdown__icon")

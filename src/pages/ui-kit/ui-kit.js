@@ -1,7 +1,5 @@
 import './ui-kit.styl'
 import '../../components/main/main.js'
 import '../../components/small-components/ui-page-1/ui-wrap/ui-wrap.js'
-import '../../components/small-components/ui-page-1/ui-color/ui-color.styl'
-import '../../components/small-components/ui-page-1/ui-block-text/ui-block-text.styl'
 import '../../components/form-hotel-search/form-hotel-search.js'
-import '../../components/small-components/text-field/text-field.styl'
+import '../../components/small-components/dropdown//img/icon-dropdown.svg'
