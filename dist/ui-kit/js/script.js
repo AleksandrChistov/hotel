@@ -201,6 +201,29 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./comp
 
 /***/ }),
 
+/***/ "./components/small-components/dropdown/dropdown.js":
+/*!**********************************************************!*\
+  !*** ./components/small-components/dropdown/dropdown.js ***!
+  \**********************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _img_icon_dropdown_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./img/icon-dropdown.svg */ \"./components/small-components/dropdown/img/icon-dropdown.svg\");\n/* harmony import */ var _img_icon_dropdown_svg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_img_icon_dropdown_svg__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _img_icon_dropdown_active_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/icon-dropdown-active.svg */ \"./components/small-components/dropdown/img/icon-dropdown-active.svg\");\n/* harmony import */ var _img_icon_dropdown_active_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_icon_dropdown_active_svg__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack:///./components/small-components/dropdown/dropdown.js?");
+
+/***/ }),
+
+/***/ "./components/small-components/dropdown/img/icon-dropdown-active.svg":
+/*!***************************************************************************!*\
+  !*** ./components/small-components/dropdown/img/icon-dropdown-active.svg ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/icon-dropdown-active.svg\";\n\n//# sourceURL=webpack:///./components/small-components/dropdown/img/icon-dropdown-active.svg?");
+
+/***/ }),
+
 /***/ "./components/small-components/dropdown/img/icon-dropdown.svg":
 /*!********************************************************************!*\
   !*** ./components/small-components/dropdown/img/icon-dropdown.svg ***!
@@ -265,7 +288,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./font
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ui_kit_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ui-kit.styl */ \"./pages/ui-kit/ui-kit.styl\");\n/* harmony import */ var _ui_kit_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_styl__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_main_main_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/main/main.js */ \"./components/main/main.js\");\n/* harmony import */ var _components_small_components_ui_page_1_ui_wrap_ui_wrap_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/small-components/ui-page-1/ui-wrap/ui-wrap.js */ \"./components/small-components/ui-page-1/ui-wrap/ui-wrap.js\");\n/* harmony import */ var _components_form_hotel_search_form_hotel_search_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/form-hotel-search/form-hotel-search.js */ \"./components/form-hotel-search/form-hotel-search.js\");\n/* harmony import */ var _components_small_components_dropdown_img_icon_dropdown_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/small-components/dropdown//img/icon-dropdown.svg */ \"./components/small-components/dropdown/img/icon-dropdown.svg\");\n/* harmony import */ var _components_small_components_dropdown_img_icon_dropdown_svg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_small_components_dropdown_img_icon_dropdown_svg__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\n\n//# sourceURL=webpack:///./pages/ui-kit/ui-kit.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ui_kit_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ui-kit.styl */ \"./pages/ui-kit/ui-kit.styl\");\n/* harmony import */ var _ui_kit_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_styl__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_main_main_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/main/main.js */ \"./components/main/main.js\");\n/* harmony import */ var _components_small_components_ui_page_1_ui_wrap_ui_wrap_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/small-components/ui-page-1/ui-wrap/ui-wrap.js */ \"./components/small-components/ui-page-1/ui-wrap/ui-wrap.js\");\n/* harmony import */ var _components_form_hotel_search_form_hotel_search_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/form-hotel-search/form-hotel-search.js */ \"./components/form-hotel-search/form-hotel-search.js\");\n/* harmony import */ var _components_small_components_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/small-components/dropdown/dropdown.js */ \"./components/small-components/dropdown/dropdown.js\");\n\n\n\n\n\n\n//# sourceURL=webpack:///./pages/ui-kit/ui-kit.js?");
 
 /***/ }),
 
