@@ -8,14 +8,14 @@ mixin dropdown(options)
       label(class="dropdown__title" for="dropdown")= options.title
     else
     input(type="text" name="dropdown" id="dropdown" class=`dropdown__input${options.color || ""}` 
-    placeholder=options.placeholder || "Email")
-    .dropdown-window
+    value=options.value || "Email")
+    .dropdown-window.dropdown-window_display_none
       each val, index in ["Взрослые", "Дети", "Младенцы"]
         .dropdown-window__wrap-elem
           p.dropdown-window__name= val
           .dropdown-window__wrap-value
-            span.dropdown-window__decrement -
+            span(class="dropdown-window__decrement") -
             span.dropdown-window__value 0
-            span.dropdown-window__increment +
-      p.dropdown-window__clear очистить
+            span(class="dropdown-window__increment dropdown-window__increment_active") +
+      p.dropdown-window__clear очистить      
       p.dropdown-window__apply применить
