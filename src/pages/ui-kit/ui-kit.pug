@@ -29,8 +29,11 @@ block content
           title: "Text Field", state: "Default"})
           +textField({color: " text-field__input_active text-field__input_margin_bottom", 
           title: "TEXT-FIELD", state: "Hover / Focus", placeholder: "This is pretty awesome"})
-          +dropdown({color: " dropdown__input_color", title: "Dropdown", state: "Default", 
-          value: "Сколько гостей"})
+          +dropdown({id: "guest", color: " dropdown__input_color", title: "Dropdown", state: "Default", 
+          value: "Сколько гостей", arrName: ["0 Взрослые", "0 Дети", "0 Младенцы"]})
+          +dropdown({id: "accommodations", color: "dropdown__input_color", width: "dropdown dropdown_width_min",
+          widthInput: "dropdown__input_width_min",title: "Dropdown", state: "Default", 
+          value: "2 спальни, 2 кровати...", arrName: ["2 Спальни", "2 Кровати", "0 Ванные комнаты"]})
     include ../../components/small-components/ui-page-1/ui-wrap/ui-wrap.pug
       .container.container-ui
         +formHotelSeacrh()

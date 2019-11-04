@@ -1,21 +1,26 @@
 mixin dropdown(options)
 
-  .dropdown
+  div(class=options.width || "dropdown")
     if options.state
       p(class="dropdown__state")= options.state
     else
     if options.title
-      label(class="dropdown__title" for="dropdown")= options.title
+      label(class="dropdown__title" for=options.id)= options.title
     else
-    input(type="text" name="dropdown" id="dropdown" class=`dropdown__input${options.color || ""}` 
-    value=options.value || "Email")
-    .dropdown-window.dropdown-window_display_none
-      each val, index in ["Взрослые", "Дети", "Младенцы"]
+    input(class=`dropdown__input ${options.color || ""} ${options.widthInput || ""}` 
+    type="text" name="dropdown" id=options.id value=options.value || "Email")
+    div(class="dropdown-window dropdown-window_display_none" id=`drop_${options.id}`)
+      each val, index in options.arrName
         .dropdown-window__wrap-elem
-          p.dropdown-window__name= val
+          - let [n, word1, word2] = val.split(" ")
+          p.dropdown-window__name= word1 + (word2 ? " " + word2 : "")
           .dropdown-window__wrap-value
-            span(class="dropdown-window__decrement") -
-            span.dropdown-window__value 0
+            if n > 0
+              span(class="dropdown-window__decrement dropdown-window__decrement_active") -
+            else
+              span(class="dropdown-window__decrement") -
+            span(class="dropdown-window__value" id=index + options.id)= n
             span(class="dropdown-window__increment dropdown-window__increment_active") +
-      p.dropdown-window__clear очистить      
-      p.dropdown-window__apply применить
+      if options.id === "guest"
+        p.dropdown-window__clear очистить      
+        p.dropdown-window__apply применить

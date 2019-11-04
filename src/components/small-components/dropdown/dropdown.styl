@@ -11,6 +11,9 @@
   &:active, &:hover, &:focus
     background-image url(/img/icon-dropdown-active.svg)
     outline none
+
+.dropdown__input_width_min
+  width 266px
   
 .dropdown__input_color
   margin-top 5px
@@ -30,6 +33,9 @@
 
 .dropdown
   max-width 320px
+
+.dropdown_width_min
+  max-width 266px
 
 .dropdown__title
   font-weight bold
@@ -61,7 +67,7 @@
   align-items center
   padding-bottom 7px
   &:nth-child(3n)
-    padding-bottom 18px
+    padding-bottom 0
 
 .dropdown-window__name,.dropdown-window__value
   font-weight bold
@@ -103,6 +109,7 @@
   font-weight bold
   font-size 12px
   text-transform uppercase
+  padding-top 18px
   &:hover
     cursor pointer
 
@@ -117,3 +124,6 @@
   display none
   &:hover
     color rgba(31, 32, 65, 0.60)
+
+.dropdown-window__clear_active
+  display inline-block
