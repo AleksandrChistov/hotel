@@ -109,6 +109,7 @@
 }
 .text-field__input_color {
   margin-top: 5px;
+  color: rgba(31,32,65,0.75);
 }
 .text-field__input_color:active,
 .text-field__input_color:hover,
@@ -164,6 +165,9 @@
   background-image: url("/img/icon-dropdown-active.svg");
   outline: none;
 }
+.dropdown__input_width_min {
+  width: 266px;
+}
 .dropdown__input_color {
   margin-top: 5px;
 }
@@ -186,6 +190,9 @@
 }
 .dropdown {
   max-width: 320px;
+}
+.dropdown_width_min {
+  max-width: 266px;
 }
 .dropdown__title {
   font-weight: bold;
@@ -218,7 +225,7 @@
   padding-bottom: 7px;
 }
 .dropdown-window__wrap-elem:nth-child(3n) {
-  padding-bottom: 18px;
+  padding-bottom: 0;
 }
 .dropdown-window__name,
 .dropdown-window__value {
@@ -265,6 +272,7 @@
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;
+  padding-top: 18px;
 }
 .dropdown-window__apply:hover,
 .dropdown-window__clear:hover {
@@ -283,6 +291,12 @@
 }
 .dropdown-window__clear:hover {
   color: rgba(31,32,65,0.6);
+}
+.dropdown-window__clear_active {
+  display: inline-block;
+}
+.text-field_margin_top {
+  margin-top: 20px;
 }
 .container-ui {
   padding-bottom: 50px;

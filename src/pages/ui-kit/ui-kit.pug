@@ -4,6 +4,7 @@ include ../../components/small-components/ui-page-1/ui-block-text/ui-block-text.
 include ../../components/form-hotel-search/form-hotel-search.pug
 include ../../components/small-components/text-field/text-field.pug
 include ../../components/small-components/dropdown/dropdown.pug
+include ../../components/small-components/masked-text-field/masked.pug
 
 block variables
   - const pageTitle = 'UI Kit'
@@ -31,6 +32,8 @@ block content
           title: "TEXT-FIELD", state: "Hover / Focus", placeholder: "This is pretty awesome"})
           +dropdown({id: "guest", color: " dropdown__input_color", title: "Dropdown", state: "Default", 
           value: "Сколько гостей", arrName: ["0 Взрослые", "0 Дети", "0 Младенцы"]})
+          +maskedTextField({color: " text-field__input_color text-field__input_margin_bottom", 
+          title: "Masked Text Field", state: "Default", marginTop: " text-field text-field_margin_top"})
           +dropdown({id: "accommodations", color: "dropdown__input_color", width: "dropdown dropdown_width_min",
           widthInput: "dropdown__input_width_min",title: "Dropdown", state: "Default", 
           value: "2 спальни, 2 кровати...", arrName: ["2 Спальни", "2 Кровати", "0 Ванные комнаты"]})
