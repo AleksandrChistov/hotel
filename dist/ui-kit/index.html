@@ -78,21 +78,21 @@
       <div class="ui-wrap"><img class="ui-wrap__logo" src="/img/ui-logo.svg" alt="Logo UI kit">
         <div class="container container-ui">
           <div class="container-text-field">
-            <div class="text-field">
+            <div class="text-field text-field_margin_bottom_20">
               <p class="text-field__state">Default</p>
               <label class="text-field__title" for="text-field">Text Field</label>
-              <input class="text-field__input text-field__input_color text-field__input_margin_bottom" type="text" name="text" id="text-field" placeholder="Email">
+              <input class="text-field__input text-field__input_color" type="text" name="text" id="text-field" placeholder="Email">
             </div>
-            <div class="text-field">
+            <div class="text-field text-field_margin_bottom_20">
               <p class="text-field__state">Hover / Focus</p>
               <label class="text-field__title" for="text-field">TEXT-FIELD</label>
-              <input class="text-field__input text-field__input_active text-field__input_margin_bottom" type="text" name="text" id="text-field" placeholder="This is pretty awesome">
+              <input class="text-field__input text-field__input_active" type="text" name="text" id="text-field" placeholder="This is pretty awesome">
             </div>
-            <div class="dropdown">
+            <div class="dropdown text-field_margin_bottom_20">
               <p class="dropdown__state">Default</p>
               <label class="dropdown__title" for="guest">Dropdown</label>
-              <input class="dropdown__input  dropdown__input_color " type="text" name="dropdown" id="guest" value="Сколько гостей">
-              <div class="dropdown-window dropdown-window_display_none" id="drop_guest">
+              <input class="dropdown__input dropdown__input_color" type="text" name="dropdown" id="guest" value="Сколько гостей">
+              <div class="dropdown-window dropdown-window_display_none dropdown-window_width_max" id="drop_guest">
                 <div class="dropdown-window__wrap-elem">
                   <p class="dropdown-window__name">Взрослые</p>
                   <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="0guest">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
@@ -112,16 +112,27 @@
                 <p class="dropdown-window__apply">применить</p>
               </div>
             </div>
-            <div class="text-field text-field text-field_margin_top">
+            <div class="text-field text-field text-field_margin_bottom_40">
               <p class="text-field__state">Default</p>
               <label class="text-field__title" for="masked-text-field">Masked Text Field</label>
-              <input class="text-field__input text-field__input_color text-field__input_margin_bottom" type="text" name="data" id="masked-text-field" placeholder="ДД.ММ.ГГГГ">
+              <input class="text-field__input text-field__input_color" type="text" name="data" id="masked-text-field" placeholder="ДД.ММ.ГГГГ">
             </div>
-            <div class="dropdown dropdown_width_min">
+            <div class="date-dropdown text-field text-field_margin_bottom_40">
+              <div class="date-dropdown__from">
+                <label class="dropdown__title" for="dateDropFrom">date Dropdown</label>
+                <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropFrom" placeholder="ДД.ММ.ГГГГ">
+              </div>
+              <div class="date-dropdown__to">
+                <label class="dropdown__title" for="dateDropTo">date Dropdown</label>
+                <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropTo" placeholder="19.08.2019">
+              </div>
+              <div class="date-dropdown-window dropdown-window_display_none"></div>
+            </div>
+            <div class="dropdown dropdown__input_width_middle">
               <p class="dropdown__state">Default</p>
               <label class="dropdown__title" for="accommodations">Dropdown</label>
-              <input class="dropdown__input dropdown__input_color dropdown__input_width_min" type="text" name="dropdown" id="accommodations" value="2 спальни, 2 кровати...">
-              <div class="dropdown-window dropdown-window_display_none" id="drop_accommodations">
+              <input class="dropdown__input dropdown__input_color dropdown__input_width_middle" type="text" name="dropdown" id="accommodations" value="2 спальни, 2 кровати...">
+              <div class="dropdown-window dropdown-window_display_none dropdown-window_width_middle" id="drop_accommodations">
                 <div class="dropdown-window__wrap-elem">
                   <p class="dropdown-window__name">Спальни</p>
                   <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement dropdown-window__decrement_active">-</span><span class="dropdown-window__value" id="0accommodations">2</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>

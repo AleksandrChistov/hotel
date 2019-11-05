@@ -201,6 +201,29 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./comp
 
 /***/ }),
 
+/***/ "./components/small-components/date-dropdown/date-dropdown.js":
+/*!********************************************************************!*\
+  !*** ./components/small-components/date-dropdown/date-dropdown.js ***!
+  \********************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var air_datepicker_src_js_air_datepicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! air-datepicker/src/js/air-datepicker */ \"../node_modules/air-datepicker/src/js/air-datepicker.js\");\n/* harmony import */ var air_datepicker_src_js_air_datepicker__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(air_datepicker_src_js_air_datepicker__WEBPACK_IMPORTED_MODULE_0__);\n\n$('.date-dropdown__input').on('mousedown', function (e) {\n  e.preventDefault();\n});\n$('.date-dropdown__input').on('click', function (e) {\n  $('.date-dropdown-window').fadeToggle(\"dropdown-window_display_none\");\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"../node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./components/small-components/date-dropdown/date-dropdown.js?");
+
+/***/ }),
+
+/***/ "./components/small-components/date-dropdown/window/window.js":
+/*!********************************************************************!*\
+  !*** ./components/small-components/date-dropdown/window/window.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("/* WEBPACK VAR INJECTION */(function($) {$('.date-dropdown-window').data('datepicker');\n$('.date-dropdown-window').datepicker({\n  inline: true,\n  range: true,\n  clearButton: true,\n  applyButton: true,\n  onSelect: function (formattedDate, date, inst) {\n    const [date1, date2] = formattedDate.split(\",\");\n    $(\"#dateDropFrom\").val(date1);\n    $(\"#dateDropTo\").val(date2);\n  }\n});\n$(\".datepicker--button\").on(\"click\", function () {\n  if ($(this).data(\"action\") === \"today\") {\n    $('.date-dropdown-window').fadeToggle(\"dropdown-window_display_none\");\n  }\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"../node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./components/small-components/date-dropdown/window/window.js?");
+
+/***/ }),
+
 /***/ "./components/small-components/dropdown/dropdown.js":
 /*!**********************************************************!*\
   !*** ./components/small-components/dropdown/dropdown.js ***!
@@ -300,7 +323,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./font
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ui_kit_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ui-kit.styl */ \"./pages/ui-kit/ui-kit.styl\");\n/* harmony import */ var _ui_kit_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_styl__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_main_main_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/main/main.js */ \"./components/main/main.js\");\n/* harmony import */ var _components_small_components_ui_page_1_ui_wrap_ui_wrap_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/small-components/ui-page-1/ui-wrap/ui-wrap.js */ \"./components/small-components/ui-page-1/ui-wrap/ui-wrap.js\");\n/* harmony import */ var _components_form_hotel_search_form_hotel_search_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/form-hotel-search/form-hotel-search.js */ \"./components/form-hotel-search/form-hotel-search.js\");\n/* harmony import */ var _components_small_components_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/small-components/dropdown/dropdown.js */ \"./components/small-components/dropdown/dropdown.js\");\n/* harmony import */ var _components_small_components_masked_text_field_masked_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/small-components/masked-text-field/masked.js */ \"./components/small-components/masked-text-field/masked.js\");\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./pages/ui-kit/ui-kit.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ui_kit_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ui-kit.styl */ \"./pages/ui-kit/ui-kit.styl\");\n/* harmony import */ var _ui_kit_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_styl__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_main_main_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/main/main.js */ \"./components/main/main.js\");\n/* harmony import */ var _components_small_components_ui_page_1_ui_wrap_ui_wrap_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/small-components/ui-page-1/ui-wrap/ui-wrap.js */ \"./components/small-components/ui-page-1/ui-wrap/ui-wrap.js\");\n/* harmony import */ var _components_small_components_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/small-components/dropdown/dropdown.js */ \"./components/small-components/dropdown/dropdown.js\");\n/* harmony import */ var _components_small_components_masked_text_field_masked_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/small-components/masked-text-field/masked.js */ \"./components/small-components/masked-text-field/masked.js\");\n/* harmony import */ var _components_small_components_date_dropdown_date_dropdown_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/small-components/date-dropdown/date-dropdown.js */ \"./components/small-components/date-dropdown/date-dropdown.js\");\n/* harmony import */ var _components_small_components_date_dropdown_window_window_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/small-components/date-dropdown/window/window.js */ \"./components/small-components/date-dropdown/window/window.js\");\n/* harmony import */ var _components_small_components_date_dropdown_window_window_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_small_components_date_dropdown_window_window_js__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _components_form_hotel_search_form_hotel_search_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/form-hotel-search/form-hotel-search.js */ \"./components/form-hotel-search/form-hotel-search.js\");\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./pages/ui-kit/ui-kit.js?");
 
 /***/ }),
 

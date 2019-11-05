@@ -1,0 +1,16 @@
+mixin dateDropdown(options)
+  div(class=`date-dropdown${options.margin || ""}${options.width || ""}`)
+    div(class="date-dropdown__from")
+      if options.title
+        label(class="dropdown__title" for=options.id1)= options.title
+      else
+      input(type='text' class="date-dropdown__input dropdown__input_color dropdown__input_width_small"
+      name="date-dropdown" id=options.id1 placeholder=`${options.value1 || "ДД.ММ.ГГГГ"}`)
+    div(class="date-dropdown__to")
+      if options.title
+        label(class="dropdown__title" for=options.id2)= options.title
+      else
+      input(type='text' class="date-dropdown__input dropdown__input_color dropdown__input_width_small"
+      name="date-dropdown" id=options.id2 placeholder=`${options.value2 || "ДД.ММ.ГГГГ"}`)
+    +dateDropdownWindow({baseClass: "date-dropdown-window dropdown-window_display_none"})
+    

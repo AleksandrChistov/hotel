@@ -1,15 +1,15 @@
 mixin dropdown(options)
 
-  div(class=options.width || "dropdown")
+  div(class=`dropdown${options.margin || ""}${options.width || ""}`)
     if options.state
       p(class="dropdown__state")= options.state
     else
     if options.title
       label(class="dropdown__title" for=options.id)= options.title
     else
-    input(class=`dropdown__input ${options.color || ""} ${options.widthInput || ""}` 
+    input(class=`dropdown__input${options.color || ""}${options.widthInput || ""}` 
     type="text" name="dropdown" id=options.id value=options.value || "Email")
-    div(class="dropdown-window dropdown-window_display_none" id=`drop_${options.id}`)
+    div(class=`dropdown-window dropdown-window_display_none${options.windowWidth || ""}` id=`drop_${options.id}`)
       each val, index in options.arrName
         .dropdown-window__wrap-elem
           - let [n, word1, word2] = val.split(" ")

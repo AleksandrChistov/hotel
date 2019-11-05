@@ -1,6 +1,6 @@
 mixin textField(options)
 
-  .text-field
+  div(class=`text-field${options.margin}`)
     if options.state
       p(class="text-field__state")= options.state
     else

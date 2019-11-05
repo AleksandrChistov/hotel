@@ -1,6 +1,6 @@
 mixin maskedTextField(options)
 
-  div(class=`text-field${options.marginTop || ""}`)
+  div(class=`text-field${options.margin || ""}`)
     if options.state
       p(class="text-field__state")= options.state
     else
