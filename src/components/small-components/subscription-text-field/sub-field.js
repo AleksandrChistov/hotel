@@ -1,0 +1,1 @@
+import "./img/arrow_forward.svg"

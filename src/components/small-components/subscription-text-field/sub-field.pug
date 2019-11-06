@@ -1,0 +1,8 @@
+mixin subField(options)
+
+  div(class=`sub-field${options.margin || ""}`)
+    if options.title
+      label(class="text-field__title" for="sub-field")= options.title
+    else
+    input(type="text" name="text" id="sub-field" class=`sub-field__input${options.color || ""}` 
+    placeholder=options.placeholder || "Email")
