@@ -1,3 +1,5 @@
+include ./window/window.pug
+
 mixin dateDropdown(options)
   div(class=`date-dropdown${options.margin || ""}${options.width || ""}`)
     div(class="date-dropdown__from")
@@ -12,5 +14,5 @@ mixin dateDropdown(options)
       else
       input(type='text' class="date-dropdown__input dropdown__input_color dropdown__input_width_small"
       name="date-dropdown" id=options.id2 placeholder=`${options.value2 || "ДД.ММ.ГГГГ"}`)
-    +dateDropdownWindow({baseClass: "date-dropdown-window dropdown-window_display_none"})
+    +dateDropdownWindow({baseClass: " date-dropdown-window dropdown-window_display_none"})
     

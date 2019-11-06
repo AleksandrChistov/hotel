@@ -1,0 +1,11 @@
+include ../date-dropdown/window/window.pug
+
+mixin filterDate(options)
+
+  div(class=`filter-date${options.margin || ""}${options.width || ""}`)
+    if options.title
+      label(class="dropdown__title" for=options.id)= options.title
+    else
+    input(class=`filter-date__input dropdown__input_width_middle dropdown__input_color${options.widthInput || ""}` 
+    type="text" name="filterDate" id=options.id placeholder=options.value || "19 авг - 23 авг")
+    +dateDropdownWindow({baseClass: " datepicker_width_middle filter-date-window dropdown-window_display_none"})
