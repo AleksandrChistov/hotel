@@ -1,0 +1,42 @@
+.radio__input
+  position absolute
+  opacity 0
+  z-index -1
+
+.radio__label
+  position relative
+  padding 0 0 0 30px
+  color rgba(31, 32, 65, 0.5)
+  cursor pointer
+
+.radio__label_margin_right
+  margin-right 20px
+  &:last-child
+    margin 0
+
+.radio__span
+  vertical-align middle
+  user-select none
+
+.radio__span:before
+  content ""
+  position absolute
+  top 0
+  left 0
+  width 20px
+  height 20px
+  border 1px solid rgba(31, 32, 65, 0.25)
+  border-radius 10px
+
+.radio__input:checked+.radio__span:after
+  content ""
+  position absolute
+  top 4px
+  left 4px
+  width 12px
+  height 12px
+  border-radius 10px
+  background linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
+
+.radio__input:checked+.radio__span:before
+  border 1px solid #BC9CFF
