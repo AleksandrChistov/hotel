@@ -1,3 +1,9 @@
+.radio
+  display inline-block
+
+.radio_margin_bottom
+  margin-bottom 35px
+
 .radio__input
   position absolute
   opacity 0
@@ -28,6 +34,17 @@
   border 1px solid rgba(31, 32, 65, 0.25)
   border-radius 10px
 
+.radio__span:after
+  content ""
+  position absolute
+  top 8px
+  left 8px
+  width 2px
+  height 2px
+  border-radius 10px
+  background #ffffff
+  transition all 0.3s
+
 .radio__input:checked+.radio__span:after
   content ""
   position absolute
@@ -37,6 +54,7 @@
   height 12px
   border-radius 10px
   background linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
+  transition all 0.3s
 
 .radio__input:checked+.radio__span:before
   border 1px solid #BC9CFF

@@ -1,0 +1,11 @@
+mixin toggle(options)
+  div(class=`toggle${options.width || ""}`)
+    p(class=`text-field__title${options.marginTitle || ""}`) Toggle
+    label(class=`toggle__label${options.label || ""}` for=`${options.id1 || "toggle1"}`)
+      input(class=`toggle__input${options.input || ""}` type="checkbox" name="toggle" 
+      value="toggle1" id=`${options.id1 || "toggle1"}` checked)
+      span(class=`toggle__span${options.span || ""}`) Получать спецпредложения
+    label(class=`toggle__label${options.label || ""}` for=`${options.id2 || "toggle2"}`)
+      input(class=`toggle__input${options.input || ""}` type="checkbox" name="toggle" 
+      value="toggle2" id=`${options.id1 || "toggle2"}`)
+      span(class=`toggle__span${options.span || ""}`) Получать спецпредложения

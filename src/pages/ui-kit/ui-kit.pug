@@ -9,6 +9,7 @@ include ../../components/small-components/filter-date-dropdown/filter-date.pug
 include ../../components/small-components/subscription-text-field/sub-field.pug
 include ../../components/small-components/checkbox-buttons/checkbox.pug
 include ../../components/small-components/radio-buttons/radio.pug
+include ../../components/small-components/toggle/toggle.pug
 include ../../components/form-hotel-search/form-hotel-search.pug
 
 block variables
@@ -46,7 +47,9 @@ block content
           +subField({title: "subscription text field", color: " text-field__input_color"})
         .container-checkbox
           +checkbox({margin: " checkbox_margin_bottom", marginTitle: " text-field__title_margin_bottom"})
-          +radioButtons({marginTitle: " text-field__title_margin_bottom", labelMargin: " radio__label_margin_right"})
+          +radioButtons({margin: " radio_margin_bottom", marginTitle: " text-field__title_margin_bottom", 
+          labelMargin: " radio__label_margin_right"})
+          +toggle({marginTitle: " text-field__title_margin_bottom", label: " toggle__label_margin_bottom"})
         .container-dropdown
           +dropdown({id: "accommodations", color: " dropdown__input_color", width: " dropdown__input_width_middle",
           windowWidth: " dropdown-window_width_middle", widthInput: " dropdown__input_width_middle",title: "Dropdown", 
