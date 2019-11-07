@@ -1,0 +1,15 @@
+mixin checkbox(options)
+  duv(class=`checkbox${options.margin || ""}`)
+    p(class=`text-field__title${options.marginTitle || ""}`) Checkbox Buttons
+    label.checkbox__label(for=`${options.id || "checkbox1"}`)
+      input(class="checkbox__input" type="checkbox" name="checkbox" value="checkbox-smoke" 
+      id=`${options.id || "checkbox1"}`)
+      span.checkbox__span Можно курить
+    label.checkbox__label(for=`${options.id || "checkbox2"}`)
+      input(class="checkbox__input" type="checkbox" name="checkbox" value="checkbox-pets" 
+      id=`${options.id || "checkbox2"}` checked)
+      span.checkbox__span Можно с питомцами
+    label.checkbox__label(for=`${options.id || "checkbox3"}`)
+      input(class="checkbox__input" type="checkbox" name="checkbox" value="checkbox-guests" 
+      id=`${options.id || "checkbox3"}` checked)
+      span.checkbox__span Можно пригласить гостей (до 10 человек)

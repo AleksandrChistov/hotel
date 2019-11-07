@@ -1,0 +1,51 @@
+.checkbox
+  display flex
+  flex-direction column
+  max-width 230px
+
+.checkbox_margin_bottom
+  margin-bottom 15px
+
+.checkbox__label
+  display flex
+  margin-bottom 10px
+  color rgba(31, 32, 65, 0.5)
+  position relative
+  padding 0 0 0 30px
+  cursor pointer
+
+.checkbox__input
+  position absolute
+  z-index -1
+  opacity 0
+
+.checkbox__span
+  user-select none
+  line-height 20px
+
+.checkbox__span:before
+  content ""
+  position absolute
+  top 0
+  left 0
+  width 20px
+  height 20px
+  border 1px solid rgba(31, 32, 65, 0.25)
+  border-radius 4px
+  background #ffffff
+
+.checkbox__input:checked+.checkbox__span:after
+  content ""
+  position absolute
+  top 5px
+  left 7px
+  width 6px
+  height 8px
+  border 1px solid transparent
+  border-image linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
+  border-image-slice 1
+  border-image-width 0 2 2 0
+  transform rotate(45deg)
+
+.checkbox__input:checked+.checkbox__span:before
+  border 1px solid #BC9CFF

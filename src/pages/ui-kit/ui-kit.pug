@@ -7,6 +7,7 @@ include ../../components/small-components/masked-text-field/masked.pug
 include ../../components/small-components/date-dropdown/date-dropdown.pug
 include ../../components/small-components/filter-date-dropdown/filter-date.pug
 include ../../components/small-components/subscription-text-field/sub-field.pug
+include ../../components/small-components/checkbox-buttons/checkbox.pug
 include ../../components/form-hotel-search/form-hotel-search.pug
 
 block variables
@@ -28,7 +29,7 @@ block content
         +text()
     include ../../components/small-components/ui-page-1/ui-wrap/ui-wrap.pug
       .container.container-ui
-        .container-text-field
+        .container-field
           +textField({margin: " text-field_margin_bottom_20", color: " text-field__input_color", 
           title: "Text Field", state: "Default"})
           +textField({margin: " text-field_margin_bottom_20", color: " text-field__input_active", 
@@ -42,6 +43,9 @@ block content
           id1: "dateDropFrom", id2: "dateDropTo", title: "date Dropdown"})
           +filterDate({title: "filter date dropdown", id: "filterDate", margin: " text-field_margin_bottom_40"})
           +subField({title: "subscription text field", color: " text-field__input_color"})
+        .container-checkbox
+          +checkbox({marginTitle: " checkbox_margin_bottom"})
+        .container-dropdown
           +dropdown({id: "accommodations", color: " dropdown__input_color", width: " dropdown__input_width_middle",
           windowWidth: " dropdown-window_width_middle", widthInput: " dropdown__input_width_middle",title: "Dropdown", 
           state: "Default", value: "2 спальни, 2 кровати...", arrName: ["2 Спальни", "2 Кровати", "0 Ванные комнаты"]})
