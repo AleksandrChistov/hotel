@@ -1,5 +1,5 @@
 mixin toggle(options)
-  div(class=`toggle${options.width || ""}`)
+  div(class=`toggle${options.marginToggle || ""}`)
     p(class=`text-field__title${options.marginTitle || ""}`) Toggle
     label(class=`toggle__label${options.label || ""}` for=`${options.id1 || "toggle1"}`)
       input(class=`toggle__input${options.input || ""}` type="checkbox" name="toggle" 

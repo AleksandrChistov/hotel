@@ -845,6 +845,9 @@
   display: flex;
   flex-direction: column;
 }
+.toggle_margin_bottom {
+  margin-bottom: 45px;
+}
 .toggle__label {
   position: relative;
   padding: 0 0 0 50px;
@@ -853,6 +856,9 @@
 }
 .toggle__label_margin_bottom {
   margin-bottom: 15px;
+}
+.toggle__label_margin_bottom:last-child {
+  margin-bottom: 0;
 }
 .toggle__input {
   position: absolute;
@@ -892,6 +898,62 @@
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   left: 24px;
   transition: left 0.5s;
+}
+.like__button {
+  width: 40px;
+  height: 20px;
+  border: 1px solid rgba(31,32,65,0.25);
+  border-radius: 10px;
+  font-size: 10px;
+  background: url("/img/like.svg") #fff 15% 50% no-repeat;
+  color: rgba(31,32,65,0.25);
+  text-align: right;
+  vertical-align: middle;
+  padding-right: 11px;
+  font-family: Montserrat, sans-serif;
+  font-size: 10px;
+}
+.like__button:hover {
+  cursor: pointer;
+  background: url("/img/border-like.svg") #fff 20% 50% no-repeat;
+  color: #bc9cff;
+  border: 0;
+  position: relative;
+  padding-right: 12px;
+}
+.like__button:hover::before {
+  content: "";
+  width: 40px;
+  height: 20px;
+  position: absolute;
+  background: url("/img/like-active.svg") 16% 50% no-repeat;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.like__button:active,
+.like__button:focus {
+  outline: none;
+}
+.like__button_active {
+  background: url("/img/border-like.svg") #fff 20% 50% no-repeat;
+  color: #bc9cff;
+  border: 0;
+  position: relative;
+  padding-right: 12px;
+}
+.like__button_active::before {
+  content: "";
+  width: 40px;
+  height: 20px;
+  position: absolute;
+  background: url("/img/like-active.svg") 16% 50% no-repeat;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.like__button_margin_right {
+  margin-right: 8px;
 }
 .container-ui {
   padding-bottom: 50px;

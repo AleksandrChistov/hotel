@@ -1,0 +1,50 @@
+.like__button
+  width 40px
+  height 20px
+  border 1px solid rgba(31, 32, 65, 0.25)
+  border-radius 10px
+  font-size 10px
+  background url("/img/like.svg") #ffffff 15% 50% no-repeat
+  color rgba(31, 32, 65, 0.25)
+  text-align right
+  vertical-align middle
+  padding-right 11px
+  font-family Montserrat, sans-serif
+  font-size 10px
+  &:hover
+    cursor pointer
+    background url("/img/border-like.svg") #ffffff 20% 50% no-repeat
+    color #BC9CFF
+    border 0
+    position relative
+    padding-right 12px
+    &::before
+      content ""
+      width 40px
+      height 20px
+      position absolute
+      background url("/img/like-active.svg") 16% 50% no-repeat
+      top 0
+      left 0
+      z-index 1
+  &:active, &:focus
+    outline none
+
+.like__button_active
+  background url("/img/border-like.svg") #ffffff 20% 50% no-repeat
+  color #BC9CFF
+  border 0
+  position relative
+  padding-right 12px
+  &::before
+    content ""
+    width 40px
+    height 20px
+    position absolute
+    background url("/img/like-active.svg") 16% 50% no-repeat
+    top 0
+    left 0
+    z-index 1
+
+.like__button_margin_right
+  margin-right 8px

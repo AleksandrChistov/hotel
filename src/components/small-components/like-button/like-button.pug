@@ -1,0 +1,7 @@
+include ./like/like.pug
+
+mixin likeButton(options)
+  div(class=`like${options.width || ""}`)
+    p(class=`text-field__title${options.marginTitle || ""}`) like button
+    +like({amount: "2", margin: " like__button_margin_right"})
+    +like({amount: "12", active: " like__button_active", margin: " like__button_margin_right"})
