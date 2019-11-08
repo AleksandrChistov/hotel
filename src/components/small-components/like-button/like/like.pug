@@ -1,2 +1,3 @@
 mixin like(options)
-  button(class=`like__button${options.active || ""}${options.margin || ""}`)= options.amount
+  button(class=`like-button${options.active || ""}${options.margin || ""}`)
+    span(class=`like-button__text${options.activeText || ""}`)= options.amount

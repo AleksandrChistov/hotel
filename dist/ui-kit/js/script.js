@@ -267,18 +267,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(f
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _like_img_like_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./like/img/like.svg */ \"./components/small-components/like-button/like/img/like.svg\");\n/* harmony import */ var _like_img_like_svg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_like_img_like_svg__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _like_img_like_active_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./like/img/like-active.svg */ \"./components/small-components/like-button/like/img/like-active.svg\");\n/* harmony import */ var _like_img_like_active_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_like_img_like_active_svg__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _like_img_border_like_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./like/img/border-like.svg */ \"./components/small-components/like-button/like/img/border-like.svg\");\n/* harmony import */ var _like_img_border_like_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_like_img_border_like_svg__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _like_like_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./like/like.js */ \"./components/small-components/like-button/like/like.js\");\n/* harmony import */ var _like_like_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_like_like_js__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\n\n//# sourceURL=webpack:///./components/small-components/like-button/like-button.js?");
-
-/***/ }),
-
-/***/ "./components/small-components/like-button/like/img/border-like.svg":
-/*!**************************************************************************!*\
-  !*** ./components/small-components/like-button/like/img/border-like.svg ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__.p + \"img/border-like.svg\";\n\n//# sourceURL=webpack:///./components/small-components/like-button/like/img/border-like.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _like_img_like_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./like/img/like.svg */ \"./components/small-components/like-button/like/img/like.svg\");\n/* harmony import */ var _like_img_like_svg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_like_img_like_svg__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _like_img_like_active_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./like/img/like-active.svg */ \"./components/small-components/like-button/like/img/like-active.svg\");\n/* harmony import */ var _like_img_like_active_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_like_img_like_active_svg__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _like_like_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./like/like.js */ \"./components/small-components/like-button/like/like.js\");\n/* harmony import */ var _like_like_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_like_like_js__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\n//# sourceURL=webpack:///./components/small-components/like-button/like-button.js?");
 
 /***/ }),
 
@@ -311,7 +300,7 @@ eval("module.exports = __webpack_require__.p + \"img/like.svg\";\n\n//# sourceUR
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/* WEBPACK VAR INJECTION */(function($) {$(\".like__button\").on(\"click\", function () {\n  let value = $(this).text();\n  $(this).text(+value + 1);\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"../node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./components/small-components/like-button/like/like.js?");
+eval("/* WEBPACK VAR INJECTION */(function($) {$(\".like-button\").on(\"click\", function () {\n  let value = $(this).children(\".like-button__text\").text();\n  $(this).children(\".like-button__text\").text(+value + 1);\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"../node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./components/small-components/like-button/like/like.js?");
 
 /***/ }),
 

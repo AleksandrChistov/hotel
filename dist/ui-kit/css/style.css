@@ -899,60 +899,50 @@
   left: 24px;
   transition: left 0.5s;
 }
-.like__button {
+.like-button {
   width: 40px;
   height: 20px;
   border: 1px solid rgba(31,32,65,0.25);
   border-radius: 10px;
-  font-size: 10px;
-  background: url("/img/like.svg") #fff 15% 50% no-repeat;
   color: rgba(31,32,65,0.25);
-  text-align: right;
-  vertical-align: middle;
-  padding-right: 11px;
-  font-family: Montserrat, sans-serif;
-  font-size: 10px;
-}
-.like__button:hover {
-  cursor: pointer;
-  background: url("/img/border-like.svg") #fff 20% 50% no-repeat;
-  color: #bc9cff;
-  border: 0;
   position: relative;
-  padding-right: 12px;
+  background: #fff;
 }
-.like__button:hover::before {
-  content: "";
-  width: 40px;
-  height: 20px;
-  position: absolute;
-  background: url("/img/like-active.svg") 16% 50% no-repeat;
-  top: 0;
-  left: 0;
-  z-index: 1;
+.like-button:hover {
+  border: 1px solid transparent;
+  color: #bc9cff;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  cursor: pointer;
 }
-.like__button:active,
-.like__button:focus {
+.like-button:active,
+.like-button:focus {
   outline: none;
 }
-.like__button_active {
-  background: url("/img/border-like.svg") #fff 20% 50% no-repeat;
-  color: #bc9cff;
-  border: 0;
-  position: relative;
-  padding-right: 12px;
-}
-.like__button_active::before {
-  content: "";
-  width: 40px;
-  height: 20px;
+.like-button__text {
   position: absolute;
-  background: url("/img/like-active.svg") 16% 50% no-repeat;
-  top: 0;
+  top: -0.2px;
   left: 0;
-  z-index: 1;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  background: url("/img/like.svg") #fff 16% 50% no-repeat;
+  padding-left: 10px;
+  font-family: Montserrat, sans-serif;
+  font-size: 10px;
+  line-height: 17px;
 }
-.like__button_margin_right {
+.like-button__text:hover {
+  background: url("/img/like-active.svg") #fff 16% 45% no-repeat;
+}
+.like-button__text_active {
+  background: url("/img/like-active.svg") #fff 16% 45% no-repeat;
+}
+.like-button_active {
+  border: 1px solid transparent;
+  color: #bc9cff;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+}
+.like-button_margin_right {
   margin-right: 8px;
 }
 .container-ui {
