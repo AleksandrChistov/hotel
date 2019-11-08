@@ -1,0 +1,7 @@
+mixin rating(options)
+  div(class=`rate-button__group${options.margin || ""}`)
+    each val, index in options.arr
+      if val.checked
+        input(class="rate-button__input" type="radio" name=options.name value=index + 1 aria-label=val.aria checked)
+      else
+        input(class="rate-button__input" type="radio" name=options.name value=index + 1 aria-label=val.aria)

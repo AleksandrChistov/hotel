@@ -1,3 +1,3 @@
 mixin like(options)
-  button(class=`like-button${options.active || ""}${options.margin || ""}`)
+  button(class=`like-button${options.active || ""}${options.margin || ""}` aria-label="Лайк")
     span(class=`like-button__text${options.activeText || ""}`)= options.amount

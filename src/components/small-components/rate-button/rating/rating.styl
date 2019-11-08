@@ -1,0 +1,52 @@
+.rate-button__input
+  -webkit-appearance none
+  position absolute
+  top 0
+  left 0
+  width 24px
+  height 24px
+  background url(/img/star_border.svg) 2px 2px repeat-x
+  opacity 0.1
+  &:active, &:focus
+    outline none
+  &:checked, &:hover
+    background url(/img/star.svg) #ffffff 2px 2px repeat-x
+    cursor pointer
+    opacity 1
+  &:active
+    transform scale(2)
+    transition transform 1s
+
+.rate-button__input:hover ~ .rate-button__input
+  background url(/img/star_border.svg) #ffffff 2px 2px repeat-x
+
+
+.rate-button__input:nth-of-type(1)
+  z-index 5
+  width 24px
+
+.rate-button__input:nth-of-type(2)
+  z-index 4
+  width 48px
+
+.rate-button__input:nth-of-type(3)
+  z-index 3
+  width 72px
+
+.rate-button__input:nth-of-type(4)
+  z-index 2
+  width 96px
+
+.rate-button__input:nth-of-type(5)
+  z-index 1
+  width 120px
+  opacity 1
+
+.rate-button__group
+  position relative
+  display inline-block
+  height 24px
+  width 120px
+
+.rate-button__group_margin_right
+  margin-right 20px

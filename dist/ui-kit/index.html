@@ -169,11 +169,28 @@
                 <input class="toggle__input" type="checkbox" name="toggle" value="toggle2" id="toggle2"><span class="toggle__span">Получать спецпредложения</span>
               </label>
             </div>
-            <div class="like">
+            <div class="like checkbox_margin_bottom">
               <p class="text-field__title text-field__title_margin_bottom">like button</p>
-              <button class="like-button like-button_margin_right"><span class="like-button__text">2</span></button>
-              <button class="like-button like-button_active like-button_margin_right"><span class="like-button__text like-button__text_active">12</span></button>
+              <button class="like-button like-button_margin_right" aria-label="Лайк"><span class="like-button__text">2</span></button>
+              <button class="like-button like-button_active like-button_margin_right" aria-label="Лайк"><span class="like-button__text like-button__text_active">12</span></button>
             </div>
+            <fieldset class="rate-button">
+              <legend class="rate-button__title text-field__title text-field__title_margin_bottom">rate button</legend>
+              <div class="rate-button__group rate-button__group_margin_right">
+                <input class="rate-button__input" type="radio" name="rating" value="1" aria-label="1 звезда" checked>
+                <input class="rate-button__input" type="radio" name="rating" value="2" aria-label="2 звезды" checked>
+                <input class="rate-button__input" type="radio" name="rating" value="3" aria-label="3 звезды" checked>
+                <input class="rate-button__input" type="radio" name="rating" value="4" aria-label="4 звезды" checked>
+                <input class="rate-button__input" type="radio" name="rating" value="5" aria-label="5 звезд">
+              </div>
+              <div class="rate-button__group">
+                <input class="rate-button__input" type="radio" name="rating2" value="1" aria-label="1 звезда" checked>
+                <input class="rate-button__input" type="radio" name="rating2" value="2" aria-label="2 звезды" checked>
+                <input class="rate-button__input" type="radio" name="rating2" value="3" aria-label="3 звезды" checked>
+                <input class="rate-button__input" type="radio" name="rating2" value="4" aria-label="4 звезды" checked>
+                <input class="rate-button__input" type="radio" name="rating2" value="5" aria-label="5 звезд" checked>
+              </div>
+            </fieldset>
           </div>
           <div class="container-dropdown">
             <div class="dropdown dropdown__input_width_middle">

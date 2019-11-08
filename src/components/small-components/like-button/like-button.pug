@@ -1,7 +1,7 @@
 include ./like/like.pug
 
 mixin likeButton(options)
-  div(class=`like${options.width || ""}`)
+  div(class=`like${options.margin || ""}`)
     p(class=`text-field__title${options.marginTitle || ""}`) like button
     +like({amount: "2", margin: " like-button_margin_right"})
     +like({amount: "12", active: " like-button_active", margin: " like-button_margin_right",

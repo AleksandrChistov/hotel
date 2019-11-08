@@ -1,0 +1,10 @@
+include ./rating/rating.pug
+
+mixin rateButton(options)
+  fieldset(class=`rate-button${options.margin || ""}`)
+    legend(class=`rate-button__title text-field__title${options.marginTitle || ""}`) rate button
+    +rating({name: "rating", margin: " rate-button__group_margin_right", 
+    arr: [{aria: "1 звезда", checked: true}, {aria: "2 звезды", checked: true}, 
+    {aria: "3 звезды", checked: true}, {aria: "4 звезды", checked: true}, {aria: "5 звезд", checked: false}]})
+    +rating({name: "rating2", arr: [{aria: "1 звезда", checked: true}, {aria: "2 звезды", checked: true}, 
+    {aria: "3 звезды", checked: true}, {aria: "4 звезды", checked: true}, {aria: "5 звезд", checked: true}]})

@@ -316,6 +316,40 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var imas
 
 /***/ }),
 
+/***/ "./components/small-components/rate-button/rate-button.js":
+/*!****************************************************************!*\
+  !*** ./components/small-components/rate-button/rate-button.js ***!
+  \****************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _rating_img_star_border_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./rating/img/star_border.svg */ \"./components/small-components/rate-button/rating/img/star_border.svg\");\n/* harmony import */ var _rating_img_star_border_svg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_rating_img_star_border_svg__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _rating_img_star_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./rating/img/star.svg */ \"./components/small-components/rate-button/rating/img/star.svg\");\n/* harmony import */ var _rating_img_star_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_rating_img_star_svg__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack:///./components/small-components/rate-button/rate-button.js?");
+
+/***/ }),
+
+/***/ "./components/small-components/rate-button/rating/img/star.svg":
+/*!*********************************************************************!*\
+  !*** ./components/small-components/rate-button/rating/img/star.svg ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/star.svg\";\n\n//# sourceURL=webpack:///./components/small-components/rate-button/rating/img/star.svg?");
+
+/***/ }),
+
+/***/ "./components/small-components/rate-button/rating/img/star_border.svg":
+/*!****************************************************************************!*\
+  !*** ./components/small-components/rate-button/rating/img/star_border.svg ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/star_border.svg\";\n\n//# sourceURL=webpack:///./components/small-components/rate-button/rating/img/star_border.svg?");
+
+/***/ }),
+
 /***/ "./components/small-components/subscription-text-field/img/arrow_forward.svg":
 /*!***********************************************************************************!*\
   !*** ./components/small-components/subscription-text-field/img/arrow_forward.svg ***!
@@ -392,7 +426,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./font
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ui_kit_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ui-kit.styl */ \"./pages/ui-kit/ui-kit.styl\");\n/* harmony import */ var _ui_kit_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_styl__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_main_main_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/main/main.js */ \"./components/main/main.js\");\n/* harmony import */ var _components_small_components_ui_page_1_ui_wrap_ui_wrap_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/small-components/ui-page-1/ui-wrap/ui-wrap.js */ \"./components/small-components/ui-page-1/ui-wrap/ui-wrap.js\");\n/* harmony import */ var _components_small_components_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/small-components/dropdown/dropdown.js */ \"./components/small-components/dropdown/dropdown.js\");\n/* harmony import */ var _components_small_components_masked_text_field_masked_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/small-components/masked-text-field/masked.js */ \"./components/small-components/masked-text-field/masked.js\");\n/* harmony import */ var _components_small_components_date_dropdown_date_dropdown_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/small-components/date-dropdown/date-dropdown.js */ \"./components/small-components/date-dropdown/date-dropdown.js\");\n/* harmony import */ var _components_small_components_filter_date_dropdown_filter_date_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/small-components/filter-date-dropdown/filter-date.js */ \"./components/small-components/filter-date-dropdown/filter-date.js\");\n/* harmony import */ var _components_form_hotel_search_form_hotel_search_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/form-hotel-search/form-hotel-search.js */ \"./components/form-hotel-search/form-hotel-search.js\");\n/* harmony import */ var _components_small_components_subscription_text_field_sub_field_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/small-components/subscription-text-field/sub-field.js */ \"./components/small-components/subscription-text-field/sub-field.js\");\n/* harmony import */ var _components_small_components_like_button_like_button_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/small-components/like-button/like-button.js */ \"./components/small-components/like-button/like-button.js\");\n\n\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./pages/ui-kit/ui-kit.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ui_kit_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ui-kit.styl */ \"./pages/ui-kit/ui-kit.styl\");\n/* harmony import */ var _ui_kit_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_styl__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_main_main_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/main/main.js */ \"./components/main/main.js\");\n/* harmony import */ var _components_small_components_ui_page_1_ui_wrap_ui_wrap_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/small-components/ui-page-1/ui-wrap/ui-wrap.js */ \"./components/small-components/ui-page-1/ui-wrap/ui-wrap.js\");\n/* harmony import */ var _components_small_components_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/small-components/dropdown/dropdown.js */ \"./components/small-components/dropdown/dropdown.js\");\n/* harmony import */ var _components_small_components_masked_text_field_masked_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/small-components/masked-text-field/masked.js */ \"./components/small-components/masked-text-field/masked.js\");\n/* harmony import */ var _components_small_components_date_dropdown_date_dropdown_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/small-components/date-dropdown/date-dropdown.js */ \"./components/small-components/date-dropdown/date-dropdown.js\");\n/* harmony import */ var _components_small_components_filter_date_dropdown_filter_date_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/small-components/filter-date-dropdown/filter-date.js */ \"./components/small-components/filter-date-dropdown/filter-date.js\");\n/* harmony import */ var _components_form_hotel_search_form_hotel_search_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/form-hotel-search/form-hotel-search.js */ \"./components/form-hotel-search/form-hotel-search.js\");\n/* harmony import */ var _components_small_components_subscription_text_field_sub_field_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/small-components/subscription-text-field/sub-field.js */ \"./components/small-components/subscription-text-field/sub-field.js\");\n/* harmony import */ var _components_small_components_like_button_like_button_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/small-components/like-button/like-button.js */ \"./components/small-components/like-button/like-button.js\");\n/* harmony import */ var _components_small_components_rate_button_rate_button_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../components/small-components/rate-button/rate-button.js */ \"./components/small-components/rate-button/rate-button.js\");\n\n\n\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./pages/ui-kit/ui-kit.js?");
 
 /***/ }),
 
