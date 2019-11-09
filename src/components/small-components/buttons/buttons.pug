@@ -1,5 +1,5 @@
 include ./button-m/button-m.pug
-//- include ./button-l/button-l.pug
+include ./button-l/button-l.pug
 
 mixin buttons(options)
   div(class=`buttons${options.margin || ""}`)
@@ -11,4 +11,5 @@ mixin buttons(options)
       +buttonM({text: "Click me", style: " button-m-active", styleText: " button-m_border"})
     .buttons__group-text
       p.button-m-text.buttons_text_gradient Click me
-      p.button-m-text.buttons_text_gray Click me
+      p.button-m-text.buttons_text_gray.button-m_margin_bottom Click me
+    +buttonL({text: "Перейти к оплате", margin: " checkbox_margin_bottom"})
