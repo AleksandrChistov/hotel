@@ -13,6 +13,7 @@ include ../../components/small-components/toggle/toggle.pug
 include ../../components/small-components/like-button/like-button.pug
 include ../../components/small-components/rate-button/rate-button.pug
 include ../../components/small-components/range-slider/range-slider.pug
+include ../../components/small-components/buttons/buttons.pug
 include ../../components/form-hotel-search/form-hotel-search.pug
 
 block variables
@@ -57,7 +58,8 @@ block content
           +likeButton({margin: " checkbox_margin_bottom", marginTitle: " text-field__title_margin_bottom"})
           +rateButton({marginTitle: " text-field__title_margin_bottom"})
         .container-buttons
-          +rangeSlider({})
+          +rangeSlider({margin: " checkbox_margin_bottom"})
+          +buttons({})
         .container-dropdown
           +dropdown({id: "accommodations", color: " dropdown__input_color", width: " dropdown__input_width_middle",
           windowWidth: " dropdown-window_width_middle", widthInput: " dropdown__input_width_middle",title: "Dropdown", 

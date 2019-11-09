@@ -920,22 +920,22 @@
 }
 .like-button__text {
   position: absolute;
-  top: -0.2px;
+  top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  width: 38px;
+  height: 18px;
   border-radius: 10px;
-  background: url("/img/like.svg") #fff 16% 50% no-repeat;
+  background: url("/img/like.svg") #fff 16% 48% no-repeat;
   padding-left: 10px;
   font-family: Montserrat, sans-serif;
   font-size: 10px;
   line-height: 17px;
 }
 .like-button__text:hover {
-  background: url("/img/like-active.svg") #fff 16% 45% no-repeat;
+  background: url("/img/like-active.svg") #fff 16% 48% no-repeat;
 }
 .like-button__text_active {
-  background: url("/img/like-active.svg") #fff 16% 45% no-repeat;
+  background: url("/img/like-active.svg") #fff 16% 48% no-repeat;
 }
 .like-button_active {
   border: 1px solid transparent;
@@ -1071,6 +1071,67 @@ html:not([dir="rtl"]) .range.noUi-horizontal .noUi-handle {
 }
 .range .noUi-connect {
   background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+}
+.button-m {
+  width: 99px;
+  height: 44px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+  border: none;
+  position: relative;
+  padding: 0;
+}
+.button-m:active,
+.button-m:focus {
+  outline: none;
+}
+.button-m:hover {
+  cursor: pointer;
+  background: linear-gradient(180deg, rgba(188,156,255,0.5) 0%, rgba(139,164,249,0.5) 100%);
+}
+.button-m-text {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+.button-m_border {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 95px;
+  height: 40px;
+  background: #fff;
+  border-radius: 22px;
+  color: #bc9cff;
+  line-height: 40px;
+}
+.button-m-active {
+  background: linear-gradient(180deg, rgba(188,156,255,0.5) 0%, rgba(139,164,249,0.5) 100%);
+}
+.buttons_margin_bottom_title {
+  margin-bottom: 15px;
+}
+.buttons__group-m {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 218px;
+  margin-bottom: 30px;
+}
+.button-m_margin_bottom {
+  margin-bottom: 30px;
+}
+.buttons__group-text {
+  display: flex;
+  justify-content: space-between;
+  width: 142px;
+}
+.buttons_text_gradient {
+  color: #bc9cff;
+}
+.buttons_text_gray {
+  color: rgba(31,32,65,0.5);
 }
 .container-ui {
   padding-bottom: 50px;
