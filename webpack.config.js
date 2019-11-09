@@ -59,7 +59,8 @@ module.exports = env => {
       new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery',
-        'window.jQuery': 'jquery'
+        'window.jQuery': 'jquery',
+        noUiSlider: 'nouislider'
       }),
       new webpack.SourceMapDevToolPlugin({
         filename: '[file].map',

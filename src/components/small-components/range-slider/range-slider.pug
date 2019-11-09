@@ -1,0 +1,5 @@
+mixin rangeSlider(options)
+  div(class=`range-slider${options.margin || ""}`)
+    p(class=`text-field__title range-slider__label${options.marginTitle || ""}`) Range Slider
+    p(class=`range-slider__number${options.marginTitle || ""}`) 5 000₽ - 10 000₽
+    div(class="range" id="range")

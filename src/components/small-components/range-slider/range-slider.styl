@@ -1,0 +1,57 @@
+.range-slider
+  display flex
+  justify-content space-between
+  flex-wrap wrap
+  width 266px
+  position relative
+
+.range-slider__label
+  margin 0 0 20px 0
+  padding 0
+
+.range-slider__number
+  font-size 12px
+  color rgba(31, 32, 65, 0.5)
+
+.range
+  width 266px
+  height 6px
+  border 1px solid rgba(31, 32, 65, 0.25)
+  border-radius 3px
+  background-color #ffffff
+
+.range.noUi-target.noUi-ltr.noUi-horizontal
+  height 6px
+
+.range.noUi-target
+  background #FFFFFF
+  border 1px solid rgba(31, 32, 65, 0.25)
+  border-radius 3px
+  box-shadow none
+
+.range.noUi-horizontal .noUi-handle
+  width 12px
+  height 12px
+  top -6px
+  background linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)
+  border 2px solid #FFFFFF
+  border-radius 10px
+  box-sizing content-box
+  box-shadow none
+  &:active, &:focus
+    outline none
+  &:hover
+    cursor pointer
+
+html:not([dir="rtl"]) .range.noUi-horizontal .noUi-handle
+  right -7px
+
+.range .noUi-handle:before, .range .noUi-handle:after
+  display none
+
+.range .noUi-connects
+  height 6px
+  top -1px
+
+.range .noUi-connect
+  background linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)
