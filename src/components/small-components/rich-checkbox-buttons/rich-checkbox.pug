@@ -1,0 +1,8 @@
+include ../checkbox-buttons/checkbox/checkbox.pug
+
+mixin richCheckbox(options)
+  duv(class=`checkbox${options.margin || ""}${options.width || ""}`)
+    p(class=`text-field__title${options.marginTitle || ""}`)= options.txt
+    each val, index in options.arr
+      +checkbox({id: val.value, value: val.value, text: val.text, descWidth: val.descWidth, 
+      checked: val.checked, description: val.description, title: `${options.title || ""}`})

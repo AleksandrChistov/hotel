@@ -6,4 +6,8 @@ mixin checkbox(options)
     else
       input(class="checkbox__input" type="checkbox" name=`${options.id || "checkbox"}` 
       value=`${options.value || "checkbox"}` id=`${options.id || "checkbox"}`)
-    span.checkbox__span= options.text
+    if options.description
+      span(class=`checkbox__span${options.title || ""}`)= options.text
+      span(class=`checkbox__description${options.descWidth || ""}`)= options.description
+    else
+      span(class=`checkbox__span${options.title || ""}`)= options.text

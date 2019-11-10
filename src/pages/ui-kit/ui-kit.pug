@@ -16,6 +16,7 @@ include ../../components/small-components/range-slider/range-slider.pug
 include ../../components/small-components/buttons/buttons.pug
 include ../../components/small-components/pagination/pagination.pug
 include ../../components/small-components/expandable-checkbox-list/checkbox-list.pug
+include ../../components/small-components/rich-checkbox-buttons/rich-checkbox.pug
 include ../../components/form-hotel-search/form-hotel-search.pug
 
 block variables
@@ -86,20 +87,28 @@ block content
             clearDisplay: " dropdown-window__clear_display_block",
             value: "3 гостя", arrName: ["2 Взрослые", "1 Дети", "0 Младенцы"]})
         .container-checkbox-list
-          +checkboxList({marginTitle: " text-field__title_margin_bottom", margin: " radio_margin_bottom", 
-            modal: true, displayModal: " checkbox__modal_display_none", 
-            cursorTitle: " checkbox_cursor", id: "checkboxDefault", 
-            txt: "expandable checkbox list", imgArrow: " checkbox_img_arrow", 
-            arr: [{value: "checkbox-breakfast", text: "Завтрак", checked: false}]})
-          +checkboxList({marginTitle: " text-field__title_margin_bottom", 
-            modal: true, cursorTitle: " checkbox_cursor", 
-            txt: "expandable checkbox list", imgArrow: " checkbox_img_arrow_transform", 
-            arr: [{value: "checkbox-breakfast", text: "Завтрак", checked: false},
-            {value: "checkbox-desk", text: "Письменный стол", checked: true},
-            {value: "checkbox-feeding-chair", text: "Стул для кормления", checked: true}, 
-            {value: "checkbox-crib", text: "Кроватка", checked: true},
-            {value: "checkbox-tv", text: "Телевизор", checked: false},
-            {value: "checkbox-shampoo", text: "Шампунь", checked: false}]})
+          .expandable-checkbox
+            +checkboxList({marginTitle: " text-field__title_margin_bottom", margin: " radio_margin_bottom", 
+              modal: true, displayModal: " checkbox__modal_display_none", 
+              cursorTitle: " checkbox_cursor", id: "checkboxDefault", 
+              txt: "expandable checkbox list", imgArrow: " checkbox_img_arrow", 
+              arr: [{value: "checkbox-br", text: "Завтрак", checked: false}]})
+            +checkboxList({marginTitle: " text-field__title_margin_bottom", 
+              modal: true, cursorTitle: " checkbox_cursor", 
+              txt: "expandable checkbox list", imgArrow: " checkbox_img_arrow_transform", 
+              arr: [{value: "checkbox-breakfast", text: "Завтрак", checked: false},
+              {value: "checkbox-desk", text: "Письменный стол", checked: true},
+              {value: "checkbox-feeding-chair", text: "Стул для кормления", checked: true}, 
+              {value: "checkbox-crib", text: "Кроватка", checked: true},
+              {value: "checkbox-tv", text: "Телевизор", checked: false},
+              {value: "checkbox-shampoo", text: "Шампунь", checked: false}]})
+          .rich-checkbox
+            +richCheckbox({txt: "rich Checkbox Buttons", marginTitle: " text-field__title_margin_bottom", 
+              title: " checkbox__span_title_bold",  width: " checkbox_width_266", 
+              arr: [{value: "checkbox-wide-corridor", text: "Широкий коридор", descWidth: " checkbox__description_width_203", 
+              description: "Ширина коридоров в номере не менее 91 см.", checked: false}, 
+              {value: "checkbox-disabled-assistant", text: "Помощник для инвалидов", descWidth: " checkbox__description_width_234", 
+              description: "На 1 этаже вас встретит специалист  и проводит до номера.", checked: false}]})
     include ../../components/small-components/ui-page-1/ui-wrap/ui-wrap.pug
       .container.container-ui
         +formHotelSeacrh()
