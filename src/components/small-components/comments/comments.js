@@ -1,0 +1,1 @@
+import './img/autor1.png'

@@ -13,6 +13,7 @@ import '../../components/small-components/buttons/buttons.js'
 import '../../components/small-components/expandable-checkbox-list/checkbox-list.js'
 import '../../components/small-components/checkbox-buttons/checkbox/checkbox.js'
 import '../../components/small-components/room-details/room-details.js'
+import '../../components/small-components/comments/comments.js'
 
 import './ui-kit.styl'
 import '../../components/small-components/ui-page-1/ui-color/ui-color.styl'
@@ -35,3 +36,4 @@ import '../../components/small-components/expandable-checkbox-list/checkbox-list
 import '../../components/small-components/rich-checkbox-buttons/rich-checkbox.styl'
 import '../../components/small-components/bullet-list/bullet-list.styl'
 import '../../components/small-components/room-details/room-details.styl'
+import '../../components/small-components/comments/comments.styl'

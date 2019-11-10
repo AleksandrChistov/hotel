@@ -83,6 +83,11 @@ p {
   width: 100%;
   margin-bottom: 40px;
 }
+.container-comments {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 
 .block-color {
   display: flex;
@@ -1019,7 +1024,7 @@ p {
 }
 
 .like-button {
-  width: 40px;
+  min-width: 40px;
   height: 20px;
   border: 1px solid rgba(31,32,65,0.25);
   border-radius: 10px;
@@ -1063,6 +1068,9 @@ p {
 }
 .like-button_margin_right {
   margin-right: 8px;
+}
+.like-button_margin {
+  margin: 2px 14px 0 5px;
 }
 
 .rate-button__input {
@@ -1447,6 +1455,34 @@ html:not([dir="rtl"]) .range.noUi-horizontal .noUi-handle {
   border: 0;
   height: 1px;
   background-color: rgba(31,32,65,0.1);
+}
+
+.comments {
+  max-width: 711px;
+}
+.comments__author {
+  display: flex;
+  margin-bottom: 10px;
+}
+.comments__author-img {
+  margin-right: 10px;
+}
+.comments__author-name {
+  font-weight: bold;
+  color: rgba(31,32,65,0.75);
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+.comments__author-period {
+  color: rgba(31,32,65,0.75);
+}
+.comments__wrap-text {
+  display: flex;
+}
+.comments__text {
+  flex-basis: 92%;
+  color: rgba(31,32,65,0.75);
+  line-height: 24px;
 }
 
 

@@ -1,0 +1,16 @@
+include ../like-button/like/like.pug
+
+mixin comments(options)
+  div(class=`comments-wrap${options.margin || ""}`)
+    each val in options.arr
+      div(class=`comments${options.margin || ""}`)
+        div(class=`comments__author`)
+          img(src=`${val.srcImg || ""}` alt=`${val.srcAlt || ""}` 
+          class=`comments__author-img${options.marginImg || ""}`)
+          div(class=`comments__author-text`)
+            p(class="comments__author-name")= val.name
+            p(class="comments__author-period")= val.period
+        div(class=`comments__wrap-text`)
+          +like({amount: "12", active: " like-button_active", margin: " like-button_margin",
+                activeText: " like-button__text_active"})
+          p(class="comments__text")= val.text

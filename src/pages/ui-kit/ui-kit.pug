@@ -19,6 +19,7 @@ include ../../components/small-components/expandable-checkbox-list/checkbox-list
 include ../../components/small-components/rich-checkbox-buttons/rich-checkbox.pug
 include ../../components/small-components/bullet-list/bullet-list.pug
 include ../../components/small-components/room-details/room-details.pug
+include ../../components/small-components/comments/comments.pug
 include ../../components/form-hotel-search/form-hotel-search.pug
 
 block variables
@@ -118,6 +119,8 @@ block content
           +roomDetails({marginImg: " room-details__img_margin", arr: [{title: "Комфорт", 
             descr: "Шумопоглощающие стены", hr: true, srcImg: "/img/insert_emoticon.svg", imgAlt: "Смайл"}, 
             {title: "Удобство", descr: "Окно в каждой из спален", hr: true, srcImg: "/img/location_city.svg", imgAlt: "Город"}]})
+          +comments({arr: [{srcImg: "/img/autor1.png", imgAlt: "Мурад Сарафанов", name: "Мурад Сарафанов", period: "5 дней назад", 
+            text: "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."}]})
     include ../../components/small-components/ui-page-1/ui-wrap/ui-wrap.pug
       .container.container-ui
         +formHotelSeacrh()
