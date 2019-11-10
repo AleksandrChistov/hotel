@@ -18,6 +18,7 @@ include ../../components/small-components/pagination/pagination.pug
 include ../../components/small-components/expandable-checkbox-list/checkbox-list.pug
 include ../../components/small-components/rich-checkbox-buttons/rich-checkbox.pug
 include ../../components/small-components/bullet-list/bullet-list.pug
+include ../../components/small-components/room-details/room-details.pug
 include ../../components/form-hotel-search/form-hotel-search.pug
 
 block variables
@@ -112,7 +113,11 @@ block content
               description: "На 1 этаже вас встретит специалист  и проводит до номера.", checked: false}]})
           .bullet-list-container
             +bulletList({title: "bullet list",  marginTitle: " text-field__title_margin_bottom", widthLi: " bullet-list__ul_width_263", 
-            arr: ["Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, а выезд до 12:00"]})
+              arr: ["Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, а выезд до 12:00"]})
+        .container-comments
+          +roomDetails({marginImg: " room-details__img_margin", arr: [{title: "Комфорт", 
+            descr: "Шумопоглощающие стены", hr: true, srcImg: "/img/insert_emoticon.svg", imgAlt: "Смайл"}, 
+            {title: "Удобство", descr: "Окно в каждой из спален", hr: true, srcImg: "/img/location_city.svg", imgAlt: "Город"}]})
     include ../../components/small-components/ui-page-1/ui-wrap/ui-wrap.pug
       .container.container-ui
         +formHotelSeacrh()

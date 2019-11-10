@@ -1,0 +1,11 @@
+mixin roomDetails(options)
+  div(class=`room-details${options.margin || ""}`)
+    each val in options.arr
+      div(class=`room-details__group${options.margin || ""}`)
+        img(src=`${val.srcImg || ""}` alt=`${val.srcAlt || ""}` class=`room-details__img${options.marginImg || ""}`)
+        div(class=`room-details__wrap-text`)
+          p(class="room-details__title")= val.title
+          p(class="room-details__descr")= val.descr
+        if val.hr
+          hr(class=`room-details__hr`)
+        else
