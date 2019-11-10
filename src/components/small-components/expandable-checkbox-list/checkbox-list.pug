@@ -1,0 +1,15 @@
+include ../checkbox-buttons/checkbox/checkbox.pug
+
+mixin checkboxList(options)
+  div(class=`checkbox${options.margin || ""}${options.imgArrow || ""}`)
+    p(class=`text-field__title${options.marginTitle || ""}${options.cursorTitle || ""}` 
+    id=`${options.id || "checkList"}`)= options.txt
+    if options.modal
+      div(class=`checkbox__modal${options.displayModal || ""}`)
+        each val, index in options.arr
+          +checkbox({id: val.value, value: val.value, text: val.text, 
+          checked: val.checked})
+    else
+      each val, index in options.arr
+        +checkbox({id: val.value, value: val.value, text: val.text, 
+        checked: val.checked})

@@ -1,0 +1,9 @@
+mixin checkbox(options)
+  label.checkbox__label(for=`${options.id || "checkbox"}`)
+    if options.checked
+      input(class="checkbox__input" type="checkbox" name=`${options.id || "checkbox"}` 
+      value=`${options.value || "checkbox"}` id=`${options.id || "checkbox"}` checked)
+    else
+      input(class="checkbox__input" type="checkbox" name=`${options.id || "checkbox"}` 
+      value=`${options.value || "checkbox"}` id=`${options.id || "checkbox"}`)
+    span.checkbox__span= options.text

@@ -7,7 +7,7 @@ include ../../components/small-components/masked-text-field/masked.pug
 include ../../components/small-components/date-dropdown/date-dropdown.pug
 include ../../components/small-components/filter-date-dropdown/filter-date.pug
 include ../../components/small-components/subscription-text-field/sub-field.pug
-include ../../components/small-components/checkbox-buttons/checkbox.pug
+include ../../components/small-components/checkbox-buttons/checkbox-buttons.pug
 include ../../components/small-components/radio-buttons/radio.pug
 include ../../components/small-components/toggle/toggle.pug
 include ../../components/small-components/like-button/like-button.pug
@@ -15,6 +15,7 @@ include ../../components/small-components/rate-button/rate-button.pug
 include ../../components/small-components/range-slider/range-slider.pug
 include ../../components/small-components/buttons/buttons.pug
 include ../../components/small-components/pagination/pagination.pug
+include ../../components/small-components/expandable-checkbox-list/checkbox-list.pug
 include ../../components/form-hotel-search/form-hotel-search.pug
 
 block variables
@@ -38,24 +39,27 @@ block content
       .container.container-ui
         .container-field
           +textField({margin: " text-field_margin_bottom_20", color: " text-field__input_color", 
-          title: "Text Field", state: "Default"})
+            title: "Text Field", state: "Default"})
           +textField({margin: " text-field_margin_bottom_20", color: " text-field__input_active", 
-          title: "TEXT-FIELD", state: "Hover / Focus", placeholder: "This is pretty awesome"})
+            title: "TEXT-FIELD", state: "Hover / Focus", placeholder: "This is pretty awesome"})
           +dropdown({margin: " text-field_margin_bottom_20", id: "guest", color: " dropdown__input_color", 
-          title: "Dropdown", state: "Default", windowWidth: " dropdown-window_width_max", 
-          value: "Сколько гостей", arrName: ["0 Взрослые", "0 Дети", "0 Младенцы"]})
+            title: "Dropdown", state: "Default", windowWidth: " dropdown-window_width_max", 
+            value: "Сколько гостей", arrName: ["0 Взрослые", "0 Дети", "0 Младенцы"]})
           +maskedTextField({color: " text-field__input_color", title: "Masked Text Field", 
-          state: "Default", margin: " text-field text-field_margin_bottom_40"})
+            state: "Default", margin: " text-field text-field_margin_bottom_40"})
           +dateDropdown({margin: " text-field text-field_margin_bottom_40", value2: "19.08.2019", 
-          id1: "dateDropFrom", id2: "dateDropTo", title: "date Dropdown"})
+            id1: "dateDropFrom", id2: "dateDropTo", title: "date Dropdown"})
           +filterDate({title: "filter date dropdown", id: "filterDate", margin: " text-field_margin_bottom_40"})
           +subField({title: "subscription text field", color: " text-field__input_color"})
         .container-checkbox
-          +checkbox({margin: " checkbox_margin_bottom", marginTitle: " text-field__title_margin_bottom"})
+          +checkboxButtons({margin: " checkbox_margin_bottom", marginTitle: " text-field__title_margin_bottom",
+            txt: "Checkbox Buttons", arr: [{value: "checkbox-smoke", text: "Можно курить", checked: false},
+            {value: "checkbox-pets", text: "Можно с питомцами", checked: true},
+            {value: "checkbox-guests", text: "Можно пригласить гостей (до 10 человек)", checked: true}]})
           +radioButtons({margin: " radio_margin_bottom", marginTitle: " text-field__title_margin_bottom", 
-          labelMargin: " radio__label_margin_right"})
+            labelMargin: " radio__label_margin_right"})
           +toggle({marginTitle: " text-field__title_margin_bottom", label: " toggle__label_margin_bottom",
-          marginToggle: " toggle_margin_bottom"})
+            marginToggle: " toggle_margin_bottom"})
           +likeButton({margin: " checkbox_margin_bottom", marginTitle: " text-field__title_margin_bottom"})
           +rateButton({marginTitle: " text-field__title_margin_bottom"})
         .container-buttons
@@ -81,6 +85,21 @@ block content
             windowDisplay: " dropdown-window_display_block", state: "Default",
             clearDisplay: " dropdown-window__clear_display_block",
             value: "3 гостя", arrName: ["2 Взрослые", "1 Дети", "0 Младенцы"]})
+        .container-checkbox-list
+          +checkboxList({marginTitle: " text-field__title_margin_bottom", margin: " radio_margin_bottom", 
+            modal: true, displayModal: " checkbox__modal_display_none", 
+            cursorTitle: " checkbox_cursor", id: "checkboxDefault", 
+            txt: "expandable checkbox list", imgArrow: " checkbox_img_arrow", 
+            arr: [{value: "checkbox-breakfast", text: "Завтрак", checked: false}]})
+          +checkboxList({marginTitle: " text-field__title_margin_bottom", 
+            modal: true, cursorTitle: " checkbox_cursor", 
+            txt: "expandable checkbox list", imgArrow: " checkbox_img_arrow_transform", 
+            arr: [{value: "checkbox-breakfast", text: "Завтрак", checked: false},
+            {value: "checkbox-desk", text: "Письменный стол", checked: true},
+            {value: "checkbox-feeding-chair", text: "Стул для кормления", checked: true}, 
+            {value: "checkbox-crib", text: "Кроватка", checked: true},
+            {value: "checkbox-tv", text: "Телевизор", checked: false},
+            {value: "checkbox-shampoo", text: "Шампунь", checked: false}]})
     include ../../components/small-components/ui-page-1/ui-wrap/ui-wrap.pug
       .container.container-ui
         +formHotelSeacrh()
