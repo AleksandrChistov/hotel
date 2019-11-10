@@ -1,0 +1,6 @@
+mixin bulletList(options)
+  duv(class=`bullet-list${options.margin || ""}`)
+    p(class=`text-field__title${options.marginTitle || ""}`)= options.title
+    ul(class=`bullet-list__ul${options.widthLi || ""}`)
+      each val, index in options.arr
+        li(class=`bullet-list__li`)= val

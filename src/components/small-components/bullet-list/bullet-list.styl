@@ -1,0 +1,24 @@
+.bullet-list__ul
+  padding 0
+  margin 0
+
+.bullet-list__ul_width_263
+  width 263px
+
+.bullet-list__li
+  position relative
+  list-style none
+  padding-left 20px
+  color rgba(31, 32, 65, 0.75)
+  line-height 24px
+  &:before
+    content ""
+    width 10px
+    height 10px
+    background-color rgba(31, 32, 65, 0.25)
+    border-radius 50%
+    position absolute
+    top 6px
+    left 0
+  &:not(:last-child)
+    margin-bottom 10px

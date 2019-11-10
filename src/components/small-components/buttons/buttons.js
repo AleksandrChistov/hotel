@@ -1,1 +1,1 @@
-import './button-l/img/arrow_forward_gradient.svg'
+import './button-l/img/arrow_forward.svg'

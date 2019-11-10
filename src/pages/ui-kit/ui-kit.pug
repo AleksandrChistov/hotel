@@ -17,6 +17,7 @@ include ../../components/small-components/buttons/buttons.pug
 include ../../components/small-components/pagination/pagination.pug
 include ../../components/small-components/expandable-checkbox-list/checkbox-list.pug
 include ../../components/small-components/rich-checkbox-buttons/rich-checkbox.pug
+include ../../components/small-components/bullet-list/bullet-list.pug
 include ../../components/form-hotel-search/form-hotel-search.pug
 
 block variables
@@ -109,6 +110,9 @@ block content
               description: "Ширина коридоров в номере не менее 91 см.", checked: false}, 
               {value: "checkbox-disabled-assistant", text: "Помощник для инвалидов", descWidth: " checkbox__description_width_234", 
               description: "На 1 этаже вас встретит специалист  и проводит до номера.", checked: false}]})
+          .bullet-list-container
+            +bulletList({title: "bullet list",  marginTitle: " text-field__title_margin_bottom", widthLi: " bullet-list__ul_width_263", 
+            arr: ["Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, а выезд до 12:00"]})
     include ../../components/small-components/ui-page-1/ui-wrap/ui-wrap.pug
       .container.container-ui
         +formHotelSeacrh()
