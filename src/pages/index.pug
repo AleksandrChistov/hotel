@@ -1,11 +1,13 @@
 extends ../components/main/main
+include ../components/small-components/ui-page-1/ui-logo/ui-logo.pug
 
 block variables
   - const pageTitle = 'Первая страница на Pug!'
   - const youAreUsingPug = true
+  - const bg = ""
 
 block content
-  include ../components/small-components/ui-page-1/ui-wrap/ui-wrap.pug
+    +uiLogo({})
     h1.title Pug - node template engine
     #container.col
       if youAreUsingPug

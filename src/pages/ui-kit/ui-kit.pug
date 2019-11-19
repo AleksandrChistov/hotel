@@ -1,4 +1,5 @@
 extends ../../components/main/main
+include ../../components/small-components/ui-page-1/ui-logo/ui-logo.pug
 include ../../components/small-components/ui-page-1/ui-color/ui-color.pug
 include ../../components/small-components/ui-page-1/ui-block-text/ui-block-text.pug
 include ../../components/small-components/text-field/text-field.pug
@@ -27,49 +28,52 @@ block variables
   - const bg = " body_bg-color_white"
 
 block content
-  include ../../components/small-components/ui-page-1/ui-wrap/ui-wrap.pug
     .container.container-ui
-      .block-color-wrap
-        +color({squareClass: " block-color__square_dark100", title: "Dark Shade 100%", hex: "#1F2041"})
-        +color({squareClass: " block-color__square_dark75", title: "Dark Shade 75%", hex: "#1F2041"})
-        +color({squareClass: " block-color__square_dark50", title: "Dark Shade 50%", hex: "#1F2041"})
-        +color({squareClass: " block-color__square_dark25", title: "Dark Shade 25%", hex: "#1F2041"})
-        +color({squareClass: " block-color__square_dark5", title: "Dark Shade 5%", hex: "#1F2041"})
-        +color({squareClass: " block-color__square_purple", title: "Purple", hex: "#BC9CFF"})
-        +color({squareClass: " block-color__square_green", title: "Green", hex: "#6FCF97"})
-      .block-text-wrap
-        +text()
-    include ../../components/small-components/ui-page-1/ui-wrap/ui-wrap.pug
-      .container.container-ui
-        .container-field
-          +textField({margin: " text-field_margin_bottom_20", color: " text-field__input_color", 
-            title: "Text Field", state: "Default"})
-          +textField({margin: " text-field_margin_bottom_20", color: " text-field__input_active", 
-            title: "TEXT-FIELD", state: "Hover / Focus", placeholder: "This is pretty awesome"})
-          +dropdown({margin: " text-field_margin_bottom_20", id: "guest", color: " dropdown__input_color", 
-            title: "Dropdown", state: "Default", windowWidth: " dropdown-window_width_max", 
-            value: "Сколько гостей", arrName: ["0 Взрослые", "0 Дети", "0 Младенцы"]})
-          +maskedTextField({color: " text-field__input_color", title: "Masked Text Field", 
-            state: "Default", margin: " text-field text-field_margin_bottom_40"})
-          +dateDropdown({margin: " text-field text-field_margin_bottom_40", value2: "19.08.2019", 
-            id1: "dateDropFrom", id2: "dateDropTo", title: "date Dropdown"})
-          +filterDate({title: "filter date dropdown", id: "filterDate", margin: " text-field_margin_bottom_40"})
-          +subField({title: "subscription text field", color: " text-field__input_color"})
-        .container-checkbox
-          +checkboxButtons({margin: " checkbox_margin_bottom", marginTitle: " text-field__title_margin_bottom",
-            txt: "Checkbox Buttons", arr: [{value: "checkbox-smoke", text: "Можно курить", checked: false},
-            {value: "checkbox-pets", text: "Можно с питомцами", checked: true},
-            {value: "checkbox-guests", text: "Можно пригласить гостей (до 10 человек)", checked: true}]})
-          +radioButtons({margin: " radio_margin_bottom", marginTitle: " text-field__title_margin_bottom", 
-            labelMargin: " radio__label_margin_right"})
-          +toggle({marginTitle: " text-field__title_margin_bottom", label: " toggle__label_margin_bottom",
-            marginToggle: " toggle_margin_bottom"})
-          +likeButton({margin: " checkbox_margin_bottom", marginTitle: " text-field__title_margin_bottom"})
-          +rateButton({marginTitle: " text-field__title_margin_bottom"})
-        .container-buttons
-          +rangeSlider({margin: " checkbox_margin_bottom"})
-          +buttons({})
-          +pagination({marginTitle: " buttons_margin_bottom_title"})
+      +uiLogo({})
+      .container-color-type
+        .block-color-wrap
+          +color({squareClass: " block-color__square_dark100", title: "Dark Shade 100%", hex: "#1F2041"})
+          +color({squareClass: " block-color__square_dark75", title: "Dark Shade 75%", hex: "#1F2041"})
+          +color({squareClass: " block-color__square_dark50", title: "Dark Shade 50%", hex: "#1F2041"})
+          +color({squareClass: " block-color__square_dark25", title: "Dark Shade 25%", hex: "#1F2041"})
+          +color({squareClass: " block-color__square_dark5", title: "Dark Shade 5%", hex: "#1F2041"})
+          +color({squareClass: " block-color__square_purple", title: "Purple", hex: "#BC9CFF"})
+          +color({squareClass: " block-color__square_green", title: "Green", hex: "#6FCF97"})
+        .block-text-wrap
+          +text()
+    .container.container-ui
+      .container-color-type.container-color-type_flex-wrap
+        +uiLogo({position: " ui-logo_position"})
+        .container-section-1
+          .container-field
+            +textField({margin: " text-field_margin_bottom_20", color: " text-field__input_color", 
+              title: "Text Field", state: "Default"})
+            +textField({margin: " text-field_margin_bottom_20", color: " text-field__input_active", 
+              title: "TEXT-FIELD", state: "Hover / Focus", placeholder: "This is pretty awesome"})
+            +dropdown({margin: " text-field_margin_bottom_20", id: "guest", color: " dropdown__input_color", 
+              title: "Dropdown", state: "Default", windowWidth: " dropdown-window_width_max", 
+              value: "Сколько гостей", arrName: ["0 Взрослые", "0 Дети", "0 Младенцы"]})
+            +maskedTextField({color: " text-field__input_color", title: "Masked Text Field", 
+              state: "Default", margin: " text-field text-field_margin_bottom_40"})
+            +dateDropdown({margin: " text-field text-field_margin_bottom_40", value2: "19.08.2019", 
+              id1: "dateDropFrom", id2: "dateDropTo", title: "date Dropdown"})
+            +filterDate({title: "filter date dropdown", id: "filterDate", margin: " text-field_margin_bottom_40"})
+            +subField({title: "subscription text field", color: " text-field__input_color"})
+          .container-checkbox
+            +checkboxButtons({margin: " checkbox_margin_bottom", marginTitle: " text-field__title_margin_bottom",
+              txt: "Checkbox Buttons", arr: [{value: "checkbox-smoke", text: "Можно курить", checked: false},
+              {value: "checkbox-pets", text: "Можно с питомцами", checked: true},
+              {value: "checkbox-guests", text: "Можно пригласить гостей (до 10 человек)", checked: true}]})
+            +radioButtons({margin: " radio_margin_bottom", marginTitle: " text-field__title_margin_bottom", 
+              labelMargin: " radio__label_margin_right"})
+            +toggle({marginTitle: " text-field__title_margin_bottom", label: " toggle__label_margin_bottom",
+              marginToggle: " toggle_margin_bottom"})
+            +likeButton({margin: " checkbox_margin_bottom", marginTitle: " text-field__title_margin_bottom"})
+            +rateButton({marginTitle: " text-field__title_margin_bottom"})
+          .container-buttons
+            +rangeSlider({margin: " range-slider_margin_bottom"})
+            +buttons({})
+            +pagination({marginTitle: " pagination_margin_bottom_title", title: true})
         .container-dropdown
           .dropdown-group1
             +dropdown({margin: " text-field_margin_bottom_20", id: "accommodations", color: " dropdown__input_color", 
@@ -77,7 +81,7 @@ block content
             title: "Dropdown", state: "Default", value: "2 спальни, 2 кровати...", arrName: ["2 Спальни", "2 Кровати", "0 Ванные комнаты"]})
             +dropdown({id: "accommodations", color: " dropdown__input_color", width: " dropdown__input_width_middle",
             windowWidth: " dropdown-window_width_middle", widthInput: " dropdown__input_width_middle",title: "Dropdown", 
-            windowDisplay: " dropdown-window_display_block", state: "Default", 
+            windowDisplay: " dropdown-window_display_block", state: "expanded", 
             value: "2 спальни, 2 кровати...", arrName: ["2 Спальни", "2 Кровати", "0 Ванные комнаты"]})
           .dropdown-group2
             +dropdown({margin: " text-field_margin_bottom_20", id: "guest", color: " dropdown__input_color", 
@@ -91,7 +95,7 @@ block content
             value: "3 гостя", arrName: ["2 Взрослые", "1 Дети", "0 Младенцы"]})
         .container-checkbox-list
           .expandable-checkbox
-            +checkboxList({marginTitle: " text-field__title_margin_bottom", margin: " radio_margin_bottom", 
+            +checkboxList({marginTitle: " text-field__title_margin_bottom", margin: " checkbox_margin_bottom_35", 
               modal: true, displayModal: " checkbox__modal_display_none", 
               cursorTitle: " checkbox_cursor", id: "checkboxDefault", 
               txt: "expandable checkbox list", imgArrow: " checkbox_img_arrow", 
@@ -121,6 +125,6 @@ block content
             {title: "Удобство", descr: "Окно в каждой из спален", hr: true, srcImg: "/img/location_city.svg", imgAlt: "Город"}]})
           +comments({arr: [{srcImg: "/img/autor1.png", imgAlt: "Мурад Сарафанов", name: "Мурад Сарафанов", period: "5 дней назад", 
             text: "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."}]})
-    include ../../components/small-components/ui-page-1/ui-wrap/ui-wrap.pug
-      .container.container-ui
-        +formHotelSeacrh()
+    .container.container-ui
+      +uiLogo({})
+      +formHotelSeacrh()

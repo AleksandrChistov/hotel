@@ -1,5 +1,5 @@
 import '../../components/main/main.js'
-import '../../components/small-components/ui-page-1/ui-wrap/ui-wrap.js'
+import '../../components/small-components/ui-page-1/ui-logo/ui-logo.js'
 import '../../components/small-components/dropdown/dropdown.js'
 import '../../components/small-components/masked-text-field/masked.js'
 import '../../components/small-components/date-dropdown/date-dropdown.js'

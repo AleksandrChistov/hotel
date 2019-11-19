@@ -7,8 +7,8 @@
     <title>UI Kit</title>
   <link href="/ui-kit/css/style.css" rel="stylesheet"></head>
   <body class="body body_bg-color_white">
-    <div class="ui-wrap"><img class="ui-wrap__logo" src="/img/ui-logo.svg" alt="Logo UI kit">
-      <div class="container container-ui">
+    <div class="container container-ui"><img class="ui-logo" src="/img/ui-logo.svg" alt="Logo UI kit">
+      <div class="container-color-type">
         <div class="block-color-wrap">
           <div class="block-color">
             <div class="block-color__square block-color__square_dark100"></div>
@@ -75,8 +75,10 @@
           </div>
         </div>
       </div>
-      <div class="ui-wrap"><img class="ui-wrap__logo" src="/img/ui-logo.svg" alt="Logo UI kit">
-        <div class="container container-ui">
+    </div>
+    <div class="container container-ui">
+      <div class="container-color-type container-color-type_flex-wrap"><img class="ui-logo ui-logo_position" src="/img/ui-logo.svg" alt="Logo UI kit">
+        <div class="container-section-1">
           <div class="container-field">
             <div class="text-field text-field_margin_bottom_20">
               <p class="text-field__state">Default</p>
@@ -193,13 +195,13 @@
             </fieldset>
           </div>
           <div class="container-buttons">
-            <div class="range-slider checkbox_margin_bottom">
+            <div class="range-slider range-slider_margin_bottom">
               <p class="text-field__title range-slider__label">Range Slider</p>
               <p class="range-slider__number">5 000₽ - 10 000₽</p>
               <div class="range" id="range"></div>
             </div>
             <div class="buttons">
-              <p class="text-field__title buttons_margin_bottom_title">like button</p>
+              <p class="text-field__title buttons_margin_bottom_title">buttons</p>
               <div class="buttons__group-m">
                 <button class="button-m button-m_margin_bottom"><span class="button-m-text">Click me</span></button>
                 <button class="button-m button-m_margin_bottom button-m-active"><span class="button-m-text">Click me</span></button>
@@ -213,206 +215,204 @@
               <button class="button-l checkbox_margin_bottom">Перейти к оплате<span class="button-l-arrow"></span></button>
             </div>
             <div class="pagination-wrap">
-              <p class="text-field__title buttons_margin_bottom_title">pagination</p>
+              <p class="text-field__title pagination_margin_bottom_title">pagination</p>
               <nav class="pagination">
                 <div class="pagination-group"><span class="pagination__page-current" aria-current="page">1</span><a class="pagination__page-number">2</a><a class="pagination__page-number">3</a><span class="pagination__page-number pagination__dots">...</span><a class="pagination__page-number">15</a><span class="pagination__page-current pagination__page-next"></span></div>
                 <p class="pagination__description">1 – 12 из 100+ вариантов аренды</p>
               </nav>
             </div>
           </div>
-          <div class="container-dropdown">
-            <div class="dropdown-group1">
-              <div class="dropdown text-field_margin_bottom_20 dropdown__input_width_middle">
-                <p class="dropdown__state">Default</p>
-                <label class="dropdown__title" for="accommodations">Dropdown</label>
-                <input class="dropdown__input dropdown__input_color dropdown__input_width_middle" type="text" name="dropdown" id="accommodations" value="2 спальни, 2 кровати...">
-                <div class="dropdown-window dropdown-window_display_none dropdown-window_width_middle" id="drop_accommodations">
-                  <div class="dropdown-window__wrap-elem">
-                    <p class="dropdown-window__name">Спальни</p>
-                    <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement dropdown-window__decrement_active">-</span><span class="dropdown-window__value" id="0accommodations">2</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
-                    </div>
-                  </div>
-                  <div class="dropdown-window__wrap-elem">
-                    <p class="dropdown-window__name">Кровати</p>
-                    <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement dropdown-window__decrement_active">-</span><span class="dropdown-window__value" id="1accommodations">2</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
-                    </div>
-                  </div>
-                  <div class="dropdown-window__wrap-elem">
-                    <p class="dropdown-window__name">Ванные комнаты</p>
-                    <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="2accommodations">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
-                    </div>
+        </div>
+        <div class="container-dropdown">
+          <div class="dropdown-group1">
+            <div class="dropdown text-field_margin_bottom_20 dropdown__input_width_middle">
+              <p class="dropdown__state">Default</p>
+              <label class="dropdown__title" for="accommodations">Dropdown</label>
+              <input class="dropdown__input dropdown__input_color dropdown__input_width_middle" type="text" name="dropdown" id="accommodations" value="2 спальни, 2 кровати...">
+              <div class="dropdown-window dropdown-window_display_none dropdown-window_width_middle" id="drop_accommodations">
+                <div class="dropdown-window__wrap-elem">
+                  <p class="dropdown-window__name">Спальни</p>
+                  <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement dropdown-window__decrement_active">-</span><span class="dropdown-window__value" id="0accommodations">2</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
                   </div>
                 </div>
-              </div>
-              <div class="dropdown dropdown__input_width_middle">
-                <p class="dropdown__state">Default</p>
-                <label class="dropdown__title" for="accommodations">Dropdown</label>
-                <input class="dropdown__input dropdown__input_color dropdown__input_width_middle" type="text" name="dropdown" id="accommodations" value="2 спальни, 2 кровати...">
-                <div class="dropdown-window dropdown-window_display_none dropdown-window_width_middle dropdown-window_display_block" id="drop_accommodations">
-                  <div class="dropdown-window__wrap-elem">
-                    <p class="dropdown-window__name">Спальни</p>
-                    <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement dropdown-window__decrement_active">-</span><span class="dropdown-window__value" id="0accommodations">2</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
-                    </div>
+                <div class="dropdown-window__wrap-elem">
+                  <p class="dropdown-window__name">Кровати</p>
+                  <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement dropdown-window__decrement_active">-</span><span class="dropdown-window__value" id="1accommodations">2</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
                   </div>
-                  <div class="dropdown-window__wrap-elem">
-                    <p class="dropdown-window__name">Кровати</p>
-                    <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement dropdown-window__decrement_active">-</span><span class="dropdown-window__value" id="1accommodations">2</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
-                    </div>
-                  </div>
-                  <div class="dropdown-window__wrap-elem">
-                    <p class="dropdown-window__name">Ванные комнаты</p>
-                    <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="2accommodations">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
-                    </div>
+                </div>
+                <div class="dropdown-window__wrap-elem">
+                  <p class="dropdown-window__name">Ванные комнаты</p>
+                  <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="2accommodations">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="dropdown-group2">
-              <div class="dropdown text-field_margin_bottom_20">
-                <p class="dropdown__state">Default</p>
-                <label class="dropdown__title" for="guest">Dropdown</label>
-                <input class="dropdown__input dropdown__input_color" type="text" name="dropdown" id="guest" value="Сколько гостей">
-                <div class="dropdown-window dropdown-window_display_none dropdown-window_width_max dropdown-window_display_block" id="drop_guest">
-                  <div class="dropdown-window__wrap-elem">
-                    <p class="dropdown-window__name">Взрослые</p>
-                    <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="0guest">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
-                    </div>
+            <div class="dropdown dropdown__input_width_middle">
+              <p class="dropdown__state">expanded</p>
+              <label class="dropdown__title" for="accommodations">Dropdown</label>
+              <input class="dropdown__input dropdown__input_color dropdown__input_width_middle" type="text" name="dropdown" id="accommodations" value="2 спальни, 2 кровати...">
+              <div class="dropdown-window dropdown-window_display_none dropdown-window_width_middle dropdown-window_display_block" id="drop_accommodations">
+                <div class="dropdown-window__wrap-elem">
+                  <p class="dropdown-window__name">Спальни</p>
+                  <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement dropdown-window__decrement_active">-</span><span class="dropdown-window__value" id="0accommodations">2</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
                   </div>
-                  <div class="dropdown-window__wrap-elem">
-                    <p class="dropdown-window__name">Дети</p>
-                    <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="1guest">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
-                    </div>
-                  </div>
-                  <div class="dropdown-window__wrap-elem">
-                    <p class="dropdown-window__name">Младенцы</p>
-                    <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="2guest">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
-                    </div>
-                  </div>
-                  <p class="dropdown-window__clear ">очистить      </p>
-                  <p class="dropdown-window__apply">применить</p>
                 </div>
-              </div>
-              <div class="dropdown text-field_margin_bottom_20">
-                <p class="dropdown__state">Default</p>
-                <label class="dropdown__title" for="guest">Dropdown</label>
-                <input class="dropdown__input dropdown__input_color" type="text" name="dropdown" id="guest" value="3 гостя">
-                <div class="dropdown-window dropdown-window_display_none dropdown-window_width_max dropdown-window_display_block" id="drop_guest">
-                  <div class="dropdown-window__wrap-elem">
-                    <p class="dropdown-window__name">Взрослые</p>
-                    <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement dropdown-window__decrement_active">-</span><span class="dropdown-window__value" id="0guest">2</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
-                    </div>
+                <div class="dropdown-window__wrap-elem">
+                  <p class="dropdown-window__name">Кровати</p>
+                  <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement dropdown-window__decrement_active">-</span><span class="dropdown-window__value" id="1accommodations">2</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
                   </div>
-                  <div class="dropdown-window__wrap-elem">
-                    <p class="dropdown-window__name">Дети</p>
-                    <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement dropdown-window__decrement_active">-</span><span class="dropdown-window__value" id="1guest">1</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
-                    </div>
+                </div>
+                <div class="dropdown-window__wrap-elem">
+                  <p class="dropdown-window__name">Ванные комнаты</p>
+                  <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="2accommodations">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
                   </div>
-                  <div class="dropdown-window__wrap-elem">
-                    <p class="dropdown-window__name">Младенцы</p>
-                    <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="2guest">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
-                    </div>
-                  </div>
-                  <p class="dropdown-window__clear  dropdown-window__clear_display_block">очистить      </p>
-                  <p class="dropdown-window__apply">применить</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="container-checkbox-list">
-            <div class="expandable-checkbox">
-              <div class="checkbox radio_margin_bottom checkbox_img_arrow">
-                <p class="text-field__title text-field__title_margin_bottom checkbox_cursor" id="checkboxDefault">expandable checkbox list</p>
-                <div class="checkbox__modal checkbox__modal_display_none">
-                  <label class="checkbox__label" for="checkbox-br">
-                    <input class="checkbox__input" type="checkbox" name="checkbox-br" value="checkbox-br" id="checkbox-br"><span class="checkbox__span">Завтрак</span>
-                  </label>
-                </div>
-              </div>
-              <div class="checkbox checkbox_img_arrow_transform">
-                <p class="text-field__title text-field__title_margin_bottom checkbox_cursor" id="checkList">expandable checkbox list</p>
-                <div class="checkbox__modal">
-                  <label class="checkbox__label" for="checkbox-breakfast">
-                    <input class="checkbox__input" type="checkbox" name="checkbox-breakfast" value="checkbox-breakfast" id="checkbox-breakfast"><span class="checkbox__span">Завтрак</span>
-                  </label>
-                  <label class="checkbox__label" for="checkbox-desk">
-                    <input class="checkbox__input" type="checkbox" name="checkbox-desk" value="checkbox-desk" id="checkbox-desk" checked><span class="checkbox__span">Письменный стол</span>
-                  </label>
-                  <label class="checkbox__label" for="checkbox-feeding-chair">
-                    <input class="checkbox__input" type="checkbox" name="checkbox-feeding-chair" value="checkbox-feeding-chair" id="checkbox-feeding-chair" checked><span class="checkbox__span">Стул для кормления</span>
-                  </label>
-                  <label class="checkbox__label" for="checkbox-crib">
-                    <input class="checkbox__input" type="checkbox" name="checkbox-crib" value="checkbox-crib" id="checkbox-crib" checked><span class="checkbox__span">Кроватка</span>
-                  </label>
-                  <label class="checkbox__label" for="checkbox-tv">
-                    <input class="checkbox__input" type="checkbox" name="checkbox-tv" value="checkbox-tv" id="checkbox-tv"><span class="checkbox__span">Телевизор</span>
-                  </label>
-                  <label class="checkbox__label" for="checkbox-shampoo">
-                    <input class="checkbox__input" type="checkbox" name="checkbox-shampoo" value="checkbox-shampoo" id="checkbox-shampoo"><span class="checkbox__span">Шампунь</span>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div class="rich-checkbox">
-              <duv class="checkbox checkbox_width_266">
-                <p class="text-field__title text-field__title_margin_bottom">rich Checkbox Buttons</p>
-                <label class="checkbox__label" for="checkbox-wide-corridor">
-                  <input class="checkbox__input" type="checkbox" name="checkbox-wide-corridor" value="checkbox-wide-corridor" id="checkbox-wide-corridor"><span class="checkbox__span checkbox__span_title_bold">Широкий коридор</span><span class="checkbox__description checkbox__description_width_203">Ширина коридоров в номере не менее 91 см.</span>
-                </label>
-                <label class="checkbox__label" for="checkbox-disabled-assistant">
-                  <input class="checkbox__input" type="checkbox" name="checkbox-disabled-assistant" value="checkbox-disabled-assistant" id="checkbox-disabled-assistant"><span class="checkbox__span checkbox__span_title_bold">Помощник для инвалидов</span><span class="checkbox__description checkbox__description_width_234">На 1 этаже вас встретит специалист  и проводит до номера.</span>
-                </label>
-              </duv>
-            </div>
-            <div class="bullet-list-container">
-              <duv class="bullet-list">
-                <p class="text-field__title text-field__title_margin_bottom">bullet list</p>
-                <ul class="bullet-list__ul bullet-list__ul_width_263">
-                  <li class="bullet-list__li">Нельзя с питомцами</li>
-                  <li class="bullet-list__li">Без вечеринок и мероприятий</li>
-                  <li class="bullet-list__li">Время прибытия — после 13:00, а выезд до 12:00</li>
-                </ul>
-              </duv>
-            </div>
-          </div>
-          <div class="container-comments">
-            <div class="room-details">
-              <div class="room-details__group"><img class="room-details__img room-details__img_margin" src="/img/insert_emoticon.svg" alt="">
-                <div class="room-details__wrap-text">
-                  <p class="room-details__title">Комфорт</p>
-                  <p class="room-details__descr">Шумопоглощающие стены</p>
-                </div>
-                <hr class="room-details__hr">
-              </div>
-              <div class="room-details__group"><img class="room-details__img room-details__img_margin" src="/img/location_city.svg" alt="">
-                <div class="room-details__wrap-text">
-                  <p class="room-details__title">Удобство</p>
-                  <p class="room-details__descr">Окно в каждой из спален</p>
-                </div>
-                <hr class="room-details__hr">
-              </div>
-            </div>
-            <div class="comments-wrap">
-              <div class="comments">
-                <div class="comments__author"><img class="comments__author-img" src="/img/autor1.png" alt="">
-                  <div class="comments__author-text">
-                    <p class="comments__author-name">Мурад Сарафанов</p>
-                    <p class="comments__author-period">5 дней назад</p>
+          <div class="dropdown-group2">
+            <div class="dropdown text-field_margin_bottom_20">
+              <p class="dropdown__state">Default</p>
+              <label class="dropdown__title" for="guest">Dropdown</label>
+              <input class="dropdown__input dropdown__input_color" type="text" name="dropdown" id="guest" value="Сколько гостей">
+              <div class="dropdown-window dropdown-window_display_none dropdown-window_width_max dropdown-window_display_block" id="drop_guest">
+                <div class="dropdown-window__wrap-elem">
+                  <p class="dropdown-window__name">Взрослые</p>
+                  <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="0guest">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
                   </div>
                 </div>
-                <div class="comments__wrap-text">
-                  <button class="like-button like-button_active like-button_margin" aria-label="Лайк"><span class="like-button__text like-button__text_active">12</span></button>
-                  <p class="comments__text">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</p>
+                <div class="dropdown-window__wrap-elem">
+                  <p class="dropdown-window__name">Дети</p>
+                  <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="1guest">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
+                  </div>
                 </div>
+                <div class="dropdown-window__wrap-elem">
+                  <p class="dropdown-window__name">Младенцы</p>
+                  <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="2guest">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
+                  </div>
+                </div>
+                <p class="dropdown-window__clear ">очистить      </p>
+                <p class="dropdown-window__apply">применить</p>
+              </div>
+            </div>
+            <div class="dropdown text-field_margin_bottom_20">
+              <p class="dropdown__state">Default</p>
+              <label class="dropdown__title" for="guest">Dropdown</label>
+              <input class="dropdown__input dropdown__input_color" type="text" name="dropdown" id="guest" value="3 гостя">
+              <div class="dropdown-window dropdown-window_display_none dropdown-window_width_max dropdown-window_display_block" id="drop_guest">
+                <div class="dropdown-window__wrap-elem">
+                  <p class="dropdown-window__name">Взрослые</p>
+                  <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement dropdown-window__decrement_active">-</span><span class="dropdown-window__value" id="0guest">2</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
+                  </div>
+                </div>
+                <div class="dropdown-window__wrap-elem">
+                  <p class="dropdown-window__name">Дети</p>
+                  <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement dropdown-window__decrement_active">-</span><span class="dropdown-window__value" id="1guest">1</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
+                  </div>
+                </div>
+                <div class="dropdown-window__wrap-elem">
+                  <p class="dropdown-window__name">Младенцы</p>
+                  <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="2guest">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
+                  </div>
+                </div>
+                <p class="dropdown-window__clear  dropdown-window__clear_display_block">очистить      </p>
+                <p class="dropdown-window__apply">применить</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-checkbox-list">
+          <div class="expandable-checkbox">
+            <div class="checkbox checkbox_margin_bottom_35 checkbox_img_arrow">
+              <p class="text-field__title text-field__title_margin_bottom checkbox_cursor" id="checkboxDefault">expandable checkbox list</p>
+              <div class="checkbox__modal checkbox__modal_display_none">
+                <label class="checkbox__label" for="checkbox-br">
+                  <input class="checkbox__input" type="checkbox" name="checkbox-br" value="checkbox-br" id="checkbox-br"><span class="checkbox__span">Завтрак</span>
+                </label>
+              </div>
+            </div>
+            <div class="checkbox checkbox_img_arrow_transform">
+              <p class="text-field__title text-field__title_margin_bottom checkbox_cursor" id="checkList">expandable checkbox list</p>
+              <div class="checkbox__modal">
+                <label class="checkbox__label" for="checkbox-breakfast">
+                  <input class="checkbox__input" type="checkbox" name="checkbox-breakfast" value="checkbox-breakfast" id="checkbox-breakfast"><span class="checkbox__span">Завтрак</span>
+                </label>
+                <label class="checkbox__label" for="checkbox-desk">
+                  <input class="checkbox__input" type="checkbox" name="checkbox-desk" value="checkbox-desk" id="checkbox-desk" checked><span class="checkbox__span">Письменный стол</span>
+                </label>
+                <label class="checkbox__label" for="checkbox-feeding-chair">
+                  <input class="checkbox__input" type="checkbox" name="checkbox-feeding-chair" value="checkbox-feeding-chair" id="checkbox-feeding-chair" checked><span class="checkbox__span">Стул для кормления</span>
+                </label>
+                <label class="checkbox__label" for="checkbox-crib">
+                  <input class="checkbox__input" type="checkbox" name="checkbox-crib" value="checkbox-crib" id="checkbox-crib" checked><span class="checkbox__span">Кроватка</span>
+                </label>
+                <label class="checkbox__label" for="checkbox-tv">
+                  <input class="checkbox__input" type="checkbox" name="checkbox-tv" value="checkbox-tv" id="checkbox-tv"><span class="checkbox__span">Телевизор</span>
+                </label>
+                <label class="checkbox__label" for="checkbox-shampoo">
+                  <input class="checkbox__input" type="checkbox" name="checkbox-shampoo" value="checkbox-shampoo" id="checkbox-shampoo"><span class="checkbox__span">Шампунь</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="rich-checkbox">
+            <duv class="checkbox checkbox_width_266">
+              <p class="text-field__title text-field__title_margin_bottom">rich Checkbox Buttons</p>
+              <label class="checkbox__label" for="checkbox-wide-corridor">
+                <input class="checkbox__input" type="checkbox" name="checkbox-wide-corridor" value="checkbox-wide-corridor" id="checkbox-wide-corridor"><span class="checkbox__span checkbox__span_title_bold">Широкий коридор</span><span class="checkbox__description checkbox__description_width_203">Ширина коридоров в номере не менее 91 см.</span>
+              </label>
+              <label class="checkbox__label" for="checkbox-disabled-assistant">
+                <input class="checkbox__input" type="checkbox" name="checkbox-disabled-assistant" value="checkbox-disabled-assistant" id="checkbox-disabled-assistant"><span class="checkbox__span checkbox__span_title_bold">Помощник для инвалидов</span><span class="checkbox__description checkbox__description_width_234">На 1 этаже вас встретит специалист  и проводит до номера.</span>
+              </label>
+            </duv>
+          </div>
+          <div class="bullet-list-container">
+            <duv class="bullet-list">
+              <p class="text-field__title text-field__title_margin_bottom">bullet list</p>
+              <ul class="bullet-list__ul bullet-list__ul_width_263">
+                <li class="bullet-list__li">Нельзя с питомцами</li>
+                <li class="bullet-list__li">Без вечеринок и мероприятий</li>
+                <li class="bullet-list__li">Время прибытия — после 13:00, а выезд до 12:00</li>
+              </ul>
+            </duv>
+          </div>
+        </div>
+        <div class="container-comments">
+          <div class="room-details">
+            <div class="room-details__group"><img class="room-details__img room-details__img_margin" src="/img/insert_emoticon.svg" alt="">
+              <div class="room-details__wrap-text">
+                <p class="room-details__title">Комфорт</p>
+                <p class="room-details__descr">Шумопоглощающие стены</p>
+              </div>
+              <hr class="room-details__hr">
+            </div>
+            <div class="room-details__group"><img class="room-details__img room-details__img_margin" src="/img/location_city.svg" alt="">
+              <div class="room-details__wrap-text">
+                <p class="room-details__title">Удобство</p>
+                <p class="room-details__descr">Окно в каждой из спален</p>
+              </div>
+              <hr class="room-details__hr">
+            </div>
+          </div>
+          <div class="comments-wrap">
+            <div class="comments">
+              <div class="comments__author"><img class="comments__author-img" src="/img/autor1.png" alt="">
+                <div class="comments__author-text">
+                  <p class="comments__author-name">Мурад Сарафанов</p>
+                  <p class="comments__author-period">5 дней назад</p>
+                </div>
+              </div>
+              <div class="comments__wrap-text">
+                <button class="like-button like-button_active like-button_margin" aria-label="Лайк"><span class="like-button__text like-button__text_active">12</span></button>
+                <p class="comments__text">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="ui-wrap"><img class="ui-wrap__logo" src="/img/ui-logo.svg" alt="Logo UI kit">
-        <div class="container container-ui">
-          <input class="datepicker-here" type="text">
-        </div>
-      </div>
+    </div>
+    <div class="container container-ui"><img class="ui-logo" src="/img/ui-logo.svg" alt="Logo UI kit">
+      <input class="datepicker-here" type="text">
     </div>
   <script type="text/javascript" src="/app/js/vendors.js"></script><script type="text/javascript" src="/ui-kit/js/script.js"></script></body>
 </html>

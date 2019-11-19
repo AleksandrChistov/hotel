@@ -1,2 +1,2 @@
 import './img/ui-logo.svg'
-import './ui-wrap.styl'
+import './ui-logo.styl'

@@ -1,6 +1,8 @@
 mixin pagination(options)
   div(class=`pagination-wrap${options.marginWrap || ""}`)
-    p(class=`text-field__title${options.marginTitle || ""}`) pagination
+    if options.title
+      p(class=`text-field__title${options.marginTitle || ""}`) pagination
+    else
     nav(class=`pagination${options.margin || ""}`)
       div(class=`pagination-group`)
         span(class=`pagination__page-current` aria-current="page") 1

@@ -3,7 +3,7 @@ include ./button-l/button-l.pug
 
 mixin buttons(options)
   div(class=`buttons${options.margin || ""}`)
-    p(class=`text-field__title buttons_margin_bottom_title${options.marginTitle || ""}`) like button
+    p(class=`text-field__title buttons_margin_bottom_title${options.marginTitle || ""}`) buttons
     .buttons__group-m
       +buttonM({text: "Click me", style: " button-m_margin_bottom"})
       +buttonM({text: "Click me", style: " button-m_margin_bottom button-m-active"})
