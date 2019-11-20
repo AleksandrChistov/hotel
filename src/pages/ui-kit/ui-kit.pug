@@ -25,6 +25,7 @@ include ../../components/form-room-search/form-room-search.pug
 include ../../components/form-reg/form-reg.pug
 include ../../components/form-reserve/form-reserve.pug
 include ../../components/form-login/form-login.pug
+include ../../components/window-datepicker/window-datepicker.pug
 
 block variables
   - const pageTitle = 'UI Kit'
@@ -138,3 +139,5 @@ block content
       .cards2
         +formReserve({lux: " form-title__lux", margin: " checkbox_margin_bottom"})
         +formLogin({txt: "Войти"})
+      .cards3
+        +windowDatepicker({})

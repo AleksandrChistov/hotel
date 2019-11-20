@@ -13,6 +13,7 @@ import '../../components/small-components/expandable-checkbox-list/checkbox-list
 import '../../components/small-components/checkbox-buttons/checkbox/checkbox.js'
 import '../../components/small-components/room-details/room-details.js'
 import '../../components/small-components/comments/comments.js'
+import '../../components/window-datepicker/window-datepicker.js'
 
 import './ui-kit.styl'
 import '../../components/small-components/ui-page-1/ui-color/ui-color.styl'
