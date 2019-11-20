@@ -1,0 +1,9 @@
+mixin toggle(options)
+  label(class=`toggle__label${options.label || ""}` for=`${options.id || "toggle"}`)
+    if options.checked
+      input(class=`toggle__input${options.input || ""}` type="checkbox" name=`${options.id || "toggle"}` 
+      value=`${options.id || "toggle"}` id=`${options.id || "toggle"}` checked)
+    else
+      input(class=`toggle__input${options.input || ""}` type="checkbox" name=`${options.id || "toggle"}` 
+      value=`${options.id || "toggle"}` id=`${options.id || "toggle"}`)
+    span(class=`toggle__span${options.span || ""}`)= options.txt

@@ -1,0 +1,7 @@
+include ./toggle/toggle.pug
+
+mixin toggleBlock(options)
+  div(class=`toggle${options.marginToggle || ""}`)
+    p(class=`text-field__title${options.marginTitle || ""}`) Toggle
+    +toggle({label: " toggle__label_margin_bottom", id: "toggle1", txt: "Получать спецпредложения", checked: true})
+    +toggle({label: " toggle__label_margin_bottom", id: "toggle2", txt: "Получать спецпредложения"})

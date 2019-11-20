@@ -1,11 +1,13 @@
 mixin radioButtons(options)
   duv(class=`radio${options.margin || ""}`)
-    p(class=`text-field__title${options.marginTitle || ""}`) Radio Buttons
-    label(class=`radio__label${options.labelMargin || ""}` for=`${options.id || "radio1"}`)
+    if options.title
+      p(class=`text-field__title${options.marginTitle || ""}`)= options.title
+    else
+    label(class=`radio__label${options.labelMargin || ""}` for=`${options.id1 || "radio1"}`)
       input(class="radio__input" type="radio" name="radio" value="radio-man" 
-      id=`${options.id || "radio1"}` checked)
+      id=`${options.id1 || "radio1"}` checked)
       span.radio__span Мужчина
-    label(class=`radio__label${options.labelMargin || ""}` for=`${options.id || "radio2"}`)
+    label(class=`radio__label${options.labelMargin || ""}` for=`${options.id2 || "radio2"}`)
       input(class="radio__input" type="radio" name="radio" value="radio-woman" 
-      id=`${options.id || "radio2"}`)
+      id=`${options.id2 || "radio2"}`)
       span.radio__span Женщина
