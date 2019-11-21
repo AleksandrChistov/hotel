@@ -1,0 +1,121 @@
+.slider-room
+  width 271px
+  height 257px
+  background #fff
+  box-shadow 0px 10px 20px rgba(31, 32, 65, 0.05)
+  border-radius 4px
+  position relative
+  overflow hidden
+
+.slider-room-block-img
+  display flex
+  margin-left 0
+
+.slider-room-img
+  width 271px
+  height 151px
+  object-fit cover
+
+.slider-room-block-text
+  padding 20px
+
+.slider-room-block-text__hotel-number
+  display flex
+  justify-content space-between
+  align-items center
+  padding-bottom 10px
+
+.form-title__number.slider-room-block-text__room
+  font-size 18px
+
+.slider-room-block-text__line
+  margin 0
+  margin-bottom 10px
+  border 0
+  height 1px
+  background rgba(31, 32, 65, 0.1)
+
+.slider-room-block-text__reviews
+  font-weight bold
+  color rgba(31,32,65,0.5)
+  &:after
+    content "Отзывов"
+    font-weight normal
+    font-size 12px
+    padding-left 5px
+
+.slider-room-block-text__rating
+  display flex
+  justify-content space-between
+  align-items center
+
+.slider-room-block-indicators
+  position absolute
+  top 130px
+  right 15px
+  list-style none
+  display flex
+  justify-content space-between
+  width 40px
+  padding 0
+  margin 0
+
+.slider-room-indicator
+  width 7px
+  height 7px
+  border 1px solid #ffffff
+  border-radius 50%
+
+.slider-room-indicator_bg_white
+  background-color #fff
+
+.slider-room-block-button
+  position absolute
+  top 0
+  left 0
+  width 271px
+  height 151px
+  display flex
+  justify-content space-between
+
+
+.slider-room-block-button:hover .slider-room-block-button-left,
+.slider-room-block-button:hover .slider-room-block-button-right
+  opacity 1
+  transition all 0.5s
+
+.slider-room-block-button-left,
+.slider-room-block-button-right
+  width 42px
+  height 151px
+  display flex
+  justify-content center
+  align-items center
+  background linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%)
+  opacity 0
+  transition opacity 0.5s
+
+.slider-room-block-button-right
+  transform matrix(-1, 0, 0, 1, 0, 0)
+
+.slider-room-arrow-left, .slider-room-arrow-right
+  border none
+  width 42px
+  height 42px
+  position relative
+  background transparent
+  padding 0
+  transform rotate(135deg)
+  cursor pointer
+  margin-left 10px
+  &:active, &:focus
+    outline none
+  &:before
+    content ""
+    width 10px
+    height 10px
+    border-right 2px solid #fff
+    border-bottom 2px solid #fff
+    position absolute
+    top 40%
+    left 40%

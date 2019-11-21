@@ -6,8 +6,8 @@
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <title>UI Kit</title>
   <link href="/ui-kit/css/style.css" rel="stylesheet"></head>
-  <body class="body body_bg-color_white">
-    <div class="container container-ui"><img class="ui-logo" src="/img/ui-logo.svg" alt="Logo UI kit">
+  <body class="body body_bg-color_black">
+    <div class="container"><img class="ui-logo" src="/img/ui-logo.svg" alt="Logo UI kit">
       <div class="container-color-type">
         <div class="block-color-wrap">
           <div class="block-color">
@@ -76,8 +76,8 @@
         </div>
       </div>
     </div>
-    <div class="container container-ui">
-      <div class="container-color-type container-color-type_flex-wrap"><img class="ui-logo ui-logo_position" src="/img/ui-logo.svg" alt="Logo UI kit">
+    <div class="container">
+      <div class="container-color-type container-color-type_flex-wrap"><img class="ui-logo ui-logo_top_50" src="/img/ui-logo.svg" alt="Logo UI kit">
         <div class="container-section-1">
           <div class="container-field">
             <div class="text-field text-field_margin_bottom_20">
@@ -155,20 +155,20 @@
             </duv>
             <duv class="radio radio_margin_bottom">
               <p class="text-field__title text-field__title_margin_bottom">Radio Buttons</p>
-              <label class="radio__label radio__label_margin_right" for="radio1">
-                <input class="radio__input" type="radio" name="radio" value="radio-man" id="radio1" checked><span class="radio__span">Мужчина</span>
+              <label class="radio__label radio__label_margin_right" for="radio11">
+                <input class="radio__input" type="radio" name="radio" value="radio-man" id="radio11" checked><span class="radio__span">Мужчина</span>
               </label>
-              <label class="radio__label radio__label_margin_right" for="radio2">
-                <input class="radio__input" type="radio" name="radio" value="radio-woman" id="radio2"><span class="radio__span">Женщина</span>
+              <label class="radio__label radio__label_margin_right" for="radio22">
+                <input class="radio__input" type="radio" name="radio" value="radio-woman" id="radio22"><span class="radio__span">Женщина</span>
               </label>
             </duv>
             <div class="toggle toggle_margin_bottom">
               <p class="text-field__title text-field__title_margin_bottom">Toggle</p>
               <label class="toggle__label toggle__label_margin_bottom" for="toggle1">
-                <input class="toggle__input" type="checkbox" name="toggle" value="toggle1" id="toggle1" checked><span class="toggle__span">Получать спецпредложения</span>
+                <input class="toggle__input" type="checkbox" name="toggle1" value="toggle1" id="toggle1" checked><span class="toggle__span">Получать спецпредложения</span>
               </label>
               <label class="toggle__label toggle__label_margin_bottom" for="toggle2">
-                <input class="toggle__input" type="checkbox" name="toggle" value="toggle2" id="toggle2"><span class="toggle__span">Получать спецпредложения</span>
+                <input class="toggle__input" type="checkbox" name="toggle2" value="toggle2" id="toggle2"><span class="toggle__span">Получать спецпредложения</span>
               </label>
             </div>
             <div class="like checkbox_margin_bottom">
@@ -179,18 +179,28 @@
             <fieldset class="rate-button">
               <legend class="rate-button__title text-field__title text-field__title_margin_bottom">rate button</legend>
               <div class="rate-button__group rate-button__group_margin_right">
-                <input class="rate-button__input" type="radio" name="rating" value="1" aria-label="1 звезда" checked>
-                <input class="rate-button__input" type="radio" name="rating" value="2" aria-label="2 звезды" checked>
-                <input class="rate-button__input" type="radio" name="rating" value="3" aria-label="3 звезды" checked>
-                <input class="rate-button__input" type="radio" name="rating" value="4" aria-label="4 звезды" checked>
-                <input class="rate-button__input" type="radio" name="rating" value="5" aria-label="5 звезд">
+                <input class="rate-button__input" type="radio" name="rating" id="rating-1" value="1" checked>
+                <label class="rate-button__label" for="rating-1" aria-label="1 звезда"></label>
+                <input class="rate-button__input" type="radio" name="rating" id="rating-2" value="2" checked>
+                <label class="rate-button__label" for="rating-2" aria-label="2 звезды"></label>
+                <input class="rate-button__input" type="radio" name="rating" id="rating-3" value="3" checked>
+                <label class="rate-button__label" for="rating-3" aria-label="3 звезды"></label>
+                <input class="rate-button__input" type="radio" name="rating" id="rating-4" value="4" checked>
+                <label class="rate-button__label" for="rating-4" aria-label="4 звезды"></label>
+                <input class="rate-button__input" type="radio" name="rating" id="rating-41" value="5">
+                <label class="rate-button__label" for="rating-5" aria-label="5 звезд"></label>
               </div>
               <div class="rate-button__group">
-                <input class="rate-button__input" type="radio" name="rating2" value="1" aria-label="1 звезда" checked>
-                <input class="rate-button__input" type="radio" name="rating2" value="2" aria-label="2 звезды" checked>
-                <input class="rate-button__input" type="radio" name="rating2" value="3" aria-label="3 звезды" checked>
-                <input class="rate-button__input" type="radio" name="rating2" value="4" aria-label="4 звезды" checked>
-                <input class="rate-button__input" type="radio" name="rating2" value="5" aria-label="5 звезд" checked>
+                <input class="rate-button__input" type="radio" name="rating2" id="rating2-1" value="1" checked>
+                <label class="rate-button__label" for="rating2-1" aria-label="1 звезда"></label>
+                <input class="rate-button__input" type="radio" name="rating2" id="rating2-2" value="2" checked>
+                <label class="rate-button__label" for="rating2-2" aria-label="2 звезды"></label>
+                <input class="rate-button__input" type="radio" name="rating2" id="rating2-3" value="3" checked>
+                <label class="rate-button__label" for="rating2-3" aria-label="3 звезды"></label>
+                <input class="rate-button__input" type="radio" name="rating2" id="rating2-4" value="4" checked>
+                <label class="rate-button__label" for="rating2-4" aria-label="4 звезды"></label>
+                <input class="rate-button__input" type="radio" name="rating2" id="rating2-5" value="5" checked>
+                <label class="rate-button__label" for="rating2-5" aria-label="5 звезд"></label>
               </div>
             </fieldset>
           </div>
@@ -203,16 +213,16 @@
             <div class="buttons">
               <p class="text-field__title buttons_margin_bottom_title">buttons</p>
               <div class="buttons__group-m">
-                <button class="button-m button-m_margin_bottom"><span class="button-m-text">Click me</span></button>
-                <button class="button-m button-m_margin_bottom button-m-active"><span class="button-m-text">Click me</span></button>
-                <button class="button-m"><span class="button-m-text button-m_border">Click me</span></button>
-                <button class="button-m button-m-active"><span class="button-m-text button-m_border">Click me</span></button>
+                <button class="button-m button-m_margin_bottom" type="button"><span class="button-m-text">Click me</span></button>
+                <button class="button-m button-m_margin_bottom button-m-active" type="button"><span class="button-m-text">Click me</span></button>
+                <button class="button-m" type="button"><span class="button-m-text button-m_border">Click me</span></button>
+                <button class="button-m button-m-active" type="button"><span class="button-m-text button-m_border">Click me</span></button>
               </div>
               <div class="buttons__group-text">
                 <p class="button-m-text buttons_text_gradient">Click me</p>
                 <p class="button-m-text buttons_text_gray button-m_margin_bottom">Click me</p>
               </div>
-              <button class="button-l checkbox_margin_bottom">Перейти к оплате<span class="button-l-arrow"></span></button>
+              <button class="button-l checkbox_margin_bottom" type="button">Перейти к оплате<span class="button-l-arrow"></span></button>
             </div>
             <div class="pagination-wrap">
               <p class="text-field__title pagination_margin_bottom_title">pagination</p>
@@ -411,8 +421,208 @@
         </div>
       </div>
     </div>
-    <div class="container container-ui"><img class="ui-logo" src="/img/ui-logo.svg" alt="Logo UI kit">
-      <input class="datepicker-here" type="text">
+    <div class="container container-ui-bg-gray"><img class="ui-logo" src="/img/ui-logo.svg" alt="Logo UI kit">
+      <div class="container-cards">
+        <div class="cards1">
+          <form class="form checkbox_margin_bottom" action="#" method="POST">
+            <p class="form__title">Найдём номера под ваши пожелания</p>
+            <div class="date-dropdown text-field text-field_margin_bottom_20">
+              <div class="date-dropdown__from">
+                <label class="dropdown__title" for="dateDropFrom2">Прибытие</label>
+                <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropFrom2" placeholder="ДД.ММ.ГГГГ">
+              </div>
+              <div class="date-dropdown__to">
+                <label class="dropdown__title" for="dateDropTo2">Выезд</label>
+                <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropTo2" placeholder="ДД.ММ.ГГГГ">
+              </div>
+              <div class="window date-dropdown-window dropdown-window_display_none"></div>
+            </div>
+            <div class="dropdown button-m_margin_bottom">
+              <label class="dropdown__title" for="guest">Гости</label>
+              <input class="dropdown__input dropdown__input_color" type="text" name="dropdown" id="guest" value="Сколько гостей">
+              <div class="dropdown-window dropdown-window_display_none dropdown-window_width_max" id="drop_guest">
+                <div class="dropdown-window__wrap-elem">
+                  <p class="dropdown-window__name">Взрослые</p>
+                  <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="0guest">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
+                  </div>
+                </div>
+                <div class="dropdown-window__wrap-elem">
+                  <p class="dropdown-window__name">Дети</p>
+                  <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="1guest">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
+                  </div>
+                </div>
+                <div class="dropdown-window__wrap-elem">
+                  <p class="dropdown-window__name">Младенцы</p>
+                  <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="2guest">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
+                  </div>
+                </div>
+                <p class="dropdown-window__clear ">очистить      </p>
+                <p class="dropdown-window__apply">применить</p>
+              </div>
+            </div>
+            <button class="button-l" type="button">Подобрать номер<span class="button-l-arrow"></span></button>
+          </form>
+          <form class="form" action="#" method="POST">
+            <p class="form__title">Регистрация аккаунта</p>
+            <input class="text-field__input text-field_margin_bottom_10 text-field__input_color" type="text" name="text" id="text-field" placeholder="Имя">
+            <input class="text-field__input text-field_margin_bottom_10 text-field__input_color" type="text" name="text" id="text-field" placeholder="Фамилия">
+            <duv class="radio radio_margin_bottom_20">
+              <label class="radio__label radio__label_margin_right" for="radio1">
+                <input class="radio__input" type="radio" name="radio" value="radio-man" id="radio1" checked><span class="radio__span">Мужчина</span>
+              </label>
+              <label class="radio__label radio__label_margin_right" for="radio2">
+                <input class="radio__input" type="radio" name="radio" value="radio-woman" id="radio2"><span class="radio__span">Женщина</span>
+              </label>
+            </duv>
+            <div class="text-field text-field_margin_bottom_20">
+              <label class="text-field__title" for="masked-text-field">Дата рождения</label>
+              <input class="text-field__input text-field__input_color" type="text" name="data" id="masked-text-field" placeholder="ДД.ММ.ГГГГ">
+            </div>
+            <label class="text-field__title" for="text-field">Данные для входа в сервис</label>
+            <input class="text-field__input text-field_margin_bottom_10 text-field__input_color" type="text" name="text" id="text-field" placeholder="Email">
+            <input class="text-field__input text-field_margin_bottom_10 text-field__input_color" type="text" name="text" id="text-field" placeholder="Пароль">
+            <label class="toggle__label text-field_margin_bottom_24" for="toggle">
+              <input class="toggle__input" type="checkbox" name="toggle" value="toggle" id="toggle"><span class="toggle__span">Получать спецпредложения</span>
+            </label>
+            <button class="button-l button-m_margin_bottom" type="button">Перейти к оплате<span class="button-l-arrow"></span></button>
+            <div class="form-footer-wrap">
+              <p class="form-footer-text">Уже есть аккаунт на Toxin</p>
+              <button class="button-m" type="button"><span class="button-m-text button-m_border">Войти</span></button>
+            </div>
+          </form>
+        </div>
+        <div class="cards2">
+          <form class="form checkbox_margin_bottom" action="#" method="POST">
+            <p class="form-reserve-title"><span class="form-title__number form-title__lux">888</span><span class="form-title__price">9 990₽</span></p>
+            <div class="date-dropdown text-field text-field_margin_bottom_20">
+              <div class="date-dropdown__from">
+                <label class="dropdown__title" for="dateDropFrom2">Прибытие</label>
+                <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropFrom2" placeholder="19.08.2019">
+              </div>
+              <div class="date-dropdown__to">
+                <label class="dropdown__title" for="dateDropTo2">Выезд</label>
+                <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropTo2" placeholder="23.08.2019">
+              </div>
+              <div class="window date-dropdown-window dropdown-window_display_none"></div>
+            </div>
+            <div class="dropdown radio_margin_bottom_20">
+              <label class="dropdown__title" for="guest">Гости</label>
+              <input class="dropdown__input dropdown__input_color" type="text" name="dropdown" id="guest" value="3 гостя">
+              <div class="dropdown-window dropdown-window_display_none dropdown-window_width_max" id="drop_guest">
+                <div class="dropdown-window__wrap-elem">
+                  <p class="dropdown-window__name">Взрослые</p>
+                  <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="0guest">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
+                  </div>
+                </div>
+                <div class="dropdown-window__wrap-elem">
+                  <p class="dropdown-window__name">Дети</p>
+                  <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="1guest">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
+                  </div>
+                </div>
+                <div class="dropdown-window__wrap-elem">
+                  <p class="dropdown-window__name">Младенцы</p>
+                  <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="2guest">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
+                  </div>
+                </div>
+                <p class="dropdown-window__clear ">очистить      </p>
+                <p class="dropdown-window__apply">применить</p>
+              </div>
+            </div>
+            <div class="form-reserve-calc">
+              <p class="form-reserve-calc-text"><span class="form-reserve-calc-text__left">9 990₽ х 4 суток</span><span class="form-reserve-calc-text__right">39 960₽</span></p>
+              <p class="form-reserve-calc-text"><span class="form-reserve-calc-text__left">Сбор за услуги: скидка 2 179₽<span class="form-reserve-calc-text__i">i</span></span><span class="form-reserve-calc-text__right">0₽</span></p>
+              <p class="form-reserve-calc-text form-reserve-calc-text_margin_bottom_30"><span class="form-reserve-calc-text__left">Сбор за дополнительные услуги<span class="form-reserve-calc-text__i">i</span></span><span class="form-reserve-calc-text__right">300₽</span></p>
+              <p class="form-reserve-calc-text form-reserve-calc-text_bold"><span class="form-reserve-calc-text__left form-reserve-calc-text__left_bg_white">Итого</span><span class="form-reserve-calc-text__right form-reserve-calc-text__right_bg_white">38 081₽</span></p>
+            </div>
+            <button class="button-l" type="button">Забронировать<span class="button-l-arrow"></span></button>
+          </form>
+          <form class="form" action="#" method="POST">
+            <p class="form__title">Войти</p>
+            <input class="text-field__input text-field_margin_bottom_10 text-field__input_color" type="text" name="text" id="text-field" placeholder="Email">
+            <input class="text-field__input radio_margin_bottom_20 text-field__input_color" type="text" name="text" id="text-field" placeholder="Пароль">
+            <button class="button-l button-m_margin_bottom" type="button">Войти<span class="button-l-arrow"></span></button>
+            <div class="form-footer-wrap">
+              <p class="form-footer-text">Нет аккаунта на Toxin?</p>
+              <button class="button-m" type="button"><span class="button-m-text button-m_border">Создать</span></button>
+            </div>
+          </form>
+        </div>
+        <div class="cards3">
+          <div class="window date-dropdown-window-cards-ui checkbox_margin_bottom"></div>
+          <div class="slider-room checkbox_margin_bottom">
+            <div class="slider-room-block-img"><img class="slider-room-img" src="/img/room-img/image1.jpg" alt="Первый номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-2.jpg" alt="Первый номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-3.jpg" alt="Первый номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-4.jpg" alt="Первый номер в отеле">
+            </div>
+            <div class="slider-room-block-text">
+              <p class="slider-room-block-text__hotel-number"><span class="form-title__number slider-room-block-text__room form-title__lux">888</span><span class="form-title__price slider-room-block-text__price">9 990₽</span></p>
+              <hr class="slider-room-block-text__line">
+              <div class="slider-room-block-text__rating">
+                <div class="rate-button__group">
+                  <input class="rate-button__input" type="radio" name="room-rating1" id="room-rating1-1" value="1" checked>
+                  <label class="rate-button__label" for="room-rating1-1" aria-label="1 звезда"></label>
+                  <input class="rate-button__input" type="radio" name="room-rating1" id="room-rating1-2" value="2" checked>
+                  <label class="rate-button__label" for="room-rating1-2" aria-label="2 звезды"></label>
+                  <input class="rate-button__input" type="radio" name="room-rating1" id="room-rating1-3" value="3" checked>
+                  <label class="rate-button__label" for="room-rating1-3" aria-label="3 звезды"></label>
+                  <input class="rate-button__input" type="radio" name="room-rating1" id="room-rating1-4" value="4" checked>
+                  <label class="rate-button__label" for="room-rating1-4" aria-label="4 звезды"></label>
+                  <input class="rate-button__input" type="radio" name="room-rating1" id="room-rating1-5" value="5" checked>
+                  <label class="rate-button__label" for="room-rating1-5" aria-label="5 звезд"></label>
+                </div><span class="slider-room-block-text__reviews">145</span>
+              </div>
+            </div>
+            <ul class="slider-room-block-indicators">
+              <li class="slider-room-indicator slider-room-indicator_bg_white"></li>
+              <li class="slider-room-indicator"></li>
+              <li class="slider-room-indicator"></li>
+              <li class="slider-room-indicator"></li>
+            </ul>
+            <div class="slider-room-block-button">
+              <div class="slider-room-block-button-left">
+                <button class="slider-room-arrow-left" type="button"></button>
+              </div>
+              <div class="slider-room-block-button-right">
+                <button class="slider-room-arrow-right" type="button"></button>
+              </div>
+            </div>
+          </div>
+          <div class="slider-room">
+            <div class="slider-room-block-img"><img class="slider-room-img" src="/img/room-img/image2.jpg" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-2.jpg" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-3.jpg" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-4.jpg" alt="Второй номер в отеле">
+            </div>
+            <div class="slider-room-block-text">
+              <p class="slider-room-block-text__hotel-number"><span class="form-title__number slider-room-block-text__room">840</span><span class="form-title__price slider-room-block-text__price">9 990₽</span></p>
+              <hr class="slider-room-block-text__line">
+              <div class="slider-room-block-text__rating">
+                <div class="rate-button__group">
+                  <input class="rate-button__input" type="radio" name="room-rating2" id="room-rating2-1" value="1" checked>
+                  <label class="rate-button__label" for="room-rating2-1" aria-label="1 звезда"></label>
+                  <input class="rate-button__input" type="radio" name="room-rating2" id="room-rating2-2" value="2" checked>
+                  <label class="rate-button__label" for="room-rating2-2" aria-label="2 звезды"></label>
+                  <input class="rate-button__input" type="radio" name="room-rating2" id="room-rating2-3" value="3" checked>
+                  <label class="rate-button__label" for="room-rating2-3" aria-label="3 звезды"></label>
+                  <input class="rate-button__input" type="radio" name="room-rating2" id="room-rating2-4" value="4" checked>
+                  <label class="rate-button__label" for="room-rating2-4" aria-label="4 звезды"></label>
+                  <input class="rate-button__input" type="radio" name="room-rating2" id="room-rating2-41" value="5">
+                  <label class="rate-button__label" for="room-rating2-5" aria-label="5 звезд"></label>
+                </div><span class="slider-room-block-text__reviews">65</span>
+              </div>
+            </div>
+            <ul class="slider-room-block-indicators">
+              <li class="slider-room-indicator slider-room-indicator_bg_white"></li>
+              <li class="slider-room-indicator"></li>
+              <li class="slider-room-indicator"></li>
+              <li class="slider-room-indicator"></li>
+            </ul>
+            <div class="slider-room-block-button">
+              <div class="slider-room-block-button-left">
+                <button class="slider-room-arrow-left" type="button"></button>
+              </div>
+              <div class="slider-room-block-button-right">
+                <button class="slider-room-arrow-right" type="button"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   <script type="text/javascript" src="/app/js/vendors.js"></script><script type="text/javascript" src="/ui-kit/js/script.js"></script></body>
 </html>

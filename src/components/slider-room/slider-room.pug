@@ -1,0 +1,23 @@
+mixin sliderRoom(options)
+  div(class=`slider-room${options.margin || ""}`)
+    div(class="slider-room-block-img")
+      each img in options.arrImg
+        img(class="slider-room-img" src=img.src, alt=options.alt)
+    div(class="slider-room-block-text")
+      p(class="slider-room-block-text__hotel-number")
+        span(class=`form-title__number slider-room-block-text__room${options.lux || ""}`)= options.room
+        span(class=`form-title__price slider-room-block-text__price`)= options.price
+      hr(class="slider-room-block-text__line")
+      div(class="slider-room-block-text__rating")
+        +rating({name: options.nameRating, arr: options.arr})
+        span(class=`slider-room-block-text__reviews`)= options.reviews
+    ul(class="slider-room-block-indicators")
+      li(class="slider-room-indicator slider-room-indicator_bg_white")
+      li(class="slider-room-indicator")
+      li(class="slider-room-indicator")
+      li(class="slider-room-indicator")
+    div(class="slider-room-block-button")
+      div(class="slider-room-block-button-left")
+        button(class="slider-room-arrow-left" type="button")
+      div(class="slider-room-block-button-right")
+        button(class="slider-room-arrow-right" type="button")

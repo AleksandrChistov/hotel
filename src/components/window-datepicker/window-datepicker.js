@@ -5,13 +5,12 @@ import './window-datepicker.styl'
 $('.date-dropdown-window-cards-ui').data('datepicker');
 
 $('.date-dropdown-window-cards-ui').datepicker({
-  startDate: new Date('08.08.2019'),
+  startDate: new Date('2019-08-08'),
   inline: true,
   range: true,
   clearButton: true,
   applyButton: true,
   onRenderCell: function(date, cellType) {
-    console.log(date.getDate());
     if (date.getDate() === 8) {
       return {
         classes: 'date-dropdown-window-cards-ui__current'
