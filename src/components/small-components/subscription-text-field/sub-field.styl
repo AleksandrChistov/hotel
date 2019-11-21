@@ -1,5 +1,17 @@
 .sub-field
   width 267px
+  position relative
+  &:before
+    content ""
+    width 44px
+    height 44px
+    position absolute
+    top 20px
+    right 0
+    background url("/img/arrow_forward_gradient.svg") center center no-repeat
+ 
+.sub-field:hover:before
+  cursor pointer
 
 .sub-field__input
   width 267px
@@ -7,6 +19,5 @@
   padding-left 15px
   border-radius 4px
   border 1px solid rgba(31, 32, 65, 0.25)
-  background url("/img/arrow_forward_gradient.svg") 95% 50% no-repeat
   &:active, &:focus
     outline none
