@@ -1,0 +1,11 @@
+mixin footer2(options)
+  - const socialLink = [{class: "footer-social__link-tw", aria: "Twitter"}, 
+  - {class: "footer-social__link-fb", aria: "Facebook"}, {class: "footer-social__link-ins", aria: "Instagram"}]
+  footer(class=`footer2${options.margin || ""}`)
+    div(class="footer2-container")
+      img(src="/img/logo.svg" class="footer__img" alt="Logo" id="footerLogo")
+      p(class="footer2__text")= options.text
+      ul.footer-social
+        each link in socialLink
+          li.footer-social__li
+            a(class=`${link.class}` href=`${link.link || "#"}` aria-label=`${link.aria || "Соцсети"}`)

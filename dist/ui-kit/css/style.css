@@ -2023,5 +2023,26 @@ html:not([dir="rtl"]) .range.noUi-horizontal .noUi-handle {
   background: url("/img/social-img/ins-icon.svg") center center no-repeat;
 }
 
+.footer2 {
+  background: #fff;
+  box-shadow: 0px 10px 20px rgba(31,32,65,0.05);
+}
+.footer2-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0 110px;
+}
+.footer2__text {
+  color: rgba(31,32,65,0.75);
+  margin-bottom: 25px;
+  line-height: 24px;
+  text-align: center;
+  width: 560px;
+  max-width: 100%;
+}
+
 
 /*# sourceMappingURL=style.css.map*/

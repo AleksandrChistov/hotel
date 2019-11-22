@@ -29,6 +29,7 @@ include ../../components/window-datepicker/window-datepicker.pug
 include ../../components/slider-room/slider-room.pug
 include ../../components/header/header.pug
 include ../../components/footer/footer.pug
+include ../../components/footer/footer2/footer2.pug
 
 block variables
   - const pageTitle = 'UI Kit'
@@ -167,3 +168,4 @@ block content
         menu: [{title: "Navigation", list: [{text: "About Us"}, {text: "News"}, {text: "Support"}, {text: "Products"}] }, 
               {title: "About us", list: [{text: "Who we are"}, {text: "Our team"}, {text: "Careers"}, {text: "Investors"}] }, 
               {title: "Support", list: [{text: "Documentation"}, {text: "Community"}, {text: "Get in Touch"}] }] })
+      +footer2({text: "Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis."})
