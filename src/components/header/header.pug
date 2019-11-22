@@ -1,9 +1,19 @@
-- let index = [5,4,3,2,1];
-- let link = "#";
-
-header.header
-  img(src=require("./img/logo.svg"), alt="Logo", id="home")
-  ul.nav
-    each val in index
-      li
-        a(href=link).nav-link=val
+mixin header(options)
+  header(class=`header${options.margin || ""}`)
+    div(class="header-container")
+      img(src="/img/logo.svg" class="header__img" alt="Logo" id="home")
+      nav(class="header-menu")
+        ul.header-menu__list
+          each item in options.list
+            li(class="header-menu__item")
+              if item.arrow
+                a(class=`header-menu__link${item.bold || ""}` href=`${item.link || "#"}`)= item.text
+                span(class="header-menu__arrow")
+              else
+                a(class=`header-menu__link${item.bold || ""}` href=`${item.link || "#"}`)= item.text
+        if options.btnText
+          +buttonM({text: options.btnText[0], styleText: " button-m_border", style: " date-dropdown__from"})
+          +buttonM({text: options.btnText[1], styleText: " button-m_bg_gradient"})
+        else
+          hr.header-menu__line
+          p(class="header-menu__name-person")= options.namePerson

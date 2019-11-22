@@ -27,6 +27,7 @@ include ../../components/form-reserve/form-reserve.pug
 include ../../components/form-login/form-login.pug
 include ../../components/window-datepicker/window-datepicker.pug
 include ../../components/slider-room/slider-room.pug
+include ../../components/header/header.pug
 
 block variables
   - const pageTitle = 'UI Kit'
@@ -152,3 +153,10 @@ block content
           alt: "Второй номер в отеле", room: "840", price: "9 990₽", nameRating: "room-rating2", reviews: "65", 
           arr: [{aria: "1 звезда", checked: true}, {aria: "2 звезды", checked: true}, 
           {aria: "3 звезды", checked: true}, {aria: "4 звезды", checked: true}, {aria: "5 звезд", checked: false}]})
+  .container.container-ui-bg-gray
+    +uiLogo({})
+    .container-header-footer
+      +header({margin: " checkbox_margin_bottom", btnText: ["Login", "Register"], list: [{text: "Home", bold: " header-menu__link_bold"}, 
+      {text: "About Us"}, {text: "Services", arrow: true}, {text: "Careers"}, {text: "News"}, {text: "Documentation"}]})
+      +header({margin: " checkbox_margin_bottom", namePerson: "Cosmin Negoita", list: [{text: "Home", bold: " header-menu__link_bold"}, {text: "About Us"}, 
+        {text: "Services", arrow: true}, {text: "Careers"}, {text: "News"}, {text: "Documentation"}]})

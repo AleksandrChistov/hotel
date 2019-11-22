@@ -5,10 +5,10 @@ mixin buttons(options)
   div(class=`buttons${options.margin || ""}`)
     p(class=`text-field__title buttons_margin_bottom_title${options.marginTitle || ""}`) buttons
     .buttons__group-m
-      +buttonM({text: "Click me", style: " button-m_margin_bottom"})
-      +buttonM({text: "Click me", style: " button-m_margin_bottom button-m-active"})
-      +buttonM({text: "Click me", styleText: " button-m_border"})
-      +buttonM({text: "Click me", style: " button-m-active", styleText: " button-m_border"})
+      +buttonM({text: "Click me", style: " button-m_margin_bottom", styleText: " button-m_bg_gradient button-m_height_44"})
+      +buttonM({text: "Click me", style: " button-m_margin_bottom button-m-active", styleText: " button-m_bg_gradient button-m_height_44"})
+      +buttonM({text: "Click me", styleText: " button-m_border button-m_height_44"})
+      +buttonM({text: "Click me", style: " button-m-active", styleText: " button-m_border button-m_height_44"})
     .buttons__group-text
       p.button-m-text.buttons_text_gradient Click me
       p.button-m-text.buttons_text_gray.button-m_margin_bottom Click me

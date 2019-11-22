@@ -1,2 +1,51 @@
 .header
-  background-image url(./img/logo.svg);
+  background #ffffff
+
+.header-container
+  padding 15px 0
+  margin 0 auto
+  max-width 1160px
+  display flex
+  justify-content space-between
+
+.header-menu
+  display flex
+  align-items center
+
+.header-menu__list
+  list-style none
+  padding 0
+  margin 0
+  display flex
+
+.header-menu__item
+  margin-right 30px
+  display flex
+  &:hover
+    cursor pointer
+
+.header-menu__item:hover .header-menu__link
+  color #bc9cff
+
+.header-menu__link, .header-menu__name-person
+  text-decoration none
+  color rgba(31, 32, 65, 0.5)
+
+.header-menu__link_bold
+  font-weight bold
+  color rgba(31, 32, 65, 0.75)
+
+.header-menu__arrow
+  width 9px
+  height 9px
+  border-right 2px solid rgba(31, 32, 65, 0.5)
+  border-bottom 2px solid rgba(31, 32, 65, 0.5)
+  margin 3px 0 0 10px
+  transform rotate(45deg)
+
+.header-menu__line
+  border 0
+  width 1px
+  height 30px
+  background-color rgba(31, 32, 65, 0.1)
+  margin-right 30px
