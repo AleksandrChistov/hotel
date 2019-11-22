@@ -53,8 +53,8 @@ module.exports = env => {
         filename: env === 'development' ? '[name]/css/style.css' : '[name]/css/style.[hash].css',
       }),
       new CopyWebpackPlugin([
-        { from: 'components/slider-room/room-img', to: 'img/room-img' }
-        // { from: 'src/fonts', to: 'fonts' },
+        { from: 'components/slider-room/room-img', to: 'img/room-img' },
+        { from: 'components/footer/social-img', to: 'img/social-img' }
       ]),
       new webpack.ProvidePlugin({
         $: 'jquery',

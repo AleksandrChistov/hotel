@@ -1,0 +1,27 @@
+mixin footer(options)
+  - const socialLink = [{class: "footer-social__link-tw", aria: "Twitter"}, 
+  - {class: "footer-social__link-fb", aria: "Facebook"}, {class: "footer-social__link-ins", aria: "Instagram"}]
+  footer(class=`footer${options.margin || ""}`)
+    div(class="footer-container")
+      div(class="footer-img-container")
+        img(src="/img/logo.svg" class="footer__img" alt="Logo" id="footerLogo")
+        p(class="footer__text")= options.text
+      div(class="footer-menu-container")
+        each list in options.menu 
+          div(class="footer-menu")
+            p(class="footer-menu__title")= list.title
+            ul.footer-menu__list
+              each item in list.list
+                li(class="footer-menu__item")
+                  a(class="footer-menu__link" href=`${item.link || "#"}`)= item.text
+      div(class="footer-subscribe-container")
+        p(class="footer-menu__title")= options.subscribeTitle
+        p(class="footer__text radio_margin_bottom_20")= options.subscribeText
+        +subField({color: " text-field__input_color", placeholder: "Your email address"})
+  div(class=`footer-copyright${options.marginBottom || ""}`)
+    div(class="footer-container-copyright")
+      p(class="footer__copyright-text")= options.copyrightText
+      ul.footer-social
+        each link in socialLink
+          li.footer-social__li
+            a(class=`${link.class}` href=`${link.link || "#"}` aria-label=`${link.aria || "Соцсети"}`)
