@@ -3,7 +3,7 @@ mixin formRegistration(options)
     p(class=`form__title${options.marginTitle || ""}`)= options.txt
     +textField({margin: " text-field_margin_bottom_10", color: " text-field__input_color", placeholder: "Имя"})
     +textField({margin: " text-field_margin_bottom_10", color: " text-field__input_color", placeholder: "Фамилия"})
-    +radioButtons({margin: " radio_margin_bottom_20", labelMargin: " radio__label_margin_right"})
+    +radioButtons({margin: " radio_margin_bottom_24", labelMargin: " radio__label_margin_right"})
     +maskedTextField({color: " text-field__input_color", title: "Дата рождения", margin: " text-field_margin_bottom_20", id: "maskedTextFormReg"})
     +textField({margin: " text-field_margin_bottom_10", color: " text-field__input_color", title: "Данные для входа в сервис"})
     +textField({margin: " text-field_margin_bottom_10", color: " text-field__input_color", placeholder: "Пароль"})
