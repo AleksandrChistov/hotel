@@ -1,9 +1,13 @@
+include ../small-components/date-dropdown/date-dropdown.pug
+include ../small-components/dropdown/dropdown.pug
+include ../small-components/buttons/button-l/button-l.pug
+
 mixin formRoomSearch(options)
   form(class=`form${options.margin || ""}` action="#" method="POST")
     p(class=`form__title${options.marginTitle || ""}`)= options.txt
-    +dateDropdown({margin: " text-field text-field_margin_bottom_20", id1: "dateDropFrom2", id2: "dateDropTo2", 
+    +dateDropdown({margin: " text-field date-dropdown_margin_bottom_18", id1: "dateDropFrom", id2: "dateDropTo", 
     title1: "Прибытие", title2: "Выезд"})
-    +dropdown({margin: " button-m_margin_bottom", id: "guest", color: " dropdown__input_color", 
+    +dropdown({margin: " dropdown_margin_bottom_30", id: "guest", color: " dropdown__input_color", 
     title: "Гости", windowWidth: " dropdown-window_width_max", 
     value: "Сколько гостей", arrName: ["0 Взрослые", "0 Дети", "0 Младенцы"]})
     +buttonL({text: "Подобрать номер"})

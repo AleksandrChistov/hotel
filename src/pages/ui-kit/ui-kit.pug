@@ -158,14 +158,16 @@ block content
   .container.container-ui-bg-gray
     +uiLogo({})
     .container-header-footer
-      +header({margin: " checkbox_margin_bottom", btnText: ["Login", "Register"], list: [{text: "Home", bold: " header-menu__link_bold"}, 
-        {text: "About Us"}, {text: "Services", arrow: true}, {text: "Careers"}, {text: "News"}, {text: "Documentation"}]})
-      +header({margin: " checkbox_margin_bottom", namePerson: "Cosmin Negoita", list: [{text: "Home", bold: " header-menu__link_bold"}, 
-        {text: "About Us"}, {text: "Services", arrow: true}, {text: "Careers"}, {text: "News"}, {text: "Documentation"}]})
-      +footer({text: "Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.", 
+      +header({margin: " checkbox_margin_bottom", marginArrow: " header-menu__arrow_margin_left_0", btnText: ["Login", "Register"], 
+        list: [{text: "Home", bold: " header-menu__link_bold"}, {text: "About Us"}, {text: "Services", arrow: true}, 
+        {text: "Careers"}, {text: "News"}, {text: "Documentation"}]})
+      +header({margin: " checkbox_margin_bottom", marginArrow: " header-menu__arrow_margin_left_0", namePerson: "Cosmin Negoita", 
+        list: [{text: "Home", bold: " header-menu__link_bold"}, {text: "About Us"}, {text: "Services", arrow: true}, 
+        {text: "Careers"}, {text: "News"}, {text: "Documentation"}]})
+      +footer({padding: " footer-container_padding_100", text: "Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.", 
         subscribeTitle: "Subscribe to our newsletter", subscribeText: "Receive our latest news and promotions in your inbox!", 
         copyrightText: "Copyright © 2018 Toxin UI Kit. All rights reserved.", marginBottom: " checkbox_margin_bottom", 
         menu: [{title: "Navigation", list: [{text: "About Us"}, {text: "News"}, {text: "Support"}, {text: "Products"}] }, 
               {title: "About us", list: [{text: "Who we are"}, {text: "Our team"}, {text: "Careers"}, {text: "Investors"}] }, 
               {title: "Support", list: [{text: "Documentation"}, {text: "Community"}, {text: "Get in Touch"}] }] })
-      +footer2({text: "Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis."})
+      +footer2({padding: " footer-container_padding_100", text: "Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis."})

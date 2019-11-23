@@ -1,22 +1,23 @@
 extends ../components/main/main
-include ../components/small-components/ui-page-1/ui-logo/ui-logo.pug
+include ../components/header/header.pug
+include ../components/form-room-search/form-room-search.pug
+include ../components/footer/footer.pug
 
 block variables
-  - const pageTitle = 'Первая страница на Pug!'
-  - const youAreUsingPug = true
+  - const pageTitle = 'Landing page'
   - const bg = ""
 
 block content
-    +uiLogo({})
-    h1.title Pug - node template engine
-    #container.col
-      if youAreUsingPug
-        p 
-          | This is the body text which is used for most of the design, 
-          | like paragraphs, lists, etc. 
-          a(href="./ui-kit/") ссылка
-      else
-        p Get on it!
-    p.montserrat-bold This is a label or CTA text
-    .container
-      p Привет я новый блок див, раскрась меня :)
+  .container
+    +header({margin: " header_position_absolute", btnText: ["Войти", "Зарегистрироваться"], list: [{text: "О нас"}, {text: "Услуги", arrow: true}, 
+      {text: "Вакансии"}, {text: "Новости"}, {text: "Соглашения", arrow: true}], itemMargin: " header-menu__item_margin"})
+    .container-main
+      img(class="container-main__bg-img" src="/img/bg-landing.jpg" alt="Фновое изображение номера")
+      +formRoomSearch({txt: "Найдём номера под ваши пожелания", margin: " form_position_absolute"})
+      p.container-main__bg-text Лучшие номера для вашей работы, отдыха и просто вдохновения
+    +footer({text: "Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»", 
+      subscribeTitle: "Подписка", subscribeText: "Получайте специальные предложения и новости сервиса", 
+      copyrightText: "Copyright © 2018 Toxin отель. Все права зачищены.", marginBottom: " checkbox_margin_bottom", placeholderField: "Email", 
+      menu: [{title: "Навигация", list: [{text: "О нас"}, {text: "Новости"}, {text: "Служба поддержки"}, {text: "Услуги"}] }, 
+            {title: "О нас", list: [{text: "О сервисе"}, {text: "Наша команда"}, {text: "Вакансии"}, {text: "Инвесторы"}] }, 
+            {title: "Служба поддержки", list: [{text: "Соглашения"}, {text: "Сообщества"}, {text: "Связь с нами"}] }] })

@@ -1,5 +1,6 @@
 import './index.styl'
-import '../components/main/main.js'
-import '../components/small-components/ui-page-1/ui-logo/ui-logo.js'
 
-$('.title').addClass('new-class');
+import './img/bg-landing.jpg'
+
+import '../components/main/main.js'
+import '../components/form-room-search/form-room-search.js'

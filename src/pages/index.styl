@@ -1,21 +1,23 @@
-.title
-  font-size 24px
-  color #ffff33
-  margin 0 auto
-  font-family "Quicksand", "Montserrat", sans-serif
-  font-weight bold
+@import '../components/header/header.styl'
+@import '../components/footer/footer.styl'
 
-p
-  font-family "Montserrat", sans-serif
-  font-weight normal
+.container-main
+  position relative
 
-.montserrat-bold
-  font-family "Montserrat", sans-serif
-  font-weight bold
-  text-transform uppercase
+.container-main__bg-img
+  max-width 100%
+  height auto
 
-.container
-  background-color green
-  color #fff
-  display flex
-  justify-content center
+.form_position_absolute
+  position absolute
+  top 140px
+  left 140px
+
+.container-main__bg-text
+  position absolute
+  bottom 25px
+  right 135px
+  text-align right
+  max-width 297px
+  line-height 24px
+  color rgba(31, 32, 65, 0.75)

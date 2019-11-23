@@ -1,3 +1,5 @@
+@import '../small-components/buttons/button-m/button-m.styl'
+
 .header
   background #ffffff
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05)
@@ -25,6 +27,9 @@
   &:hover
     cursor pointer
 
+.header-menu__item_margin
+  margin-right 20px
+
 .header-menu__item:hover .header-menu__link
   color #bc9cff
 
@@ -41,8 +46,11 @@
   height 9px
   border-right 2px solid rgba(31, 32, 65, 0.5)
   border-bottom 2px solid rgba(31, 32, 65, 0.5)
-  margin 3px 0 0 10px
+  margin 3px 8px 0 8px
   transform rotate(45deg)
+
+.header-menu__arrow_margin_left_0
+  margin 3px 0 0 10px
 
 .header-menu__line
   border 0
@@ -50,3 +58,10 @@
   height 30px
   background-color rgba(31, 32, 65, 0.1)
   margin-right 30px
+
+.header_position_absolute
+  position absolute
+  top 0
+  left 0
+  width 100%
+  z-index 1
