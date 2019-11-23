@@ -32,6 +32,10 @@ $('.dropdown__input').on('mousedown', function(e) {
 	e.preventDefault();
 });
 
+$('.dropdown__title').on('click', function(e) {
+	e.preventDefault();
+});
+
 $(".dropdown__input").on("click", function() {
   $(this).toggleClass("dropdown__input_active");
   $(this).siblings(".dropdown-window").slideToggle("dropdown-window_display_none");

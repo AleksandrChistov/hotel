@@ -5,7 +5,7 @@ mixin maskedTextField(options)
       p(class="text-field__state")= options.state
     else
     if options.title
-      label(class="text-field__title" for="masked-text-field")= options.title
+      label(class="text-field__title" for=`${options.id}`)= options.title
     else
-    input(type="text" name="data" id="masked-text-field" class=`text-field__input${options.color || ""}` 
+    input(type="text" name="data" id=`${options.id}` class=`text-field__input${options.color || ""}` 
     placeholder=options.placeholder || "ДД.ММ.ГГГГ")

@@ -13,6 +13,7 @@ import '../../components/small-components/expandable-checkbox-list/checkbox-list
 import '../../components/small-components/checkbox-buttons/checkbox/checkbox.js'
 import '../../components/small-components/room-details/room-details.js'
 import '../../components/small-components/comments/comments.js'
+import '../../components/form-reg/form-reg.js'
 import '../../components/window-datepicker/window-datepicker.js'
 import '../../components/slider-room/slider-room.js'
 import '../../components/header/header.js'

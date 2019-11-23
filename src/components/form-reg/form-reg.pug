@@ -4,11 +4,11 @@ mixin formRegistration(options)
     +textField({margin: " text-field_margin_bottom_10", color: " text-field__input_color", placeholder: "Имя"})
     +textField({margin: " text-field_margin_bottom_10", color: " text-field__input_color", placeholder: "Фамилия"})
     +radioButtons({margin: " radio_margin_bottom_20", labelMargin: " radio__label_margin_right"})
-    +maskedTextField({color: " text-field__input_color", title: "Дата рождения", margin: " text-field_margin_bottom_20"})
+    +maskedTextField({color: " text-field__input_color", title: "Дата рождения", margin: " text-field_margin_bottom_20", id: "maskedTextFormReg"})
     +textField({margin: " text-field_margin_bottom_10", color: " text-field__input_color", title: "Данные для входа в сервис"})
     +textField({margin: " text-field_margin_bottom_10", color: " text-field__input_color", placeholder: "Пароль"})
     +toggle({label: " text-field_margin_bottom_24", id: "toggle", txt: "Получать спецпредложения"})
     +buttonL({text: "Перейти к оплате", margin: " button-m_margin_bottom"})
     .form-footer-wrap
       p.form-footer-text Уже есть аккаунт на Toxin
-      +buttonM({text: "Войти", styleText: " button-m_border button-m_height_44 button-m_width_95"})
+      +buttonM({text: "Войти", style: " button-m_border button-m_width_99"})

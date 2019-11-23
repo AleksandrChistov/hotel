@@ -1,3 +1,2 @@
 mixin buttonM(options)
-  button(class=`button-m${options.style || ""}` type="button")
-    span(class=`button-m-text${options.styleText || ""}`)= options.text
+  button(class=`button-m button-m-text${options.style || ""}` type="button")= options.text
