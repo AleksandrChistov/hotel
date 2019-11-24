@@ -4,19 +4,123 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-    <title>Первая страница на Pug!</title>
+    <title>Landing page</title>
   <link href="/app/css/style.css" rel="stylesheet"></head>
-  <body class="body"><img class="ui-logo" src="/img/ui-logo.svg" alt="Logo UI kit">
-    <h1 class="title">Pug - node template engine</h1>
-    <div class="col" id="container">
-      <p>
-         This is the body text which is used for most of the design, 
-        like paragraphs, lists, etc. <a href="./ui-kit/">ссылка</a>
-      </p>
-    </div>
-    <p class="montserrat-bold">This is a label or CTA text</p>
+  <body class="body">
     <div class="container">
-      <p>Привет я новый блок див, раскрась меня :)</p>
+      <header class="header header_position_absolute">
+        <div class="header-container"><img class="header__img" src="/img/logo.svg" alt="Logo" id="headerLogo">
+          <nav class="header-menu">
+            <ul class="header-menu__list">
+              <li class="header-menu__item header-menu__item_margin"><a class="header-menu__link" href="#">О нас</a>
+              </li>
+              <li class="header-menu__item header-menu__item_margin"><a class="header-menu__link" href="#">Услуги</a><span class="header-menu__arrow"></span>
+              </li>
+              <li class="header-menu__item header-menu__item_margin"><a class="header-menu__link" href="#">Вакансии</a>
+              </li>
+              <li class="header-menu__item header-menu__item_margin"><a class="header-menu__link" href="#">Новости</a>
+              </li>
+              <li class="header-menu__item header-menu__item_margin"><a class="header-menu__link" href="#">Соглашения</a><span class="header-menu__arrow"></span>
+              </li>
+            </ul>
+            <button class="button-m button-m-text button-m_border button-m_height_34 button-m_margin-right" type="button">Войти</button>
+            <button class="button-m button-m-text button-m_height_34" type="button">Зарегистрироваться</button>
+          </nav>
+        </div>
+      </header>
+      <div class="container-main"><img class="container-main__bg-img" src="/img/bg-landing.jpg" alt="Фновое изображение номера">
+        <form class="form form_position_absolute" action="#" method="POST">
+          <p class="form__title">Найдём номера под ваши пожелания</p>
+          <div class="date-dropdown text-field date-dropdown_margin_bottom_18">
+            <div class="date-dropdown__from">
+              <label class="dropdown__title" for="dateDropFrom">Прибытие</label>
+              <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropFrom" placeholder="ДД.ММ.ГГГГ">
+            </div>
+            <div class="date-dropdown__to">
+              <label class="dropdown__title" for="dateDropTo">Выезд</label>
+              <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropTo" placeholder="ДД.ММ.ГГГГ">
+            </div>
+            <div class="window date-dropdown-window dropdown-window_display_none"></div>
+          </div>
+          <div class="dropdown dropdown_margin_bottom_30">
+            <label class="dropdown__title" for="guest">Гости</label>
+            <input class="dropdown__input dropdown__input_color" type="text" name="dropdown" id="guest" value="Сколько гостей">
+            <div class="dropdown-window dropdown-window_display_none dropdown-window_width_max" id="drop_guest">
+              <div class="dropdown-window__wrap-elem">
+                <p class="dropdown-window__name">Взрослые</p>
+                <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="0guest">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
+                </div>
+              </div>
+              <div class="dropdown-window__wrap-elem">
+                <p class="dropdown-window__name">Дети</p>
+                <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="1guest">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
+                </div>
+              </div>
+              <div class="dropdown-window__wrap-elem">
+                <p class="dropdown-window__name">Младенцы</p>
+                <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="2guest">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
+                </div>
+              </div>
+              <p class="dropdown-window__clear ">очистить      </p>
+              <p class="dropdown-window__apply">применить</p>
+            </div>
+          </div>
+          <button class="button-l" type="button">Подобрать номер<span class="button-l-arrow"></span></button>
+        </form>
+        <p class="container-main__bg-text">Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
+      </div>
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-img-container"><img class="footer__img" src="/img/logo.svg" alt="Logo" id="footerLogo">
+            <p class="footer__text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+          </div>
+          <div class="footer-menu-container">
+            <div class="footer-menu">
+              <p class="footer-menu__title">Навигация</p>
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">О нас</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Новости</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Служба поддержки</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Услуги</a></li>
+              </ul>
+            </div>
+            <div class="footer-menu">
+              <p class="footer-menu__title">О нас</p>
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">О сервисе</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Наша команда</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Вакансии</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Инвесторы</a></li>
+              </ul>
+            </div>
+            <div class="footer-menu">
+              <p class="footer-menu__title">Служба поддержки</p>
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Соглашения</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Сообщества</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Связь с нами</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-subscribe-container">
+            <p class="footer-menu__title">Подписка</p>
+            <p class="footer__text sub-field_bottom_20">Получайте специальные предложения и новости сервиса</p>
+            <div class="sub-field sub-field_width_260">
+              <input class="sub-field__input sub-field__input_color" type="text" name="text" id="sub-field" placeholder="Email">
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="footer-copyright checkbox_margin_bottom">
+        <div class="footer-container-copyright">
+          <p class="footer__copyright-text">Copyright © 2018 Toxin отель. Все права зачищены.</p>
+          <ul class="footer-social">
+            <li class="footer-social__li"><a class="footer-social__link-tw" href="#" aria-label="Twitter"></a></li>
+            <li class="footer-social__li"><a class="footer-social__link-fb" href="#" aria-label="Facebook"></a></li>
+            <li class="footer-social__li"><a class="footer-social__link-ins" href="#" aria-label="Instagram"></a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   <script type="text/javascript" src="/app/js/vendors.js"></script><script type="text/javascript" src="/app/js/script.js"></script></body>
 </html>

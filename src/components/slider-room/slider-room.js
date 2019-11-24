@@ -1,4 +1,5 @@
 import './slider-room.styl'
+import '../small-components/rate-button/rating/rating.styl'
 
 let clicked = true;
 

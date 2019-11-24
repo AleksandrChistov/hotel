@@ -1,3 +1,5 @@
+include ../small-components/rate-button/rating/rating.pug
+
 mixin sliderRoom(options)
   div(class=`slider-room${options.margin || ""}`)
     div(class="slider-room-block-img")
@@ -5,8 +7,8 @@ mixin sliderRoom(options)
         img(class="slider-room-img" src=img.src, alt=options.alt)
     div(class="slider-room-block-text")
       p(class="slider-room-block-text__hotel-number")
-        span(class=`form-title__number slider-room-block-text__room${options.lux || ""}`)= options.room
-        span(class=`form-title__price slider-room-block-text__price`)= options.price
+        span(class=`slider-room-block-text__room${options.lux || ""}`)= options.room
+        span(class=`slider-room-block-text__price`)= options.price
       hr(class="slider-room-block-text__line")
       div(class="slider-room-block-text__rating")
         +rating({name: options.nameRating, arr: options.arr})

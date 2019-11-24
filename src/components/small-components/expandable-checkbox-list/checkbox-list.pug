@@ -2,7 +2,7 @@ include ../checkbox-buttons/checkbox/checkbox.pug
 
 mixin checkboxList(options)
   div(class=`checkbox${options.margin || ""}${options.imgArrow || ""}`)
-    p(class=`text-field__title${options.marginTitle || ""}${options.cursorTitle || ""}` 
+    p(class=`checkbox-list__title checkbox-click${options.marginTitle || ""}${options.cursorTitle || ""}` 
     id=`${options.id || "checkList"}`)= options.txt
     if options.modal
       div(class=`checkbox__modal${options.displayModal || ""}`)

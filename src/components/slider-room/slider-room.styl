@@ -25,8 +25,34 @@
   align-items flex-end
   padding-bottom 10px
 
-.form-title__number.slider-room-block-text__room
+.slider-room-block-text__room
+  display inline-block
+  font-family Quicksand, Montserrat, sans-serif
+  font-weight bold
   font-size 19px
+  color #1f2041
+  &:before
+    content "№"
+    font-size 14px
+    padding-right 4px
+
+.slider-room-block-text__room-lux:after
+  content "люкс"
+  font-family Montserrat, sans-serif
+  font-weight bold
+  font-size 12px
+  text-transform uppercase
+  color #bc9cff
+  padding-left 5px
+
+.slider-room-block-text__price
+  font-weight bold
+  color rgba(31,32,65,0.5)
+  &:after
+    content "в сутки"
+    font-weight normal
+    font-size 12px
+    padding-left 4px
 
 .slider-room-block-text__line
   margin 0

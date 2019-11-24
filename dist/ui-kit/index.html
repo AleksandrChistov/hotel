@@ -83,12 +83,12 @@
             <div class="text-field text-field_margin_bottom_20">
               <p class="text-field__state">Default</p>
               <label class="text-field__title" for="text-field">Text Field</label>
-              <input class="text-field__input text-field__input_color" type="text" name="text" id="text-field" placeholder="Email">
+              <input class="text-field__input text-field__input_color" type="text" name="text" id="" placeholder="Email">
             </div>
             <div class="text-field text-field_margin_bottom_20">
               <p class="text-field__state">Hover / Focus</p>
               <label class="text-field__title" for="text-field">TEXT-FIELD</label>
-              <input class="text-field__input text-field__input_active" type="text" name="text" id="text-field" placeholder="This is pretty awesome">
+              <input class="text-field__input text-field__input_active" type="text" name="text" id="" placeholder="This is pretty awesome">
             </div>
             <div class="dropdown text-field_margin_bottom_20">
               <p class="dropdown__state">Default</p>
@@ -142,7 +142,7 @@
           </div>
           <div class="container-checkbox">
             <duv class="checkbox checkbox_margin_bottom">
-              <p class="text-field__title text-field__title_margin_bottom">Checkbox Buttons</p>
+              <p class="checkbox__title text-field__title_margin_bottom">Checkbox Buttons</p>
               <label class="checkbox__label" for="checkbox1">
                 <input class="checkbox__input" type="checkbox" name="checkbox1" value="checkbox-smoke" id="checkbox1"><span class="checkbox__span">Можно курить</span>
               </label>
@@ -206,17 +206,17 @@
           </div>
           <div class="container-buttons">
             <div class="range-slider range-slider_margin_bottom">
-              <p class="text-field__title range-slider__label">Range Slider</p>
+              <p class="range-slider__label">Range Slider</p>
               <p class="range-slider__number">5 000₽ - 10 000₽</p>
               <div class="range" id="range"></div>
             </div>
             <div class="buttons">
               <p class="text-field__title buttons_margin_bottom_title">buttons</p>
               <div class="buttons__group-m">
-                <button class="button-m button-m_margin_bottom" type="button"><span class="button-m-text button-m_bg_gradient button-m_height_44">Click me</span></button>
-                <button class="button-m button-m_margin_bottom button-m-active" type="button"><span class="button-m-text button-m_bg_gradient button-m_height_44">Click me</span></button>
-                <button class="button-m" type="button"><span class="button-m-text button-m_border button-m_height_44">Click me</span></button>
-                <button class="button-m button-m-active" type="button"><span class="button-m-text button-m_border button-m_height_44">Click me</span></button>
+                <button class="button-m button-m-text button-m_margin_bottom button-m_width_99" type="button">Click me</button>
+                <button class="button-m button-m-text button-m_margin_bottom button-m-active button-m_width_99" type="button">Click me</button>
+                <button class="button-m button-m-text button-m_border button-m_width_99" type="button">Click me</button>
+                <button class="button-m button-m-text button-m_border button-m_border_active button-m_width_99" type="button">Click me</button>
               </div>
               <div class="buttons__group-text">
                 <p class="button-m-text buttons_text_gradient">Click me</p>
@@ -334,7 +334,7 @@
         <div class="container-checkbox-list">
           <div class="expandable-checkbox">
             <div class="checkbox checkbox_margin_bottom_35 checkbox_img_arrow">
-              <p class="text-field__title text-field__title_margin_bottom checkbox_cursor" id="checkboxDefault">expandable checkbox list</p>
+              <p class="checkbox-list__title checkbox-click text-field__title_margin_bottom checkbox_cursor" id="checkboxDefault">expandable checkbox list</p>
               <div class="checkbox__modal checkbox__modal_display_none">
                 <label class="checkbox__label" for="checkbox-br">
                   <input class="checkbox__input" type="checkbox" name="checkbox-br" value="checkbox-br" id="checkbox-br"><span class="checkbox__span">Завтрак</span>
@@ -342,7 +342,7 @@
               </div>
             </div>
             <div class="checkbox checkbox_img_arrow_transform">
-              <p class="text-field__title text-field__title_margin_bottom checkbox_cursor" id="checkList">expandable checkbox list</p>
+              <p class="checkbox-list__title checkbox-click text-field__title_margin_bottom checkbox_cursor" id="checkList">expandable checkbox list</p>
               <div class="checkbox__modal">
                 <label class="checkbox__label" for="checkbox-breakfast">
                   <input class="checkbox__input" type="checkbox" name="checkbox-breakfast" value="checkbox-breakfast" id="checkbox-breakfast"><span class="checkbox__span">Завтрак</span>
@@ -367,7 +367,7 @@
           </div>
           <div class="rich-checkbox">
             <duv class="checkbox checkbox_width_266">
-              <p class="text-field__title text-field__title_margin_bottom">rich Checkbox Buttons</p>
+              <p class="rich-checkbox__title text-field__title_margin_bottom">rich Checkbox Buttons</p>
               <label class="checkbox__label" for="checkbox-wide-corridor">
                 <input class="checkbox__input" type="checkbox" name="checkbox-wide-corridor" value="checkbox-wide-corridor" id="checkbox-wide-corridor"><span class="checkbox__span checkbox__span_title_bold">Широкий коридор</span><span class="checkbox__description checkbox__description_width_203">Ширина коридоров в номере не менее 91 см.</span>
               </label>
@@ -426,18 +426,18 @@
         <div class="cards1">
           <form class="form checkbox_margin_bottom" action="#" method="POST">
             <p class="form__title">Найдём номера под ваши пожелания</p>
-            <div class="date-dropdown text-field text-field_margin_bottom_20">
+            <div class="date-dropdown text-field date-dropdown_margin_bottom_18">
               <div class="date-dropdown__from">
-                <label class="dropdown__title" for="dateDropFrom2">Прибытие</label>
-                <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropFrom2" placeholder="ДД.ММ.ГГГГ">
+                <label class="dropdown__title" for="dateDropFrom">Прибытие</label>
+                <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropFrom" placeholder="ДД.ММ.ГГГГ">
               </div>
               <div class="date-dropdown__to">
-                <label class="dropdown__title" for="dateDropTo2">Выезд</label>
-                <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropTo2" placeholder="ДД.ММ.ГГГГ">
+                <label class="dropdown__title" for="dateDropTo">Выезд</label>
+                <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropTo" placeholder="ДД.ММ.ГГГГ">
               </div>
               <div class="window date-dropdown-window dropdown-window_display_none"></div>
             </div>
-            <div class="dropdown button-m_margin_bottom">
+            <div class="dropdown dropdown_margin_bottom_30">
               <label class="dropdown__title" for="guest">Гости</label>
               <input class="dropdown__input dropdown__input_color" type="text" name="dropdown" id="guest" value="Сколько гостей">
               <div class="dropdown-window dropdown-window_display_none dropdown-window_width_max" id="drop_guest">
@@ -464,9 +464,9 @@
           </form>
           <form class="form" action="#" method="POST">
             <p class="form__title">Регистрация аккаунта</p>
-            <input class="text-field__input text-field_margin_bottom_10 text-field__input_color" type="text" name="text" id="text-field" placeholder="Имя">
-            <input class="text-field__input text-field_margin_bottom_10 text-field__input_color" type="text" name="text" id="text-field" placeholder="Фамилия">
-            <duv class="radio radio_margin_bottom_20">
+            <input class="text-field__input text-field_margin_bottom_10 text-field__input_color" type="text" name="text" id="" placeholder="Имя">
+            <input class="text-field__input text-field_margin_bottom_10 text-field__input_color" type="text" name="text" id="" placeholder="Фамилия">
+            <duv class="radio radio_margin_bottom_24">
               <label class="radio__label radio__label_margin_right" for="radio1">
                 <input class="radio__input" type="radio" name="radio" value="radio-man" id="radio1" checked><span class="radio__span">Мужчина</span>
               </label>
@@ -475,25 +475,25 @@
               </label>
             </duv>
             <div class="text-field text-field_margin_bottom_20">
-              <label class="text-field__title" for="masked-text-field">Дата рождения</label>
-              <input class="text-field__input text-field__input_color" type="text" name="data" id="masked-text-field" placeholder="ДД.ММ.ГГГГ">
+              <label class="text-field__title" for="maskedTextFormReg">Дата рождения</label>
+              <input class="text-field__input text-field__input_color" type="text" name="data" id="maskedTextFormReg" placeholder="ДД.ММ.ГГГГ">
             </div>
             <label class="text-field__title" for="text-field">Данные для входа в сервис</label>
-            <input class="text-field__input text-field_margin_bottom_10 text-field__input_color" type="text" name="text" id="text-field" placeholder="Email">
-            <input class="text-field__input text-field_margin_bottom_10 text-field__input_color" type="text" name="text" id="text-field" placeholder="Пароль">
+            <input class="text-field__input text-field_margin_bottom_10 text-field__input_color" type="text" name="text" id="" placeholder="Email">
+            <input class="text-field__input text-field_margin_bottom_10 text-field__input_color" type="text" name="text" id="" placeholder="Пароль">
             <label class="toggle__label text-field_margin_bottom_24" for="toggle">
               <input class="toggle__input" type="checkbox" name="toggle" value="toggle" id="toggle"><span class="toggle__span">Получать спецпредложения</span>
             </label>
             <button class="button-l button-m_margin_bottom" type="button">Перейти к оплате<span class="button-l-arrow"></span></button>
             <div class="form-footer-wrap">
               <p class="form-footer-text">Уже есть аккаунт на Toxin</p>
-              <button class="button-m" type="button"><span class="button-m-text button-m_border button-m_height_44 button-m_width_95">Войти</span></button>
+              <button class="button-m button-m-text button-m_border button-m_width_99" type="button">Войти</button>
             </div>
           </form>
         </div>
         <div class="cards2">
           <form class="form checkbox_margin_bottom" action="#" method="POST">
-            <p class="form-reserve-title"><span class="form-title__number form-title__lux">888</span><span class="form-title__price">9 990₽</span></p>
+            <p class="form-reserve-title"><span class="form-title__number slider-room-block-text__room-lux">888</span><span class="form-title__price">9 990₽</span></p>
             <div class="date-dropdown text-field text-field_margin_bottom_20">
               <div class="date-dropdown__from">
                 <label class="dropdown__title" for="dateDropFrom2">Прибытие</label>
@@ -538,22 +538,22 @@
           </form>
           <form class="form" action="#" method="POST">
             <p class="form__title">Войти</p>
-            <input class="text-field__input text-field_margin_bottom_10 text-field__input_color" type="text" name="text" id="text-field" placeholder="Email">
-            <input class="text-field__input radio_margin_bottom_20 text-field__input_color" type="text" name="text" id="text-field" placeholder="Пароль">
+            <input class="text-field__input text-field_margin_bottom_10 text-field__input_color" type="text" name="text" id="" placeholder="Email">
+            <input class="text-field__input radio_margin_bottom_20 text-field__input_color" type="text" name="text" id="" placeholder="Пароль">
             <button class="button-l button-m_margin_bottom" type="button">Войти<span class="button-l-arrow"></span></button>
             <div class="form-footer-wrap">
               <p class="form-footer-text">Нет аккаунта на Toxin?</p>
-              <button class="button-m" type="button"><span class="button-m-text button-m_border button-m_height_44 button-m_width_95">Создать</span></button>
+              <button class="button-m button-m-text button-m_border button-m_width_99" type="button">Создать</button>
             </div>
           </form>
         </div>
         <div class="cards3">
           <div class="window date-dropdown-window-cards-ui checkbox_margin_bottom"></div>
           <div class="slider-room checkbox_margin_bottom">
-            <div class="slider-room-block-img"><img class="slider-room-img" src="/img/room-img/image1.jpg" alt="Первый номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-2.jpg" alt="Первый номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-3.jpg" alt="Первый номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-4.jpg" alt="Первый номер в отеле">
+            <div class="slider-room-block-img"><img class="slider-room-img" src="/img/room-img/image1.webp" alt="Первый номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-2.webp" alt="Первый номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-3.webp" alt="Первый номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-4.webp" alt="Первый номер в отеле">
             </div>
             <div class="slider-room-block-text">
-              <p class="slider-room-block-text__hotel-number"><span class="form-title__number slider-room-block-text__room form-title__lux">888</span><span class="form-title__price slider-room-block-text__price">9 990₽</span></p>
+              <p class="slider-room-block-text__hotel-number"><span class="slider-room-block-text__room slider-room-block-text__room-lux">888</span><span class="slider-room-block-text__price">9 990₽</span></p>
               <hr class="slider-room-block-text__line">
               <div class="slider-room-block-text__rating">
                 <div class="rate-button__group">
@@ -577,19 +577,19 @@
               <li class="slider-room-indicator"></li>
             </ul>
             <div class="slider-room-block-button">
-              <div class="slider-room-block-button-left">
+              <div class="slider-room-block-button-left slider-room_arrow_active">
                 <button class="slider-room-arrow-left" type="button"></button>
               </div>
-              <div class="slider-room-block-button-right">
+              <div class="slider-room-block-button-right slider-room_arrow_active">
                 <button class="slider-room-arrow-right" type="button"></button>
               </div>
             </div>
           </div>
           <div class="slider-room">
-            <div class="slider-room-block-img"><img class="slider-room-img" src="/img/room-img/image2.jpg" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-2.jpg" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-3.jpg" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-4.jpg" alt="Второй номер в отеле">
+            <div class="slider-room-block-img"><img class="slider-room-img" src="/img/room-img/image2.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-2.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-3.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-4.webp" alt="Второй номер в отеле">
             </div>
             <div class="slider-room-block-text">
-              <p class="slider-room-block-text__hotel-number"><span class="form-title__number slider-room-block-text__room">840</span><span class="form-title__price slider-room-block-text__price">9 990₽</span></p>
+              <p class="slider-room-block-text__hotel-number"><span class="slider-room-block-text__room">840</span><span class="slider-room-block-text__price">9 990₽</span></p>
               <hr class="slider-room-block-text__line">
               <div class="slider-room-block-text__rating">
                 <div class="rate-button__group">
@@ -634,7 +634,7 @@
                 </li>
                 <li class="header-menu__item"><a class="header-menu__link" href="#">About Us</a>
                 </li>
-                <li class="header-menu__item"><a class="header-menu__link" href="#">Services</a><span class="header-menu__arrow"></span>
+                <li class="header-menu__item"><a class="header-menu__link" href="#">Services</a><span class="header-menu__arrow header-menu__arrow_margin_left_0"></span>
                 </li>
                 <li class="header-menu__item"><a class="header-menu__link" href="#">Careers</a>
                 </li>
@@ -643,8 +643,8 @@
                 <li class="header-menu__item"><a class="header-menu__link" href="#">Documentation</a>
                 </li>
               </ul>
-              <button class="button-m date-dropdown__from" type="button"><span class="button-m-text button-m_border">Login</span></button>
-              <button class="button-m" type="button"><span class="button-m-text button-m_bg_gradient">Register</span></button>
+              <button class="button-m button-m-text button-m_border button-m_height_34 button-m_margin-right" type="button">Login</button>
+              <button class="button-m button-m-text button-m_height_34" type="button">Register</button>
             </nav>
           </div>
         </header>
@@ -656,7 +656,7 @@
                 </li>
                 <li class="header-menu__item"><a class="header-menu__link" href="#">About Us</a>
                 </li>
-                <li class="header-menu__item"><a class="header-menu__link" href="#">Services</a><span class="header-menu__arrow"></span>
+                <li class="header-menu__item"><a class="header-menu__link" href="#">Services</a><span class="header-menu__arrow header-menu__arrow_margin_left_0"></span>
                 </li>
                 <li class="header-menu__item"><a class="header-menu__link" href="#">Careers</a>
                 </li>
@@ -671,7 +671,7 @@
           </div>
         </header>
         <footer class="footer">
-          <div class="footer-container">
+          <div class="footer-container footer-container_padding_100">
             <div class="footer-img-container"><img class="footer__img" src="/img/logo.svg" alt="Logo" id="footerLogo">
               <p class="footer__text">Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.</p>
             </div>
@@ -705,9 +705,9 @@
             </div>
             <div class="footer-subscribe-container">
               <p class="footer-menu__title">Subscribe to our newsletter</p>
-              <p class="footer__text radio_margin_bottom_20">Receive our latest news and promotions in your inbox!</p>
-              <div class="sub-field">
-                <input class="sub-field__input text-field__input_color" type="text" name="text" id="sub-field" placeholder="Your email address">
+              <p class="footer__text sub-field_bottom_20">Receive our latest news and promotions in your inbox!</p>
+              <div class="sub-field sub-field_width_260">
+                <input class="sub-field__input sub-field__input_color" type="text" name="text" id="sub-field" placeholder="Your email address">
               </div>
             </div>
           </div>

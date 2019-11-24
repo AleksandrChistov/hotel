@@ -9,6 +9,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const pages = [
   { filename: 'index.html', template: './pages/index.pug', chunks: ['app', 'vendors'] },
   { filename: 'ui-kit/index.html', template: './pages/ui-kit/ui-kit.pug', chunks: ['ui-kit', 'vendors'] },
+  { filename: 'search-room/index.html', template: './pages/search-room/search-room.pug', chunks: ['search-room', 'vendors'] }
 ];
 
 let obj = {};

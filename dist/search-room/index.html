@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <title>Search room filter</title>
+  <link href="/search-room/css/style.css" rel="stylesheet"></head>
+  <body class="body">
+    <div class="container">
+      <header class="header">
+        <div class="header-container"><img class="header__img" src="/img/logo.svg" alt="Logo" id="headerLogo">
+          <nav class="header-menu">
+            <ul class="header-menu__list">
+              <li class="header-menu__item header-menu__item_margin"><a class="header-menu__link" href="#">О нас</a>
+              </li>
+              <li class="header-menu__item header-menu__item_margin"><a class="header-menu__link" href="#">Услуги</a><span class="header-menu__arrow"></span>
+              </li>
+              <li class="header-menu__item header-menu__item_margin"><a class="header-menu__link" href="#">Вакансии</a>
+              </li>
+              <li class="header-menu__item header-menu__item_margin"><a class="header-menu__link" href="#">Новости</a>
+              </li>
+              <li class="header-menu__item header-menu__item_margin"><a class="header-menu__link" href="#">Соглашения</a><span class="header-menu__arrow"></span>
+              </li>
+            </ul>
+            <button class="button-m button-m-text button-m_border button-m_height_34 button-m_margin-right" type="button">Войти</button>
+            <button class="button-m button-m-text button-m_height_34" type="button">Зарегистрироваться</button>
+          </nav>
+        </div>
+      </header>
+      <div class="container-search">
+        <div class="filter">
+          <div class="filter-date sub-field_bottom_20">
+            <label class="dropdown__title" for="filterDate">Даты пребывания в отеле</label>
+            <input class="filter-date__input dropdown__input_width_middle dropdown__input_color" type="text" name="filterDate" id="filterDate" placeholder="19 авг - 23 авг">
+            <div class="window datepicker_width_middle filter-date-window dropdown-window_display_none"></div>
+          </div>
+          <div class="dropdown dropdown_margin_bottom_30 dropdown__input_width_middle">
+            <p class="dropdown__state">Default</p>
+            <label class="dropdown__title" for="guest">Dropdown</label>
+            <input class="dropdown__input dropdown__input_color" type="text" name="dropdown" id="guest" value="3 гостя, 1 младенец">
+            <div class="dropdown-window dropdown-window_display_none dropdown-window_width_middle" id="drop_guest">
+              <div class="dropdown-window__wrap-elem">
+                <p class="dropdown-window__name">Взрослые</p>
+                <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement dropdown-window__decrement_active">-</span><span class="dropdown-window__value" id="0guest">2</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
+                </div>
+              </div>
+              <div class="dropdown-window__wrap-elem">
+                <p class="dropdown-window__name">Дети</p>
+                <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement dropdown-window__decrement_active">-</span><span class="dropdown-window__value" id="1guest">1</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
+                </div>
+              </div>
+              <div class="dropdown-window__wrap-elem">
+                <p class="dropdown-window__name">Младенцы</p>
+                <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement dropdown-window__decrement_active">-</span><span class="dropdown-window__value" id="2guest">1</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
+                </div>
+              </div>
+              <p class="dropdown-window__clear  dropdown-window__clear_display_block">очистить      </p>
+              <p class="dropdown-window__apply">применить</p>
+            </div>
+          </div>
+          <div class="range-slider dropdown_margin_bottom_30">
+            <p class="range-slider__label">Диапазон цены</p>
+            <p class="range-slider__number">5 000₽ - 10 000₽</p>
+            <div class="range" id="range"></div>
+            <p class="range-slider__descr">Стоимость за сутки пребывания в номере</p>
+          </div>
+          <duv class="checkbox dropdown_margin_bottom_30">
+            <p class="checkbox__title text-field__title_margin_bottom">Checkbox Buttons</p>
+            <label class="checkbox__label" for="checkbox1">
+              <input class="checkbox__input" type="checkbox" name="checkbox1" value="checkbox-smoke" id="checkbox1"><span class="checkbox__span">Можно курить</span>
+            </label>
+            <label class="checkbox__label" for="checkbox2">
+              <input class="checkbox__input" type="checkbox" name="checkbox2" value="checkbox-pets" id="checkbox2" checked><span class="checkbox__span">Можно с питомцами</span>
+            </label>
+            <label class="checkbox__label" for="checkbox3">
+              <input class="checkbox__input" type="checkbox" name="checkbox3" value="checkbox-guests" id="checkbox3" checked><span class="checkbox__span">Можно пригласить гостей (до 10 человек)</span>
+            </label>
+          </duv>
+          <duv class="checkbox dropdown_margin_bottom_30 checkbox_width_266">
+            <p class="rich-checkbox__title text-field__title_margin_bottom">Доступность</p>
+            <label class="checkbox__label" for="checkbox-wide-corridor">
+              <input class="checkbox__input" type="checkbox" name="checkbox-wide-corridor" value="checkbox-wide-corridor" id="checkbox-wide-corridor"><span class="checkbox__span checkbox__span_title_bold">Широкий коридор</span><span class="checkbox__description checkbox__description_width_203">Ширина коридоров в номере не менее 91 см.</span>
+            </label>
+            <label class="checkbox__label" for="checkbox-disabled-assistant">
+              <input class="checkbox__input" type="checkbox" name="checkbox-disabled-assistant" value="checkbox-disabled-assistant" id="checkbox-disabled-assistant"><span class="checkbox__span checkbox__span_title_bold">Помощник для инвалидов</span><span class="checkbox__description checkbox__description_width_234">На 1 этаже вас встретит специалист  и проводит до номера.</span>
+            </label>
+          </duv>
+          <div class="dropdown dropdown_margin_bottom_30 dropdown__input_width_middle">
+            <label class="dropdown__title" for="accommodations">Удобства номера</label>
+            <input class="dropdown__input dropdown__input_color" type="text" name="dropdown" id="accommodations" value="2 спальни, 2 кровати...">
+            <div class="dropdown-window dropdown-window_display_none dropdown-window_width_middle" id="drop_accommodations">
+              <div class="dropdown-window__wrap-elem">
+                <p class="dropdown-window__name">Спальни</p>
+                <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement dropdown-window__decrement_active">-</span><span class="dropdown-window__value" id="0accommodations">2</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
+                </div>
+              </div>
+              <div class="dropdown-window__wrap-elem">
+                <p class="dropdown-window__name">Кровати</p>
+                <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement dropdown-window__decrement_active">-</span><span class="dropdown-window__value" id="1accommodations">2</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
+                </div>
+              </div>
+              <div class="dropdown-window__wrap-elem">
+                <p class="dropdown-window__name">Ванные комнаты</p>
+                <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="2accommodations">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="checkbox checkbox_img_arrow">
+            <p class="checkbox-list__title checkbox-click text-field__title_margin_bottom checkbox_cursor" id="checkList">Дополнительные удобства</p>
+            <div class="checkbox__modal checkbox__modal_display_none">
+              <label class="checkbox__label" for="checkbox-breakfast">
+                <input class="checkbox__input" type="checkbox" name="checkbox-breakfast" value="checkbox-breakfast" id="checkbox-breakfast"><span class="checkbox__span">Завтрак</span>
+              </label>
+              <label class="checkbox__label" for="checkbox-desk">
+                <input class="checkbox__input" type="checkbox" name="checkbox-desk" value="checkbox-desk" id="checkbox-desk" checked><span class="checkbox__span">Письменный стол</span>
+              </label>
+              <label class="checkbox__label" for="checkbox-feeding-chair">
+                <input class="checkbox__input" type="checkbox" name="checkbox-feeding-chair" value="checkbox-feeding-chair" id="checkbox-feeding-chair" checked><span class="checkbox__span">Стул для кормления</span>
+              </label>
+              <label class="checkbox__label" for="checkbox-crib">
+                <input class="checkbox__input" type="checkbox" name="checkbox-crib" value="checkbox-crib" id="checkbox-crib" checked><span class="checkbox__span">Кроватка</span>
+              </label>
+              <label class="checkbox__label" for="checkbox-tv">
+                <input class="checkbox__input" type="checkbox" name="checkbox-tv" value="checkbox-tv" id="checkbox-tv"><span class="checkbox__span">Телевизор</span>
+              </label>
+              <label class="checkbox__label" for="checkbox-shampoo">
+                <input class="checkbox__input" type="checkbox" name="checkbox-shampoo" value="checkbox-shampoo" id="checkbox-shampoo"><span class="checkbox__span">Шампунь</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="room-img">
+          <p class="room-img__title">Номера, которые мы для вас подобрали</p>
+          <div class="room-img-wrap">
+            <div class="slider-room room-img_margin">
+              <div class="slider-room-block-img"><img class="slider-room-img" src="/img/room-img/image1.webp" alt="Первый номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-2.webp" alt="Первый номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-3.webp" alt="Первый номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-4.webp" alt="Первый номер в отеле">
+              </div>
+              <div class="slider-room-block-text">
+                <p class="slider-room-block-text__hotel-number"><span class="slider-room-block-text__room slider-room-block-text__room-lux">888</span><span class="slider-room-block-text__price">9 990₽</span></p>
+                <hr class="slider-room-block-text__line">
+                <div class="slider-room-block-text__rating">
+                  <div class="rate-button__group">
+                    <input class="rate-button__input" type="radio" name="room-rating1" id="room-rating1-1" value="1" checked>
+                    <label class="rate-button__label" for="room-rating1-1" aria-label="1 звезда"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating1" id="room-rating1-2" value="2" checked>
+                    <label class="rate-button__label" for="room-rating1-2" aria-label="2 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating1" id="room-rating1-3" value="3" checked>
+                    <label class="rate-button__label" for="room-rating1-3" aria-label="3 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating1" id="room-rating1-4" value="4" checked>
+                    <label class="rate-button__label" for="room-rating1-4" aria-label="4 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating1" id="room-rating1-5" value="5" checked>
+                    <label class="rate-button__label" for="room-rating1-5" aria-label="5 звезд"></label>
+                  </div><span class="slider-room-block-text__reviews">145</span>
+                </div>
+              </div>
+              <ul class="slider-room-block-indicators">
+                <li class="slider-room-indicator slider-room-indicator_bg_white"></li>
+                <li class="slider-room-indicator"></li>
+                <li class="slider-room-indicator"></li>
+                <li class="slider-room-indicator"></li>
+              </ul>
+              <div class="slider-room-block-button">
+                <div class="slider-room-block-button-left slider-room_arrow_active">
+                  <button class="slider-room-arrow-left" type="button"></button>
+                </div>
+                <div class="slider-room-block-button-right slider-room_arrow_active">
+                  <button class="slider-room-arrow-right" type="button"></button>
+                </div>
+              </div>
+            </div>
+            <div class="slider-room room-img_margin">
+              <div class="slider-room-block-img"><img class="slider-room-img" src="/img/room-img/image2.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-2.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-3.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-4.webp" alt="Второй номер в отеле">
+              </div>
+              <div class="slider-room-block-text">
+                <p class="slider-room-block-text__hotel-number"><span class="slider-room-block-text__room">840</span><span class="slider-room-block-text__price">9 990₽</span></p>
+                <hr class="slider-room-block-text__line">
+                <div class="slider-room-block-text__rating">
+                  <div class="rate-button__group">
+                    <input class="rate-button__input" type="radio" name="room-rating2" id="room-rating2-1" value="1" checked>
+                    <label class="rate-button__label" for="room-rating2-1" aria-label="1 звезда"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating2" id="room-rating2-2" value="2" checked>
+                    <label class="rate-button__label" for="room-rating2-2" aria-label="2 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating2" id="room-rating2-3" value="3" checked>
+                    <label class="rate-button__label" for="room-rating2-3" aria-label="3 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating2" id="room-rating2-4" value="4" checked>
+                    <label class="rate-button__label" for="room-rating2-4" aria-label="4 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating2" id="room-rating2-5" value="5">
+                    <label class="rate-button__label" for="room-rating2-5" aria-label="5 звезд"></label>
+                  </div><span class="slider-room-block-text__reviews">65</span>
+                </div>
+              </div>
+              <ul class="slider-room-block-indicators">
+                <li class="slider-room-indicator slider-room-indicator_bg_white"></li>
+                <li class="slider-room-indicator"></li>
+                <li class="slider-room-indicator"></li>
+                <li class="slider-room-indicator"></li>
+              </ul>
+              <div class="slider-room-block-button">
+                <div class="slider-room-block-button-left">
+                  <button class="slider-room-arrow-left" type="button"></button>
+                </div>
+                <div class="slider-room-block-button-right">
+                  <button class="slider-room-arrow-right" type="button"></button>
+                </div>
+              </div>
+            </div>
+            <div class="slider-room room-img_margin">
+              <div class="slider-room-block-img"><img class="slider-room-img" src="/img/room-img/image3.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-2.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-3.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-4.webp" alt="Второй номер в отеле">
+              </div>
+              <div class="slider-room-block-text">
+                <p class="slider-room-block-text__hotel-number"><span class="slider-room-block-text__room">840</span><span class="slider-room-block-text__price">9 990₽</span></p>
+                <hr class="slider-room-block-text__line">
+                <div class="slider-room-block-text__rating">
+                  <div class="rate-button__group">
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-1" value="1" checked>
+                    <label class="rate-button__label" for="room-rating3-1" aria-label="1 звезда"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-2" value="2" checked>
+                    <label class="rate-button__label" for="room-rating3-2" aria-label="2 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-3" value="3" checked>
+                    <label class="rate-button__label" for="room-rating3-3" aria-label="3 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-4" value="4" checked>
+                    <label class="rate-button__label" for="room-rating3-4" aria-label="4 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-5" value="5">
+                    <label class="rate-button__label" for="room-rating3-5" aria-label="5 звезд"></label>
+                  </div><span class="slider-room-block-text__reviews">65</span>
+                </div>
+              </div>
+              <ul class="slider-room-block-indicators">
+                <li class="slider-room-indicator slider-room-indicator_bg_white"></li>
+                <li class="slider-room-indicator"></li>
+                <li class="slider-room-indicator"></li>
+                <li class="slider-room-indicator"></li>
+              </ul>
+              <div class="slider-room-block-button">
+                <div class="slider-room-block-button-left">
+                  <button class="slider-room-arrow-left" type="button"></button>
+                </div>
+                <div class="slider-room-block-button-right">
+                  <button class="slider-room-arrow-right" type="button"></button>
+                </div>
+              </div>
+            </div>
+            <div class="slider-room room-img_margin">
+              <div class="slider-room-block-img"><img class="slider-room-img" src="/img/room-img/image4.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-2.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-3.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-4.webp" alt="Второй номер в отеле">
+              </div>
+              <div class="slider-room-block-text">
+                <p class="slider-room-block-text__hotel-number"><span class="slider-room-block-text__room">840</span><span class="slider-room-block-text__price">9 990₽</span></p>
+                <hr class="slider-room-block-text__line">
+                <div class="slider-room-block-text__rating">
+                  <div class="rate-button__group">
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-1" value="1" checked>
+                    <label class="rate-button__label" for="room-rating3-1" aria-label="1 звезда"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-2" value="2" checked>
+                    <label class="rate-button__label" for="room-rating3-2" aria-label="2 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-3" value="3" checked>
+                    <label class="rate-button__label" for="room-rating3-3" aria-label="3 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-4" value="4" checked>
+                    <label class="rate-button__label" for="room-rating3-4" aria-label="4 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-5" value="5">
+                    <label class="rate-button__label" for="room-rating3-5" aria-label="5 звезд"></label>
+                  </div><span class="slider-room-block-text__reviews">65</span>
+                </div>
+              </div>
+              <ul class="slider-room-block-indicators">
+                <li class="slider-room-indicator slider-room-indicator_bg_white"></li>
+                <li class="slider-room-indicator"></li>
+                <li class="slider-room-indicator"></li>
+                <li class="slider-room-indicator"></li>
+              </ul>
+              <div class="slider-room-block-button">
+                <div class="slider-room-block-button-left">
+                  <button class="slider-room-arrow-left" type="button"></button>
+                </div>
+                <div class="slider-room-block-button-right">
+                  <button class="slider-room-arrow-right" type="button"></button>
+                </div>
+              </div>
+            </div>
+            <div class="slider-room room-img_margin">
+              <div class="slider-room-block-img"><img class="slider-room-img" src="/img/room-img/image5.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-2.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-3.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-4.webp" alt="Второй номер в отеле">
+              </div>
+              <div class="slider-room-block-text">
+                <p class="slider-room-block-text__hotel-number"><span class="slider-room-block-text__room">840</span><span class="slider-room-block-text__price">9 990₽</span></p>
+                <hr class="slider-room-block-text__line">
+                <div class="slider-room-block-text__rating">
+                  <div class="rate-button__group">
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-1" value="1" checked>
+                    <label class="rate-button__label" for="room-rating3-1" aria-label="1 звезда"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-2" value="2" checked>
+                    <label class="rate-button__label" for="room-rating3-2" aria-label="2 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-3" value="3" checked>
+                    <label class="rate-button__label" for="room-rating3-3" aria-label="3 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-4" value="4" checked>
+                    <label class="rate-button__label" for="room-rating3-4" aria-label="4 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-5" value="5">
+                    <label class="rate-button__label" for="room-rating3-5" aria-label="5 звезд"></label>
+                  </div><span class="slider-room-block-text__reviews">65</span>
+                </div>
+              </div>
+              <ul class="slider-room-block-indicators">
+                <li class="slider-room-indicator slider-room-indicator_bg_white"></li>
+                <li class="slider-room-indicator"></li>
+                <li class="slider-room-indicator"></li>
+                <li class="slider-room-indicator"></li>
+              </ul>
+              <div class="slider-room-block-button">
+                <div class="slider-room-block-button-left">
+                  <button class="slider-room-arrow-left" type="button"></button>
+                </div>
+                <div class="slider-room-block-button-right">
+                  <button class="slider-room-arrow-right" type="button"></button>
+                </div>
+              </div>
+            </div>
+            <div class="slider-room room-img_margin">
+              <div class="slider-room-block-img"><img class="slider-room-img" src="/img/room-img/image6.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-2.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-3.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-4.webp" alt="Второй номер в отеле">
+              </div>
+              <div class="slider-room-block-text">
+                <p class="slider-room-block-text__hotel-number"><span class="slider-room-block-text__room">840</span><span class="slider-room-block-text__price">9 990₽</span></p>
+                <hr class="slider-room-block-text__line">
+                <div class="slider-room-block-text__rating">
+                  <div class="rate-button__group">
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-1" value="1" checked>
+                    <label class="rate-button__label" for="room-rating3-1" aria-label="1 звезда"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-2" value="2" checked>
+                    <label class="rate-button__label" for="room-rating3-2" aria-label="2 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-3" value="3" checked>
+                    <label class="rate-button__label" for="room-rating3-3" aria-label="3 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-4" value="4" checked>
+                    <label class="rate-button__label" for="room-rating3-4" aria-label="4 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-5" value="5">
+                    <label class="rate-button__label" for="room-rating3-5" aria-label="5 звезд"></label>
+                  </div><span class="slider-room-block-text__reviews">65</span>
+                </div>
+              </div>
+              <ul class="slider-room-block-indicators">
+                <li class="slider-room-indicator slider-room-indicator_bg_white"></li>
+                <li class="slider-room-indicator"></li>
+                <li class="slider-room-indicator"></li>
+                <li class="slider-room-indicator"></li>
+              </ul>
+              <div class="slider-room-block-button">
+                <div class="slider-room-block-button-left">
+                  <button class="slider-room-arrow-left" type="button"></button>
+                </div>
+                <div class="slider-room-block-button-right">
+                  <button class="slider-room-arrow-right" type="button"></button>
+                </div>
+              </div>
+            </div>
+            <div class="slider-room room-img_margin">
+              <div class="slider-room-block-img"><img class="slider-room-img" src="/img/room-img/image7.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-2.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-3.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-4.webp" alt="Второй номер в отеле">
+              </div>
+              <div class="slider-room-block-text">
+                <p class="slider-room-block-text__hotel-number"><span class="slider-room-block-text__room">840</span><span class="slider-room-block-text__price">9 990₽</span></p>
+                <hr class="slider-room-block-text__line">
+                <div class="slider-room-block-text__rating">
+                  <div class="rate-button__group">
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-1" value="1" checked>
+                    <label class="rate-button__label" for="room-rating3-1" aria-label="1 звезда"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-2" value="2" checked>
+                    <label class="rate-button__label" for="room-rating3-2" aria-label="2 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-3" value="3" checked>
+                    <label class="rate-button__label" for="room-rating3-3" aria-label="3 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-4" value="4" checked>
+                    <label class="rate-button__label" for="room-rating3-4" aria-label="4 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-5" value="5">
+                    <label class="rate-button__label" for="room-rating3-5" aria-label="5 звезд"></label>
+                  </div><span class="slider-room-block-text__reviews">65</span>
+                </div>
+              </div>
+              <ul class="slider-room-block-indicators">
+                <li class="slider-room-indicator slider-room-indicator_bg_white"></li>
+                <li class="slider-room-indicator"></li>
+                <li class="slider-room-indicator"></li>
+                <li class="slider-room-indicator"></li>
+              </ul>
+              <div class="slider-room-block-button">
+                <div class="slider-room-block-button-left">
+                  <button class="slider-room-arrow-left" type="button"></button>
+                </div>
+                <div class="slider-room-block-button-right">
+                  <button class="slider-room-arrow-right" type="button"></button>
+                </div>
+              </div>
+            </div>
+            <div class="slider-room room-img_margin">
+              <div class="slider-room-block-img"><img class="slider-room-img" src="/img/room-img/image8.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-2.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-3.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-4.webp" alt="Второй номер в отеле">
+              </div>
+              <div class="slider-room-block-text">
+                <p class="slider-room-block-text__hotel-number"><span class="slider-room-block-text__room">840</span><span class="slider-room-block-text__price">9 990₽</span></p>
+                <hr class="slider-room-block-text__line">
+                <div class="slider-room-block-text__rating">
+                  <div class="rate-button__group">
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-1" value="1" checked>
+                    <label class="rate-button__label" for="room-rating3-1" aria-label="1 звезда"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-2" value="2" checked>
+                    <label class="rate-button__label" for="room-rating3-2" aria-label="2 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-3" value="3" checked>
+                    <label class="rate-button__label" for="room-rating3-3" aria-label="3 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-4" value="4" checked>
+                    <label class="rate-button__label" for="room-rating3-4" aria-label="4 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-5" value="5">
+                    <label class="rate-button__label" for="room-rating3-5" aria-label="5 звезд"></label>
+                  </div><span class="slider-room-block-text__reviews">65</span>
+                </div>
+              </div>
+              <ul class="slider-room-block-indicators">
+                <li class="slider-room-indicator slider-room-indicator_bg_white"></li>
+                <li class="slider-room-indicator"></li>
+                <li class="slider-room-indicator"></li>
+                <li class="slider-room-indicator"></li>
+              </ul>
+              <div class="slider-room-block-button">
+                <div class="slider-room-block-button-left">
+                  <button class="slider-room-arrow-left" type="button"></button>
+                </div>
+                <div class="slider-room-block-button-right">
+                  <button class="slider-room-arrow-right" type="button"></button>
+                </div>
+              </div>
+            </div>
+            <div class="slider-room room-img_margin">
+              <div class="slider-room-block-img"><img class="slider-room-img" src="/img/room-img/image9.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-2.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-3.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-4.webp" alt="Второй номер в отеле">
+              </div>
+              <div class="slider-room-block-text">
+                <p class="slider-room-block-text__hotel-number"><span class="slider-room-block-text__room">840</span><span class="slider-room-block-text__price">9 990₽</span></p>
+                <hr class="slider-room-block-text__line">
+                <div class="slider-room-block-text__rating">
+                  <div class="rate-button__group">
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-1" value="1" checked>
+                    <label class="rate-button__label" for="room-rating3-1" aria-label="1 звезда"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-2" value="2" checked>
+                    <label class="rate-button__label" for="room-rating3-2" aria-label="2 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-3" value="3" checked>
+                    <label class="rate-button__label" for="room-rating3-3" aria-label="3 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-4" value="4" checked>
+                    <label class="rate-button__label" for="room-rating3-4" aria-label="4 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-5" value="5">
+                    <label class="rate-button__label" for="room-rating3-5" aria-label="5 звезд"></label>
+                  </div><span class="slider-room-block-text__reviews">65</span>
+                </div>
+              </div>
+              <ul class="slider-room-block-indicators">
+                <li class="slider-room-indicator slider-room-indicator_bg_white"></li>
+                <li class="slider-room-indicator"></li>
+                <li class="slider-room-indicator"></li>
+                <li class="slider-room-indicator"></li>
+              </ul>
+              <div class="slider-room-block-button">
+                <div class="slider-room-block-button-left">
+                  <button class="slider-room-arrow-left" type="button"></button>
+                </div>
+                <div class="slider-room-block-button-right">
+                  <button class="slider-room-arrow-right" type="button"></button>
+                </div>
+              </div>
+            </div>
+            <div class="slider-room room-img_margin">
+              <div class="slider-room-block-img"><img class="slider-room-img" src="/img/room-img/image10.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-2.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-3.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-4.webp" alt="Второй номер в отеле">
+              </div>
+              <div class="slider-room-block-text">
+                <p class="slider-room-block-text__hotel-number"><span class="slider-room-block-text__room">840</span><span class="slider-room-block-text__price">9 990₽</span></p>
+                <hr class="slider-room-block-text__line">
+                <div class="slider-room-block-text__rating">
+                  <div class="rate-button__group">
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-1" value="1" checked>
+                    <label class="rate-button__label" for="room-rating3-1" aria-label="1 звезда"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-2" value="2" checked>
+                    <label class="rate-button__label" for="room-rating3-2" aria-label="2 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-3" value="3" checked>
+                    <label class="rate-button__label" for="room-rating3-3" aria-label="3 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-4" value="4" checked>
+                    <label class="rate-button__label" for="room-rating3-4" aria-label="4 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-5" value="5">
+                    <label class="rate-button__label" for="room-rating3-5" aria-label="5 звезд"></label>
+                  </div><span class="slider-room-block-text__reviews">65</span>
+                </div>
+              </div>
+              <ul class="slider-room-block-indicators">
+                <li class="slider-room-indicator slider-room-indicator_bg_white"></li>
+                <li class="slider-room-indicator"></li>
+                <li class="slider-room-indicator"></li>
+                <li class="slider-room-indicator"></li>
+              </ul>
+              <div class="slider-room-block-button">
+                <div class="slider-room-block-button-left">
+                  <button class="slider-room-arrow-left" type="button"></button>
+                </div>
+                <div class="slider-room-block-button-right">
+                  <button class="slider-room-arrow-right" type="button"></button>
+                </div>
+              </div>
+            </div>
+            <div class="slider-room room-img_margin">
+              <div class="slider-room-block-img"><img class="slider-room-img" src="/img/room-img/image11.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-2.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-3.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-4.webp" alt="Второй номер в отеле">
+              </div>
+              <div class="slider-room-block-text">
+                <p class="slider-room-block-text__hotel-number"><span class="slider-room-block-text__room">840</span><span class="slider-room-block-text__price">9 990₽</span></p>
+                <hr class="slider-room-block-text__line">
+                <div class="slider-room-block-text__rating">
+                  <div class="rate-button__group">
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-1" value="1" checked>
+                    <label class="rate-button__label" for="room-rating3-1" aria-label="1 звезда"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-2" value="2" checked>
+                    <label class="rate-button__label" for="room-rating3-2" aria-label="2 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-3" value="3" checked>
+                    <label class="rate-button__label" for="room-rating3-3" aria-label="3 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-4" value="4" checked>
+                    <label class="rate-button__label" for="room-rating3-4" aria-label="4 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-5" value="5">
+                    <label class="rate-button__label" for="room-rating3-5" aria-label="5 звезд"></label>
+                  </div><span class="slider-room-block-text__reviews">65</span>
+                </div>
+              </div>
+              <ul class="slider-room-block-indicators">
+                <li class="slider-room-indicator slider-room-indicator_bg_white"></li>
+                <li class="slider-room-indicator"></li>
+                <li class="slider-room-indicator"></li>
+                <li class="slider-room-indicator"></li>
+              </ul>
+              <div class="slider-room-block-button">
+                <div class="slider-room-block-button-left">
+                  <button class="slider-room-arrow-left" type="button"></button>
+                </div>
+                <div class="slider-room-block-button-right">
+                  <button class="slider-room-arrow-right" type="button"></button>
+                </div>
+              </div>
+            </div>
+            <div class="slider-room room-img_margin">
+              <div class="slider-room-block-img"><img class="slider-room-img" src="/img/room-img/image12.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-2.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-3.webp" alt="Второй номер в отеле"><img class="slider-room-img" src="/img/room-img/image-default-4.webp" alt="Второй номер в отеле">
+              </div>
+              <div class="slider-room-block-text">
+                <p class="slider-room-block-text__hotel-number"><span class="slider-room-block-text__room">840</span><span class="slider-room-block-text__price">9 990₽</span></p>
+                <hr class="slider-room-block-text__line">
+                <div class="slider-room-block-text__rating">
+                  <div class="rate-button__group">
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-1" value="1" checked>
+                    <label class="rate-button__label" for="room-rating3-1" aria-label="1 звезда"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-2" value="2" checked>
+                    <label class="rate-button__label" for="room-rating3-2" aria-label="2 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-3" value="3" checked>
+                    <label class="rate-button__label" for="room-rating3-3" aria-label="3 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-4" value="4" checked>
+                    <label class="rate-button__label" for="room-rating3-4" aria-label="4 звезды"></label>
+                    <input class="rate-button__input" type="radio" name="room-rating3" id="room-rating3-5" value="5">
+                    <label class="rate-button__label" for="room-rating3-5" aria-label="5 звезд"></label>
+                  </div><span class="slider-room-block-text__reviews">65</span>
+                </div>
+              </div>
+              <ul class="slider-room-block-indicators">
+                <li class="slider-room-indicator slider-room-indicator_bg_white"></li>
+                <li class="slider-room-indicator"></li>
+                <li class="slider-room-indicator"></li>
+                <li class="slider-room-indicator"></li>
+              </ul>
+              <div class="slider-room-block-button">
+                <div class="slider-room-block-button-left">
+                  <button class="slider-room-arrow-left" type="button"></button>
+                </div>
+                <div class="slider-room-block-button-right">
+                  <button class="slider-room-arrow-right" type="button"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagination-wrap">
+            <nav class="pagination">
+              <div class="pagination-group"><span class="pagination__page-current" aria-current="page">1</span><a class="pagination__page-number">2</a><a class="pagination__page-number">3</a><span class="pagination__page-number pagination__dots">...</span><a class="pagination__page-number">15</a><span class="pagination__page-current pagination__page-next"></span></div>
+              <p class="pagination__description">1 – 12 из 100+ вариантов аренды</p>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-img-container"><img class="footer__img" src="/img/logo.svg" alt="Logo" id="footerLogo">
+            <p class="footer__text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+          </div>
+          <div class="footer-menu-container">
+            <div class="footer-menu">
+              <p class="footer-menu__title">Навигация</p>
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">О нас</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Новости</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Служба поддержки</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Услуги</a></li>
+              </ul>
+            </div>
+            <div class="footer-menu">
+              <p class="footer-menu__title">О нас</p>
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">О сервисе</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Наша команда</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Вакансии</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Инвесторы</a></li>
+              </ul>
+            </div>
+            <div class="footer-menu">
+              <p class="footer-menu__title">Служба поддержки</p>
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Соглашения</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Сообщества</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Связь с нами</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-subscribe-container">
+            <p class="footer-menu__title">Подписка</p>
+            <p class="footer__text sub-field_bottom_20">Получайте специальные предложения и новости сервиса</p>
+            <div class="sub-field sub-field_width_260">
+              <input class="sub-field__input sub-field__input_color" type="text" name="text" id="sub-field" placeholder="Email">
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="footer-copyright checkbox_margin_bottom">
+        <div class="footer-container-copyright">
+          <p class="footer__copyright-text">Copyright © 2018 Toxin отель. Все права зачищены.</p>
+          <ul class="footer-social">
+            <li class="footer-social__li"><a class="footer-social__link-tw" href="#" aria-label="Twitter"></a></li>
+            <li class="footer-social__li"><a class="footer-social__link-fb" href="#" aria-label="Facebook"></a></li>
+            <li class="footer-social__li"><a class="footer-social__link-ins" href="#" aria-label="Instagram"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <script type="text/javascript" src="/app/js/vendors.js"></script><script type="text/javascript" src="/search-room/js/script.js"></script></body>
+</html>

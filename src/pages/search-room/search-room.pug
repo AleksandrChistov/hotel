@@ -1,0 +1,120 @@
+extends ../../components/main/main
+include ../../components/header/header.pug
+include ../../components/small-components/filter-date-dropdown/filter-date.pug
+include ../../components/small-components/dropdown/dropdown.pug
+include ../../components/small-components/range-slider/range-slider.pug
+include ../../components/small-components/checkbox-buttons/checkbox-buttons.pug
+include ../../components/small-components/rich-checkbox-buttons/rich-checkbox.pug
+include ../../components/small-components/expandable-checkbox-list/checkbox-list.pug
+include ../../components/slider-room/slider-room.pug
+include ../../components/small-components/pagination/pagination.pug
+include ../../components/footer/footer.pug
+
+block variables
+  - const pageTitle = 'Search room filter'
+  - const bg = ""
+
+block content
+  .container
+    +header({btnText: ["Войти", "Зарегистрироваться"], list: [{text: "О нас"}, {text: "Услуги", arrow: true}, 
+      {text: "Вакансии"}, {text: "Новости"}, {text: "Соглашения", arrow: true}], itemMargin: " header-menu__item_margin"})
+    .container-search
+      .filter
+        +filterDate({title: "Даты пребывания в отеле", id: "filterDate", margin: " filter-date_bottom_17"})
+        +dropdown({margin: " dropdown_margin_bottom_30", width: " dropdown__input_width_middle", id: "guest", 
+            color: " dropdown__input_color", title: "Гости", windowWidth: " dropdown-window_width_middle", 
+            clearDisplay: " dropdown-window__clear_display_block", value: "3 гостя, 1 младенец", arrName: ["2 Взрослые", "1 Дети", "1 Младенцы"]})
+        +rangeSlider({margin: " range-slider_bottom_28", title: "Диапазон цены", descr: "Стоимость за сутки пребывания в номере"})
+        +checkboxButtons({margin: " dropdown_margin_bottom_30", marginTitle: " text-field__title_margin_bottom",
+            txt: "Checkbox Buttons", arr: [{value: "checkbox-smoke", text: "Можно курить", checked: false},
+            {value: "checkbox-pets", text: "Можно с питомцами", checked: true},
+            {value: "checkbox-guests", text: "Можно пригласить гостей (до 10 человек)", checked: true}]})
+        +richCheckbox({margin: " rich-checkbox_bottom_21", txt: "Доступность", marginTitle: " text-field__title_margin_bottom", 
+            title: " checkbox__span_title_bold",  width: " checkbox_width_266", 
+            arr: [{value: "checkbox-wide-corridor", text: "Широкий коридор", descWidth: " checkbox__description_width_203", 
+            description: "Ширина коридоров в номере не менее 91 см.", checked: false}, 
+            {value: "checkbox-disabled-assistant", text: "Помощник для инвалидов", descWidth: " checkbox__description_width_234", 
+            description: "На 1 этаже вас встретит специалист  и проводит до номера.", checked: false}]})
+        +dropdown({margin: " dropdown_margin_bottom_30", id: "accommodations", color: " dropdown__input_color", 
+            width: " dropdown__input_width_middle", windowWidth: " dropdown-window_width_middle", title: "Удобства номера", 
+            value: "2 спальни, 2 кровати...", arrName: ["2 Спальни", "2 Кровати", "0 Ванные комнаты"]})
+        +checkboxList({marginTitle: " text-field__title_margin_bottom", 
+            modal: true, cursorTitle: " checkbox_cursor", displayModal: " checkbox__modal_display_none", 
+            txt: "Дополнительные удобства", imgArrow: " checkbox_img_arrow", 
+            arr: [{value: "checkbox-breakfast", text: "Завтрак", checked: false},
+            {value: "checkbox-desk", text: "Письменный стол", checked: true},
+            {value: "checkbox-feeding-chair", text: "Стул для кормления", checked: true}, 
+            {value: "checkbox-crib", text: "Кроватка", checked: true},
+            {value: "checkbox-tv", text: "Телевизор", checked: false},
+            {value: "checkbox-shampoo", text: "Шампунь", checked: false}]})
+      .room-img
+        p.room-img__title Номера, которые мы для вас подобрали
+        .room-img-wrap
+          +sliderRoom({arrImg: [{src: "/img/room-img/image1.webp"}, {src: "/img/room-img/image-default-2.webp"}, 
+            {src: "/img/room-img/image-default-3.webp"}, {src: "/img/room-img/image-default-4.webp"}], alt: "Первый номер в отеле", 
+            lux: " slider-room-block-text__room-lux", room: "888", price: "9 990₽", nameRating: "room-rating1", reviews: "145", margin: " room-img_margin", 
+            arrowActive: " slider-room_arrow_active", arr: [{aria: "1 звезда", checked: true}, {aria: "2 звезды", checked: true}, 
+            {aria: "3 звезды", checked: true}, {aria: "4 звезды", checked: true}, {aria: "5 звезд", checked: true}]})
+          +sliderRoom({arrImg: [{src: "/img/room-img/image2.webp"}, {src: "/img/room-img/image-default-2.webp"}, 
+            {src: "/img/room-img/image-default-3.webp"}, {src: "/img/room-img/image-default-4.webp"}], 
+            alt: "Второй номер в отеле", room: "840", price: "9 990₽", nameRating: "room-rating2", reviews: "65", margin: " room-img_margin",  
+            arr: [{aria: "1 звезда", checked: true}, {aria: "2 звезды", checked: true}, 
+            {aria: "3 звезды", checked: true}, {aria: "4 звезды", checked: true}, {aria: "5 звезд", checked: false}]})
+          +sliderRoom({arrImg: [{src: "/img/room-img/image3.webp"}, {src: "/img/room-img/image-default-2.webp"}, 
+            {src: "/img/room-img/image-default-3.webp"}, {src: "/img/room-img/image-default-4.webp"}], 
+            alt: "Третий номер в отеле", lux: " slider-room-block-text__room-lux", room: "980", price: "8 500₽", nameRating: "room-rating3", 
+            reviews: "35", margin: " room-img_margin", arr: [{aria: "1 звезда", checked: true}, {aria: "2 звезды", checked: true}, 
+            {aria: "3 звезды", checked: true}, {aria: "4 звезды", checked: false}, {aria: "5 звезд", checked: false}]})
+          +sliderRoom({arrImg: [{src: "/img/room-img/image4.webp"}, {src: "/img/room-img/image-default-2.webp"}, 
+            {src: "/img/room-img/image-default-3.webp"}, {src: "/img/room-img/image-default-4.webp"}], 
+            alt: "Второй номер в отеле", room: "856", price: "7 300₽", nameRating: "room-rating4", reviews: "19", margin: " room-img_margin",  
+            arr: [{aria: "1 звезда", checked: true}, {aria: "2 звезды", checked: true}, 
+            {aria: "3 звезды", checked: true}, {aria: "4 звезды", checked: true}, {aria: "5 звезд", checked: true}]})
+          +sliderRoom({arrImg: [{src: "/img/room-img/image5.webp"}, {src: "/img/room-img/image-default-2.webp"}, 
+            {src: "/img/room-img/image-default-3.webp"}, {src: "/img/room-img/image-default-4.webp"}], 
+            alt: "Второй номер в отеле", room: "740", price: "6 000₽", nameRating: "room-rating5", reviews: "44", margin: " room-img_margin",  
+            arr: [{aria: "1 звезда", checked: true}, {aria: "2 звезды", checked: true}, 
+            {aria: "3 звезды", checked: true}, {aria: "4 звезды", checked: true}, {aria: "5 звезд", checked: false}]})
+          +sliderRoom({arrImg: [{src: "/img/room-img/image6.webp"}, {src: "/img/room-img/image-default-2.webp"}, 
+            {src: "/img/room-img/image-default-3.webp"}, {src: "/img/room-img/image-default-4.webp"}], 
+            alt: "Второй номер в отеле", room: "982", price: "5 800₽", nameRating: "room-rating6", reviews: "56", margin: " room-img_margin",  
+            arr: [{aria: "1 звезда", checked: true}, {aria: "2 звезды", checked: true}, 
+            {aria: "3 звезды", checked: true}, {aria: "4 звезды", checked: false}, {aria: "5 звезд", checked: false}]})
+          +sliderRoom({arrImg: [{src: "/img/room-img/image7.webp"}, {src: "/img/room-img/image-default-2.webp"}, 
+            {src: "/img/room-img/image-default-3.webp"}, {src: "/img/room-img/image-default-4.webp"}], 
+            alt: "Второй номер в отеле", room: "678", price: "5 500₽", nameRating: "room-rating7", reviews: "45", margin: " room-img_margin",  
+            arr: [{aria: "1 звезда", checked: true}, {aria: "2 звезды", checked: true}, 
+            {aria: "3 звезды", checked: true}, {aria: "4 звезды", checked: true}, {aria: "5 звезд", checked: true}]})
+          +sliderRoom({arrImg: [{src: "/img/room-img/image8.webp"}, {src: "/img/room-img/image-default-2.webp"}, 
+            {src: "/img/room-img/image-default-3.webp"}, {src: "/img/room-img/image-default-4.webp"}], 
+            alt: "Второй номер в отеле", room: "450", price: "5 300₽", nameRating: "room-rating8", reviews: "39", margin: " room-img_margin",  
+            arr: [{aria: "1 звезда", checked: true}, {aria: "2 звезды", checked: true}, 
+            {aria: "3 звезды", checked: true}, {aria: "4 звезды", checked: true}, {aria: "5 звезд", checked: false}]})
+          +sliderRoom({arrImg: [{src: "/img/room-img/image9.webp"}, {src: "/img/room-img/image-default-2.webp"}, 
+            {src: "/img/room-img/image-default-3.webp"}, {src: "/img/room-img/image-default-4.webp"}], 
+            alt: "Второй номер в отеле", room: "350", price: "5 000₽", nameRating: "room-rating9", reviews: "77", margin: " room-img_margin",  
+            arr: [{aria: "1 звезда", checked: true}, {aria: "2 звезды", checked: true}, 
+            {aria: "3 звезды", checked: true}, {aria: "4 звезды", checked: false}, {aria: "5 звезд", checked: false}]})
+          +sliderRoom({arrImg: [{src: "/img/room-img/image10.webp"}, {src: "/img/room-img/image-default-2.webp"}, 
+            {src: "/img/room-img/image-default-3.webp"}, {src: "/img/room-img/image-default-4.webp"}], 
+            alt: "Второй номер в отеле", room: "666", price: "5 000₽", nameRating: "room-rating10", reviews: "25", margin: " room-img_margin",  
+            arr: [{aria: "1 звезда", checked: true}, {aria: "2 звезды", checked: true}, 
+            {aria: "3 звезды", checked: true}, {aria: "4 звезды", checked: true}, {aria: "5 звезд", checked: true}]})
+          +sliderRoom({arrImg: [{src: "/img/room-img/image11.webp"}, {src: "/img/room-img/image-default-2.webp"}, 
+            {src: "/img/room-img/image-default-3.webp"}, {src: "/img/room-img/image-default-4.webp"}], 
+            alt: "Второй номер в отеле", room: "444", price: "5 000₽", nameRating: "room-rating11", reviews: "15", margin: " room-img_margin",  
+            arr: [{aria: "1 звезда", checked: true}, {aria: "2 звезды", checked: true}, 
+            {aria: "3 звезды", checked: true}, {aria: "4 звезды", checked: false}, {aria: "5 звезд", checked: false}]})
+          +sliderRoom({arrImg: [{src: "/img/room-img/image12.webp"}, {src: "/img/room-img/image-default-2.webp"}, 
+            {src: "/img/room-img/image-default-3.webp"}, {src: "/img/room-img/image-default-4.webp"}], 
+            alt: "Второй номер в отеле", room: "352", price: "5 000₽", nameRating: "room-rating12", reviews: "55", margin: " room-img_margin",  
+            arr: [{aria: "1 звезда", checked: true}, {aria: "2 звезды", checked: true}, 
+            {aria: "3 звезды", checked: true}, {aria: "4 звезды", checked: false}, {aria: "5 звезд", checked: false}]})
+        +pagination({marginTitle: " pagination_margin_bottom_title"})
+    hr.filter-line
+    +footer({text: "Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»", 
+      subscribeTitle: "Подписка", subscribeText: "Получайте специальные предложения и новости сервиса", 
+      copyrightText: "Copyright © 2018 Toxin отель. Все права зачищены.", marginBottom: " checkbox_margin_bottom", placeholderField: "Email", 
+      menu: [{title: "Навигация", list: [{text: "О нас"}, {text: "Новости"}, {text: "Служба поддержки"}, {text: "Услуги"}] }, 
+            {title: "О нас", list: [{text: "О сервисе"}, {text: "Наша команда"}, {text: "Вакансии"}, {text: "Инвесторы"}] }, 
+            {title: "Служба поддержки", list: [{text: "Соглашения"}, {text: "Сообщества"}, {text: "Связь с нами"}] }] })
