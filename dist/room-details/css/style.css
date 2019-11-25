@@ -11,6 +11,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'Montserrat';
+  src: local('☺'), url(/fonts/Montserrat-Medium/Montserrat-Medium.woff) format('woff'), url(/fonts/Montserrat-Medium/Montserrat-Medium.ttf) format('truetype'), url(/fonts/Montserrat-Medium/Montserrat-Medium.svg) format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Quicksand';
   src: local('☺'), url(/fonts/Quicksand-Bold/Quicksand-Bold.woff) format('woff'), url(/fonts/Quicksand-Bold/Quicksand-Bold.ttf) format('truetype'), url(/fonts/Quicksand-Bold/Quicksand-Bold.svg) format('svg');
   font-weight: bold;
@@ -62,6 +68,7 @@ p {
   font-size: 24px;
   color: #1f2041;
   padding-bottom: 20px;
+  letter-spacing: -0.7px;
 }
 
 .room-details-img-wrap {
@@ -91,10 +98,10 @@ p {
 .room-details-main-info-wrap {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 }
 .room-details-main-impressions {
-  flex-basis: 49%;
+  flex-basis: 49.5%;
 }
 .room-details-main__title {
   font-family: Quicksand, Montserrat, sans-serif;
@@ -102,10 +109,11 @@ p {
   font-weight: bold;
   color: #1f2041;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  letter-spacing: -0.5px;
 }
 .room-details-main__title_bottom_20 {
   margin-bottom: 20px;
@@ -121,7 +129,7 @@ p {
   justify-content: space-between;
 }
 .room-details-regulations-cancellation {
-  flex-basis: 49%;
+  flex-basis: 49.5%;
 }
 .room-details-main__text {
   line-height: 24px;
@@ -138,9 +146,12 @@ p {
 .button-m-text {
   font-size: 12px;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 500;
+  letter-spacing: 0.2px;
   color: #fff;
+  line-height: 34px;
   font-family: Montserrat, sans-serif;
+  text-decoration: none;
 }
 .button-m {
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
@@ -148,6 +159,9 @@ p {
   border: none;
   height: 44px;
   padding: 0 19.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .button-m:active,
 .button-m:focus {
@@ -169,7 +183,7 @@ p {
   height: 44px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  line-height: 40px;
 }
 .button-m_border:active,
 .button-m_border:focus {
@@ -184,6 +198,7 @@ p {
 }
 .button-m_height_34 {
   height: 34px;
+  align-items: center;
 }
 .button-m_width_99 {
   width: 99px;
@@ -191,6 +206,16 @@ p {
 }
 .button-m_margin-right {
   margin-right: 20px;
+}
+.buttons_text_gradient {
+  color: #bc9cff;
+}
+.buttons_text_gray {
+  color: rgba(31,32,65,0.5);
+}
+.button-m_ui_kit {
+  letter-spacing: 0;
+  font-weight: bold;
 }
 .header {
   background: #fff;
@@ -1033,8 +1058,9 @@ p {
   font-family: Montserrat, sans-serif;
   text-transform: uppercase;
   color: #fff;
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.65px;
   position: relative;
 }
 .button-l:active,

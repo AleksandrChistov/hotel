@@ -9,7 +9,7 @@ block variables
 
 block content
   .container
-    +header({btnText: ["Войти", "Зарегистрироваться"], list: [{text: "О нас"}, {text: "Услуги", arrow: true}, 
+    +header({link: "/sign-in", link2: "/registration", btnText: ["Войти", "Зарегистрироваться"], list: [{text: "О нас"}, {text: "Услуги", arrow: true}, 
       {text: "Вакансии"}, {text: "Новости"}, {text: "Соглашения", arrow: true}], itemMargin: " header-menu__item_margin"})
     .container-sign-in
       +formLogin({txt: "Войти"})

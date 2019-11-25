@@ -5,11 +5,11 @@ mixin buttons(options)
   div(class=`buttons${options.margin || ""}`)
     p(class=`text-field__title buttons_margin_bottom_title${options.marginTitle || ""}`) buttons
     .buttons__group-m
-      +buttonM({text: "Click me", style: " button-m_margin_bottom button-m_width_99"})
-      +buttonM({text: "Click me", style: " button-m_margin_bottom button-m-active button-m_width_99"})
-      +buttonM({text: "Click me", style: " button-m_border button-m_width_99"})
-      +buttonM({text: "Click me", style: " button-m_border button-m_border_active button-m_width_99"})
+      +buttonM({text: "Click me", style: " button-m_ui_kit button-m_margin_bottom button-m_width_99"})
+      +buttonM({text: "Click me", style: " button-m_ui_kit button-m_margin_bottom button-m-active button-m_width_99"})
+      +buttonM({text: "Click me", style: " button-m_ui_kit button-m_border button-m_width_99"})
+      +buttonM({text: "Click me", style: " button-m_ui_kit button-m_border button-m_border_active button-m_width_99"})
     .buttons__group-text
-      p.button-m-text.buttons_text_gradient Click me
-      p.button-m-text.buttons_text_gray.button-m_margin_bottom Click me
+      p.button-m-text.buttons_text_gradient.button-m_ui_kit Click me
+      p.button-m-text.buttons_text_gray.button-m_margin_bottom_20.button-m_ui_kit Click me
     +buttonL({text: "Перейти к оплате", margin: " checkbox_margin_bottom"})

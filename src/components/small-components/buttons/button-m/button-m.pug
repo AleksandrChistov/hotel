@@ -1,2 +1,2 @@
 mixin buttonM(options)
-  button(class=`button-m button-m-text${options.style || ""}` type="button")= options.text
+  a(href=`${options.link || "#"}` class=`button-m button-m-text${options.style || ""}` type="button")= options.text

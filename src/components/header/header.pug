@@ -14,8 +14,8 @@ mixin header(options)
               else
                 a(class=`header-menu__link${item.bold || ""}` href=`${item.link || "#"}`)= item.text
         if options.btnText
-          +buttonM({text: options.btnText[0], style: " button-m_border button-m_height_34 button-m_margin-right"})
-          +buttonM({text: options.btnText[1], style: " button-m_height_34"})
+          +buttonM({text: options.btnText[0], link: `${options.link || "#"}`, style: " button-m_border button-m_height_34 button-m_margin-right"})
+          +buttonM({text: options.btnText[1], link: `${options.link2 || "#"}`, style: " button-m_height_34"})
         else
           hr.header-menu__line
           p(class="header-menu__name-person")= options.namePerson

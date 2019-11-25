@@ -83,12 +83,12 @@
             <div class="text-field text-field_margin_bottom_20">
               <p class="text-field__state">Default</p>
               <label class="text-field__title" for="text-field">Text Field</label>
-              <input class="text-field__input text-field__input_color" type="text" name="text" id="" placeholder="Email">
+              <input class="text-field__input text-field__input_color" type="text" name="text" id="text" placeholder="Email">
             </div>
             <div class="text-field text-field_margin_bottom_20">
               <p class="text-field__state">Hover / Focus</p>
               <label class="text-field__title" for="text-field">TEXT-FIELD</label>
-              <input class="text-field__input text-field__input_active" type="text" name="text" id="" placeholder="This is pretty awesome">
+              <input class="text-field__input text-field__input_active" type="text" name="text" id="textActive" placeholder="This is pretty awesome">
             </div>
             <div class="dropdown text-field_margin_bottom_20">
               <p class="dropdown__state">Default</p>
@@ -122,11 +122,11 @@
             <div class="date-dropdown text-field text-field_margin_bottom_40">
               <div class="date-dropdown__from">
                 <label class="dropdown__title" for="dateDropFrom">date Dropdown</label>
-                <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropFrom" placeholder="ДД.ММ.ГГГГ">
+                <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropFrom" value="ДД.ММ.ГГГГ">
               </div>
               <div class="date-dropdown__to">
                 <label class="dropdown__title" for="dateDropTo">date Dropdown</label>
-                <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropTo" placeholder="19.08.2019">
+                <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropTo" value="19.08.2019">
               </div>
               <div class="window date-dropdown-window dropdown-window_display_none"></div>
             </div>
@@ -212,15 +212,11 @@
             </div>
             <div class="buttons">
               <p class="text-field__title buttons_margin_bottom_title">buttons</p>
-              <div class="buttons__group-m">
-                <button class="button-m button-m-text button-m_margin_bottom button-m_width_99" type="button">Click me</button>
-                <button class="button-m button-m-text button-m_margin_bottom button-m-active button-m_width_99" type="button">Click me</button>
-                <button class="button-m button-m-text button-m_border button-m_width_99" type="button">Click me</button>
-                <button class="button-m button-m-text button-m_border button-m_border_active button-m_width_99" type="button">Click me</button>
+              <div class="buttons__group-m"><a class="button-m button-m-text button-m_ui_kit button-m_margin_bottom button-m_width_99" href="#" type="button">Click me</a><a class="button-m button-m-text button-m_ui_kit button-m_margin_bottom button-m-active button-m_width_99" href="#" type="button">Click me</a><a class="button-m button-m-text button-m_ui_kit button-m_border button-m_width_99" href="#" type="button">Click me</a><a class="button-m button-m-text button-m_ui_kit button-m_border button-m_border_active button-m_width_99" href="#" type="button">Click me</a>
               </div>
               <div class="buttons__group-text">
-                <p class="button-m-text buttons_text_gradient">Click me</p>
-                <p class="button-m-text buttons_text_gray button-m_margin_bottom">Click me</p>
+                <p class="button-m-text buttons_text_gradient button-m_ui_kit">Click me</p>
+                <p class="button-m-text buttons_text_gray button-m_margin_bottom_20 button-m_ui_kit">Click me</p>
               </div>
               <button class="button-l checkbox_margin_bottom" type="button">Перейти к оплате<span class="button-l-arrow"></span></button>
             </div>
@@ -282,7 +278,6 @@
           </div>
           <div class="dropdown-group2">
             <div class="dropdown text-field_margin_bottom_20">
-              <p class="dropdown__state">Default</p>
               <label class="dropdown__title" for="guest">Dropdown</label>
               <input class="dropdown__input dropdown__input_color dropdown__input_active" type="text" name="dropdown" id="guest" value="Сколько гостей">
               <div class="dropdown-window dropdown-window_display_none dropdown-window_width_max dropdown-window_display_block" id="drop_guest">
@@ -306,7 +301,6 @@
               </div>
             </div>
             <div class="dropdown text-field_margin_bottom_20">
-              <p class="dropdown__state">Default</p>
               <label class="dropdown__title" for="guest">Dropdown</label>
               <input class="dropdown__input dropdown__input_color dropdown__input_active" type="text" name="dropdown" id="guest" value="3 гостя">
               <div class="dropdown-window dropdown-window_display_none dropdown-window_width_max dropdown-window_display_block" id="drop_guest">
@@ -431,11 +425,11 @@
             <div class="date-dropdown text-field date-dropdown_margin_bottom_18">
               <div class="date-dropdown__from">
                 <label class="dropdown__title" for="dateDropFrom">Прибытие</label>
-                <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropFrom" placeholder="ДД.ММ.ГГГГ">
+                <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropFrom" value="ДД.ММ.ГГГГ">
               </div>
               <div class="date-dropdown__to">
                 <label class="dropdown__title" for="dateDropTo">Выезд</label>
-                <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropTo" placeholder="ДД.ММ.ГГГГ">
+                <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropTo" value="ДД.ММ.ГГГГ">
               </div>
               <div class="window date-dropdown-window dropdown-window_display_none"></div>
             </div>
@@ -488,8 +482,7 @@
             </label>
             <button class="button-l button-m_margin_bottom" type="button">Перейти к оплате<span class="button-l-arrow"></span></button>
             <div class="form-footer-wrap">
-              <p class="form-footer-text">Уже есть аккаунт на Toxin</p>
-              <button class="button-m button-m-text button-m_border button-m_width_99" type="button">Войти</button>
+              <p class="form-footer-text">Уже есть аккаунт на Toxin</p><a class="button-m button-m-text button-m_border button-m_width_99" href="/sign-in" type="button">Войти</a>
             </div>
           </form>
         </div>
@@ -499,11 +492,11 @@
             <div class="date-dropdown text-field date-dropdown_margin_bottom_18">
               <div class="date-dropdown__from">
                 <label class="dropdown__title" for="dateDropFrom">Прибытие</label>
-                <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropFrom" placeholder="19.08.2019">
+                <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropFrom" value="19.08.2019">
               </div>
               <div class="date-dropdown__to">
                 <label class="dropdown__title" for="dateDropTo">Выезд</label>
-                <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropTo" placeholder="23.08.2019">
+                <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropTo" value="23.08.2019">
               </div>
               <div class="window date-dropdown-window dropdown-window_display_none"></div>
             </div>
@@ -544,8 +537,7 @@
             <input class="text-field__input text-field_margin_bottom_20 text-field__input_color" type="password" name="text" id="password" placeholder="Пароль">
             <button class="button-l button-m_margin_bottom" type="button">Войти<span class="button-l-arrow"></span></button>
             <div class="form-footer-wrap">
-              <p class="form-footer-text">Нет аккаунта на Toxin?</p>
-              <button class="button-m button-m-text button-m_border button-m_width_99" type="button">Создать</button>
+              <p class="form-footer-text">Нет аккаунта на Toxin?</p><a class="button-m button-m-text button-m_border button-m_width_99" href="/registration" type="button">Создать</a>
             </div>
           </form>
         </div>
@@ -644,9 +636,7 @@
                 </li>
                 <li class="header-menu__item"><a class="header-menu__link" href="#">Documentation</a>
                 </li>
-              </ul>
-              <button class="button-m button-m-text button-m_border button-m_height_34 button-m_margin-right" type="button">Login</button>
-              <button class="button-m button-m-text button-m_height_34" type="button">Register</button>
+              </ul><a class="button-m button-m-text button-m_border button-m_height_34 button-m_margin-right" href="#" type="button">Login</a><a class="button-m button-m-text button-m_height_34" href="#" type="button">Register</a>
             </nav>
           </div>
         </header>

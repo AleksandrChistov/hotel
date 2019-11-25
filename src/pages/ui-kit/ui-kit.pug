@@ -55,9 +55,9 @@ block content
       .container-section-1
         .container-field
           div(class="text-field text-field_margin_bottom_20")
-            +textField({color: " text-field__input_color", title: "Text Field", state: "Default"})
+            +textField({id: "text", color: " text-field__input_color", title: "Text Field", state: "Default"})
           div(class="text-field text-field_margin_bottom_20")
-            +textField({color: " text-field__input_active", title: "TEXT-FIELD", state: "Hover / Focus", 
+            +textField({id: "textActive", color: " text-field__input_active", title: "TEXT-FIELD", state: "Hover / Focus", 
               placeholder: "This is pretty awesome"})
           +dropdown({margin: " text-field_margin_bottom_20", id: "guest", color: " dropdown__input_color", 
             title: "Dropdown", state: "Default", windowWidth: " dropdown-window_width_max", 
@@ -94,13 +94,13 @@ block content
           value: "2 спальни, 2 кровати...", arrName: ["2 Спальни", "2 Кровати", "0 Ванные комнаты"]})
         .dropdown-group2
           +dropdown({margin: " text-field_margin_bottom_20", id: "guest", color: " dropdown__input_color", 
-          title: "Dropdown", state: "Default", windowWidth: " dropdown-window_width_max", widthInput: " dropdown__input_active", 
-          windowDisplay: " dropdown-window_display_block", state: "Default",
-          value: "Сколько гостей", arrName: ["0 Взрослые", "0 Дети", "0 Младенцы"]})
+          title: "Dropdown", windowWidth: " dropdown-window_width_max", widthInput: " dropdown__input_active", 
+          windowDisplay: " dropdown-window_display_block", value: "Сколько гостей", 
+          arrName: ["0 Взрослые", "0 Дети", "0 Младенцы"]})
           +dropdown({margin: " text-field_margin_bottom_20", id: "guest", color: " dropdown__input_color", 
-          title: "Dropdown", state: "Default", windowWidth: " dropdown-window_width_max", widthInput: " dropdown__input_active", 
-          windowDisplay: " dropdown-window_display_block", state: "Default", clearDisplay: true, 
-          value: "3 гостя", arrName: ["2 Взрослые", "1 Дети", "0 Младенцы"]})
+          title: "Dropdown", windowWidth: " dropdown-window_width_max", widthInput: " dropdown__input_active", 
+          windowDisplay: " dropdown-window_display_block", clearDisplay: true, value: "3 гостя", 
+          arrName: ["2 Взрослые", "1 Дети", "0 Младенцы"]})
       .container-checkbox-list
         .expandable-checkbox
           +checkboxList({marginTitle: " text-field__title_margin_bottom", margin: " checkbox_margin_bottom_35", 
