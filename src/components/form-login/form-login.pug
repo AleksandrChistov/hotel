@@ -1,8 +1,13 @@
+include ../small-components/text-field/text-field.pug
+include ../small-components/buttons/button-l/button-l.pug
+include ../small-components/buttons/button-m/button-m.pug
+
 mixin formLogin(options)
   form(class=`form${options.margin || ""}` action="#" method="POST")
     p(class=`form__title${options.marginTitle || ""}`)= options.txt
-    +textField({margin: " text-field_margin_bottom_10", color: " text-field__input_color"})
-    +textField({margin: " radio_margin_bottom_20", color: " text-field__input_color", placeholder: "Пароль"})
+    +textField({id: "text", margin: " text-field_margin_bottom_10", color: " text-field__input_color"})
+    +textField({type: "password", id: "password", margin: " text-field_margin_bottom_20", 
+        color: " text-field__input_color", placeholder: "Пароль"})
     +buttonL({text: "Войти", margin: " button-m_margin_bottom"})
     .form-footer-wrap
       p.form-footer-text Нет аккаунта на Toxin?

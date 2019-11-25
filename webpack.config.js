@@ -11,7 +11,8 @@ const pages = [
   { filename: 'ui-kit/index.html', template: './pages/ui-kit/ui-kit.pug', chunks: ['ui-kit', 'vendors'] },
   { filename: 'search-room/index.html', template: './pages/search-room/search-room.pug', chunks: ['search-room', 'vendors'] },
   { filename: 'room-details/index.html', template: './pages/room-details/room-details.pug', chunks: ['room-details', 'vendors'] },
-  { filename: 'registration/index.html', template: './pages/registration/registration.pug', chunks: ['registration', 'vendors'] }
+  { filename: 'registration/index.html', template: './pages/registration/registration.pug', chunks: ['registration', 'vendors'] },
+  { filename: 'sign-in/index.html', template: './pages/sign-in/sign-in.pug', chunks: ['sign-in', 'vendors'] }
 ];
 
 let obj = {};

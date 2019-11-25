@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-    <title>Registration</title>
-  <link href="/registration/css/style.css" rel="stylesheet"></head>
+    <title>Sign in</title>
+  <link href="/sign-in/css/style.css" rel="stylesheet"></head>
   <body class="body">
     <div class="container">
       <header class="header">
@@ -28,33 +28,15 @@
           </nav>
         </div>
       </header>
-      <div class="container-reg">
+      <div class="container-sign-in">
         <form class="form" action="#" method="POST">
-          <p class="form__title">Регистрация аккаунта</p>
-          <input class="text-field__input text-field_margin_bottom_10 text-field__input_color" type="text" name="text" id="name" placeholder="Имя">
-          <input class="text-field__input text-field_margin_bottom_10 text-field__input_color" type="text" name="text" id="surname" placeholder="Фамилия">
-          <duv class="radio radio_margin_bottom_24">
-            <label class="radio__label radio__label_margin_right" for="radio1">
-              <input class="radio__input" type="radio" name="radio" value="radio-man" id="radio1" checked><span class="radio__span">Мужчина</span>
-            </label>
-            <label class="radio__label radio__label_margin_right" for="radio2">
-              <input class="radio__input" type="radio" name="radio" value="radio-woman" id="radio2"><span class="radio__span">Женщина</span>
-            </label>
-          </duv>
-          <div class="text-field text-field_margin_bottom_20">
-            <label class="text-field__title" for="maskedTextFormReg">Дата рождения</label>
-            <input class="text-field__input text-field__input_color" type="text" name="data" id="maskedTextFormReg" placeholder="ДД.ММ.ГГГГ">
-          </div>
-          <label class="text-field__title" for="text-field">Данные для входа в сервис</label>
-          <input class="text-field__input text-field_margin_bottom_10 text-field__input_color" type="text" name="text" id="email" placeholder="Email">
-          <input class="text-field__input text-field_margin_bottom_10 text-field__input_color" type="password" name="text" id="password" placeholder="Пароль">
-          <label class="toggle__label text-field_margin_bottom_24" for="toggle">
-            <input class="toggle__input" type="checkbox" name="toggle" value="toggle" id="toggle"><span class="toggle__span">Получать спецпредложения</span>
-          </label>
-          <button class="button-l button-m_margin_bottom" type="button">Перейти к оплате<span class="button-l-arrow"></span></button>
+          <p class="form__title">Войти</p>
+          <input class="text-field__input text-field_margin_bottom_10 text-field__input_color" type="text" name="text" id="text" placeholder="Email">
+          <input class="text-field__input text-field_margin_bottom_20 text-field__input_color" type="password" name="text" id="password" placeholder="Пароль">
+          <button class="button-l button-m_margin_bottom" type="button">Войти<span class="button-l-arrow"></span></button>
           <div class="form-footer-wrap">
-            <p class="form-footer-text">Уже есть аккаунт на Toxin</p>
-            <button class="button-m button-m-text button-m_border button-m_width_99" type="button">Войти</button>
+            <p class="form-footer-text">Нет аккаунта на Toxin?</p>
+            <button class="button-m button-m-text button-m_border button-m_width_99" type="button">Создать</button>
           </div>
         </form>
       </div>
@@ -111,5 +93,5 @@
         </div>
       </div>
     </div>
-  <script type="text/javascript" src="/app/js/vendors.js"></script><script type="text/javascript" src="/registration/js/script.js"></script></body>
+  <script type="text/javascript" src="/app/js/vendors.js"></script><script type="text/javascript" src="/sign-in/js/script.js"></script></body>
 </html>
