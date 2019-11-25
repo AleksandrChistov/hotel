@@ -11,6 +11,6 @@ mixin comments(options)
             p(class="comments__author-name")= val.name
             p(class="comments__author-period")= val.period
         div(class=`comments__wrap-text`)
-          +like({amount: "12", active: " like-button_active", margin: " like-button_margin",
-                activeText: " like-button__text_active"})
+          +like({amount: val.amount, active: val.btnActive ? " like-button_active" : "", margin: " like-button_margin",
+                activeText: val.btnActive ? " like-button__text_active" : ""})
           p(class="comments__text")= val.text

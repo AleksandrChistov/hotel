@@ -1,0 +1,118 @@
+.vote
+  display flex
+  justify-content space-between
+  align-items flex-end
+  max-width 310px
+
+.vote-diagram-wrap
+  position relative
+  width 120px
+  height 120px
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+
+.vote-diagram-sumptuously-wrap
+  position absolute
+  top 0
+  left 0
+  width 59px
+  height 120px
+  overflow hidden
+
+.vote-diagram-sumptuously
+  width 120px
+  height 120px
+  border 4px solid transparent
+  border-radius 50%
+  background: linear-gradient(#fff,#fff) padding-box, linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%) border-box
+  display block
+
+.vote-diagram-good-wrap
+  position absolute
+  top 0
+  right 0
+  width 59px
+  height 59px
+  overflow hidden
+  transform rotate(90deg)
+
+.vote-diagram-good
+  width 120px
+  height 120px
+  border 10px solid transparent
+  border-radius 50%
+  background: linear-gradient(#fff,#fff) padding-box, linear-gradient(90deg, #BC9CFF 0%, #8BA4F9 100%) border-box
+  display block
+
+.vote-diagram-satisfactorily-wrap
+  position absolute
+  bottom 0
+  right 0
+  width 59px
+  height 59px
+  overflow hidden
+  transform rotate(180deg)
+
+.vote-diagram-satisfactorily
+  width 120px
+  height 120px
+  border 4px solid transparent
+  border-radius 50%
+  background: linear-gradient(#fff,#fff) padding-box, linear-gradient(90deg, #6FCF97 0%, #66D2EA 100%) border-box
+  display block
+
+.vote-diagram-amount
+  text-align center
+  z-index 1
+  font-family Quicksand, Montserrat, sans-serif
+  font-size 24px
+  font-weight bold
+  color #BC9CFF
+  margin 0
+
+.vote-diagram-text
+  text-align center
+  z-index 1
+  font-family Quicksand, Montserrat, sans-serif
+  font-size 12px
+  font-weight bold
+  color #BC9CFF
+  text-transform uppercase
+  margin 0
+  margin-bottom 6px
+
+.vote-value-wrap
+  margin 0
+  padding-left 30px
+  list-style none
+
+.vote-value_orange, .vote-value_green, 
+.vote-value_violet, .vote-value_black
+  position relative
+  padding-left 15px
+  color rgba(31, 32, 65, 0.75)
+  line-height 24px
+
+.vote-value_orange:before, .vote-value_green:before, 
+.vote-value_violet:before, .vote-value_black:before
+    content ""
+    width 10px
+    height 10px
+    border-radius 50%
+    position absolute
+    top 7px
+    left 0
+
+.vote-value_orange:before
+  background linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%)
+
+.vote-value_green:before
+  background linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)
+
+.vote-value_violet:before
+  background linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
+
+.vote-value_black:before
+  background linear-gradient(180deg, #919191 0%, #3D4975 100%)

@@ -1,0 +1,16 @@
+mixin vote(options)
+  div(class="vote")
+    div(class="vote-diagram-wrap")
+      p(class="vote-diagram-amount")= options.amount || "0"
+      p(class="vote-diagram-text")= "голосов"
+      div(class="vote-diagram-sumptuously-wrap")
+        span(class="vote-diagram-sumptuously")
+      div(class="vote-diagram-good-wrap")
+        span(class="vote-diagram-good")
+      div(class="vote-diagram-satisfactorily-wrap")
+        span(class="vote-diagram-satisfactorily")
+    ul(class="vote-value-wrap")
+      li(class="vote-value vote-value_orange") Великолепно
+      li(class="vote-value vote-value_green") Хорошо
+      li(class="vote-value vote-value_violet") Удовлетворительно
+      li(class="vote-value vote-value_black") Разочарован

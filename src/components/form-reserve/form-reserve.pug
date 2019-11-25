@@ -1,13 +1,18 @@
+include ../../components/small-components/date-dropdown/date-dropdown.pug
+include ../../components/small-components/dropdown/dropdown.pug
+include ../../components/small-components/buttons/button-l/button-l.pug
+
 mixin formReserve(options)
   form(class=`form${options.margin || ""}` action="#" method="POST")
     p(class=`form-reserve-title${options.marginTitle || ""}`)
       span(class=`form-title__number${options.lux || ""}`)= 888
       span(class="form-title__price")= "9 990₽"
-    +dateDropdown({margin: " text-field text-field_margin_bottom_20", id1: "dateDropFrom2", id2: "dateDropTo2", 
+    +dateDropdown({margin: " text-field date-dropdown_margin_bottom_18", id1: "dateDropFrom", id2: "dateDropTo", 
     title1: "Прибытие", title2: "Выезд", value1: "19.08.2019", value2: "23.08.2019"})
-    +dropdown({margin: " radio_margin_bottom_20", id: "guest", color: " dropdown__input_color", 
-    title: "Гости", windowWidth: " dropdown-window_width_max", 
-    value: "3 гостя", arrName: ["0 Взрослые", "0 Дети", "0 Младенцы"]})
+    +dropdown({margin: " dropdown_margin_bottom_20", id: "guest", color: " dropdown__input_color", 
+    title: "Гости", windowWidth: " dropdown-window_width_max", clearDisplay: options.clearDisplay ? options.clearDisplay : false, 
+    value: options.dropdownValue ? options.dropdownValue : "Сколько гостей", 
+    arrName: options.dropdownArrName ? options.dropdownArrName : ["0 Взрослые", "0 Дети", "0 Младенцы"]})
     div(class="form-reserve-calc")
       p(class="form-reserve-calc-text")
         span(class="form-reserve-calc-text__left")= "9 990₽ х 4 суток"
@@ -16,7 +21,7 @@ mixin formReserve(options)
         span(class="form-reserve-calc-text__left")= "Сбор за услуги: скидка 2 179₽"
           span(class="form-reserve-calc-text__i")= "i"
         span(class="form-reserve-calc-text__right")= "0₽"
-      p(class="form-reserve-calc-text form-reserve-calc-text_margin_bottom_30")
+      p(class="form-reserve-calc-text form-reserve-calc-text_margin_bottom_27")
         span(class="form-reserve-calc-text__left")= "Сбор за дополнительные услуги"
           span(class="form-reserve-calc-text__i")= "i"
         span(class="form-reserve-calc-text__right")= "300₽"

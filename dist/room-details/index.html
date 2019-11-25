@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-    <title>Landing page</title>
-  <link href="/app/css/style.css" rel="stylesheet"></head>
+    <title>Room details</title>
+  <link href="/room-details/css/style.css" rel="stylesheet"></head>
   <body class="body">
     <div class="container">
-      <header class="header header_position_absolute">
+      <header class="header">
         <div class="header-container"><img class="header__img" src="/img/logo.svg" alt="Logo" id="headerLogo">
           <nav class="header-menu">
             <ul class="header-menu__list">
@@ -28,23 +28,75 @@
           </nav>
         </div>
       </header>
-      <div class="container-main"><img class="container-main__bg-img" src="/img/bg-landing.jpg" alt="Фоновое изображение номера">
-        <form class="form form_position_absolute" action="#" method="POST">
-          <p class="form__title">Найдём номера под ваши пожелания</p>
+      <div class="room-details-img-wrap"><img class="img-888-1" src="/img/room-img/888-1.jpg" alt="Спальня номера 888">
+        <div class="room-details-img-small"><img class="img-888-2" src="/img/room-img/888-2.webp" alt="Вторая комната номера 888"><img class="img-888-3" src="/img/room-img/888-3.webp" alt="Третья комната номера 888"></div>
+      </div>
+      <div class="room-details-main-wrap">
+        <div class="room-details-main">
+          <div class="room-details-main-info">
+            <h2 class="room-details-main__title">Сведения о номере</h2>
+            <div class="room-details">
+              <div class="room-details__group"><img class="room-details__img room-details__img_margin" src="/img/insert_emoticon.svg" alt="">
+                <div class="room-details__wrap-text">
+                  <p class="room-details__title">Комфорт</p>
+                  <p class="room-details__descr">Шумопоглощающие стены</p>
+                </div>
+                <hr class="room-details__hr">
+              </div>
+              <div class="room-details__group"><img class="room-details__img room-details__img_margin" src="/img/location_city.svg" alt="">
+                <div class="room-details__wrap-text">
+                  <p class="room-details__title">Удобство</p>
+                  <p class="room-details__descr">Окно в каждой из спален</p>
+                </div>
+                <hr class="room-details__hr">
+              </div>
+              <div class="room-details__group"><img class="room-details__img room-details__img_margin" src="/img/whatshot.svg" alt="">
+                <div class="room-details__wrap-text">
+                  <p class="room-details__title">Уют</p>
+                  <p class="room-details__descr">Номер оснащён камином</p>
+                </div>
+                <hr class="room-details__hr">
+              </div>
+            </div>
+          </div>
+          <div class="room-details-main-impressions">
+            <h2 class="room-details-main__title">Впечатления от номера</h2>
+            <div class="vote">
+              <div class="vote-diagram-wrap">
+                <p class="vote-diagram-amount">260</p>
+                <p class="vote-diagram-text">голосов</p>
+                <div class="vote-diagram-sumptuously-wrap"><span class="vote-diagram-sumptuously"></span></div>
+                <div class="vote-diagram-good-wrap"><span class="vote-diagram-good"></span></div>
+                <div class="vote-diagram-satisfactorily-wrap"><span class="vote-diagram-satisfactorily"></span></div>
+              </div>
+              <ul class="vote-value-wrap">
+                <li class="vote-value vote-value_orange">Великолепно</li>
+                <li class="vote-value vote-value_green">Хорошо</li>
+                <li class="vote-value vote-value_violet">Удовлетворительно</li>
+                <li class="vote-value vote-value_black">Разочарован</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="room-details-comment">
+          <h2 class="room-details-main__title">Отзывы посетителей номера</h2>
+        </div>
+        <form class="form" action="#" method="POST">
+          <p class="form-reserve-title"><span class="form-title__number slider-room-block-text__room-lux">888</span><span class="form-title__price">9 990₽</span></p>
           <div class="date-dropdown text-field date-dropdown_margin_bottom_18">
             <div class="date-dropdown__from">
-              <label class="dropdown__title" for="dateDropFrom">Прибытие</label>
-              <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropFrom" placeholder="ДД.ММ.ГГГГ">
+              <label class="dropdown__title" for="dateDropFrom2">Прибытие</label>
+              <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropFrom2" placeholder="19.08.2019">
             </div>
             <div class="date-dropdown__to">
-              <label class="dropdown__title" for="dateDropTo">Выезд</label>
-              <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropTo" placeholder="ДД.ММ.ГГГГ">
+              <label class="dropdown__title" for="dateDropTo2">Выезд</label>
+              <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropTo2" placeholder="23.08.2019">
             </div>
             <div class="window date-dropdown-window dropdown-window_display_none"></div>
           </div>
-          <div class="dropdown dropdown_margin_bottom_30">
+          <div class="dropdown dropdown_margin_bottom_20">
             <label class="dropdown__title" for="guest">Гости</label>
-            <input class="dropdown__input dropdown__input_color" type="text" name="dropdown" id="guest" value="Сколько гостей">
+            <input class="dropdown__input dropdown__input_color" type="text" name="dropdown" id="guest" value="3 гостя">
             <div class="dropdown-window dropdown-window_display_none dropdown-window_width_max" id="drop_guest">
               <div class="dropdown-window__wrap-elem">
                 <p class="dropdown-window__name">Взрослые</p>
@@ -65,10 +117,16 @@
               <p class="dropdown-window__apply">применить</p>
             </div>
           </div>
-          <button class="button-l" type="button">Подобрать номер<span class="button-l-arrow"></span></button>
+          <div class="form-reserve-calc">
+            <p class="form-reserve-calc-text"><span class="form-reserve-calc-text__left">9 990₽ х 4 суток</span><span class="form-reserve-calc-text__right">39 960₽</span></p>
+            <p class="form-reserve-calc-text"><span class="form-reserve-calc-text__left">Сбор за услуги: скидка 2 179₽<span class="form-reserve-calc-text__i">i</span></span><span class="form-reserve-calc-text__right">0₽</span></p>
+            <p class="form-reserve-calc-text form-reserve-calc-text_margin_bottom_30"><span class="form-reserve-calc-text__left">Сбор за дополнительные услуги<span class="form-reserve-calc-text__i">i</span></span><span class="form-reserve-calc-text__right">300₽</span></p>
+            <p class="form-reserve-calc-text form-reserve-calc-text_bold"><span class="form-reserve-calc-text__left form-reserve-calc-text__left_bg_white">Итого</span><span class="form-reserve-calc-text__right form-reserve-calc-text__right_bg_white">38 081₽</span></p>
+          </div>
+          <button class="button-l" type="button">Забронировать<span class="button-l-arrow"></span></button>
         </form>
-        <p class="container-main__bg-text">Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
       </div>
+      <hr class="filter-line">
       <footer class="footer">
         <div class="footer-container">
           <div class="footer-img-container"><img class="footer__img" src="/img/logo.svg" alt="Logo" id="footerLogo">
@@ -122,5 +180,5 @@
         </div>
       </div>
     </div>
-  <script type="text/javascript" src="/app/js/vendors.js"></script><script type="text/javascript" src="/app/js/script.js"></script></body>
+  <script type="text/javascript" src="/app/js/vendors.js"></script><script type="text/javascript" src="/room-details/js/script.js"></script></body>
 </html>

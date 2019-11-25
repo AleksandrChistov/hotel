@@ -9,7 +9,8 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const pages = [
   { filename: 'index.html', template: './pages/index.pug', chunks: ['app', 'vendors'] },
   { filename: 'ui-kit/index.html', template: './pages/ui-kit/ui-kit.pug', chunks: ['ui-kit', 'vendors'] },
-  { filename: 'search-room/index.html', template: './pages/search-room/search-room.pug', chunks: ['search-room', 'vendors'] }
+  { filename: 'search-room/index.html', template: './pages/search-room/search-room.pug', chunks: ['search-room', 'vendors'] },
+  { filename: 'room-details/index.html', template: './pages/room-details/room-details.pug', chunks: ['room-details', 'vendors'] }
 ];
 
 let obj = {};
@@ -55,7 +56,8 @@ module.exports = env => {
       }),
       new CopyWebpackPlugin([
         { from: 'components/slider-room/room-img', to: 'img/room-img' },
-        { from: 'components/footer/social-img', to: 'img/social-img' }
+        { from: 'components/footer/social-img', to: 'img/social-img' },
+        { from: 'pages/room-details/img', to: 'img/room-img' }
       ]),
       new webpack.ProvidePlugin({
         $: 'jquery',

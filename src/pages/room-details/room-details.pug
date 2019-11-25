@@ -1,0 +1,57 @@
+extends ../../components/main/main
+include ../../components/header/header.pug
+include ../../components/small-components/room-details/room-details.pug
+include ../../components/vote/vote.pug
+include ../../components/small-components/comments/comments.pug
+include ../../components/small-components/bullet-list/bullet-list.pug
+include ../../components/form-reserve/form-reserve.pug
+include ../../components/footer/footer.pug
+
+block variables
+  - const pageTitle = 'Room details'
+  - const bg = ""
+
+block content
+  .container
+    +header({btnText: ["Войти", "Зарегистрироваться"], list: [{text: "О нас"}, {text: "Услуги", arrow: true}, 
+      {text: "Вакансии"}, {text: "Новости"}, {text: "Соглашения", arrow: true}], itemMargin: " header-menu__item_margin"})
+    .room-details-img-wrap
+      img(class="img-888-1" src="/img/room-img/888-1.jpg" alt="Спальня номера 888")
+      .room-details-img-small
+        img(class="img-888-2" src="/img/room-img/888-2.webp" alt="Вторая комната номера 888")
+        img(class="img-888-3" src="/img/room-img/888-3.webp" alt="Третья комната номера 888")
+    .room-details-main-wrap
+      .room-details-main
+        .room-details-main-info-wrap
+          .room-details-main-info
+            h2.room-details-main__title Сведения о номере
+            +roomDetails({arr: [{title: "Комфорт", descr: "Шумопоглощающие стены", hr: true, img: " room-details__img_emoticon"}, 
+            {title: "Удобство", descr: "Окно в каждой из спален", hr: true, img: " room-details__img_city"}, 
+            {title: "Уют", descr: "Номер оснащён камином", hr: false, img: " room-details__img_whatshot"}]})
+          .room-details-main-impressions
+            h2.room-details-main__title Впечатления от номера
+            +vote({amount: "260"})
+        .room-details-comment
+          h2.room-details-main__title Отзывы посетителей номера
+            span(class="room-details-main__amount-comments") 2 отзыва
+          +comments({arr: [{srcImg: "/img/autor1.png", imgAlt: "Мурад Сарафанов", name: "Мурад Сарафанов", period: "5 дней назад", amount: "12", btnActive: true, 
+          text: "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."}, 
+          {srcImg: "/img/autor2.png", imgAlt: "Патрисия Стёклышкова", name: "Патрисия Стёклышкова", period: "Неделю назад", amount: "2", 
+          text: "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент"}]})
+        .room-details-regulations
+          .room-details-regulations-spec
+            h2.room-details-main__title.room-details-main__title_bottom_20.room-details-main__title_left_20 Правила
+            +bulletList({marginTitle: " text-field__title_margin_bottom", widthLi: " bullet-list__ul_width_263", 
+            arr: ["Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, а выезд до 12:00"]})
+          .room-details-regulations-cancellation
+            h2.room-details-main__title.room-details-main__title_bottom_20 Отмена
+            p.room-details-main__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+      +formReserve({lux: " form-title__number-lux", margin: " form_height_513", dropdownValue: "3 гостя", clearDisplay: true, 
+      dropdownArrName: ["2 Взрослые", "1 Дети", "0 Младенцы"]})
+    hr.filter-line
+    +footer({text: "Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»", 
+      subscribeTitle: "Подписка", subscribeText: "Получайте специальные предложения и новости сервиса", 
+      copyrightText: "Copyright © 2018 Toxin отель. Все права зачищены.", marginBottom: " checkbox_margin_bottom", placeholderField: "Email", 
+      menu: [{title: "Навигация", list: [{text: "О нас"}, {text: "Новости"}, {text: "Служба поддержки"}, {text: "Услуги"}] }, 
+            {title: "О нас", list: [{text: "О сервисе"}, {text: "Наша команда"}, {text: "Вакансии"}, {text: "Инвесторы"}] }, 
+            {title: "Служба поддержки", list: [{text: "Соглашения"}, {text: "Сообщества"}, {text: "Связь с нами"}] }] })

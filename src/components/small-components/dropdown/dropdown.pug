@@ -22,5 +22,5 @@ mixin dropdown(options)
             span(class="dropdown-window__value" id=index + options.id)= n
             span(class="dropdown-window__increment dropdown-window__increment_active") +
       if options.id === "guest"
-        p(class=`dropdown-window__clear ${options.clearDisplay || ""}`) очистить      
+        p(class=`dropdown-window__clear${options.clearDisplay ? " dropdown-window__clear_display_block" : ""}`) очистить      
         p.dropdown-window__apply применить

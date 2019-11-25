@@ -99,8 +99,7 @@ block content
           value: "Сколько гостей", arrName: ["0 Взрослые", "0 Дети", "0 Младенцы"]})
           +dropdown({margin: " text-field_margin_bottom_20", id: "guest", color: " dropdown__input_color", 
           title: "Dropdown", state: "Default", windowWidth: " dropdown-window_width_max", widthInput: " dropdown__input_active", 
-          windowDisplay: " dropdown-window_display_block", state: "Default",
-          clearDisplay: " dropdown-window__clear_display_block",
+          windowDisplay: " dropdown-window_display_block", state: "Default", clearDisplay: true, 
           value: "3 гостя", arrName: ["2 Взрослые", "1 Дети", "0 Младенцы"]})
       .container-checkbox-list
         .expandable-checkbox
@@ -129,10 +128,9 @@ block content
           +bulletList({title: "bullet list",  marginTitle: " text-field__title_margin_bottom", widthLi: " bullet-list__ul_width_263", 
             arr: ["Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, а выезд до 12:00"]})
       .container-comments
-        +roomDetails({marginImg: " room-details__img_margin", arr: [{title: "Комфорт", 
-          descr: "Шумопоглощающие стены", hr: true, srcImg: "/img/insert_emoticon.svg", imgAlt: "Смайл"}, 
-          {title: "Удобство", descr: "Окно в каждой из спален", hr: true, srcImg: "/img/location_city.svg", imgAlt: "Город"}]})
-        +comments({arr: [{srcImg: "/img/autor1.png", imgAlt: "Мурад Сарафанов", name: "Мурад Сарафанов", period: "5 дней назад", 
+        +roomDetails({arr: [{title: "Комфорт", descr: "Шумопоглощающие стены", hr: true, img: " room-details__img_emoticon"}, 
+          {title: "Удобство", descr: "Окно в каждой из спален", hr: true, img: " room-details__img_city"}]})
+        +comments({margin: " comments_margin_top_5", arr: [{srcImg: "/img/autor1.png", imgAlt: "Мурад Сарафанов", name: "Мурад Сарафанов", period: "5 дней назад", amount: "12", btnActive: true, 
           text: "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."}]})
   .container.container-ui-bg-gray
     +uiLogo({})
@@ -141,7 +139,8 @@ block content
         +formRoomSearch({txt: "Найдём номера под ваши пожелания", margin: " checkbox_margin_bottom"})
         +formRegistration({txt: "Регистрация аккаунта"})
       .cards2
-        +formReserve({lux: " slider-room-block-text__room-lux", margin: " checkbox_margin_bottom"})
+        +formReserve({lux: " slider-room-block-text__room-lux", margin: " checkbox_margin_bottom", dropdownValue: "3 гостя", 
+        clearDisplay: true, dropdownArrName: ["2 Взрослые", "1 Дети", "0 Младенцы"]})
         +formLogin({txt: "Войти"})
       .cards3
         +windowDatepicker({})

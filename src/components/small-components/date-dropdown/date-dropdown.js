@@ -1,5 +1,7 @@
 import 'air-datepicker/src/js/air-datepicker'
 import 'air-datepicker/dist/css/datepicker.css'
+import './window/window.styl'
+import './date-dropdown.styl'
 
 $('.date-dropdown-window').data('datepicker');
 
