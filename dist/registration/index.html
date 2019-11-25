@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-    <title>Landing page</title>
-  <link href="/app/css/style.css" rel="stylesheet"></head>
+    <title>Registration</title>
+  <link href="/registration/css/style.css" rel="stylesheet"></head>
   <body class="body">
     <div class="container">
-      <header class="header header_position_absolute">
+      <header class="header">
         <div class="header-container"><img class="header__img" src="/img/logo.svg" alt="Logo" id="headerLogo">
           <nav class="header-menu">
             <ul class="header-menu__list">
@@ -28,49 +28,38 @@
           </nav>
         </div>
       </header>
-      <div class="container-main"><img class="container-main__bg-img" src="/img/bg-landing.jpg" alt="Фоновое изображение номера">
-        <form class="form form_position_absolute" action="#" method="POST">
-          <p class="form__title">Найдём номера под ваши пожелания</p>
-          <div class="date-dropdown text-field date-dropdown_margin_bottom_18">
-            <div class="date-dropdown__from">
-              <label class="dropdown__title" for="dateDropFrom">Прибытие</label>
-              <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropFrom" placeholder="ДД.ММ.ГГГГ">
-            </div>
-            <div class="date-dropdown__to">
-              <label class="dropdown__title" for="dateDropTo">Выезд</label>
-              <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropTo" placeholder="ДД.ММ.ГГГГ">
-            </div>
-            <div class="window date-dropdown-window dropdown-window_display_none"></div>
+      <div class="container-reg">
+        <form class="form" action="#" method="POST">
+          <p class="form__title">Регистрация аккаунта</p>
+          <input class="text-field__input text-field_margin_bottom_10 text-field__input_color" type="text" name="text" id="" placeholder="Имя">
+          <input class="text-field__input text-field_margin_bottom_10 text-field__input_color" type="text" name="text" id="" placeholder="Фамилия">
+          <duv class="radio radio_margin_bottom_24">
+            <label class="radio__label radio__label_margin_right" for="radio1">
+              <input class="radio__input" type="radio" name="radio" value="radio-man" id="radio1" checked><span class="radio__span">Мужчина</span>
+            </label>
+            <label class="radio__label radio__label_margin_right" for="radio2">
+              <input class="radio__input" type="radio" name="radio" value="radio-woman" id="radio2"><span class="radio__span">Женщина</span>
+            </label>
+          </duv>
+          <div class="text-field text-field_margin_bottom_20">
+            <label class="text-field__title" for="maskedTextFormReg">Дата рождения</label>
+            <input class="text-field__input text-field__input_color" type="text" name="data" id="maskedTextFormReg" placeholder="ДД.ММ.ГГГГ">
           </div>
-          <div class="dropdown dropdown_margin_bottom_30">
-            <label class="dropdown__title" for="guest">Гости</label>
-            <input class="dropdown__input dropdown__input_color" type="text" name="dropdown" id="guest" value="Сколько гостей">
-            <div class="dropdown-window dropdown-window_display_none dropdown-window_width_max" id="drop_guest">
-              <div class="dropdown-window__wrap-elem">
-                <p class="dropdown-window__name">Взрослые</p>
-                <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="0guest">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
-                </div>
-              </div>
-              <div class="dropdown-window__wrap-elem">
-                <p class="dropdown-window__name">Дети</p>
-                <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="1guest">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
-                </div>
-              </div>
-              <div class="dropdown-window__wrap-elem">
-                <p class="dropdown-window__name">Младенцы</p>
-                <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="2guest">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
-                </div>
-              </div>
-              <p class="dropdown-window__clear">очистить      </p>
-              <p class="dropdown-window__apply">применить</p>
-            </div>
+          <label class="text-field__title" for="text-field">Данные для входа в сервис</label>
+          <input class="text-field__input text-field_margin_bottom_10 text-field__input_color" type="text" name="text" id="" placeholder="Email">
+          <input class="text-field__input text-field_margin_bottom_10 text-field__input_color" type="password" name="text" id="" placeholder="Пароль">
+          <label class="toggle__label text-field_margin_bottom_24" for="toggle">
+            <input class="toggle__input" type="checkbox" name="toggle" value="toggle" id="toggle"><span class="toggle__span">Получать спецпредложения</span>
+          </label>
+          <button class="button-l button-m_margin_bottom" type="button">Перейти к оплате<span class="button-l-arrow"></span></button>
+          <div class="form-footer-wrap">
+            <p class="form-footer-text">Уже есть аккаунт на Toxin</p>
+            <button class="button-m button-m-text button-m_border button-m_width_99" type="button">Войти</button>
           </div>
-          <button class="button-l" type="button">Подобрать номер<span class="button-l-arrow"></span></button>
         </form>
-        <p class="container-main__bg-text">Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
       </div>
       <footer class="footer">
-        <div class="footer-container">
+        <div class="footer-container footer-container_padding_100">
           <div class="footer-img-container"><img class="footer__img" src="/img/logo.svg" alt="Logo" id="footerLogo">
             <p class="footer__text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
           </div>
@@ -122,5 +111,5 @@
         </div>
       </div>
     </div>
-  <script type="text/javascript" src="/app/js/vendors.js"></script><script type="text/javascript" src="/app/js/script.js"></script></body>
+  <script type="text/javascript" src="/app/js/vendors.js"></script><script type="text/javascript" src="/registration/js/script.js"></script></body>
 </html>

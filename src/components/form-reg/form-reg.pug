@@ -1,3 +1,10 @@
+include ../small-components/text-field/text-field.pug
+include ../small-components/radio-buttons/radio.pug
+include ../small-components/masked-text-field/masked.pug
+include ../small-components/toggle/toggle-block.pug
+include ../small-components/buttons/button-l/button-l.pug
+include ../small-components/buttons/button-m/button-m.pug
+
 mixin formRegistration(options)
   form(class=`form${options.margin || ""}` action="#" method="POST")
     p(class=`form__title${options.marginTitle || ""}`)= options.txt
@@ -6,7 +13,7 @@ mixin formRegistration(options)
     +radioButtons({margin: " radio_margin_bottom_24", labelMargin: " radio__label_margin_right"})
     +maskedTextField({color: " text-field__input_color", title: "Дата рождения", margin: " text-field_margin_bottom_20", id: "maskedTextFormReg"})
     +textField({margin: " text-field_margin_bottom_10", color: " text-field__input_color", title: "Данные для входа в сервис"})
-    +textField({margin: " text-field_margin_bottom_10", color: " text-field__input_color", placeholder: "Пароль"})
+    +textField({type: "password", margin: " text-field_margin_bottom_10", color: " text-field__input_color", placeholder: "Пароль"})
     +toggle({label: " text-field_margin_bottom_24", id: "toggle", txt: "Получать спецпредложения"})
     +buttonL({text: "Перейти к оплате", margin: " button-m_margin_bottom"})
     .form-footer-wrap

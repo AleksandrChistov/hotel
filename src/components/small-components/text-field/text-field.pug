@@ -5,6 +5,6 @@ mixin textField(options)
   if options.title
     label(class="text-field__title" for="text-field")= options.title
   else
-  input(type="text" name="text" id=`${options.id || ""}` 
+  input(type=`${options.type || "text"}` name="text" id=`${options.id || ""}` 
   class=`text-field__input${options.margin || ""}${options.color || ""}` 
   placeholder=options.placeholder || "Email")

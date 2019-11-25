@@ -1,3 +1,8 @@
+import '../small-components/text-field/text-field.styl'
+import '../small-components/radio-buttons/radio.styl'
+import '../small-components/toggle/toggle-block.styl'
+import '../small-components/buttons/buttons.styl'
+import './form-reg.styl'
 import IMask from 'imask';
 
 const element = document.getElementById('maskedTextFormReg');

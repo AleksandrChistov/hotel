@@ -1,0 +1,21 @@
+extends ../../components/main/main
+include ../../components/header/header.pug
+include ../../components/form-reg/form-reg.pug
+include ../../components/footer/footer.pug
+
+block variables
+  - const pageTitle = 'Registration'
+  - const bg = ""
+
+block content
+  .container
+    +header({btnText: ["Войти", "Зарегистрироваться"], list: [{text: "О нас"}, {text: "Услуги", arrow: true}, 
+      {text: "Вакансии"}, {text: "Новости"}, {text: "Соглашения", arrow: true}], itemMargin: " header-menu__item_margin"})
+    .container-reg
+      +formRegistration({txt: "Регистрация аккаунта"})
+    +footer({text: "Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»", 
+      subscribeTitle: "Подписка", subscribeText: "Получайте специальные предложения и новости сервиса", padding: " footer-container_padding_100", 
+      copyrightText: "Copyright © 2018 Toxin отель. Все права зачищены.", marginBottom: " checkbox_margin_bottom", placeholderField: "Email", 
+      menu: [{title: "Навигация", list: [{text: "О нас"}, {text: "Новости"}, {text: "Служба поддержки"}, {text: "Услуги"}] }, 
+            {title: "О нас", list: [{text: "О сервисе"}, {text: "Наша команда"}, {text: "Вакансии"}, {text: "Инвесторы"}] }, 
+            {title: "Служба поддержки", list: [{text: "Соглашения"}, {text: "Сообщества"}, {text: "Связь с нами"}] }] })

@@ -10,7 +10,8 @@ const pages = [
   { filename: 'index.html', template: './pages/index.pug', chunks: ['app', 'vendors'] },
   { filename: 'ui-kit/index.html', template: './pages/ui-kit/ui-kit.pug', chunks: ['ui-kit', 'vendors'] },
   { filename: 'search-room/index.html', template: './pages/search-room/search-room.pug', chunks: ['search-room', 'vendors'] },
-  { filename: 'room-details/index.html', template: './pages/room-details/room-details.pug', chunks: ['room-details', 'vendors'] }
+  { filename: 'room-details/index.html', template: './pages/room-details/room-details.pug', chunks: ['room-details', 'vendors'] },
+  { filename: 'registration/index.html', template: './pages/registration/registration.pug', chunks: ['registration', 'vendors'] }
 ];
 
 let obj = {};

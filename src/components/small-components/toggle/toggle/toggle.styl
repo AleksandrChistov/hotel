@@ -1,0 +1,54 @@
+
+.toggle_margin_bottom
+  margin-bottom 45px
+
+.toggle__label
+  position relative
+  display inline-block
+  padding 0 0 0 50px
+  color rgba(31, 32, 65, 0.75)
+  cursor pointer
+
+.toggle__label_margin_bottom
+  margin-bottom 15px
+  &:last-child
+    margin-bottom 0
+
+.toggle__input
+  position absolute
+  opacity 0
+  z-index -1
+
+.toggle__span
+  user-select none
+  vertical-align middle
+
+.toggle__span:before
+  content ""
+  position absolute
+  top 0
+  left 0
+  width 40px
+  height 20px
+  border 1px solid rgba(31, 32, 65, 0.25)
+  border-radius 10px
+  background #ffffff
+
+.toggle__span:after
+  content ""
+  position absolute
+  top 4px
+  left 4px
+  width 12px
+  height 12px
+  border-radius 10px
+  background rgba(31, 32, 65, 0.25)
+  transition left 0.5s
+
+.toggle__input:checked+.toggle__span:before
+  border 1px solid #BC9CFF
+
+.toggle__input:checked+.toggle__span:after
+  background linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
+  left 24px
+  transition left 0.5s
