@@ -322,6 +322,7 @@
 }
 .footer__copyright-text {
   color: rgba(31,32,65,0.75);
+  margin-right: 30px;
 }
 .footer-social {
   list-style: none;
@@ -947,6 +948,8 @@ p {
   }
   .footer__copyright-text {
     margin-bottom: 15px;
+    margin-right: 0;
+    text-align: center;
   }
   .footer-menu-container {
     flex-direction: column;
