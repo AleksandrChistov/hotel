@@ -7,12 +7,12 @@ mixin dateDropdown(options)
         label(class="dropdown__title" for=options.id1)= options.title1
       else
       input(type='text' class="date-dropdown__input dropdown__input_color dropdown__input_width_small"
-      name="date-dropdown" id=options.id1 value=`${options.value1 || "ДД.ММ.ГГГГ"}`)
+      name="date-dropdown" id=options.id1 value=`${options.value1 || "ДД.ММ.ГГГГ"}` placeholder=options.value || "ДД.ММ.ГГГГ")
     div(class="date-dropdown__to")
       if options.title2
         label(class="dropdown__title" for=options.id2)= options.title2
       else
       input(type='text' class="date-dropdown__input dropdown__input_color dropdown__input_width_small"
-      name="date-dropdown" id=options.id2 value=`${options.value2 || "ДД.ММ.ГГГГ"}`)
+      name="date-dropdown" id=options.id2 value=`${options.value2 || "ДД.ММ.ГГГГ"}` placeholder=`${options.value2 || "ДД.ММ.ГГГГ"}`)
     +dateDropdownWindow({baseClass: " date-dropdown-window dropdown-window_display_none"})
     

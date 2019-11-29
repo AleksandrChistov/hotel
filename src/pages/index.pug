@@ -9,15 +9,14 @@ block variables
 
 block content
   .container
-    +header({link: "/sign-in", link2: "/registration", margin: " header_position_absolute", btnText: ["Войти", "Зарегистрироваться"], list: [{text: "О нас"}, {text: "Услуги", arrow: true}, 
+    +header({link: "/sign-in", link2: "/registration", btnText: ["Войти", "Зарегистрироваться"], list: [{text: "О нас"}, {text: "Услуги", arrow: true}, 
       {text: "Вакансии"}, {text: "Новости"}, {text: "Соглашения", arrow: true}], itemMargin: " header-menu__item_margin"})
     .container-main
-      img(class="container-main__bg-img" src="/img/bg-landing.jpg" alt="Фоновое изображение номера")
-      +formRoomSearch({txt: "Найдём номера под ваши пожелания", margin: " form_position_absolute"})
+      +formRoomSearch({txt: "Найдём номера под ваши пожелания"})
       p.container-main__bg-text Лучшие номера для вашей работы, отдыха и просто вдохновения
     +footer({text: "Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»", 
-      subscribeTitle: "Подписка", subscribeText: "Получайте специальные предложения и новости сервиса", 
-      copyrightText: "Copyright © 2018 Toxin отель. Все права зачищены.", marginBottom: " checkbox_margin_bottom", placeholderField: "Email", 
+      subscribeTitle: "Подписка", subscribeText: "Получайте специальные предложения и новости сервиса", padding: " footer-container_padding_100", 
+      copyrightText: "Copyright © 2019 Toxin отель. Все права защищены.", marginBottom: " checkbox_margin_bottom", placeholderField: "Email", 
       menu: [{title: "Навигация", list: [{text: "О нас"}, {text: "Новости"}, {text: "Служба поддержки"}, {text: "Услуги"}] }, 
             {title: "О нас", list: [{text: "О сервисе"}, {text: "Наша команда"}, {text: "Вакансии"}, {text: "Инвесторы"}] }, 
             {title: "Служба поддержки", list: [{text: "Соглашения"}, {text: "Сообщества"}, {text: "Связь с нами"}] }] })

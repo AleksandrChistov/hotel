@@ -8,7 +8,7 @@
   <link href="/app/css/style.css" rel="stylesheet"></head>
   <body class="body">
     <div class="container">
-      <header class="header header_position_absolute">
+      <header class="header">
         <div class="header-container"><img class="header__img" src="/img/logo.svg" alt="Logo" id="headerLogo">
           <nav class="header-menu">
             <ul class="header-menu__list">
@@ -22,21 +22,22 @@
               </li>
               <li class="header-menu__item header-menu__item_margin"><a class="header-menu__link" href="#">Соглашения</a><span class="header-menu__arrow"></span>
               </li>
-            </ul><a class="button-m button-m-text button-m_border button-m_height_34 button-m_margin-right" href="/sign-in" type="button">Войти</a><a class="button-m button-m-text button-m_height_34" href="/registration" type="button">Зарегистрироваться</a>
+            </ul>
+            <div class="menu-hamburger"><span class="menu-hamburger__line"></span><span class="menu-hamburger__line"></span><span class="menu-hamburger__line"></span></div><a class="button-m button-m-text button-m_border button-m_height_34 button-m_margin-right" href="/sign-in" type="button">Войти</a><a class="button-m button-m-text button-m_height_34 button-m-reg" href="/registration" type="button">Зарегистрироваться</a>
           </nav>
         </div>
       </header>
-      <div class="container-main"><img class="container-main__bg-img" src="/img/bg-landing.jpg" alt="Фоновое изображение номера">
-        <form class="form form_position_absolute" action="#" method="POST">
+      <div class="container-main">
+        <form class="form" action="#" method="POST">
           <p class="form__title">Найдём номера под ваши пожелания</p>
           <div class="date-dropdown text-field date-dropdown_margin_bottom_18">
             <div class="date-dropdown__from">
               <label class="dropdown__title" for="dateDropFrom">Прибытие</label>
-              <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropFrom" value="ДД.ММ.ГГГГ">
+              <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropFrom" value="ДД.ММ.ГГГГ" placeholder="ДД.ММ.ГГГГ">
             </div>
             <div class="date-dropdown__to">
               <label class="dropdown__title" for="dateDropTo">Выезд</label>
-              <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropTo" value="ДД.ММ.ГГГГ">
+              <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropTo" value="ДД.ММ.ГГГГ" placeholder="ДД.ММ.ГГГГ">
             </div>
             <div class="window date-dropdown-window dropdown-window_display_none"></div>
           </div>
@@ -68,7 +69,7 @@
         <p class="container-main__bg-text">Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
       </div>
       <footer class="footer">
-        <div class="footer-container">
+        <div class="footer-container footer-container_padding_100">
           <div class="footer-img-container"><img class="footer__img" src="/img/logo.svg" alt="Logo" id="footerLogo">
             <p class="footer__text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
           </div>
@@ -111,7 +112,7 @@
       </footer>
       <div class="footer-copyright checkbox_margin_bottom">
         <div class="footer-container-copyright">
-          <p class="footer__copyright-text">Copyright © 2018 Toxin отель. Все права зачищены.</p>
+          <p class="footer__copyright-text">Copyright © 2019 Toxin отель. Все права защищены.</p>
           <ul class="footer-social">
             <li class="footer-social__li"><a class="footer-social__link-tw" href="#" aria-label="Twitter"></a></li>
             <li class="footer-social__li"><a class="footer-social__link-fb" href="#" aria-label="Facebook"></a></li>

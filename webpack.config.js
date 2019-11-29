@@ -76,7 +76,17 @@ module.exports = env => {
       rules: [
         {
           test: /\.styl$/,
-          use: [MiniCssExtractPlugin.loader, 'css-loader', 'stylus-loader']
+          use: [MiniCssExtractPlugin.loader, 'css-loader', 
+          {
+            loader: 'postcss-loader',
+            options: {
+              ident: 'postcss',
+              plugins: [
+                require('css-mqpacker')({})
+              ]
+            }
+          }, 
+          'stylus-loader']
         },
         {
           test: /\.css$/,

@@ -13,9 +13,13 @@ mixin header(options)
                 span(class=`header-menu__arrow${options.marginArrow || ""}`)
               else
                 a(class=`header-menu__link${item.bold || ""}` href=`${item.link || "#"}`)= item.text
+        .menu-hamburger
+          span.menu-hamburger__line
+          span.menu-hamburger__line
+          span.menu-hamburger__line
         if options.btnText
           +buttonM({text: options.btnText[0], link: `${options.link || "#"}`, style: " button-m_border button-m_height_34 button-m_margin-right"})
-          +buttonM({text: options.btnText[1], link: `${options.link2 || "#"}`, style: " button-m_height_34"})
+          +buttonM({text: options.btnText[1], link: `${options.link2 || "#"}`, style: " button-m_height_34 button-m-reg"})
         else
           hr.header-menu__line
           p(class="header-menu__name-person")= options.namePerson

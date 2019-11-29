@@ -1,0 +1,59 @@
+@media (max-width: 1200px)
+  .header
+    padding 0 20px
+  .header-menu__item_margin
+    margin-right 1.5vw
+  .button-m_margin-right
+    margin-right 1.5vw
+
+@media (max-width: 904px)
+  .button-m-reg
+    display none
+
+@media (max-width: 680px)
+  .header-menu__list
+    display flex
+    flex-direction column
+    position fixed
+    padding 18vh 0 15vh
+    padding-left 5vw
+    top 0
+    left -100%
+    background-color rgba(0, 0, 0, 0.95)
+    z-index 1
+    height 100vh
+    width 50vw
+    overflow auto
+    transition all 0.6s
+  .header-menu__link
+    color #ffffff
+    padding 30px 20px
+  .header-menu__arrow 
+    border-right 2px solid rgba(255, 255, 255, 0.7)
+    border-bottom 2px solid rgba(255, 255, 255, 0.7)
+    margin 3px 8px 0 0
+    transform rotate(45deg) translateX(-4px)
+  .header-menu__item
+    align-items baseline
+  .menu-hamburger
+    display block
+  .button-m_margin-right
+    margin-right 30px
+  .header__img
+    width 115px
+  .button-m-text
+    font-size 10px
+
+@media (max-width: 450px)
+  .header-menu
+    justify-content flex-end
+  .header-menu__list
+    width 85vw
+
+@media (max-width: 350px)
+  .header-menu__list
+    width 80vw
+
+.header-menu__list_active
+  left 0
+  transition all 0.6s
