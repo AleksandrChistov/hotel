@@ -1381,6 +1381,7 @@ p {
 }
 .dropdown-window_width_middle {
   width: 266px;
+  max-width: 100%;
   padding: 7px 7px 7px 15px;
 }
 .dropdown-window_display_none {
@@ -1483,6 +1484,7 @@ p {
 }
 .dropdown__input_width_middle {
   width: 266px;
+  max-width: 100%;
 }
 
 
@@ -1730,6 +1732,7 @@ p {
 }
 .dropdown-window_width_middle {
   width: 266px;
+  max-width: 100%;
   padding: 7px 7px 7px 15px;
 }
 .dropdown-window_display_none {
@@ -1832,9 +1835,11 @@ p {
 }
 .dropdown__input_width_middle {
   width: 266px;
+  max-width: 100%;
 }
 .filter-date {
   width: 266px;
+  max-width: 100%;
   position: relative;
 }
 .filter-date__input {
