@@ -1,6 +1,66 @@
 /******/ (function(modules) { // webpackBootstrap
+/******/ 	// install a JSONP callback for chunk loading
+/******/ 	function webpackJsonpCallback(data) {
+/******/ 		var chunkIds = data[0];
+/******/ 		var moreModules = data[1];
+/******/ 		var executeModules = data[2];
+/******/
+/******/ 		// add "moreModules" to the modules object,
+/******/ 		// then flag all "chunkIds" as loaded and fire callback
+/******/ 		var moduleId, chunkId, i = 0, resolves = [];
+/******/ 		for(;i < chunkIds.length; i++) {
+/******/ 			chunkId = chunkIds[i];
+/******/ 			if(Object.prototype.hasOwnProperty.call(installedChunks, chunkId) && installedChunks[chunkId]) {
+/******/ 				resolves.push(installedChunks[chunkId][0]);
+/******/ 			}
+/******/ 			installedChunks[chunkId] = 0;
+/******/ 		}
+/******/ 		for(moduleId in moreModules) {
+/******/ 			if(Object.prototype.hasOwnProperty.call(moreModules, moduleId)) {
+/******/ 				modules[moduleId] = moreModules[moduleId];
+/******/ 			}
+/******/ 		}
+/******/ 		if(parentJsonpFunction) parentJsonpFunction(data);
+/******/
+/******/ 		while(resolves.length) {
+/******/ 			resolves.shift()();
+/******/ 		}
+/******/
+/******/ 		// add entry modules from loaded chunk to deferred list
+/******/ 		deferredModules.push.apply(deferredModules, executeModules || []);
+/******/
+/******/ 		// run deferred modules when all chunks ready
+/******/ 		return checkDeferredModules();
+/******/ 	};
+/******/ 	function checkDeferredModules() {
+/******/ 		var result;
+/******/ 		for(var i = 0; i < deferredModules.length; i++) {
+/******/ 			var deferredModule = deferredModules[i];
+/******/ 			var fulfilled = true;
+/******/ 			for(var j = 1; j < deferredModule.length; j++) {
+/******/ 				var depId = deferredModule[j];
+/******/ 				if(installedChunks[depId] !== 0) fulfilled = false;
+/******/ 			}
+/******/ 			if(fulfilled) {
+/******/ 				deferredModules.splice(i--, 1);
+/******/ 				result = __webpack_require__(__webpack_require__.s = deferredModule[0]);
+/******/ 			}
+/******/ 		}
+/******/
+/******/ 		return result;
+/******/ 	}
+/******/
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
+/******/
+/******/ 	// object to store loaded and loading chunks
+/******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 	// Promise = chunk loading, 0 = chunk loaded
+/******/ 	var installedChunks = {
+/******/ 		"sign-in": 0
+/******/ 	};
+/******/
+/******/ 	var deferredModules = [];
 /******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
@@ -79,12 +139,32 @@
 /******/ 	// __webpack_public_path__
 /******/ 	__webpack_require__.p = "/";
 /******/
+/******/ 	var jsonpArray = window["webpackJsonp"] = window["webpackJsonp"] || [];
+/******/ 	var oldJsonpFunction = jsonpArray.push.bind(jsonpArray);
+/******/ 	jsonpArray.push = webpackJsonpCallback;
+/******/ 	jsonpArray = jsonpArray.slice();
+/******/ 	for(var i = 0; i < jsonpArray.length; i++) webpackJsonpCallback(jsonpArray[i]);
+/******/ 	var parentJsonpFunction = oldJsonpFunction;
 /******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./pages/sign-in/sign-in.js");
+/******/
+/******/ 	// add entry module to deferred list
+/******/ 	deferredModules.push(["./pages/sign-in/sign-in.js","vendors"]);
+/******/ 	// run deferred modules when ready
+/******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./components/footer/footer.styl":
+/*!***************************************!*\
+  !*** ./components/footer/footer.styl ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./components/footer/footer.styl?");
+
+/***/ }),
 
 /***/ "./components/form-login/form-login.js":
 /*!*********************************************!*\
@@ -106,6 +186,40 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sma
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./components/form-login/form-login.styl?");
+
+/***/ }),
+
+/***/ "./components/header/header.js":
+/*!*************************************!*\
+  !*** ./components/header/header.js ***!
+  \*************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _img_logo_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./img/logo.svg */ \"./components/header/img/logo.svg\");\n/* harmony import */ var _img_logo_svg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_img_logo_svg__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _header_styl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header.styl */ \"./components/header/header.styl\");\n/* harmony import */ var _header_styl__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_header_styl__WEBPACK_IMPORTED_MODULE_1__);\n\n\n$('.menu-hamburger').on('click', function () {\n  $('.header-menu__list').toggleClass('header-menu__list_active');\n  $('.menu-hamburger').toggleClass('menu-hamburger__close');\n}); // $(document).on('click', function(el) {\n//   const popup = $('.header-menu__list_active');\n//   const gamburger = 'menu-hamburger menu-hamburger__close';\n//   const gamburgerline = 'menu-hamburger__line';\n//   const target = el.target.className;\n//   console.log(target);\n//   if(target !== gamburger && target !== gamburgerline && !popup.has(el.target).length) {\n//     console.log('Я тут');\n//     $('.header-menu__list').toggleClass('header-menu__list_active');\n//     $('.menu-hamburger').toggleClass('menu-hamburger__close');\n//   }\n// })\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"../node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./components/header/header.js?");
+
+/***/ }),
+
+/***/ "./components/header/header.styl":
+/*!***************************************!*\
+  !*** ./components/header/header.styl ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./components/header/header.styl?");
+
+/***/ }),
+
+/***/ "./components/header/img/logo.svg":
+/*!****************************************!*\
+  !*** ./components/header/img/logo.svg ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/logo.svg\";\n\n//# sourceURL=webpack:///./components/header/img/logo.svg?");
 
 /***/ }),
 
@@ -187,6 +301,17 @@ eval("module.exports = __webpack_require__.p + \"img/bg-registration.jpg\";\n\n/
 
 /***/ }),
 
+/***/ "./pages/sign-in/media.styl":
+/*!**********************************!*\
+  !*** ./pages/sign-in/media.styl ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./pages/sign-in/media.styl?");
+
+/***/ }),
+
 /***/ "./pages/sign-in/sign-in.js":
 /*!**********************************!*\
   !*** ./pages/sign-in/sign-in.js ***!
@@ -195,7 +320,7 @@ eval("module.exports = __webpack_require__.p + \"img/bg-registration.jpg\";\n\n/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_main_main_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/main/main.js */ \"./components/main/main.js\");\n/* harmony import */ var _sign_in_styl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sign-in.styl */ \"./pages/sign-in/sign-in.styl\");\n/* harmony import */ var _sign_in_styl__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sign_in_styl__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _registration_img_bg_registration_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../registration/img/bg-registration.jpg */ \"./pages/registration/img/bg-registration.jpg\");\n/* harmony import */ var _registration_img_bg_registration_jpg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_registration_img_bg_registration_jpg__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _components_form_login_form_login_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/form-login/form-login.js */ \"./components/form-login/form-login.js\");\n\n\n\n\n\n//# sourceURL=webpack:///./pages/sign-in/sign-in.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_main_main_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/main/main.js */ \"./components/main/main.js\");\n/* harmony import */ var _components_header_header_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/header/header.js */ \"./components/header/header.js\");\n/* harmony import */ var _components_footer_footer_styl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/footer/footer.styl */ \"./components/footer/footer.styl\");\n/* harmony import */ var _components_footer_footer_styl__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_footer_footer_styl__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _sign_in_styl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./sign-in.styl */ \"./pages/sign-in/sign-in.styl\");\n/* harmony import */ var _sign_in_styl__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_sign_in_styl__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _registration_img_bg_registration_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../registration/img/bg-registration.jpg */ \"./pages/registration/img/bg-registration.jpg\");\n/* harmony import */ var _registration_img_bg_registration_jpg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_registration_img_bg_registration_jpg__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _components_form_login_form_login_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/form-login/form-login.js */ \"./components/form-login/form-login.js\");\n/* harmony import */ var _media_styl__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./media.styl */ \"./pages/sign-in/media.styl\");\n/* harmony import */ var _media_styl__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_media_styl__WEBPACK_IMPORTED_MODULE_6__);\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./pages/sign-in/sign-in.js?");
 
 /***/ }),
 

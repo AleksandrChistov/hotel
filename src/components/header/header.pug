@@ -10,7 +10,7 @@ mixin header(options)
             li(class=`header-menu__item${options.itemMargin || ""}`)
               if item.arrow
                 a(class=`header-menu__link${item.bold || ""}` href=`${item.link || "#"}`)= item.text
-                span(class=`header-menu__arrow${options.marginArrow || ""}`)
+                  span(class=`header-menu__arrow${options.marginArrow || ""}`)
               else
                 a(class=`header-menu__link${item.bold || ""}` href=`${item.link || "#"}`)= item.text
         .menu-hamburger

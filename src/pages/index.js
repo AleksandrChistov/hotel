@@ -1,6 +1,5 @@
 import './index.styl'
 
-import '../components/header/header.styl'
 import '../components/header/header.js'
 import '../components/footer/footer.styl'
 
