@@ -9,11 +9,8 @@ $('.menu-hamburger').on('click', function() {
 $(document).on('click', function(e) {
   const gamburger = $(e.target).closest('.menu-hamburger');
   const gamburgerClose = $('.menu-hamburger__close');
-  if(!gamburgerClose.length || gamburger.length) {
-    return false;
-  }
   const popup = $(e.target).closest('.header-menu__list_active');
-  if(!popup.length) {
+  if(!popup.length && gamburgerClose.length && !gamburger.length) {
     $('.header-menu__list').removeClass('header-menu__list_active');
     $('.menu-hamburger').removeClass('menu-hamburger__close');
   }

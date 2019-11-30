@@ -3,7 +3,8 @@ include ../small-components/buttons/button-m/button-m.pug
 mixin header(options)
   header(class=`header${options.margin || ""}`)
     div(class="header-container")
-      img(src="/img/logo.svg" class="header__img" alt="Logo" id="headerLogo")
+      a(class="header__img-link" href="/")
+        img(src="/img/logo.svg" class="header__img" alt="Logo" id="headerLogo")
       nav(class="header-menu")
         ul.header-menu__list
           each item in options.list

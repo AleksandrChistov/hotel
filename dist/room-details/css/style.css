@@ -72,6 +72,12 @@ p {
   letter-spacing: -0.7px;
 }
 
+@media (max-width: 350px) {
+  .form__title {
+    font-size: 22px;
+  }
+}
+
 .room-details-img-wrap {
   display: flex;
   margin-bottom: 70px;
@@ -253,6 +259,9 @@ p {
 .header-menu__item:hover .header-menu__link {
   color: #bc9cff;
 }
+.header-menu__link {
+  display: flex;
+}
 .header-menu__link,
 .header-menu__name-person {
   text-decoration: none;
@@ -267,11 +276,12 @@ p {
   height: 9px;
   border-right: 2px solid rgba(31,32,65,0.5);
   border-bottom: 2px solid rgba(31,32,65,0.5);
-  margin: 3px 8px 0 8px;
+  margin: 3px 8px 0 9px;
   transform: rotate(45deg);
+  display: inline-block;
 }
 .header-menu__arrow_margin_left_0 {
-  margin: 3px 0 0 10px;
+  margin: 3px 2px 0 9px;
 }
 .header-menu__line {
   border: 0;
@@ -296,10 +306,11 @@ p {
   padding-right: 20px;
 }
 .menu-hamburger {
-  width: 28px;
-  height: 19px;
+  width: 37px;
+  height: 29px;
   display: none;
   order: 1;
+  padding: 5px;
 }
 .menu-hamburger__line {
   width: 100%;
@@ -323,6 +334,9 @@ p {
 }
 .menu-hamburger__close .menu-hamburger__line:last-child {
   transform: rotate(45deg) translate(-5px, -5px);
+}
+.header__img-link {
+  display: flex;
 }
 
 .room-details__group {
