@@ -32,53 +32,99 @@
       </div>
       <div class="room-details-main-wrap">
         <div class="room-details-main">
-          <div class="room-details-main-info-wrap">
-            <div class="room-details-main-info">
-              <h2 class="room-details-main__title">Сведения о номере</h2>
-              <div class="room-details">
-                <div class="room-details__group">
-                  <div class="room-details__img room-details__img_emoticon"></div>
-                  <div class="room-details__wrap-text">
-                    <p class="room-details__title">Комфорт</p>
-                    <p class="room-details__descr">Шумопоглощающие стены</p>
+          <div class="room-details-form-wrap">
+            <div class="room-details-main-info-wrap">
+              <div class="room-details-main-info">
+                <h2 class="room-details-main__title">Сведения о номере</h2>
+                <div class="room-details">
+                  <div class="room-details__group">
+                    <div class="room-details__img room-details__img_emoticon"></div>
+                    <div class="room-details__wrap-text">
+                      <p class="room-details__title">Комфорт</p>
+                      <p class="room-details__descr">Шумопоглощающие стены</p>
+                    </div>
+                    <hr class="room-details__hr">
                   </div>
-                  <hr class="room-details__hr">
-                </div>
-                <div class="room-details__group">
-                  <div class="room-details__img room-details__img_city"></div>
-                  <div class="room-details__wrap-text">
-                    <p class="room-details__title">Удобство</p>
-                    <p class="room-details__descr">Окно в каждой из спален</p>
+                  <div class="room-details__group">
+                    <div class="room-details__img room-details__img_city"></div>
+                    <div class="room-details__wrap-text">
+                      <p class="room-details__title">Удобство</p>
+                      <p class="room-details__descr">Окно в каждой из спален</p>
+                    </div>
+                    <hr class="room-details__hr">
                   </div>
-                  <hr class="room-details__hr">
-                </div>
-                <div class="room-details__group">
-                  <div class="room-details__img room-details__img_whatshot"></div>
-                  <div class="room-details__wrap-text">
-                    <p class="room-details__title">Уют</p>
-                    <p class="room-details__descr">Номер оснащён камином</p>
+                  <div class="room-details__group">
+                    <div class="room-details__img room-details__img_whatshot"></div>
+                    <div class="room-details__wrap-text">
+                      <p class="room-details__title">Уют</p>
+                      <p class="room-details__descr">Номер оснащён камином</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="room-details-main-impressions">
-              <h2 class="room-details-main__title">Впечатления от номера</h2>
-              <div class="vote">
-                <div class="vote-diagram-wrap">
-                  <p class="vote-diagram-amount">260</p>
-                  <p class="vote-diagram-text">голосов</p>
-                  <div class="vote-diagram-sumptuously-wrap"><span class="vote-diagram-sumptuously"></span></div>
-                  <div class="vote-diagram-good-wrap"><span class="vote-diagram-good"></span></div>
-                  <div class="vote-diagram-satisfactorily-wrap"><span class="vote-diagram-satisfactorily"></span></div>
+              <div class="room-details-main-impressions">
+                <h2 class="room-details-main__title">Впечатления от номера</h2>
+                <div class="vote">
+                  <div class="vote-diagram-wrap">
+                    <p class="vote-diagram-amount">260</p>
+                    <p class="vote-diagram-text">голосов</p>
+                    <div class="vote-diagram-sumptuously-wrap"><span class="vote-diagram-sumptuously"></span></div>
+                    <div class="vote-diagram-good-wrap"><span class="vote-diagram-good"></span></div>
+                    <div class="vote-diagram-satisfactorily-wrap"><span class="vote-diagram-satisfactorily"></span></div>
+                  </div>
+                  <ul class="vote-value-wrap">
+                    <li class="vote-value vote-value_orange">Великолепно</li>
+                    <li class="vote-value vote-value_green">Хорошо</li>
+                    <li class="vote-value vote-value_violet">Удовлетворительно</li>
+                    <li class="vote-value vote-value_black">Разочарован</li>
+                  </ul>
                 </div>
-                <ul class="vote-value-wrap">
-                  <li class="vote-value vote-value_orange">Великолепно</li>
-                  <li class="vote-value vote-value_green">Хорошо</li>
-                  <li class="vote-value vote-value_violet">Удовлетворительно</li>
-                  <li class="vote-value vote-value_black">Разочарован</li>
-                </ul>
               </div>
             </div>
+            <form class="form form_height_513 form_absolute" action="#" method="POST">
+              <p class="form-reserve-title"><span class="form-title__number form-title__number-lux">888</span><span class="form-title__price">9 990₽</span></p>
+              <div class="date-dropdown text-field date-dropdown_margin_bottom_18">
+                <div class="date-dropdown__from">
+                  <label class="dropdown__title" for="dateDropFrom">Прибытие</label>
+                  <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropFrom" value="19.08.2019" placeholder="ДД.ММ.ГГГГ">
+                </div>
+                <div class="date-dropdown__to">
+                  <label class="dropdown__title" for="dateDropTo">Выезд</label>
+                  <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropTo" value="23.08.2019" placeholder="23.08.2019">
+                </div>
+                <div class="window date-dropdown-window dropdown-window_display_none"></div>
+              </div>
+              <div class="dropdown dropdown_margin_bottom_20">
+                <label class="dropdown__title" for="guest">Гости</label>
+                <input class="dropdown__input dropdown__input_color" type="text" name="dropdown" id="guest" value="3 гостя">
+                <div class="dropdown-window dropdown-window_display_none dropdown-window_width_max" id="drop_guest">
+                  <div class="dropdown-window__wrap-elem">
+                    <p class="dropdown-window__name">Взрослые</p>
+                    <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement dropdown-window__decrement_active">-</span><span class="dropdown-window__value" id="0guest">2</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
+                    </div>
+                  </div>
+                  <div class="dropdown-window__wrap-elem">
+                    <p class="dropdown-window__name">Дети</p>
+                    <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement dropdown-window__decrement_active">-</span><span class="dropdown-window__value" id="1guest">1</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
+                    </div>
+                  </div>
+                  <div class="dropdown-window__wrap-elem">
+                    <p class="dropdown-window__name">Младенцы</p>
+                    <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="2guest">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
+                    </div>
+                  </div>
+                  <p class="dropdown-window__clear dropdown-window__clear_display_block">очистить      </p>
+                  <p class="dropdown-window__apply">применить</p>
+                </div>
+              </div>
+              <div class="form-reserve-calc">
+                <p class="form-reserve-calc-text"><span class="form-reserve-calc-text__left">9 990₽ х 4 суток</span><span class="form-reserve-calc-text__right">39 960₽</span></p>
+                <p class="form-reserve-calc-text"><span class="form-reserve-calc-text__left">Сбор за услуги: скидка 2 179₽<span class="form-reserve-calc-text__i">i</span></span><span class="form-reserve-calc-text__right">0₽</span></p>
+                <p class="form-reserve-calc-text form-reserve-calc-text_margin_bottom_27"><span class="form-reserve-calc-text__left">Сбор за дополнительные услуги<span class="form-reserve-calc-text__i">i</span></span><span class="form-reserve-calc-text__right">300₽</span></p>
+                <p class="form-reserve-calc-text form-reserve-calc-text_bold"><span class="form-reserve-calc-text__left form-reserve-calc-text__left_bg_white">Итого</span><span class="form-reserve-calc-text__right form-reserve-calc-text__right_bg_white">38 081₽</span></p>
+              </div>
+              <button class="button-l" type="button">Забронировать<span class="button-l-arrow"></span></button>
+            </form>
           </div>
           <div class="room-details-comment">
             <h2 class="room-details-main__title">Отзывы посетителей номера<span class="room-details-main__amount-comments">2 отзыва</span></h2>
@@ -126,50 +172,6 @@
             </div>
           </div>
         </div>
-        <form class="form form_height_513" action="#" method="POST">
-          <p class="form-reserve-title"><span class="form-title__number form-title__number-lux">888</span><span class="form-title__price">9 990₽</span></p>
-          <div class="date-dropdown text-field date-dropdown_margin_bottom_18">
-            <div class="date-dropdown__from">
-              <label class="dropdown__title" for="dateDropFrom">Прибытие</label>
-              <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropFrom" value="19.08.2019" placeholder="ДД.ММ.ГГГГ">
-            </div>
-            <div class="date-dropdown__to">
-              <label class="dropdown__title" for="dateDropTo">Выезд</label>
-              <input class="date-dropdown__input dropdown__input_color dropdown__input_width_small" type="text" name="date-dropdown" id="dateDropTo" value="23.08.2019" placeholder="23.08.2019">
-            </div>
-            <div class="window date-dropdown-window dropdown-window_display_none"></div>
-          </div>
-          <div class="dropdown dropdown_margin_bottom_20">
-            <label class="dropdown__title" for="guest">Гости</label>
-            <input class="dropdown__input dropdown__input_color" type="text" name="dropdown" id="guest" value="3 гостя">
-            <div class="dropdown-window dropdown-window_display_none dropdown-window_width_max" id="drop_guest">
-              <div class="dropdown-window__wrap-elem">
-                <p class="dropdown-window__name">Взрослые</p>
-                <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement dropdown-window__decrement_active">-</span><span class="dropdown-window__value" id="0guest">2</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
-                </div>
-              </div>
-              <div class="dropdown-window__wrap-elem">
-                <p class="dropdown-window__name">Дети</p>
-                <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement dropdown-window__decrement_active">-</span><span class="dropdown-window__value" id="1guest">1</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
-                </div>
-              </div>
-              <div class="dropdown-window__wrap-elem">
-                <p class="dropdown-window__name">Младенцы</p>
-                <div class="dropdown-window__wrap-value"><span class="dropdown-window__decrement">-</span><span class="dropdown-window__value" id="2guest">0</span><span class="dropdown-window__increment dropdown-window__increment_active">+</span>
-                </div>
-              </div>
-              <p class="dropdown-window__clear dropdown-window__clear_display_block">очистить      </p>
-              <p class="dropdown-window__apply">применить</p>
-            </div>
-          </div>
-          <div class="form-reserve-calc">
-            <p class="form-reserve-calc-text"><span class="form-reserve-calc-text__left">9 990₽ х 4 суток</span><span class="form-reserve-calc-text__right">39 960₽</span></p>
-            <p class="form-reserve-calc-text"><span class="form-reserve-calc-text__left">Сбор за услуги: скидка 2 179₽<span class="form-reserve-calc-text__i">i</span></span><span class="form-reserve-calc-text__right">0₽</span></p>
-            <p class="form-reserve-calc-text form-reserve-calc-text_margin_bottom_27"><span class="form-reserve-calc-text__left">Сбор за дополнительные услуги<span class="form-reserve-calc-text__i">i</span></span><span class="form-reserve-calc-text__right">300₽</span></p>
-            <p class="form-reserve-calc-text form-reserve-calc-text_bold"><span class="form-reserve-calc-text__left form-reserve-calc-text__left_bg_white">Итого</span><span class="form-reserve-calc-text__right form-reserve-calc-text__right_bg_white">38 081₽</span></p>
-          </div>
-          <button class="button-l" type="button">Забронировать<span class="button-l-arrow"></span></button>
-        </form>
       </div>
       <hr class="filter-line">
       <footer class="footer">

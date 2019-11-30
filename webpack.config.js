@@ -82,7 +82,7 @@ module.exports = env => {
             options: {
               ident: 'postcss',
               plugins: [
-                require('css-mqpacker')({})
+                require('css-mqpacker')({sort: true})
               ]
             }
           }, 

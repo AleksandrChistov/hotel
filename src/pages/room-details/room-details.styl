@@ -16,11 +16,13 @@
   justify-content space-between
   max-width 1160px
   margin 0 auto 70px
+  position relative
 
 .room-details-main
   display flex
   flex-direction column
   flex-basis 61.3%
+  margin-right 20px
 
 .room-details-main-info-wrap
   display flex
@@ -29,6 +31,7 @@
 
 .room-details-main-impressions
   flex-basis 49.5%
+  margin-bottom 20px
 
 .room-details-main__title
   font-family Quicksand, Montserrat, sans-serif
@@ -68,3 +71,16 @@
   font-size 14px
   font-weight normal
   color rgba(31, 32, 65, 0.5)
+
+.room-details-img-wrap img
+  max-width 100%
+  object-fit cover
+  height fit-content
+
+.room-details-img-wrap > img
+  max-width 70%
+
+.form_absolute
+  position absolute
+  top 0
+  right 0
