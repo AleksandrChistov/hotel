@@ -82,7 +82,7 @@ module.exports = env => {
             options: {
               ident: 'postcss',
               plugins: [
-                require('css-mqpacker')({sort: true})
+                require('postcss-sort-media-queries')({sort: 'desktop-first'})
               ]
             }
           }, 

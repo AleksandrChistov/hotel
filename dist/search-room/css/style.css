@@ -1417,7 +1417,8 @@ html:not([dir="rtl"]) .range.noUi-horizontal .noUi-handle {
   .filter {
     margin-right: 35px;
   }
-}@media (max-width: 904px) {
+}
+@media (max-width: 904px) {
   .button-m-reg {
     display: none;
   }
@@ -1464,7 +1465,8 @@ html:not([dir="rtl"]) .range.noUi-horizontal .noUi-handle {
     left: 0;
     transition: all 0.5s;
   }
-}@media (max-width: 680px) {
+}
+@media (max-width: 680px) {
   .header-menu__list {
     display: flex;
     flex-direction: column;
@@ -1519,7 +1521,8 @@ html:not([dir="rtl"]) .range.noUi-horizontal .noUi-handle {
   .filter-btn_lg {
     font-size: 11px;
   }
-}@media (max-width: 450px) {
+}
+@media (max-width: 450px) {
   .header-menu {
     justify-content: flex-end;
   }
@@ -1552,14 +1555,30 @@ html:not([dir="rtl"]) .range.noUi-horizontal .noUi-handle {
   .room-img__title {
     font-size: 20px;
   }
-}@media (max-width: 350px) {
+}
+@media (max-width: 380px) {
+  .window .datepicker--cell {
+    height: auto;
+    padding: 2.5vw;
+  }
+  .window .datepicker--cell.datepicker--cell-day.-range-from-.-selected-::after,
+  .window .datepicker--cell.datepicker--cell-day.-range-to-.-selected-::before,
+  .window .datepicker--cell.-range-to-.-focus-::before,
+  .window .datepicker--cell.-range-from-.-focus-::after {
+    height: 9vw;
+    width: 9vw;
+  }
+}
+@media (max-width: 350px) {
   .header-menu__list {
     width: 78vw;
   }
-}@media (max-width: 380px) {
+  .dropdown__input_width_small {
+    font-size: 12px;
+  }
   .window .datepicker--cell {
     height: auto;
-    padding: 3.2vw;
+    padding: 3vw;
   }
   .window .datepicker--cell.datepicker--cell-day.-range-from-.-selected-::after,
   .window .datepicker--cell.datepicker--cell-day.-range-to-.-selected-::before,
@@ -1567,21 +1586,6 @@ html:not([dir="rtl"]) .range.noUi-horizontal .noUi-handle {
   .window .datepicker--cell.-range-from-.-focus-::after {
     height: 10.5vw;
     width: 10.5vw;
-  }
-}@media (max-width: 340px) {
-  .dropdown__input_width_small {
-    font-size: 12px;
-  }
-  .window .datepicker--cell {
-    height: auto;
-    padding: 2.55vw;
-  }
-  .window .datepicker--cell.datepicker--cell-day.-range-from-.-selected-::after,
-  .window .datepicker--cell.datepicker--cell-day.-range-to-.-selected-::before,
-  .window .datepicker--cell.-range-to-.-focus-::before,
-  .window .datepicker--cell.-range-from-.-focus-::after {
-    height: 9.8vw;
-    width: 9.8vw;
   }
 }
 

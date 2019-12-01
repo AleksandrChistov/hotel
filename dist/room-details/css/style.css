@@ -1319,19 +1319,7 @@ p {
   background: url("/img/social-img/ins-icon.svg") center center no-repeat;
 }
 
-@media (max-width: 1048px) {
-  .form {
-    right: 8vw;
-  }
-  .room-details-main-info-wrap {
-    flex-direction: column;
-    margin-bottom: 50px;
-  }
-  .room-details-main {
-    margin-left: 8vw;
-    flex-basis: 70%;
-  }
-}@media (max-width: 1200px) {
+@media (max-width: 1200px) {
   .header {
     padding: 0 20px;
   }
@@ -1354,7 +1342,21 @@ p {
   .form_absolute {
     margin-right: 20px;
   }
-}@media (max-width: 904px) {
+}
+@media (max-width: 1048px) {
+  .form {
+    right: 8vw;
+  }
+  .room-details-main-info-wrap {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .room-details-main {
+    margin-left: 8vw;
+    flex-basis: 70%;
+  }
+}
+@media (max-width: 904px) {
   .button-m-reg {
     display: none;
   }
@@ -1401,7 +1403,8 @@ p {
   .room-details-img-small {
     flex-direction: row;
   }
-}@media (max-width: 680px) {
+}
+@media (max-width: 680px) {
   .header-menu__list {
     display: flex;
     flex-direction: column;
@@ -1472,7 +1475,8 @@ p {
   .room-details-main__title_left_20 {
     padding-left: 0;
   }
-}@media (max-width: 450px) {
+}
+@media (max-width: 450px) {
   .header-menu {
     justify-content: flex-end;
   }
@@ -1532,19 +1536,30 @@ p {
   .form-reserve-calc-text__right_bg_white {
     font-size: 14px;
   }
-}@media (max-width: 350px) {
+}
+@media (max-width: 380px) {
+  .window .datepicker--cell {
+    height: auto;
+    padding: 2.5vw;
+  }
+  .window .datepicker--cell.datepicker--cell-day.-range-from-.-selected-::after,
+  .window .datepicker--cell.datepicker--cell-day.-range-to-.-selected-::before,
+  .window .datepicker--cell.-range-to-.-focus-::before,
+  .window .datepicker--cell.-range-from-.-focus-::after {
+    height: 9vw;
+    width: 9vw;
+  }
+}
+@media (max-width: 350px) {
   .header-menu__list {
     width: 78vw;
   }
-  .form {
-    position: relative;
-    left: -20px;
-    max-width: 100vw;
+  .dropdown__input_width_small {
+    font-size: 12px;
   }
-}@media (max-width: 380px) {
   .window .datepicker--cell {
     height: auto;
-    padding: 3.2vw;
+    padding: 3vw;
   }
   .window .datepicker--cell.datepicker--cell-day.-range-from-.-selected-::after,
   .window .datepicker--cell.datepicker--cell-day.-range-to-.-selected-::before,
@@ -1553,20 +1568,13 @@ p {
     height: 10.5vw;
     width: 10.5vw;
   }
-}@media (max-width: 340px) {
-  .dropdown__input_width_small {
-    font-size: 12px;
+  .form {
+    position: relative;
+    left: -20px;
+    max-width: 100vw;
   }
-  .window .datepicker--cell {
-    height: auto;
-    padding: 2.55vw;
-  }
-  .window .datepicker--cell.datepicker--cell-day.-range-from-.-selected-::after,
-  .window .datepicker--cell.datepicker--cell-day.-range-to-.-selected-::before,
-  .window .datepicker--cell.-range-to-.-focus-::before,
-  .window .datepicker--cell.-range-from-.-focus-::after {
-    height: 9.8vw;
-    width: 9.8vw;
+  .room-details-main__title {
+    font-size: 18px;
   }
 }
 

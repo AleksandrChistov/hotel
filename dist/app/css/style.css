@@ -442,49 +442,6 @@ p {
   }
 }
 
-.date-dropdown {
-  display: flex;
-  justify-content: space-between;
-  width: 320px;
-  max-width: 100%;
-  position: relative;
-}
-.date-dropdown__from,
-.date-dropdown__to {
-  display: flex;
-  flex-direction: column;
-  max-width: 46.5%;
-}
-.date-dropdown__from {
-  margin-right: 20px;
-}
-.date-dropdown__input {
-  height: 44px;
-  padding-left: 15px;
-  border-radius: 4px;
-  border: 1px solid rgba(31,32,65,0.25);
-  background-image: url("/img/icon-dropdown.svg");
-  background-repeat: no-repeat;
-  background-position: 90% 50%;
-  color: rgba(31,32,65,0.75);
-}
-.date-dropdown__input:active,
-.date-dropdown__input:hover,
-.date-dropdown__input:focus {
-  background-image: url("/img/icon-dropdown-active.svg");
-  outline: none;
-}
-.dropdown__input_width_small {
-  width: 150px;
-  max-width: 100%;
-}
-.datepicker_width {
-  width: 320px;
-}
-.date-dropdown_margin_bottom_18 {
-  margin-bottom: 18px;
-}
-
 .dropdown__input {
   width: 100%;
   height: 44px;
@@ -868,6 +825,49 @@ p {
   order: -1;
 }
 
+.date-dropdown {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  max-width: 100%;
+  position: relative;
+}
+.date-dropdown__from,
+.date-dropdown__to {
+  display: flex;
+  flex-direction: column;
+  max-width: 46.5%;
+}
+.date-dropdown__from {
+  margin-right: 20px;
+}
+.date-dropdown__input {
+  height: 44px;
+  padding-left: 15px;
+  border-radius: 4px;
+  border: 1px solid rgba(31,32,65,0.25);
+  background-image: url("/img/icon-dropdown.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+  color: rgba(31,32,65,0.75);
+}
+.date-dropdown__input:active,
+.date-dropdown__input:hover,
+.date-dropdown__input:focus {
+  background-image: url("/img/icon-dropdown-active.svg");
+  outline: none;
+}
+.dropdown__input_width_small {
+  width: 150px;
+  max-width: 100%;
+}
+.datepicker_width {
+  width: 320px;
+}
+.date-dropdown_margin_bottom_18 {
+  margin-bottom: 18px;
+}
+
 @media (max-width: 1200px) {
   .header {
     padding: 0 20px;
@@ -885,7 +885,8 @@ p {
     padding-left: 20px;
     padding-right: 20px;
   }
-}@media (max-width: 904px) {
+}
+@media (max-width: 904px) {
   .button-m-reg {
     display: none;
   }
@@ -899,7 +900,8 @@ p {
   .container-main {
     padding: 70px 100px 385px;
   }
-}@media (max-width: 680px) {
+}
+@media (max-width: 680px) {
   .header-menu__list {
     display: flex;
     flex-direction: column;
@@ -957,7 +959,8 @@ p {
     text-align: center;
     width: 100%;
   }
-}@media (max-width: 450px) {
+}
+@media (max-width: 450px) {
   .header-menu {
     justify-content: flex-end;
   }
@@ -992,14 +995,30 @@ p {
     display: flex;
     justify-content: center;
   }
-}@media (max-width: 350px) {
+}
+@media (max-width: 380px) {
+  .window .datepicker--cell {
+    height: auto;
+    padding: 2.5vw;
+  }
+  .window .datepicker--cell.datepicker--cell-day.-range-from-.-selected-::after,
+  .window .datepicker--cell.datepicker--cell-day.-range-to-.-selected-::before,
+  .window .datepicker--cell.-range-to-.-focus-::before,
+  .window .datepicker--cell.-range-from-.-focus-::after {
+    height: 9vw;
+    width: 9vw;
+  }
+}
+@media (max-width: 350px) {
   .header-menu__list {
     width: 78vw;
   }
-}@media (max-width: 380px) {
+  .dropdown__input_width_small {
+    font-size: 12px;
+  }
   .window .datepicker--cell {
     height: auto;
-    padding: 3.2vw;
+    padding: 3vw;
   }
   .window .datepicker--cell.datepicker--cell-day.-range-from-.-selected-::after,
   .window .datepicker--cell.datepicker--cell-day.-range-to-.-selected-::before,
@@ -1007,21 +1026,6 @@ p {
   .window .datepicker--cell.-range-from-.-focus-::after {
     height: 10.5vw;
     width: 10.5vw;
-  }
-}@media (max-width: 340px) {
-  .dropdown__input_width_small {
-    font-size: 12px;
-  }
-  .window .datepicker--cell {
-    height: auto;
-    padding: 2.55vw;
-  }
-  .window .datepicker--cell.datepicker--cell-day.-range-from-.-selected-::after,
-  .window .datepicker--cell.datepicker--cell-day.-range-to-.-selected-::before,
-  .window .datepicker--cell.-range-to-.-focus-::before,
-  .window .datepicker--cell.-range-from-.-focus-::after {
-    height: 9.8vw;
-    width: 9.8vw;
   }
 }
 
