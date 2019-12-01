@@ -640,13 +640,13 @@ p {
 .datepicker_width_middle .datepicker {
   width: 266px;
 }
-.datepicker_width_middle .datepicker--cell {
+.datepicker_width_middle .datepicker--content .datepicker--cell {
   height: 32.5px;
 }
-.datepicker_width_middle .datepicker--cell.datepicker--cell-day.-range-from-.-selected-::after,
-.datepicker_width_middle .datepicker--cell.datepicker--cell-day.-range-to-.-selected-::before,
-.datepicker_width_middle .datepicker--cell.-range-to-.-focus-::before,
-.datepicker_width_middle .datepicker--cell.-range-from-.-focus-::after {
+.datepicker_width_middle .datepicker--content .datepicker--cell.datepicker--cell-day.-range-from-.-selected-::after,
+.datepicker_width_middle .datepicker--content .datepicker--cell.datepicker--cell-day.-range-to-.-selected-::before,
+.datepicker_width_middle .datepicker--content .datepicker--cell.-range-to-.-focus-::before,
+.datepicker_width_middle .datepicker--content .datepicker--cell.-range-from-.-focus-::after {
   height: 32.5px;
   width: 32.5px;
 }
@@ -1556,36 +1556,9 @@ html:not([dir="rtl"]) .range.noUi-horizontal .noUi-handle {
     font-size: 20px;
   }
 }
-@media (max-width: 380px) {
-  .window .datepicker--cell {
-    height: auto;
-    padding: 2.5vw;
-  }
-  .window .datepicker--cell.datepicker--cell-day.-range-from-.-selected-::after,
-  .window .datepicker--cell.datepicker--cell-day.-range-to-.-selected-::before,
-  .window .datepicker--cell.-range-to-.-focus-::before,
-  .window .datepicker--cell.-range-from-.-focus-::after {
-    height: 9vw;
-    width: 9vw;
-  }
-}
 @media (max-width: 350px) {
   .header-menu__list {
     width: 78vw;
-  }
-  .dropdown__input_width_small {
-    font-size: 12px;
-  }
-  .window .datepicker--cell {
-    height: auto;
-    padding: 3vw;
-  }
-  .window .datepicker--cell.datepicker--cell-day.-range-from-.-selected-::after,
-  .window .datepicker--cell.datepicker--cell-day.-range-to-.-selected-::before,
-  .window .datepicker--cell.-range-to-.-focus-::before,
-  .window .datepicker--cell.-range-from-.-focus-::after {
-    height: 10.5vw;
-    width: 10.5vw;
   }
 }
 

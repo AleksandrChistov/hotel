@@ -868,6 +868,36 @@ p {
   margin-bottom: 18px;
 }
 
+@media (max-width: 380px) {
+  .window .datepicker--cell {
+    height: auto;
+    padding: 2.5vw;
+  }
+  .window .datepicker--cell.datepicker--cell-day.-range-from-.-selected-::after,
+  .window .datepicker--cell.datepicker--cell-day.-range-to-.-selected-::before,
+  .window .datepicker--cell.-range-to-.-focus-::before,
+  .window .datepicker--cell.-range-from-.-focus-::after {
+    height: 9vw;
+    width: 9vw;
+  }
+}
+@media (max-width: 350px) {
+  .dropdown__input_width_small {
+    font-size: 12px;
+  }
+  .window .datepicker--cell {
+    height: auto;
+    padding: 3vw;
+  }
+  .window .datepicker--cell.datepicker--cell-day.-range-from-.-selected-::after,
+  .window .datepicker--cell.datepicker--cell-day.-range-to-.-selected-::before,
+  .window .datepicker--cell.-range-to-.-focus-::before,
+  .window .datepicker--cell.-range-from-.-focus-::after {
+    height: 10.5vw;
+    width: 10.5vw;
+  }
+}
+
 @media (max-width: 1200px) {
   .header {
     padding: 0 20px;
@@ -996,36 +1026,9 @@ p {
     justify-content: center;
   }
 }
-@media (max-width: 380px) {
-  .window .datepicker--cell {
-    height: auto;
-    padding: 2.5vw;
-  }
-  .window .datepicker--cell.datepicker--cell-day.-range-from-.-selected-::after,
-  .window .datepicker--cell.datepicker--cell-day.-range-to-.-selected-::before,
-  .window .datepicker--cell.-range-to-.-focus-::before,
-  .window .datepicker--cell.-range-from-.-focus-::after {
-    height: 9vw;
-    width: 9vw;
-  }
-}
 @media (max-width: 350px) {
   .header-menu__list {
     width: 78vw;
-  }
-  .dropdown__input_width_small {
-    font-size: 12px;
-  }
-  .window .datepicker--cell {
-    height: auto;
-    padding: 3vw;
-  }
-  .window .datepicker--cell.datepicker--cell-day.-range-from-.-selected-::after,
-  .window .datepicker--cell.datepicker--cell-day.-range-to-.-selected-::before,
-  .window .datepicker--cell.-range-to-.-focus-::before,
-  .window .datepicker--cell.-range-from-.-focus-::after {
-    height: 10.5vw;
-    width: 10.5vw;
   }
 }
 

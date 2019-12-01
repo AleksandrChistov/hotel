@@ -949,6 +949,36 @@ p {
   margin-bottom: 18px;
 }
 
+@media (max-width: 380px) {
+  .window .datepicker--cell {
+    height: auto;
+    padding: 2.5vw;
+  }
+  .window .datepicker--cell.datepicker--cell-day.-range-from-.-selected-::after,
+  .window .datepicker--cell.datepicker--cell-day.-range-to-.-selected-::before,
+  .window .datepicker--cell.-range-to-.-focus-::before,
+  .window .datepicker--cell.-range-from-.-focus-::after {
+    height: 9vw;
+    width: 9vw;
+  }
+}
+@media (max-width: 350px) {
+  .dropdown__input_width_small {
+    font-size: 12px;
+  }
+  .window .datepicker--cell {
+    height: auto;
+    padding: 3vw;
+  }
+  .window .datepicker--cell.datepicker--cell-day.-range-from-.-selected-::after,
+  .window .datepicker--cell.datepicker--cell-day.-range-to-.-selected-::before,
+  .window .datepicker--cell.-range-to-.-focus-::before,
+  .window .datepicker--cell.-range-from-.-focus-::after {
+    height: 10.5vw;
+    width: 10.5vw;
+  }
+}
+
 .dropdown__input {
   width: 100%;
   height: 44px;
@@ -1320,6 +1350,12 @@ p {
 }
 
 @media (max-width: 1200px) {
+  .room-details-main-wrap {
+    padding: 0 20px;
+  }
+  .form_absolute {
+    margin-right: 20px;
+  }
   .header {
     padding: 0 20px;
   }
@@ -1336,12 +1372,6 @@ p {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .room-details-main-wrap {
-    padding: 0 20px;
-  }
-  .form_absolute {
-    margin-right: 20px;
-  }
 }
 @media (max-width: 1048px) {
   .form {
@@ -1357,16 +1387,6 @@ p {
   }
 }
 @media (max-width: 904px) {
-  .button-m-reg {
-    display: none;
-  }
-  .footer-container {
-    flex-direction: column;
-  }
-  .footer-menu-container,
-  .footer-subscribe-container {
-    margin-top: 40px;
-  }
   .form {
     position: static;
     margin: 0 auto 30px;
@@ -1403,8 +1423,41 @@ p {
   .room-details-img-small {
     flex-direction: row;
   }
+  .button-m-reg {
+    display: none;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-menu-container,
+  .footer-subscribe-container {
+    margin-top: 40px;
+  }
 }
 @media (max-width: 680px) {
+  .room-details-main-info-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .room-details-main-info {
+    order: 1;
+  }
+  .room-details-main-impressions {
+    margin-bottom: 30px;
+  }
+  .room-details-regulations-spec {
+    margin-bottom: 20px;
+  }
+  .room-details-regulations {
+    margin: 0 20px;
+    flex-direction: column;
+  }
+  .room-details-comment {
+    margin: 0 20px 30px;
+  }
+  .room-details-main__title_left_20 {
+    padding-left: 0;
+  }
   .header-menu__list {
     display: flex;
     flex-direction: column;
@@ -1452,60 +1505,8 @@ p {
   .button-m-text {
     font-size: 10px;
   }
-  .room-details-main-info-wrap {
-    flex-direction: column;
-    align-items: center;
-  }
-  .room-details-main-info {
-    order: 1;
-  }
-  .room-details-main-impressions {
-    margin-bottom: 30px;
-  }
-  .room-details-regulations-spec {
-    margin-bottom: 20px;
-  }
-  .room-details-regulations {
-    margin: 0 20px;
-    flex-direction: column;
-  }
-  .room-details-comment {
-    margin: 0 20px 30px;
-  }
-  .room-details-main__title_left_20 {
-    padding-left: 0;
-  }
 }
 @media (max-width: 450px) {
-  .header-menu {
-    justify-content: flex-end;
-  }
-  .header-menu__list {
-    width: 82vw;
-  }
-  .footer-container-copyright {
-    flex-direction: column;
-  }
-  .footer__copyright-text {
-    margin-bottom: 15px;
-    margin-right: 0;
-    text-align: center;
-  }
-  .footer-menu-container {
-    flex-direction: column;
-  }
-  .footer-menu {
-    margin-bottom: 30px;
-  }
-  .footer-subscribe-container {
-    margin-top: 20px;
-  }
-  .footer-img-container {
-    max-width: 360px;
-  }
-  .footer-container {
-    padding: 45px 20px 50px;
-  }
   .room-details-regulations {
     margin: 0;
     flex-direction: column;
@@ -1536,38 +1537,37 @@ p {
   .form-reserve-calc-text__right_bg_white {
     font-size: 14px;
   }
-}
-@media (max-width: 380px) {
-  .window .datepicker--cell {
-    height: auto;
-    padding: 2.5vw;
+  .header-menu {
+    justify-content: flex-end;
   }
-  .window .datepicker--cell.datepicker--cell-day.-range-from-.-selected-::after,
-  .window .datepicker--cell.datepicker--cell-day.-range-to-.-selected-::before,
-  .window .datepicker--cell.-range-to-.-focus-::before,
-  .window .datepicker--cell.-range-from-.-focus-::after {
-    height: 9vw;
-    width: 9vw;
+  .header-menu__list {
+    width: 82vw;
+  }
+  .footer-container-copyright {
+    flex-direction: column;
+  }
+  .footer__copyright-text {
+    margin-bottom: 15px;
+    margin-right: 0;
+    text-align: center;
+  }
+  .footer-menu-container {
+    flex-direction: column;
+  }
+  .footer-menu {
+    margin-bottom: 30px;
+  }
+  .footer-subscribe-container {
+    margin-top: 20px;
+  }
+  .footer-img-container {
+    max-width: 360px;
+  }
+  .footer-container {
+    padding: 45px 20px 50px;
   }
 }
 @media (max-width: 350px) {
-  .header-menu__list {
-    width: 78vw;
-  }
-  .dropdown__input_width_small {
-    font-size: 12px;
-  }
-  .window .datepicker--cell {
-    height: auto;
-    padding: 3vw;
-  }
-  .window .datepicker--cell.datepicker--cell-day.-range-from-.-selected-::after,
-  .window .datepicker--cell.datepicker--cell-day.-range-to-.-selected-::before,
-  .window .datepicker--cell.-range-to-.-focus-::before,
-  .window .datepicker--cell.-range-from-.-focus-::after {
-    height: 10.5vw;
-    width: 10.5vw;
-  }
   .form {
     position: relative;
     left: -20px;
@@ -1575,6 +1575,9 @@ p {
   }
   .room-details-main__title {
     font-size: 18px;
+  }
+  .header-menu__list {
+    width: 78vw;
   }
 }
 

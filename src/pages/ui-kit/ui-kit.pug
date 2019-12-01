@@ -144,16 +144,17 @@ block content
         +formLogin({txt: "Войти"})
       .cards3
         +windowDatepicker({})
-        +sliderRoom({arrImg: [{src: "/img/room-img/image1.webp"}, {src: "/img/room-img/image-default-2.webp"}, 
-          {src: "/img/room-img/image-default-3.webp"}, {src: "/img/room-img/image-default-4.webp"}], alt: "Первый номер в отеле", lux: " slider-room-block-text__room-lux",
-          room: "888", price: "9 990₽", nameRating: "room-rating1", reviews: "145", margin: " checkbox_margin_bottom", 
-          arrowActive: " slider-room_arrow_active", arr: [{aria: "1 звезда", checked: true}, {aria: "2 звезды", checked: true}, 
-          {aria: "3 звезды", checked: true}, {aria: "4 звезды", checked: true}, {aria: "5 звезд", checked: true}]})
-        +sliderRoom({arrImg: [{src: "/img/room-img/image2.webp"}, {src: "/img/room-img/image-default-2.webp"}, 
-          {src: "/img/room-img/image-default-3.webp"}, {src: "/img/room-img/image-default-4.webp"}], 
-          alt: "Второй номер в отеле", room: "840", price: "9 990₽", nameRating: "room-rating2", reviews: "65", 
-          arr: [{aria: "1 звезда", checked: true}, {aria: "2 звезды", checked: true}, 
-          {aria: "3 звезды", checked: true}, {aria: "4 звезды", checked: true}, {aria: "5 звезд", checked: false}]})
+        .slider-room-wrap
+          +sliderRoom({arrImg: [{src: "/img/room-img/image1.webp"}, {src: "/img/room-img/image-default-2.webp"}, 
+            {src: "/img/room-img/image-default-3.webp"}, {src: "/img/room-img/image-default-4.webp"}], alt: "Первый номер в отеле", lux: " slider-room-block-text__room-lux",
+            room: "888", price: "9 990₽", nameRating: "room-rating1", reviews: "145", margin: " checkbox_margin_bottom", 
+            arrowActive: " slider-room_arrow_active", arr: [{aria: "1 звезда", checked: true}, {aria: "2 звезды", checked: true}, 
+            {aria: "3 звезды", checked: true}, {aria: "4 звезды", checked: true}, {aria: "5 звезд", checked: true}]})
+          +sliderRoom({arrImg: [{src: "/img/room-img/image2.webp"}, {src: "/img/room-img/image-default-2.webp"}, 
+            {src: "/img/room-img/image-default-3.webp"}, {src: "/img/room-img/image-default-4.webp"}], 
+            alt: "Второй номер в отеле", room: "840", price: "9 990₽", nameRating: "room-rating2", reviews: "65", 
+            arr: [{aria: "1 звезда", checked: true}, {aria: "2 звезды", checked: true}, 
+            {aria: "3 звезды", checked: true}, {aria: "4 звезды", checked: true}, {aria: "5 звезд", checked: false}]})
   .container.container-ui-bg-gray
     +uiLogo({})
     .container-header-footer
