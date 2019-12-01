@@ -2,12 +2,12 @@ include ../small-components/rate-button/rating/rating.pug
 
 mixin sliderRoom(options)
   div(class=`slider-room${options.margin || ""}`)
-    div(class="slider-room-block-img")
+    a(class="slider-room-block-img" href="#")
       each img in options.arrImg
         img(class="slider-room-img" src=img.src, alt=options.alt)
     div(class="slider-room-block-text")
       p(class="slider-room-block-text__hotel-number")
-        span(class=`slider-room-block-text__room${options.lux || ""}`)= options.room
+        a(class=`slider-room-block-text__room${options.lux || ""}` href="#")= options.room
         span(class=`slider-room-block-text__price`)= options.price
       hr(class="slider-room-block-text__line")
       div(class="slider-room-block-text__rating")
@@ -18,8 +18,7 @@ mixin sliderRoom(options)
       li(class="slider-room-indicator")
       li(class="slider-room-indicator")
       li(class="slider-room-indicator")
-    div(class="slider-room-block-button")
-      div(class=`slider-room-block-button-left${options.arrowActive || ""}`)
-        button(class="slider-room-arrow-left" type="button")
-      div(class=`slider-room-block-button-right${options.arrowActive || ""}`)
-        button(class="slider-room-arrow-right" type="button")
+    div(class=`slider-room-block-button-left${options.arrowActive || ""}`)
+      button(class="slider-room-arrow-left" type="button")
+    div(class=`slider-room-block-button-right${options.arrowActive || ""}`)
+      button(class="slider-room-arrow-right" type="button")

@@ -902,6 +902,10 @@ html:not([dir="rtl"]) .range.noUi-horizontal .noUi-handle {
   font-weight: bold;
   font-size: 19px;
   color: #1f2041;
+  text-decoration: none;
+}
+.slider-room-block-text__room:hover {
+  text-decoration: underline;
 }
 .slider-room-block-text__room:before {
   content: "№";
@@ -968,15 +972,6 @@ html:not([dir="rtl"]) .range.noUi-horizontal .noUi-handle {
 .slider-room-indicator_bg_white {
   background-color: #fff;
 }
-.slider-room-block-button {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 271px;
-  height: 151px;
-  display: flex;
-  justify-content: space-between;
-}
 .slider-room-block-button-left,
 .slider-room-block-button-right {
   width: 42px;
@@ -987,9 +982,19 @@ html:not([dir="rtl"]) .range.noUi-horizontal .noUi-handle {
   background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 99.99%, rgba(255,255,255,0) 100%);
   opacity: 0;
   transition: opacity 0.5s;
+  position: absolute;
+  top: 0;
 }
-.slider-room-block-button:hover .slider-room-block-button-left,
-.slider-room-block-button:hover .slider-room-block-button-right,
+.slider-room-block-button-left {
+  left: 0;
+}
+.slider-room-block-button-right {
+  right: 0;
+}
+.slider-room-block-img:hover ~ .slider-room-block-button-left,
+.slider-room-block-img:hover ~ .slider-room-block-button-right,
+.slider-room-block-button-left:hover,
+.slider-room-block-button-right:hover,
 .slider-room_arrow_active {
   opacity: 1;
   transition: all 0.5s;
