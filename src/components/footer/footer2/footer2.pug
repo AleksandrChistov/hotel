@@ -3,7 +3,7 @@ mixin footer2(options)
   - {class: "footer-social__link-fb", aria: "Facebook"}, {class: "footer-social__link-ins", aria: "Instagram"}]
   footer(class=`footer2${options.margin || ""}`)
     div(class="footer2-container")
-      img(src="/img/logo.svg" class="footer__img" alt="Logo" id="footerLogo")
+      img(src=options.logoImg class="footer__img" alt="Logo" id="footerLogo")
       p(class="footer2__text")= options.text
       ul.footer-social
         each link in socialLink

@@ -1,7 +1,7 @@
 import '../../components/main/main.js'
 
 import '../../components/header/header.js'
-import '../../components/footer/footer.styl'
+import '../../components/footer/footer.js'
 
 import './registration.styl'
 

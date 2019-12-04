@@ -56,11 +56,6 @@ module.exports = env => {
       new MiniCssExtractPlugin({
         filename: env === 'development' ? '[name]/css/style.css' : '[name]/css/style.[hash].css',
       }),
-      new CopyWebpackPlugin([
-        { from: 'components/slider-room/room-img', to: 'img/room-img' },
-        { from: 'components/footer/social-img', to: 'img/social-img' },
-        { from: 'pages/room-details/img', to: 'img/room-img' }
-      ]),
       new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery',
@@ -113,11 +108,20 @@ module.exports = env => {
           }
         },
         { 
-          test: /\.(png|jpg|gif|svg|ico)$/,
+          test: /\.(png|jpg|gif|svg|ico|webp)$/,
           exclude: /fonts/,
           loader: "file-loader",
           options: {
-            name: 'img/[name].[ext]'
+            name: '[name].[ext]',
+            outputPath: (url, resourcePath, context) => {
+              if (/social-img/.test(resourcePath)) {
+                return `img/social-img/${url}`;
+              }
+              if (/room-img/.test(resourcePath) || /room-details/.test(resourcePath)) {
+                return `img/room-img/${url}`;
+              }
+              return `img/${url}`;
+            },
           }
         }
       ]

@@ -10,7 +10,7 @@ import '../../components/small-components/dropdown/dropdown.js'
 import '../../components/small-components/range-slider/range-slider.js'
 import '../../components/small-components/range-slider/range-slider.styl'
 
-import '../../components/small-components/checkbox-buttons/checkbox-buttons.styl'
+import '../../components/small-components/checkbox-buttons/checkbox-buttons.js'
 
 import '../../components/small-components/rich-checkbox-buttons/rich-checkbox.styl'
 
@@ -21,7 +21,7 @@ import '../../components/slider-room/slider-room.js'
 
 import '../../components/small-components/pagination/pagination.styl'
 
-import '../../components/footer/footer.styl'
+import '../../components/footer/footer.js'
 
 import './search-room.styl'
 

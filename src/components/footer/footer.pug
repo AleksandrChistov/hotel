@@ -6,7 +6,7 @@ mixin footer(options)
   footer(class=`footer${options.margin || ""}`)
     div(class=`footer-container${options.padding || ""}`)
       div(class="footer-img-container")
-        img(src="/img/logo.svg" class="footer__img" alt="Logo" id="footerLogo")
+        img(src=options.logoImg class="footer__img" alt="Logo" id="footerLogo")
         p(class="footer__text")= options.text
       div(class="footer-menu-container")
         each list in options.menu 

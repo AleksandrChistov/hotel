@@ -19,7 +19,7 @@ include ../../components/small-components/pagination/pagination.pug
 include ../../components/small-components/expandable-checkbox-list/checkbox-list.pug
 include ../../components/small-components/rich-checkbox-buttons/rich-checkbox.pug
 include ../../components/small-components/bullet-list/bullet-list.pug
-include ../../components/small-components/room-details/room-details.pug
+include ../../components/small-components/room-comfort/room-comfort.pug
 include ../../components/small-components/comments/comments.pug
 include ../../components/form-room-search/form-room-search.pug
 include ../../components/form-reg/form-reg.pug
@@ -34,10 +34,11 @@ include ../../components/footer/footer2/footer2.pug
 block variables
   - const pageTitle = 'UI Kit'
   - const bg = " body_bg-color_black"
+  - const urlFavicon = require("../../components/main/img/favicon.ico")
 
 block content
   .container
-    +uiLogo({})
+    +uiLogo({logoImg: require("../../components/small-components/ui-page-1/ui-logo/img/ui-logo.svg")})
     .container-color-type
       .block-color-wrap
         +color({squareClass: " block-color__square_dark100", title: "Dark Shade 100%", hex: "#1F2041"})
@@ -51,7 +52,7 @@ block content
         +text()
   .container
     .container-color-type.container-color-type_flex-wrap
-      +uiLogo({position: " ui-logo_top_50"})
+      +uiLogo({logoImg: require("../../components/small-components/ui-page-1/ui-logo/img/ui-logo.svg"), position: " ui-logo_top_50"})
       .container-section-1
         .container-field
           div(class="text-field text-field_margin_bottom_20")
@@ -130,10 +131,10 @@ block content
       .container-comments
         +roomDetails({arr: [{title: "Комфорт", descr: "Шумопоглощающие стены", hr: true, img: " room-details__img_emoticon"}, 
           {title: "Удобство", descr: "Окно в каждой из спален", hr: true, img: " room-details__img_city"}]})
-        +comments({margin: " comments_margin_top_5", arr: [{srcImg: "/img/autor1.png", imgAlt: "Мурад Сарафанов", name: "Мурад Сарафанов", period: "5 дней назад", amount: "12", btnActive: true, 
+        +comments({margin: " comments_margin_top_5", arr: [{srcImg: require("../../components/small-components/comments/img/autor1.png"), imgAlt: "Мурад Сарафанов", name: "Мурад Сарафанов", period: "5 дней назад", amount: "12", btnActive: true, 
           text: "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."}]})
   .container.container-ui-bg-gray
-    +uiLogo({})
+    +uiLogo({logoImg: require("../../components/small-components/ui-page-1/ui-logo/img/ui-logo.svg")})
     .container-cards
       .cards1
         +formRoomSearch({txt: "Найдём номера под ваши пожелания", margin: " checkbox_margin_bottom"})
@@ -145,29 +146,32 @@ block content
       .cards3
         +windowDatepicker({})
         .slider-room-wrap
-          +sliderRoom({arrImg: [{src: "/img/room-img/image1.webp"}, {src: "/img/room-img/image-default-2.webp"}, 
-            {src: "/img/room-img/image-default-3.webp"}, {src: "/img/room-img/image-default-4.webp"}], alt: "Первый номер в отеле", lux: " slider-room-block-text__room-lux",
+          +sliderRoom({arrImg: [{src: require("../../components/slider-room/room-img/image1.webp")}, {src: require("../../components/slider-room/room-img/image-default-2.webp")}, 
+            {src: require("../../components/slider-room/room-img/image-default-3.webp")}, {src: require("../../components/slider-room/room-img/image-default-4.webp")}], alt: "Первый номер в отеле", lux: " slider-room-block-text__room-lux",
             room: "888", price: "9 990₽", nameRating: "room-rating1", reviews: "145", margin: " checkbox_margin_bottom", 
             arrowActive: " slider-room_arrow_active", arr: [{aria: "1 звезда", checked: true}, {aria: "2 звезды", checked: true}, 
             {aria: "3 звезды", checked: true}, {aria: "4 звезды", checked: true}, {aria: "5 звезд", checked: true}]})
-          +sliderRoom({arrImg: [{src: "/img/room-img/image2.webp"}, {src: "/img/room-img/image-default-2.webp"}, 
-            {src: "/img/room-img/image-default-3.webp"}, {src: "/img/room-img/image-default-4.webp"}], 
+          +sliderRoom({arrImg: [{src: require("../../components/slider-room/room-img/image2.webp")}, {src: require("../../components/slider-room/room-img/image-default-2.webp")}, 
+            {src: require("../../components/slider-room/room-img/image-default-3.webp")}, {src: require("../../components/slider-room/room-img/image-default-4.webp")}], 
             alt: "Второй номер в отеле", room: "840", price: "9 990₽", nameRating: "room-rating2", reviews: "65", 
             arr: [{aria: "1 звезда", checked: true}, {aria: "2 звезды", checked: true}, 
             {aria: "3 звезды", checked: true}, {aria: "4 звезды", checked: true}, {aria: "5 звезд", checked: false}]})
   .container.container-ui-bg-gray
-    +uiLogo({})
+    +uiLogo({logoImg: require("../../components/small-components/ui-page-1/ui-logo/img/ui-logo.svg")})
     .container-header-footer
-      +header({margin: " checkbox_margin_bottom", marginArrow: " header-menu__arrow_margin_left_0", btnText: ["Login", "Register"], 
+      +header({logoImg: require("../../components/header/img/logo.svg"), margin: " checkbox_margin_bottom", 
+        marginArrow: " header-menu__arrow_margin_left_0", btnText: ["Login", "Register"], 
         list: [{text: "Home", bold: " header-menu__link_bold"}, {text: "About Us"}, {text: "Services", arrow: true}, 
         {text: "Careers"}, {text: "News"}, {text: "Documentation"}]})
-      +header({margin: " checkbox_margin_bottom", marginArrow: " header-menu__arrow_margin_left_0", namePerson: "Cosmin Negoita", 
+      +header({logoImg: require("../../components/header/img/logo.svg"), margin: " checkbox_margin_bottom", 
+        marginArrow: " header-menu__arrow_margin_left_0", namePerson: "Cosmin Negoita", 
         list: [{text: "Home", bold: " header-menu__link_bold"}, {text: "About Us"}, {text: "Services", arrow: true}, 
         {text: "Careers"}, {text: "News"}, {text: "Documentation"}]})
       +footer({padding: " footer-container_padding_100", text: "Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.", 
-        subscribeTitle: "Subscribe to our newsletter", subscribeText: "Receive our latest news and promotions in your inbox!", 
+        logoImg: require("../../components/header/img/logo.svg"), subscribeTitle: "Subscribe to our newsletter", subscribeText: "Receive our latest news and promotions in your inbox!", 
         copyrightText: "Copyright © 2019 Toxin UI Kit. All rights reserved.", marginBottom: " checkbox_margin_bottom", 
         menu: [{title: "Navigation", list: [{text: "About Us"}, {text: "News"}, {text: "Support"}, {text: "Products"}] }, 
               {title: "About us", list: [{text: "Who we are"}, {text: "Our team"}, {text: "Careers"}, {text: "Investors"}] }, 
               {title: "Support", list: [{text: "Documentation"}, {text: "Community"}, {text: "Get in Touch"}] }] })
-      +footer2({padding: " footer-container_padding_100", text: "Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis."})
+      +footer2({logoImg: require("../../components/header/img/logo.svg"), padding: " footer-container_padding_100", 
+        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis."})

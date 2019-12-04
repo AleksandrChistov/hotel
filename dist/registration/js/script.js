@@ -155,6 +155,18 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./components/footer/footer.js":
+/*!*************************************!*\
+  !*** ./components/footer/footer.js ***!
+  \*************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _small_components_subscription_text_field_sub_field_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../small-components/subscription-text-field/sub-field.styl */ \"./components/small-components/subscription-text-field/sub-field.styl\");\n/* harmony import */ var _small_components_subscription_text_field_sub_field_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_small_components_subscription_text_field_sub_field_styl__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _footer_styl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer.styl */ \"./components/footer/footer.styl\");\n/* harmony import */ var _footer_styl__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_footer_styl__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack:///./components/footer/footer.js?");
+
+/***/ }),
+
 /***/ "./components/footer/footer.styl":
 /*!***************************************!*\
   !*** ./components/footer/footer.styl ***!
@@ -174,7 +186,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./comp
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _small_components_text_field_text_field_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../small-components/text-field/text-field.styl */ \"./components/small-components/text-field/text-field.styl\");\n/* harmony import */ var _small_components_text_field_text_field_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_small_components_text_field_text_field_styl__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _small_components_radio_buttons_radio_styl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../small-components/radio-buttons/radio.styl */ \"./components/small-components/radio-buttons/radio.styl\");\n/* harmony import */ var _small_components_radio_buttons_radio_styl__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_small_components_radio_buttons_radio_styl__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _small_components_toggle_toggle_block_styl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../small-components/toggle/toggle-block.styl */ \"./components/small-components/toggle/toggle-block.styl\");\n/* harmony import */ var _small_components_toggle_toggle_block_styl__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_small_components_toggle_toggle_block_styl__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _small_components_buttons_buttons_styl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../small-components/buttons/buttons.styl */ \"./components/small-components/buttons/buttons.styl\");\n/* harmony import */ var _small_components_buttons_buttons_styl__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_small_components_buttons_buttons_styl__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _form_reg_styl__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./form-reg.styl */ \"./components/form-reg/form-reg.styl\");\n/* harmony import */ var _form_reg_styl__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_form_reg_styl__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var imask__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! imask */ \"../node_modules/imask/dist/imask.esm.js\");\n\n\n\n\n\n\nconst element = document.getElementById('maskedTextFormReg');\nObject(imask__WEBPACK_IMPORTED_MODULE_5__[\"default\"])(element, {\n  mask: Date,\n  pattern: 'd.`m.`Y',\n  blocks: {\n    d: {\n      mask: imask__WEBPACK_IMPORTED_MODULE_5__[\"default\"].MaskedRange,\n      from: 1,\n      to: 31,\n      maxLength: 2\n    },\n    m: {\n      mask: imask__WEBPACK_IMPORTED_MODULE_5__[\"default\"].MaskedRange,\n      from: 1,\n      to: 12,\n      maxLength: 2\n    },\n    Y: {\n      mask: imask__WEBPACK_IMPORTED_MODULE_5__[\"default\"].MaskedRange,\n      from: 1900,\n      to: 2010\n    }\n  }\n});\n\n//# sourceURL=webpack:///./components/form-reg/form-reg.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _small_components_text_field_text_field_styl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../small-components/text-field/text-field.styl */ \"./components/small-components/text-field/text-field.styl\");\n/* harmony import */ var _small_components_text_field_text_field_styl__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_small_components_text_field_text_field_styl__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _small_components_radio_buttons_radio_styl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../small-components/radio-buttons/radio.styl */ \"./components/small-components/radio-buttons/radio.styl\");\n/* harmony import */ var _small_components_radio_buttons_radio_styl__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_small_components_radio_buttons_radio_styl__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _small_components_toggle_toggle_block_styl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../small-components/toggle/toggle-block.styl */ \"./components/small-components/toggle/toggle-block.styl\");\n/* harmony import */ var _small_components_toggle_toggle_block_styl__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_small_components_toggle_toggle_block_styl__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _small_components_buttons_buttons_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../small-components/buttons/buttons.js */ \"./components/small-components/buttons/buttons.js\");\n/* harmony import */ var _form_reg_styl__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./form-reg.styl */ \"./components/form-reg/form-reg.styl\");\n/* harmony import */ var _form_reg_styl__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_form_reg_styl__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var imask__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! imask */ \"../node_modules/imask/dist/imask.esm.js\");\n\n\n\n\n\n\nconst element = document.getElementById('maskedTextFormReg');\nObject(imask__WEBPACK_IMPORTED_MODULE_5__[\"default\"])(element, {\n  mask: Date,\n  pattern: 'd.`m.`Y',\n  blocks: {\n    d: {\n      mask: imask__WEBPACK_IMPORTED_MODULE_5__[\"default\"].MaskedRange,\n      from: 1,\n      to: 31,\n      maxLength: 2\n    },\n    m: {\n      mask: imask__WEBPACK_IMPORTED_MODULE_5__[\"default\"].MaskedRange,\n      from: 1,\n      to: 12,\n      maxLength: 2\n    },\n    Y: {\n      mask: imask__WEBPACK_IMPORTED_MODULE_5__[\"default\"].MaskedRange,\n      from: 1900,\n      to: 2010\n    }\n  }\n});\n\n//# sourceURL=webpack:///./components/form-reg/form-reg.js?");
 
 /***/ }),
 
@@ -268,6 +280,51 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./comp
 
 /***/ }),
 
+/***/ "./components/small-components/buttons/button-l/button-l.styl":
+/*!********************************************************************!*\
+  !*** ./components/small-components/buttons/button-l/button-l.styl ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./components/small-components/buttons/button-l/button-l.styl?");
+
+/***/ }),
+
+/***/ "./components/small-components/buttons/button-l/img/arrow_forward.svg":
+/*!****************************************************************************!*\
+  !*** ./components/small-components/buttons/button-l/img/arrow_forward.svg ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/arrow_forward.svg\";\n\n//# sourceURL=webpack:///./components/small-components/buttons/button-l/img/arrow_forward.svg?");
+
+/***/ }),
+
+/***/ "./components/small-components/buttons/button-m/button-m.styl":
+/*!********************************************************************!*\
+  !*** ./components/small-components/buttons/button-m/button-m.styl ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./components/small-components/buttons/button-m/button-m.styl?");
+
+/***/ }),
+
+/***/ "./components/small-components/buttons/buttons.js":
+/*!********************************************************!*\
+  !*** ./components/small-components/buttons/buttons.js ***!
+  \********************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _button_l_img_arrow_forward_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./button-l/img/arrow_forward.svg */ \"./components/small-components/buttons/button-l/img/arrow_forward.svg\");\n/* harmony import */ var _button_l_img_arrow_forward_svg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_button_l_img_arrow_forward_svg__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _button_m_button_m_styl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./button-m/button-m.styl */ \"./components/small-components/buttons/button-m/button-m.styl\");\n/* harmony import */ var _button_m_button_m_styl__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_button_m_button_m_styl__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _button_l_button_l_styl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./button-l/button-l.styl */ \"./components/small-components/buttons/button-l/button-l.styl\");\n/* harmony import */ var _button_l_button_l_styl__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_button_l_button_l_styl__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _buttons_styl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./buttons.styl */ \"./components/small-components/buttons/buttons.styl\");\n/* harmony import */ var _buttons_styl__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_buttons_styl__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\n\n//# sourceURL=webpack:///./components/small-components/buttons/buttons.js?");
+
+/***/ }),
+
 /***/ "./components/small-components/buttons/buttons.styl":
 /*!**********************************************************!*\
   !*** ./components/small-components/buttons/buttons.styl ***!
@@ -287,6 +344,17 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./comp
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./components/small-components/radio-buttons/radio.styl?");
+
+/***/ }),
+
+/***/ "./components/small-components/subscription-text-field/sub-field.styl":
+/*!****************************************************************************!*\
+  !*** ./components/small-components/subscription-text-field/sub-field.styl ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./components/small-components/subscription-text-field/sub-field.styl?");
 
 /***/ }),
 
@@ -353,7 +421,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./page
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_main_main_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/main/main.js */ \"./components/main/main.js\");\n/* harmony import */ var _components_header_header_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/header/header.js */ \"./components/header/header.js\");\n/* harmony import */ var _components_footer_footer_styl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/footer/footer.styl */ \"./components/footer/footer.styl\");\n/* harmony import */ var _components_footer_footer_styl__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_footer_footer_styl__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _registration_styl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./registration.styl */ \"./pages/registration/registration.styl\");\n/* harmony import */ var _registration_styl__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_registration_styl__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _img_bg_registration_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./img/bg-registration.jpg */ \"./pages/registration/img/bg-registration.jpg\");\n/* harmony import */ var _img_bg_registration_jpg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_img_bg_registration_jpg__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _components_form_reg_form_reg_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/form-reg/form-reg.js */ \"./components/form-reg/form-reg.js\");\n/* harmony import */ var _media_styl__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./media.styl */ \"./pages/registration/media.styl\");\n/* harmony import */ var _media_styl__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_media_styl__WEBPACK_IMPORTED_MODULE_6__);\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./pages/registration/registration.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_main_main_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/main/main.js */ \"./components/main/main.js\");\n/* harmony import */ var _components_header_header_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/header/header.js */ \"./components/header/header.js\");\n/* harmony import */ var _components_footer_footer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/footer/footer.js */ \"./components/footer/footer.js\");\n/* harmony import */ var _registration_styl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./registration.styl */ \"./pages/registration/registration.styl\");\n/* harmony import */ var _registration_styl__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_registration_styl__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _img_bg_registration_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./img/bg-registration.jpg */ \"./pages/registration/img/bg-registration.jpg\");\n/* harmony import */ var _img_bg_registration_jpg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_img_bg_registration_jpg__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _components_form_reg_form_reg_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/form-reg/form-reg.js */ \"./components/form-reg/form-reg.js\");\n/* harmony import */ var _media_styl__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./media.styl */ \"./pages/registration/media.styl\");\n/* harmony import */ var _media_styl__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_media_styl__WEBPACK_IMPORTED_MODULE_6__);\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./pages/registration/registration.js?");
 
 /***/ }),
 

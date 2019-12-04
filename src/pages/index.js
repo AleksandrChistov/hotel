@@ -1,7 +1,7 @@
 import './index.styl'
 
 import '../components/header/header.js'
-import '../components/footer/footer.styl'
+import '../components/footer/footer.js'
 
 import './img/bg-landing.jpg'
 
